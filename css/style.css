@@ -104,3 +104,9 @@ body {
 	background:url(/images/gridbg.gif) top left repeat;
 }
 
+span.amp {
+    font-family: Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
+    font-style: italic;
+    font-weight:normal;
+}
+
