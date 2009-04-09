@@ -2,6 +2,21 @@ require 'csv'
 require 'rubygems'
 require 'amazon/ecs'
 
+class Array
+  def to_sentence
+    case length
+      when 0
+        ""
+      when 1
+        self[0].to_s
+      when 2
+        "#{self[0]} and #{self[1]}"
+      else
+        "#{self[0...-1].join(',')} and #{self[-1]}"
+    end
+  end
+end
+
 # Access Key
 Amazon::Ecs.options = {:aWS_access_key_id => "1KWW0ZZBXM2H44SQVD02"}
 
@@ -34,8 +49,9 @@ end.compact
 puts "Parsing data for #{booksdata.size} entries"
 links_html = booksdata.collect do |book|
   if book
+    authors = book.get_array("author") +  book.get_array("creator")
     <<-EOF
-    <li><a href="#{book.get('detailpageurl')}">#{book.get('title')}</a></li>
+    <li><a href="#{book.get('detailpageurl')}">#{book.get('title')} by #{authors.to_sentence}</a></li>
     EOF
   else
     ""

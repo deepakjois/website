@@ -1,0 +1,106 @@
+ul, li, h1, h2, body,
+header, nav, article, section, footer {
+	margin:0;
+	padding:0;
+}
+
+a {
+	text-decoration:none;
+}
+
+
+body,
+a  {
+	background:#fff;
+	color:#444;	
+}
+
+a:hover {
+	color:#9e934a;
+}
+
+header, nav, article, section, footer {
+	display:block;
+}
+
+div.heading,
+div#wrapper {
+	width:30em;
+	margin:0 auto;
+}
+
+h1 a {
+	text-decoration:none;
+}
+
+nav {
+	overflow:hidden;
+	height:1.5em;
+	margin:0.6em 0 0 0;
+}
+
+nav ul {
+	display:none;
+}
+
+
+nav li {
+	display:inline;
+	padding:0 0.5em 0 0;
+	letter-spacing:0.05em;
+}
+
+div.heading:hover nav ul {
+	display:block;
+}
+
+div.heading {
+	margin:3.8em 0 1em 0;
+}
+
+section p:first-child {
+	float:left;
+	width:245px;
+	margin:0 1em 0 0;
+}
+
+section + section p:first-child {
+	float:none;
+	width:auto;
+	margin:0;
+}
+
+section {
+	clear:both;
+}
+
+nav li + li a:before {
+	content: "·";
+	padding-right:0.8em;
+}
+
+
+/* ========= */
+/* = FONTS = */
+/* ========= */
+body {
+	font: normal normal normal 1em/1.5 "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+h1 {
+	font: normal normal bold 2em/1.5 "Palatino", "Palatino Linotype", "Hoefler Text", Times, "Times New Roman";
+}
+
+body { font-size:100%; }
+h1 { font-size:2.25em; }
+h2 { font-size:1.5em;  }
+h3 { font-size:1.125em; }
+h4, nav { font-size:0.875em; }
+p  { font-size:0.75em;  }
+
+
+
+body {
+	background:url(/images/gridbg.gif) top left repeat;
+}
+
