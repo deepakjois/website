@@ -1,4 +1,4 @@
-ul, li, h1, h2, body,
+p, ul, li, h1, h2, h3, body,
 header, nav, article, section, footer {
 	margin:0;
 	padding:0;
@@ -9,14 +9,17 @@ a {
 }
 
 
-body,
-a  {
+body {
 	background:#fff;
-	color:#444;	
+	color:#555;	
+}
+
+a {
+	color:#000;
 }
 
 a:hover {
-	color:#9e934a;
+	text-decoration:underline;
 }
 
 header, nav, article, section, footer {
@@ -25,22 +28,28 @@ header, nav, article, section, footer {
 
 div.heading,
 div#wrapper {
-	width:30em;
+	width:35em;
 	margin:0 auto;
+}
+
+h1 {
+	text-align:center;
 }
 
 h1 a {
 	text-decoration:none;
 }
 
-nav {
+nav,
+div.heading header + nav {
 	overflow:hidden;
 	height:1.5em;
 	margin:0.6em 0 0 0;
 }
 
 nav ul {
-	display:none;
+	display:block;
+	text-align:center;
 }
 
 
@@ -50,62 +59,116 @@ nav li {
 	letter-spacing:0.05em;
 }
 
-div.heading:hover nav ul {
-	display:block;
-}
-
 div.heading {
-	margin:3.8em 0 1em 0;
+	margin:3.1em 0 1em 0;
+	position:relative;
 }
 
-section p:first-child {
-	float:left;
+nav li + li:before {
+	content: "❧";
+	padding:0 0.5em 0 0.1em;
+}
+
+div.heading nav {
+	position:absolute;
+	top:0;
+	left:0;
+	margin-top:0.2em;
+}
+
+div.heading header + nav {
+	position:static;
+}
+
+/* DEEPAK PHOTO AND SLOGAN */
+section.bio {
+	position:relative;
+	min-height:200px;
+}
+section.bio p + p {
+	padding:0.9em 0 0 0;
+	margin:0 0 0 8.5em;
+}
+
+section.bio p:first-child {
+	position:absolute;
+	left:0;
+	top:0;
 	width:245px;
-	margin:0 1em 0 0;
-}
-
-section + section p:first-child {
-	float:none;
-	width:auto;
-	margin:0;
 }
 
 section {
 	clear:both;
 }
 
-nav li + li a:before {
-	content: "·";
-	padding-right:0.8em;
+section h2 {
+	font-variant:small-caps;
+	font-weight:normal;
+	line-height:2em;
 }
 
+section h3 {
+	font-weight:bold;
+}
+
+section p,
+section h3 {
+	margin:0 0 1.286em 0;
+}
+
+
+/* DEEPAK ONLINE */
+section.online {
+	margin:2.3em 0;
+	text-align:center;	
+}
+
+section.online p a:after {
+	content: "";
+}
+
+section.online li {
+	list-style:none;
+	display:inline;
+}
+
+section.online li + li:before {
+	content: "❧";
+	padding:0 0.5em;	
+}
 
 /* ========= */
 /* = FONTS = */
 /* ========= */
 body {
-	font: normal normal normal 1em/1.5 "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font: normal normal normal 1em/1.286 Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
 }
 
 h1 {
-	font: normal normal bold 2em/1.5 "Palatino", "Palatino Linotype", "Hoefler Text", Times, "Times New Roman";
+	font: normal normal normal 3em/1.5 Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
 }
 
+h1 small {
+    font-size: 0.2em;
+}
+
+
 body { font-size:100%; }
-h1 { font-size:2.25em; }
-h2 { font-size:1.5em;  }
-h3 { font-size:1.125em; }
-h4, nav { font-size:0.875em; }
-p  { font-size:0.75em;  }
+h1 { font-size:5em;}
+section.online p { font-size:2em; }
+h2 { font-size:1.125em; }
+h3, p, li, h4, a.title { font-size:0.875em; }
 
 
+section.bio p {
+	font-size:2em;
+}
 
 body {
-	background:url(/images/gridbg.gif) top left repeat;
+	/* background:url(/images/gridbg.gif) top left repeat;  */
 }
 
 span.amp {
-    font-family: Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
     font-style: italic;
     font-weight:normal;
 }

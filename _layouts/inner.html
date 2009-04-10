@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<title>{{ page.title }}</title> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" title="Main CSS"> 
+{% include dirty_ie_hack.html %}
+</head>
+<body>
+<div id="wrapper">
+	<div class="heading"><!--START CLASS heading-->
+	  <nav><a class="title" href="/">❮ Home</a></nav>
+    <header>    	  
+			<h1>{{page.title}}</h1>
+		</header>		
+		<nav>
+			{% include menu.html %}	
+		</nav>	
+	</div><!--END CLASS heading-->
+	{{ content }}	
+</div>
+</body>
+</html>
+
