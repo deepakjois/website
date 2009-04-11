@@ -166,11 +166,12 @@ section.bio p {
 }
 
 body {
-	background:url(/images/gridbg.gif) top left repeat; 
+	/* background:url(/images/gridbg.gif) top left repeat;  */
 }
 
 span.amp {
     font-style: italic;
     font-weight:normal;
+    font:  Baskerville, Constantia, Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", serif;
 }
 
