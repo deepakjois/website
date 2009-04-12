@@ -87,7 +87,7 @@ section.bio {
 }
 section.bio p + p {
 	padding:0.9em 0 0 0;
-	margin:0 0 0 8.5em;
+	margin:0 0 0 272px;
 }
 
 section.bio p:first-child {
