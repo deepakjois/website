@@ -59,6 +59,6 @@ links_html = booksdata.collect do |book|
 end
 
 
-File.open("_includes/books_read.html", "w") do |f|
-  f.write "<ul>\n" + links_html.join("\n") + "</ul>\n"
-end
+#File.open("_includes/books_read.html", "w") do |f|
+#  f.write "<ul>\n" + links_html.join("\n") + "</ul>\n"
+#end
