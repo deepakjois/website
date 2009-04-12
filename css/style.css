@@ -107,12 +107,13 @@ section h2 {
 	line-height:2em;
 }
 
+
 section h3 {
 	font-weight:bold;
+	line-height:2em;
 }
 
 section p,
-section h3,
 section ul {
 	margin:0 0 1.286em 0;
 }
@@ -157,8 +158,8 @@ h1 small {
 body { font-size:100%; }
 h1 { font-size:5em;}
 section.online p { font-size:2em; }
-h2 { font-size:1.125em; }
-h3, p, ul, h4, a.title { font-size:0.875em; }
+h2,h3 { font-size:1.125em; }
+p, ul, h4, a.title { font-size:0.875em; }
 
 
 section.bio p {
@@ -166,7 +167,7 @@ section.bio p {
 }
 
 body {
-	/* background:url(/images/gridbg.gif) top left repeat;  */
+	 /* background:url(/images/gridbg.gif) top left repeat;  */
 }
 
 span.amp {
