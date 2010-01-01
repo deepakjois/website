@@ -6,7 +6,10 @@
 
 - url      : books/index.html
   title    : Books
-  source   : books.txt
+  requires : [bookmonthly.st, book.st]
+  template : books.txt.st
+  data     :
+    books : FROM books.yaml ORDER BY date ASC GROUP BY date
 
 - url      : colophon/index.html
   title    : Colophon

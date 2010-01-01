@@ -161,6 +161,7 @@ section.online p { font-size:2em; }
 h2,h3 { font-size:1.125em; }
 p, ul, h4, a.title { font-size:0.875em; }
 
+em.impt { color:red; }
 
 section.bio p {
 	font-size:2em;
