@@ -3,4 +3,4 @@ title: "Deepak Jois &middot; Website"
 sourcedir: source
 datadir: data
 filesdir: files
-layout: inner.html.st
+layout: layouts/inner.html.st

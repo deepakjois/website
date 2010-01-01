@@ -1,7 +1,7 @@
 - url      : index.html
   title    : "Deepak Jois &middot; Website"
   source   : index.txt
-  layout   : home.html.st
+  layout   : layouts/home.html.st
   inmenu   : no
 
 - url      : books/index.html
