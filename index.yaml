@@ -1,0 +1,26 @@
+- url      : index.html
+  title    : "Deepak Jois &middot; Website"
+  source   : index.txt
+  layout   : home.html.st
+  inmenu   : no
+
+- url      : books/index.html
+  title    : Books
+  source   : books.txt
+
+- url      : colophon/index.html
+  title    : Colophon
+  source   : colophon.txt
+
+- url      : code/index.html
+  title    : Code
+  source   : code.txt
+
+- url      : contact/index.html
+  title    : Contact
+  source   : contact.txt
+  
+- url     : books/old_2006-2009.html
+  title   : "2006–2009"
+  source  : books/old_2006-2009.html    
+  inmenu  : no

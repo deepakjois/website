@@ -1,0 +1,15 @@
+<section class="bio">	
+  <p><img src="images/deepak-jois.png" alt="Picture of Deepak Jois" /></p>
+  <p><a href="/code">Geek</a>,<br/><a href="/books">Bibliophile</a> <span class="amp">&amp;</span><br/><a href="http://blog.deepak.jois.name"> Part&#x2011;time&nbsp;Philosopher</a></p>
+</section>
+<section class="online">
+
+  * [Blog](http://blog.deepak.jois.name)
+  * [Twitter](http://twitter.com/vyom)
+  * [Flickr](http://flickr.com/photos/nimbupani)
+  * [FriendFeed](http://friendfeed.com/vyom)
+  * [Github](http://github.com/deepakjois)
+  * [LinkedIn](http://www.linkedin.com/in/deepakjois)
+  * [Amazon](http://www.amazon.com/wishlist/2SBXJEB7XQW1)
+  
+</section>

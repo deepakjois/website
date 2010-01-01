@@ -1,0 +1,6 @@
+I keep a [huge list of books][old_list] that I managed read from 2006 to 2009,
+organised by rough categories.
+
+[old_list]: old_2006-2009.html
+
+Nowadays, I read books primarily from the [library](http://spl.org).

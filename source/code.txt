@@ -1,0 +1,85 @@
+## Software
+
+### Dhun
+
+[Dhun] is a minimalist, commandline music player for OS X. I wrote this while
+reading some chapters of the brilliant book [OS X Internals][osxinternals].
+Dhun uses C-based libraries to handle audio playback and Spotlight querying on
+OS X. The rest of the code is written in Ruby.
+
+[Dhun]: http://github.com/deepakjois/dhun
+[osxinternals]: http://www.amazon.com/Mac-OS-Internals-Systems-Approach/dp/0321278542
+
+### gchartrb
+	  
+_This project is currently unmaintained_.
+
+You can fork [the code][gchartrb] on GitHub and do what you like with it.
+
+**gchartrb** is a Ruby wrapper around the [Google Chart API][gchartapi]. It is
+inspired by another Ruby based graphing library called [Gruff][gruff]. Visit
+the website for more information.
+
+[gchartrb]: http://github.com/deepakjois/gchartrb	
+[gchartapi]: http://code.google.com/apis/chart/
+[gruff]: http://nubyonrails.com/pages/gruff
+
+
+### Tabbie
+
+Aditya Krishnan and me were the original creators of [Tabbie][tabbie], an open source
+Tab Software for British Parliamentary style debating tournaments. It was
+first used in NTU Worlds 2004.
+
+Apart from NTU Worlds 2004, Tabbie has been [used in many tournaments][tabbie_cust] around
+the world, including two World Universities Debating tournaments in Vancouver
+(2006) and Bangkok (2008).
+
+Klaas Van Schelven is the current maintainer of Tabbie.
+
+[tabbie]: http://tabbie.wikidot.com
+[ntu]: http://www.ntu.edu.sg
+[tabbie_cust]: http://tabbie.wikidot.com/customers
+
+## Bits of Code
+
+### TwitterArchiver
+
+[TwitterArchiver] is a script written in [Haskell]. It archives all your past
+Tweets in a JSON file. It also has the ability to sync an already existing
+archive and update it with the latest feeds.
+
+[TwitterArchiver]: http://github.com/deepakjois/TwitterArchiver/tree/master
+
+### Project Euler Problems
+
+I am using [Project Euler] to learn [Haskell]. I have put up some problem
+[solutions on github][euler-github].
+
+[Project Euler]: http://projecteuler.net
+[Haskell]: http://www.haskell.org/
+[euler-github]: http://github.com/deepakjois/projecteuler/tree/master
+
+### PyFlickrUploadr
+
+_This code is no longer being maintained_.
+
+[PyFlickrUploadr] is a Python script to upload photos to Flickr from the
+commandline. It has a variety of things you can set from the command-line like
+tags, privacy level etc.
+
+[PyFlickrUploadr]: http://jflickruploader.sourceforge.net/pyflickruploadr.html
+	  	   
+### Gnome Wallpaper Changer
+
+_This code is no longer being maintained_.
+
+A long time ago [I wrote a script][oldblogpost] to change/cycle wallpapers
+automatically in Gnome on Ubuntu Linux. I put up the code on a post on my old
+blog. A couple of people even contributed a few variants to it.
+
+[oldblogpost]: http://chakravyuh.blogspot.com/2005/10/gnome-wallpaper-switcher.html
+
+  * [My Version](wall/wall1.py.txt)
+  * [Modified Version 2](wall/wall2.py.txt) (By Anonymous)
+  * [Modified Version 3](wall/wall3.py.txt) (By Erik)
