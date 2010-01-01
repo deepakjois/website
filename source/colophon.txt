@@ -3,7 +3,9 @@
 This site used to be generated using [Jekyll], but I switched to using [yst]
 later because of its superior Markdown support (via [Pandoc]) and its ability
 to handle multiple formats which I intend to use sometime soon. The website
-codebase is [hosted on Github][site_gh].
+codebase is [hosted on Github][site_gh]. You can view the source [in Markdown
+format][colophon-src] (with Pandoc extensions) that is formatted into this
+page.
 
 [HTML 5] markup is used throughout.
 
@@ -12,6 +14,7 @@ codebase is [hosted on Github][site_gh].
 [site_gh]: http://github.com/deepakjois/website
 [Pandoc]: http://johnmacfarlane.net/pandoc/
 [HTML 5]: http://en.wikipedia.org/wiki/HTML_5
+[colophon-src]: http://github.com/deepakjois/website/blob/master/source/colophon.txt
 
 ## Design
 
