@@ -15,6 +15,7 @@
 		</header>		
 	 $contents$
 </div>
+$analytics()$
 </body>
 </html>
 

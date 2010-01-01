@@ -20,6 +20,7 @@ $iehtml5()$
   $contents$
   </section>
 </div>
+$analytics()$
 </body>
 </html>
 
