@@ -1,0 +1,22 @@
+* Easily accessible input format
+** Should be readabale : No XML Tag Soup!
+** WYSIWYG
+*** Easy to Visualise
+*** Most WYSIWYG Tools introduce extranous formatting elements etc.
+** Non-WYSIWYG
+*** Geeky, may not be accessbile to 'normal' people ;)
+*** Need to identify a good format. Markdown (w/ Pandoc) best so far
+* Common Preprocessing
+** TOC Generation, depending on output format
+** Formatting Images, Math Equations etc
+** Bibliography (?)
+* Web Preprocessing
+** Javascript
+** Commenting system like on Django Book
+** Classes and IDs for CSS formatting
+** HTML Tree Generation
+* Print Preprocessing
+** Non-regular elements like cover page etc
+** Page layout and formatting
+** PDF/DocBook/Epub generation
+
