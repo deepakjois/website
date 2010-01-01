@@ -27,7 +27,7 @@ the website for more information.
 
 ### Tabbie
 
-Aditya Krishnan and me were the original creators of [Tabbie][tabbie], an open source
+Aditya Krishnan and I were the original creators of [Tabbie][tabbie], an open source
 Tab Software for British Parliamentary style debating tournaments. It was
 first used in NTU Worlds 2004.
 
