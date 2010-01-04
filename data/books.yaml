@@ -10,3 +10,15 @@
   author   : "Martin Lindstrom"
   category : "non-fiction-economics"
   date     : 2010-01-01
+
+- title    : "The TeXbook"
+  link     : "http://www.amazon.com/TeXbook-Donald-E-Knuth/dp/0201134489"
+  author   : "Donald Knuth"
+  category : "non-fiction-tech"
+  date     : 2010-01-01
+
+- title    : "Ratio: The Simple Codes Behind the Craft of Everyday Cooking"
+  link     : "http://www.amazon.com/Ratio-Simple-Behind-Everyday-Cooking/dp/1416566112"
+  author   : "Michael Ruhlman"
+  category : "non-fiction-other"
+  date     : 2010-01-01
