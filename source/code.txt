@@ -43,13 +43,13 @@ Klaas Van Schelven is the current maintainer of Tabbie.
 
 ## Bits of Code
 
-### TwitterArchiver
+### hs-twitterarchiver
 
-[TwitterArchiver] is a script written in [Haskell]. It archives all your past
+[hs-twitterarchiver] is a script written in [Haskell]. It archives all your past
 Tweets in a JSON file. It also has the ability to sync an already existing
 archive and update it with the latest feeds.
 
-[TwitterArchiver]: http://github.com/deepakjois/TwitterArchiver/tree/master
+[hs-twitterarchiver]: http://github.com/deepakjois/hs-twitterarchiver/tree/master
 
 ### Project Euler Problems
 
