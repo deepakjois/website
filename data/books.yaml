@@ -36,3 +36,10 @@
   category : "non-fiction-tech"
   readable : yes
   date     : 2010-02-01
+
+- title    : "The Next 100 Years: A Forecast for the 21st Century"
+  link     : "http://www.amazon.com/Next-100-Years-Forecast-Century/dp/038551705X/"
+  author   : "George Friedman"
+  category : "non-fiction-other"
+  date     : 2010-02-01
+    
