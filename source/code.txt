@@ -66,7 +66,7 @@ archive and update it with the latest feeds.
 ### Patches to yst
 
 [yst] is the static web page creator that powers this site. I contributed some
-patches to it([1][patch3],[2][patch2],[3][patch3]), and hope to develop more features when I get time.
+patches to it([1][patch1],[2][patch2],[3][patch3]), and hope to develop more features when I get time.
 
 [yst]: http://github.com/jgm/yst/
 [patch1]: http://github.com/jgm/yst/commit/1388233929b3330bea3faf466762b37b59e6e79f
