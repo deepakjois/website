@@ -1,0 +1,4176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Graphics.GChart.Types</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+><SCRIPT TYPE="text/javascript"
+>window.onload = function () {setSynopsis("mini_Graphics-GChart-Types.html")};</SCRIPT
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+>hs-gchart-0.1: Haskell wrapper for the Google Chart API</TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="modulebar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><FONT SIZE="6"
+>Graphics.GChart.Types</FONT
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="section4"
+><B
+>Contents</B
+></TD
+></TR
+><TR
+><TD
+><DL
+><DT
+><A HREF="#1"
+>Chart data
+</A
+></DT
+><DT
+><A HREF="#2"
+>Required Parameters
+</A
+></DT
+><DD
+><DL
+><DT
+><A HREF="#3"
+>Chart Size
+</A
+></DT
+><DT
+><A HREF="#4"
+>Chart Data
+</A
+></DT
+><DT
+><A HREF="#5"
+>Chart Type
+</A
+></DT
+></DL
+></DD
+><DT
+><A HREF="#6"
+>Optional Parameters
+</A
+></DT
+><DD
+><DL
+><DT
+><A HREF="#7"
+>Chart Colors
+</A
+></DT
+><DT
+><A HREF="#8"
+>Solid Fill, Linear Gradient, Linear Stripes
+</A
+></DT
+><DT
+><A HREF="#9"
+>Chart Title
+</A
+></DT
+><DT
+><A HREF="#10"
+>Chart Legend
+</A
+></DT
+><DT
+><A HREF="#11"
+>Axis styles and labels
+</A
+></DT
+><DT
+><A HREF="#12"
+>Grid Lines
+</A
+></DT
+><DT
+><A HREF="#13"
+>Pie chart and Google-o-meter labels
+</A
+></DT
+></DL
+></DD
+><DT
+><A HREF="#14"
+>Default Values
+</A
+></DT
+></DL
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Description</TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>This module contains the Haskell data model for the Google Chart API.
+</P
+><P
+>Details about the parameters can be found on the Google Chart API website :
+<A HREF="http://code.google.com/apis/chart/"
+>http://code.google.com/apis/chart/</A
+>
+</P
+><P
+>Some chart types are not supported yet :
+</P
+><UL
+><LI
+> Maps <A HREF="http://code.google.com/apis/chart/types.html#maps"
+>http://code.google.com/apis/chart/types.html#maps</A
+>
+</LI
+><LI
+> QRCodes <A HREF="http://code.google.com/apis/chart/types.html#qrcodes"
+>http://code.google.com/apis/chart/types.html#qrcodes</A
+>
+</LI
+></UL
+><P
+>Some parameters are not supported yet :
+</P
+><UL
+><LI
+> Data Scaling <A HREF="http://code.google.com/apis/chart/formats.html#data_scaling"
+>http://code.google.com/apis/chart/formats.html#data_scaling</A
+>
+</LI
+><LI
+> Shape markers <A HREF="http://code.google.com/apis/chart/styles.html#shape_markers"
+>http://code.google.com/apis/chart/styles.html#shape_markers</A
+>
+</LI
+><LI
+> Range markers <A HREF="http://code.google.com/apis/chart/styles.html#range_markers"
+>http://code.google.com/apis/chart/styles.html#range_markers</A
+>
+</LI
+><LI
+> Financial markers <A HREF="http://code.google.com/apis/chart/styles.html#financial_markers"
+>http://code.google.com/apis/chart/styles.html#financial_markers</A
+>
+</LI
+><LI
+> Line Styles <A HREF="http://code.google.com/apis/chart/styles.html#line_styles"
+>http://code.google.com/apis/chart/styles.html#line_styles</A
+>
+</LI
+><LI
+> Fill area <A HREF="http://code.google.com/apis/chart/colors.html#fill_area_marker"
+>http://code.google.com/apis/chart/colors.html#fill_area_marker</A
+>
+</LI
+><LI
+> Bar width and spacing <A HREF="http://code.google.com/apis/chart/styles.html#bar_width"
+>http://code.google.com/apis/chart/styles.html#bar_width</A
+>
+</LI
+><LI
+> Bar chart zero line  <A HREF="http://code.google.com/apis/chart/styles.html#zero_line"
+>http://code.google.com/apis/chart/styles.html#zero_line</A
+>
+</LI
+><LI
+> Data point labels <A HREF="http://code.google.com/apis/chart/labels.html#data_point_labels"
+>http://code.google.com/apis/chart/labels.html#data_point_labels</A
+>
+</LI
+><LI
+> Chart margins <A HREF="http://code.google.com/apis/chart/styles.html#chart_margins"
+>http://code.google.com/apis/chart/styles.html#chart_margins</A
+>
+</LI
+><LI
+> Chart title color and font customisation <A HREF="http://code.google.com/apis/chart/labels.html#chart_title"
+>http://code.google.com/apis/chart/labels.html#chart_title</A
+>
+</LI
+><LI
+> Pie chart orientation <A HREF="http://code.google.com/apis/chart/types.html#pie_charts"
+>http://code.google.com/apis/chart/types.html#pie_charts</A
+>
+</LI
+></UL
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Synopsis</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AChart"
+>Chart</A
+>  = <A HREF="#v%3AChart"
+>Chart</A
+> {<TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AchartSize"
+>chartSize</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartSize"
+>ChartSize</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AchartType"
+>chartType</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartType"
+>ChartType</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AchartData"
+>chartData</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AchartTitle"
+>chartTitle</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartTitle"
+>ChartTitle</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AchartColors"
+>chartColors</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartColors"
+>ChartColors</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AchartFills"
+>chartFills</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartFills"
+>ChartFills</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AchartLegend"
+>chartLegend</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AchartAxes"
+>chartAxes</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartAxes"
+>ChartAxes</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AchartGrid"
+>chartGrid</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AchartLabels"
+>chartLabels</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartLabels"
+>ChartLabels</A
+></TD
+></TR
+></TABLE
+>}</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AChartSize"
+>ChartSize</A
+>  = <A HREF="#v%3ASize"
+>Size</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AChartData"
+>ChartData</A
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+>= <A HREF="#v%3ASimple"
+>Simple</A
+> [[<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+>]]</TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AText"
+>Text</A
+> [[<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+>]]</TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AExtended"
+>Extended</A
+> [[<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+>]]</TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AChartType"
+>ChartType</A
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+>= <A HREF="#v%3ALine"
+>Line</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ASparklines"
+>Sparklines</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ALineXY"
+>LineXY</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ABarHorizontalStacked"
+>BarHorizontalStacked</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ABarVerticalStacked"
+>BarVerticalStacked</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ABarHorizontalGrouped"
+>BarHorizontalGrouped</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ABarVerticalGrouped"
+>BarVerticalGrouped</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3APie"
+>Pie</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3APie3D"
+>Pie3D</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3APieConcentric"
+>PieConcentric</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AVenn"
+>Venn</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AScatterPlot"
+>ScatterPlot</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ARadar"
+>Radar</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AGoogleOMeter"
+>GoogleOMeter</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AChartColors"
+>ChartColors</A
+>  = <A HREF="#v%3AChartColors"
+>ChartColors</A
+> [<A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+>]</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A HREF="#t%3AColor"
+>Color</A
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A HREF="#t%3AChartFills"
+>ChartFills</A
+> = [<A HREF="Graphics-GChart-Types.html#t%3AFill"
+>Fill</A
+>]</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AFill"
+>Fill</A
+>  = <A HREF="#v%3AFill"
+>Fill</A
+> <A HREF="Graphics-GChart-Types.html#t%3AFillKind"
+>FillKind</A
+> <A HREF="Graphics-GChart-Types.html#t%3AFillType"
+>FillType</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AFillKind"
+>FillKind</A
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+>= <A HREF="#v%3ASolid"
+>Solid</A
+> <A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ALinearGradient"
+>LinearGradient</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAngle"
+>Angle</A
+> [(<A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+>, <A HREF="Graphics-GChart-Types.html#t%3AOffset"
+>Offset</A
+>)]</TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ALinearStripes"
+>LinearStripes</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAngle"
+>Angle</A
+> [(<A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+>, <A HREF="Graphics-GChart-Types.html#t%3AWidth"
+>Width</A
+>)]</TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AFillType"
+>FillType</A
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+>= <A HREF="#v%3ABackground"
+>Background</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AArea"
+>Area</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ATransparent"
+>Transparent</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A HREF="#t%3AOffset"
+>Offset</A
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A HREF="#t%3AWidth"
+>Width</A
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A HREF="#t%3AAngle"
+>Angle</A
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A HREF="#t%3AChartTitle"
+>ChartTitle</A
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AChartLegend"
+>ChartLegend</A
+>  = <A HREF="#v%3ALegend"
+>Legend</A
+> [<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+>] (<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3ALegendPosition"
+>LegendPosition</A
+>)</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3ALegendPosition"
+>LegendPosition</A
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+>= <A HREF="#v%3ALegendBottom"
+>LegendBottom</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ALegendTop"
+>LegendTop</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ALegendVBottom"
+>LegendVBottom</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ALegendVTop"
+>LegendVTop</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ALegendRight"
+>LegendRight</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ALegendLeft"
+>LegendLeft</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A HREF="#t%3AChartAxes"
+>ChartAxes</A
+> = [<A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+>]</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AAxis"
+>Axis</A
+>  = <A HREF="#v%3AAxis"
+>Axis</A
+> {<TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AaxisType"
+>axisType</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AAxisType"
+>AxisType</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AaxisLabels"
+>axisLabels</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> [<A HREF="Graphics-GChart-Types.html#t%3AAxisLabel"
+>AxisLabel</A
+>]</TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AaxisPositions"
+>axisPositions</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> [<A HREF="Graphics-GChart-Types.html#t%3AAxisPosition"
+>AxisPosition</A
+>]</TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AaxisRange"
+>axisRange</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisRange"
+>AxisRange</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AaxisStyle"
+>axisStyle</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisStyle"
+>AxisStyle</A
+></TD
+></TR
+></TABLE
+>}</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AAxisType"
+>AxisType</A
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+>= <A HREF="#v%3AAxisBottom"
+>AxisBottom</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AAxisTop"
+>AxisTop</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AAxisLeft"
+>AxisLeft</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AAxisRight"
+>AxisRight</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A HREF="#t%3AAxisLabel"
+>AxisLabel</A
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A HREF="#t%3AAxisPosition"
+>AxisPosition</A
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A HREF="#t%3AFontSize"
+>FontSize</A
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AAxisRange"
+>AxisRange</A
+>  = <A HREF="#v%3ARange"
+>Range</A
+> (<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+>, <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+>) (<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+>)</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AAxisStyle"
+>AxisStyle</A
+>  = <A HREF="#v%3AStyle"
+>Style</A
+> {<TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AaxisColor"
+>axisColor</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AaxisFontSize"
+>axisFontSize</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AFontSize"
+>FontSize</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AaxisStyleAlign"
+>axisStyleAlign</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisStyleAlignment"
+>AxisStyleAlignment</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AaxisDrawingControl"
+>axisDrawingControl</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3ADrawingControl"
+>DrawingControl</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AtickMarkColor"
+>tickMarkColor</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+></TD
+></TR
+></TABLE
+>}</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3ADrawingControl"
+>DrawingControl</A
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+>= <A HREF="#v%3ADrawLines"
+>DrawLines</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ADrawTicks"
+>DrawTicks</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3ADrawLinesTicks"
+>DrawLinesTicks</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AAxisStyleAlignment"
+>AxisStyleAlignment</A
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+>= <A HREF="#v%3AAxisStyleLeft"
+>AxisStyleLeft</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AAxisStyleCenter"
+>AxisStyleCenter</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>| <A HREF="#v%3AAxisStyleRight"
+>AxisStyleRight</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AChartGrid"
+>ChartGrid</A
+>  = <A HREF="#v%3AChartGrid"
+>ChartGrid</A
+> {<TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AxAxisStep"
+>xAxisStep</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AyAxisStep"
+>yAxisStep</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AlineSegmentLength"
+>lineSegmentLength</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AblankSegmentLength"
+>blankSegmentLength</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AxOffset"
+>xOffset</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3AyOffset"
+>yOffset</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+></TABLE
+>}</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A HREF="#t%3AChartLabels"
+>ChartLabels</A
+>  = <A HREF="#v%3AChartLabels"
+>ChartLabels</A
+> [<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+>]</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AdefaultChart"
+>defaultChart</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChart"
+>Chart</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AdefaultAxis"
+>defaultAxis</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AdefaultGrid"
+>defaultGrid</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="1"
+><A NAME="1"
+>Chart data
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>This type represents the Chart
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:Chart"
+><A NAME="t%3AChart"
+></A
+></A
+><B
+>Chart</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Data type for the chart
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="5" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Chart"
+><A NAME="v%3AChart"
+></A
+></A
+><B
+>Chart</B
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="body" COLSPAN="2"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:chartSize"
+><A NAME="v%3AchartSize"
+></A
+></A
+><B
+>chartSize</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartSize"
+>ChartSize</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:chartType"
+><A NAME="v%3AchartType"
+></A
+></A
+><B
+>chartType</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartType"
+>ChartType</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:chartData"
+><A NAME="v%3AchartData"
+></A
+></A
+><B
+>chartData</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:chartTitle"
+><A NAME="v%3AchartTitle"
+></A
+></A
+><B
+>chartTitle</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartTitle"
+>ChartTitle</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:chartColors"
+><A NAME="v%3AchartColors"
+></A
+></A
+><B
+>chartColors</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartColors"
+>ChartColors</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:chartFills"
+><A NAME="v%3AchartFills"
+></A
+></A
+><B
+>chartFills</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartFills"
+>ChartFills</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:chartLegend"
+><A NAME="v%3AchartLegend"
+></A
+></A
+><B
+>chartLegend</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:chartAxes"
+><A NAME="v%3AchartAxes"
+></A
+></A
+><B
+>chartAxes</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartAxes"
+>ChartAxes</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:chartGrid"
+><A NAME="v%3AchartGrid"
+></A
+></A
+><B
+>chartGrid</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:chartLabels"
+><A NAME="v%3AchartLabels"
+></A
+></A
+><B
+>chartLabels</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartLabels"
+>ChartLabels</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Chart')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Chart" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChart"
+>Chart</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="2"
+><A NAME="2"
+>Required Parameters
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>These parameters are required for all charts
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="3"
+><A NAME="3"
+>Chart Size
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:ChartSize"
+><A NAME="t%3AChartSize"
+></A
+></A
+><B
+>ChartSize</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Size of the chart. width and height specified in pixels
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Size"
+><A NAME="v%3ASize"
+></A
+></A
+><B
+>Size</B
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ChartSize')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ChartSize" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartSize"
+>ChartSize</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>ChartItem <A HREF="Graphics-GChart-Types.html#t%3AChartSize"
+>ChartSize</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="4"
+><A NAME="4"
+>Chart Data
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:ChartData"
+><A NAME="t%3AChartData"
+></A
+></A
+><B
+>ChartData</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Chart data along with encoding. XY data for is encoded a pair of
+ | consecutive data sets
+ | <A HREF="http://code.google.com/apis/chart/formats.html"
+>http://code.google.com/apis/chart/formats.html</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Simple"
+><A NAME="v%3ASimple"
+></A
+></A
+><B
+>Simple</B
+> [[<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+>]]</TD
+><TD CLASS="rdoc"
+>Simple - lets you specify integer values from 061, inclusive
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:Text"
+><A NAME="v%3AText"
+></A
+></A
+><B
+>Text</B
+> [[<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+>]]</TD
+><TD CLASS="rdoc"
+>Text - supports floating point numbers from 0100, inclusive
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:Extended"
+><A NAME="v%3AExtended"
+></A
+></A
+><B
+>Extended</B
+> [[<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+>]]</TD
+><TD CLASS="rdoc"
+>Extended - lets you specify integer values from 04095, inclusive
+</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ChartData')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ChartData" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>ChartItem <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="5"
+><A NAME="5"
+>Chart Type
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:ChartType"
+><A NAME="t%3AChartType"
+></A
+></A
+><B
+>ChartType</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Chart type <A HREF="http://code.google.com/apis/chart/types.html"
+>http://code.google.com/apis/chart/types.html</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Line"
+><A NAME="v%3ALine"
+></A
+></A
+><B
+>Line</B
+></TD
+><TD CLASS="rdoc"
+>Line Chart
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:Sparklines"
+><A NAME="v%3ASparklines"
+></A
+></A
+><B
+>Sparklines</B
+></TD
+><TD CLASS="rdoc"
+>Sparklines
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:LineXY"
+><A NAME="v%3ALineXY"
+></A
+></A
+><B
+>LineXY</B
+></TD
+><TD CLASS="rdoc"
+>Line Chart w/ XY co-ordinates
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:BarHorizontalStacked"
+><A NAME="v%3ABarHorizontalStacked"
+></A
+></A
+><B
+>BarHorizontalStacked</B
+></TD
+><TD CLASS="rdoc"
+>Horizontal bar chart w/ stacked bars
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:BarVerticalStacked"
+><A NAME="v%3ABarVerticalStacked"
+></A
+></A
+><B
+>BarVerticalStacked</B
+></TD
+><TD CLASS="rdoc"
+>Vertical bar chart w/ stacked bars
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:BarHorizontalGrouped"
+><A NAME="v%3ABarHorizontalGrouped"
+></A
+></A
+><B
+>BarHorizontalGrouped</B
+></TD
+><TD CLASS="rdoc"
+>Horizontal bar chart w/ grouped bars
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:BarVerticalGrouped"
+><A NAME="v%3ABarVerticalGrouped"
+></A
+></A
+><B
+>BarVerticalGrouped</B
+></TD
+><TD CLASS="rdoc"
+>Vertical bar chart w/ grouped bars
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:Pie"
+><A NAME="v%3APie"
+></A
+></A
+><B
+>Pie</B
+></TD
+><TD CLASS="rdoc"
+>Two dimensional pie chart
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:Pie3D"
+><A NAME="v%3APie3D"
+></A
+></A
+><B
+>Pie3D</B
+></TD
+><TD CLASS="rdoc"
+>Three dimensional pie chart
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:PieConcentric"
+><A NAME="v%3APieConcentric"
+></A
+></A
+><B
+>PieConcentric</B
+></TD
+><TD CLASS="rdoc"
+>Concentric pie chart
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:Venn"
+><A NAME="v%3AVenn"
+></A
+></A
+><B
+>Venn</B
+></TD
+><TD CLASS="rdoc"
+>Venn Diagram
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:ScatterPlot"
+><A NAME="v%3AScatterPlot"
+></A
+></A
+><B
+>ScatterPlot</B
+></TD
+><TD CLASS="rdoc"
+>Scatter Plot
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:Radar"
+><A NAME="v%3ARadar"
+></A
+></A
+><B
+>Radar</B
+></TD
+><TD CLASS="rdoc"
+>Radar Chart
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:GoogleOMeter"
+><A NAME="v%3AGoogleOMeter"
+></A
+></A
+><B
+>GoogleOMeter</B
+></TD
+><TD CLASS="rdoc"
+>Google-o-meter
+</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ChartType')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ChartType" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartType"
+>ChartType</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>ChartItem <A HREF="Graphics-GChart-Types.html#t%3AChartType"
+>ChartType</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="6"
+><A NAME="6"
+>Optional Parameters
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>All other parameters are optional
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="7"
+><A NAME="7"
+>Chart Colors
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:ChartColors"
+><A NAME="t%3AChartColors"
+></A
+></A
+><B
+>ChartColors</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Chart colors specified as a list of <TT
+><A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+></TT
+> values for each data point.
+ | <A HREF="http://code.google.com/apis/chart/colors.html#chart_colors"
+>http://code.google.com/apis/chart/colors.html#chart_colors</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:ChartColors"
+><A NAME="v%3AChartColors"
+></A
+></A
+><B
+>ChartColors</B
+> [<A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+>]</TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ChartColors')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ChartColors" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartColors"
+>ChartColors</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>ChartItem <A HREF="Graphics-GChart-Types.html#t%3AChartColors"
+>ChartColors</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:Color"
+><A NAME="t%3AColor"
+></A
+></A
+><B
+>Color</B
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Color data specified as a hex string
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="8"
+><A NAME="8"
+>Solid Fill, Linear Gradient, Linear Stripes
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:ChartFills"
+><A NAME="t%3AChartFills"
+></A
+></A
+><B
+>ChartFills</B
+> = [<A HREF="Graphics-GChart-Types.html#t%3AFill"
+>Fill</A
+>]</TD
+></TR
+><TR
+><TD CLASS="doc"
+>Chart fills, as a list of <TT
+><A HREF="Graphics-GChart-Types.html#t%3AFill"
+>Fill</A
+></TT
+>s
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:Fill"
+><A NAME="t%3AFill"
+></A
+></A
+><B
+>Fill</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Constructor for a chart fill
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Fill"
+><A NAME="v%3AFill"
+></A
+></A
+><B
+>Fill</B
+> <A HREF="Graphics-GChart-Types.html#t%3AFillKind"
+>FillKind</A
+> <A HREF="Graphics-GChart-Types.html#t%3AFillType"
+>FillType</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Fill')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Fill" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AFill"
+>Fill</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:FillKind"
+><A NAME="t%3AFillKind"
+></A
+></A
+><B
+>FillKind</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Specifies the kind of fill
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Solid"
+><A NAME="v%3ASolid"
+></A
+></A
+><B
+>Solid</B
+> <A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+></TD
+><TD CLASS="rdoc"
+>Solid Fill <A HREF="http://code.google.com/apis/chart/colors.html#solid_fill"
+>http://code.google.com/apis/chart/colors.html#solid_fill</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:LinearGradient"
+><A NAME="v%3ALinearGradient"
+></A
+></A
+><B
+>LinearGradient</B
+> <A HREF="Graphics-GChart-Types.html#t%3AAngle"
+>Angle</A
+> [(<A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+>, <A HREF="Graphics-GChart-Types.html#t%3AOffset"
+>Offset</A
+>)]</TD
+><TD CLASS="rdoc"
+>Linear Gradient <A HREF="http://code.google.com/apis/chart/colors.html#linear_gradient"
+>http://code.google.com/apis/chart/colors.html#linear_gradient</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:LinearStripes"
+><A NAME="v%3ALinearStripes"
+></A
+></A
+><B
+>LinearStripes</B
+> <A HREF="Graphics-GChart-Types.html#t%3AAngle"
+>Angle</A
+> [(<A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+>, <A HREF="Graphics-GChart-Types.html#t%3AWidth"
+>Width</A
+>)]</TD
+><TD CLASS="rdoc"
+>Linear Stripes <A HREF="http://code.google.com/apis/chart/colors.html#linear_stripes"
+>http://code.google.com/apis/chart/colors.html#linear_stripes</A
+>
+</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:FillKind')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:FillKind" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AFillKind"
+>FillKind</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:FillType"
+><A NAME="t%3AFillType"
+></A
+></A
+><B
+>FillType</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Specifies the type of fill
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Background"
+><A NAME="v%3ABackground"
+></A
+></A
+><B
+>Background</B
+></TD
+><TD CLASS="rdoc"
+>Background fill
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:Area"
+><A NAME="v%3AArea"
+></A
+></A
+><B
+>Area</B
+></TD
+><TD CLASS="rdoc"
+>Chart area fill
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:Transparent"
+><A NAME="v%3ATransparent"
+></A
+></A
+><B
+>Transparent</B
+></TD
+><TD CLASS="rdoc"
+>Apply transparency to whole chart (applicable to <TT
+><A HREF="Graphics-GChart-Types.html#v%3ASolid"
+>Solid</A
+></TT
+> fill only)
+</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:FillType')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:FillType" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AFillType"
+>FillType</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:Offset"
+><A NAME="t%3AOffset"
+></A
+></A
+><B
+>Offset</B
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Specifies at what point the color is pure. In this parameter, 0 specifies
+ | the right-most chart position and 1 specifies the left-most chart
+ | position. Applicable to <TT
+><A HREF="Graphics-GChart-Types.html#v%3ALinearGradient"
+>LinearGradient</A
+></TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:Width"
+><A NAME="t%3AWidth"
+></A
+></A
+><B
+>Width</B
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Width of the stripe. must be between 0 and 1, where 1 is the full width of
+ | the chart
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:Angle"
+><A NAME="t%3AAngle"
+></A
+></A
+><B
+>Angle</B
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Specifies the angle of the gradient between 0 (horizontal) and 90
+ | (vertical). Applicable to <TT
+><A HREF="Graphics-GChart-Types.html#v%3ALinearGradient"
+>LinearGradient</A
+></TT
+> and <TT
+><A HREF="Graphics-GChart-Types.html#v%3ALinearStripes"
+>LinearStripes</A
+></TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="9"
+><A NAME="9"
+>Chart Title
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:ChartTitle"
+><A NAME="t%3AChartTitle"
+></A
+></A
+><B
+>ChartTitle</B
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Title of the chart
+ | <A HREF="http://code.google.com/apis/chart/labels.html#chart_title"
+>http://code.google.com/apis/chart/labels.html#chart_title</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="10"
+><A NAME="10"
+>Chart Legend
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:ChartLegend"
+><A NAME="t%3AChartLegend"
+></A
+></A
+><B
+>ChartLegend</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Specifies a chart legend
+ | <A HREF="http://code.google.com/apis/chart/labels.html#chart_legend"
+>http://code.google.com/apis/chart/labels.html#chart_legend</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Legend"
+><A NAME="v%3ALegend"
+></A
+></A
+><B
+>Legend</B
+> [<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+>] (<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3ALegendPosition"
+>LegendPosition</A
+>)</TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ChartLegend')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ChartLegend" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>ChartItem <A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:LegendPosition"
+><A NAME="t%3ALegendPosition"
+></A
+></A
+><B
+>LegendPosition</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Position of legend on chart. Applies to <TT
+><A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:LegendBottom"
+><A NAME="v%3ALegendBottom"
+></A
+></A
+><B
+>LegendBottom</B
+></TD
+><TD CLASS="rdoc"
+>Bottom of chart, horizontally
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:LegendTop"
+><A NAME="v%3ALegendTop"
+></A
+></A
+><B
+>LegendTop</B
+></TD
+><TD CLASS="rdoc"
+>Top of chart, horizontally
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:LegendVBottom"
+><A NAME="v%3ALegendVBottom"
+></A
+></A
+><B
+>LegendVBottom</B
+></TD
+><TD CLASS="rdoc"
+>Bottom of chart, vertically
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:LegendVTop"
+><A NAME="v%3ALegendVTop"
+></A
+></A
+><B
+>LegendVTop</B
+></TD
+><TD CLASS="rdoc"
+>Bottom of chart, vertically
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:LegendRight"
+><A NAME="v%3ALegendRight"
+></A
+></A
+><B
+>LegendRight</B
+></TD
+><TD CLASS="rdoc"
+>Left of chart
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:LegendLeft"
+><A NAME="v%3ALegendLeft"
+></A
+></A
+><B
+>LegendLeft</B
+></TD
+><TD CLASS="rdoc"
+>Right of chart
+</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:LegendPosition')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:LegendPosition" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3ALegendPosition"
+>LegendPosition</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="11"
+><A NAME="11"
+>Axis styles and labels
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:ChartAxes"
+><A NAME="t%3AChartAxes"
+></A
+></A
+><B
+>ChartAxes</B
+> = [<A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+>]</TD
+></TR
+><TR
+><TD CLASS="doc"
+>List of <TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TT
+> for chart
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:Axis"
+><A NAME="t%3AAxis"
+></A
+></A
+><B
+>Axis</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Specify an axis for chart.
+ | <A HREF="http://code.google.com/apis/chart/labels.html#axis_styles"
+>http://code.google.com/apis/chart/labels.html#axis_styles</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="5" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Axis"
+><A NAME="v%3AAxis"
+></A
+></A
+><B
+>Axis</B
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="body" COLSPAN="2"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:axisType"
+><A NAME="v%3AaxisType"
+></A
+></A
+><B
+>axisType</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AAxisType"
+>AxisType</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:axisLabels"
+><A NAME="v%3AaxisLabels"
+></A
+></A
+><B
+>axisLabels</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> [<A HREF="Graphics-GChart-Types.html#t%3AAxisLabel"
+>AxisLabel</A
+>]</TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:axisPositions"
+><A NAME="v%3AaxisPositions"
+></A
+></A
+><B
+>axisPositions</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> [<A HREF="Graphics-GChart-Types.html#t%3AAxisPosition"
+>AxisPosition</A
+>]</TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:axisRange"
+><A NAME="v%3AaxisRange"
+></A
+></A
+><B
+>axisRange</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisRange"
+>AxisRange</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:axisStyle"
+><A NAME="v%3AaxisStyle"
+></A
+></A
+><B
+>axisStyle</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisStyle"
+>AxisStyle</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Axis')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Axis" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:AxisType"
+><A NAME="t%3AAxisType"
+></A
+></A
+><B
+>AxisType</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Type of <TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TT
+>
+ | <A HREF="http://code.google.com/apis/chart/labels.html#axis_type"
+>http://code.google.com/apis/chart/labels.html#axis_type</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:AxisBottom"
+><A NAME="v%3AAxisBottom"
+></A
+></A
+><B
+>AxisBottom</B
+></TD
+><TD CLASS="rdoc"
+>Bottom x-axis
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:AxisTop"
+><A NAME="v%3AAxisTop"
+></A
+></A
+><B
+>AxisTop</B
+></TD
+><TD CLASS="rdoc"
+>Top x-axis
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:AxisLeft"
+><A NAME="v%3AAxisLeft"
+></A
+></A
+><B
+>AxisLeft</B
+></TD
+><TD CLASS="rdoc"
+>Left y-axis
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:AxisRight"
+><A NAME="v%3AAxisRight"
+></A
+></A
+><B
+>AxisRight</B
+></TD
+><TD CLASS="rdoc"
+>Right y-axis
+</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:AxisType')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:AxisType" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisType"
+>AxisType</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:AxisLabel"
+><A NAME="t%3AAxisLabel"
+></A
+></A
+><B
+>AxisLabel</B
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TT
+> Labels.
+ | <A HREF="http://code.google.com/apis/chart/labels.html#axis_labels"
+>http://code.google.com/apis/chart/labels.html#axis_labels</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:AxisPosition"
+><A NAME="t%3AAxisPosition"
+></A
+></A
+><B
+>AxisPosition</B
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+><TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TT
+> Label Positions. <A HREF="http://code.google.com/apis/chart/labels.html#axis_label_positions"
+>http://code.google.com/apis/chart/labels.html#axis_label_positions</A
+>
+</P
+><P
+>Labels with a specified position of 0 are placed at the bottom of the y- or
+r-axis, or at the left of the x- or t-axis.
+</P
+><P
+>Labels with a specified position of 100 are placed at the top of the y- or
+r-axis, or at the right of the x- or t-axis.
+</P
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:FontSize"
+><A NAME="t%3AFontSize"
+></A
+></A
+><B
+>FontSize</B
+> = <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Font size in pixels. Applicable to <TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxisStyle"
+>AxisStyle</A
+></TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:AxisRange"
+><A NAME="t%3AAxisRange"
+></A
+></A
+><B
+>AxisRange</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+><P
+><TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TT
+> Range <A HREF="http://code.google.com/apis/chart/labels.html#axis_range"
+>http://code.google.com/apis/chart/labels.html#axis_range</A
+>
+</P
+><P
+>The range is specifies with a tuple containing the start and end values. An
+optional interval value can be specified.
+</P
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Range"
+><A NAME="v%3ARange"
+></A
+></A
+><B
+>Range</B
+> (<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+>, <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+>) (<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+>)</TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:AxisRange')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:AxisRange" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Eq.html#t%3AEq"
+>Eq</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisRange"
+>AxisRange</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisRange"
+>AxisRange</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:AxisStyle"
+><A NAME="t%3AAxisStyle"
+></A
+></A
+><B
+>AxisStyle</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Specify <TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TT
+> style
+ | <A HREF="http://code.google.com/apis/chart/labels.html#axis_styles"
+>http://code.google.com/apis/chart/labels.html#axis_styles</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="5" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Style"
+><A NAME="v%3AStyle"
+></A
+></A
+><B
+>Style</B
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="body" COLSPAN="2"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:axisColor"
+><A NAME="v%3AaxisColor"
+></A
+></A
+><B
+>axisColor</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:axisFontSize"
+><A NAME="v%3AaxisFontSize"
+></A
+></A
+><B
+>axisFontSize</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AFontSize"
+>FontSize</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:axisStyleAlign"
+><A NAME="v%3AaxisStyleAlign"
+></A
+></A
+><B
+>axisStyleAlign</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisStyleAlignment"
+>AxisStyleAlignment</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:axisDrawingControl"
+><A NAME="v%3AaxisDrawingControl"
+></A
+></A
+><B
+>axisDrawingControl</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3ADrawingControl"
+>DrawingControl</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:tickMarkColor"
+><A NAME="v%3AtickMarkColor"
+></A
+></A
+><B
+>tickMarkColor</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:AxisStyle')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:AxisStyle" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Eq.html#t%3AEq"
+>Eq</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisStyle"
+>AxisStyle</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisStyle"
+>AxisStyle</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:DrawingControl"
+><A NAME="t%3ADrawingControl"
+></A
+></A
+><B
+>DrawingControl</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Control drawing of <TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TT
+>. Applicable to <TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxisStyle"
+>AxisStyle</A
+></TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:DrawLines"
+><A NAME="v%3ADrawLines"
+></A
+></A
+><B
+>DrawLines</B
+></TD
+><TD CLASS="rdoc"
+>Draw axis lines only
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:DrawTicks"
+><A NAME="v%3ADrawTicks"
+></A
+></A
+><B
+>DrawTicks</B
+></TD
+><TD CLASS="rdoc"
+>Draw tick marks only
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:DrawLinesTicks"
+><A NAME="v%3ADrawLinesTicks"
+></A
+></A
+><B
+>DrawLinesTicks</B
+></TD
+><TD CLASS="rdoc"
+>Draw axis lines and tick marks
+</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:DrawingControl')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:DrawingControl" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Eq.html#t%3AEq"
+>Eq</A
+> <A HREF="Graphics-GChart-Types.html#t%3ADrawingControl"
+>DrawingControl</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3ADrawingControl"
+>DrawingControl</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:AxisStyleAlignment"
+><A NAME="t%3AAxisStyleAlignment"
+></A
+></A
+><B
+>AxisStyleAlignment</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Alignment of <TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TT
+> labels. Applies to <TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxisStyle"
+>AxisStyle</A
+></TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:AxisStyleLeft"
+><A NAME="v%3AAxisStyleLeft"
+></A
+></A
+><B
+>AxisStyleLeft</B
+></TD
+><TD CLASS="rdoc"
+>Left aligned labels
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:AxisStyleCenter"
+><A NAME="v%3AAxisStyleCenter"
+></A
+></A
+><B
+>AxisStyleCenter</B
+></TD
+><TD CLASS="rdoc"
+>Centered labels
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:AxisStyleRight"
+><A NAME="v%3AAxisStyleRight"
+></A
+></A
+><B
+>AxisStyleRight</B
+></TD
+><TD CLASS="rdoc"
+>Right aligned labels
+</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:AxisStyleAlignment')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:AxisStyleAlignment" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Eq.html#t%3AEq"
+>Eq</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisStyleAlignment"
+>AxisStyleAlignment</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AAxisStyleAlignment"
+>AxisStyleAlignment</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="12"
+><A NAME="12"
+>Grid Lines
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:ChartGrid"
+><A NAME="t%3AChartGrid"
+></A
+></A
+><B
+>ChartGrid</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Grid Lines for Chart
+ | <A HREF="http://code.google.com/apis/chart/styles.html#grid"
+>http://code.google.com/apis/chart/styles.html#grid</A
+>
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="5" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:ChartGrid"
+><A NAME="v%3AChartGrid"
+></A
+></A
+><B
+>ChartGrid</B
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="body" COLSPAN="2"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:xAxisStep"
+><A NAME="v%3AxAxisStep"
+></A
+></A
+><B
+>xAxisStep</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+><TD CLASS="rdoc"
+>x-axis step size (0-100)
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:yAxisStep"
+><A NAME="v%3AyAxisStep"
+></A
+></A
+><B
+>yAxisStep</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+><TD CLASS="rdoc"
+>y-axis step size (0-100)
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:lineSegmentLength"
+><A NAME="v%3AlineSegmentLength"
+></A
+></A
+><B
+>lineSegmentLength</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+><TD CLASS="rdoc"
+>length of line segment
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:blankSegmentLength"
+><A NAME="v%3AblankSegmentLength"
+></A
+></A
+><B
+>blankSegmentLength</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+><TD CLASS="rdoc"
+>length of blank segment
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:xOffset"
+><A NAME="v%3AxOffset"
+></A
+></A
+><B
+>xOffset</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+><TD CLASS="rdoc"
+>x axis offset
+</TD
+></TR
+><TR
+><TD CLASS="arg"
+><A NAME="v:yOffset"
+><A NAME="v%3AyOffset"
+></A
+></A
+><B
+>yOffset</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Maybe.html#t%3AMaybe"
+>Maybe</A
+> <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Prelude.html#t%3AFloat"
+>Float</A
+></TD
+><TD CLASS="rdoc"
+>y axis offset
+</TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ChartGrid')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ChartGrid" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>ChartItem <A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="13"
+><A NAME="13"
+>Pie chart and Google-o-meter labels
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:ChartLabels"
+><A NAME="t%3AChartLabels"
+></A
+></A
+><B
+>ChartLabels</B
+>  </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Labels for Pie Chart and Google-o-meter.
+ | Specify a list with a single label for Google-o-meter
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:ChartLabels"
+><A NAME="v%3AChartLabels"
+></A
+></A
+><B
+>ChartLabels</B
+> [<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+>]</TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ChartLabels')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ChartLabels" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Text-Show.html#t%3AShow"
+>Show</A
+> <A HREF="Graphics-GChart-Types.html#t%3AChartLabels"
+>ChartLabels</A
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>ChartItem <A HREF="Graphics-GChart-Types.html#t%3AChartLabels"
+>ChartLabels</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="14"
+><A NAME="14"
+>Default Values
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>These functions return default values for complex parameters, which can be
+       used as starting points to construct parameters when creating charts. 
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:defaultChart"
+><A NAME="v%3AdefaultChart"
+></A
+></A
+><B
+>defaultChart</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChart"
+>Chart</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:defaultAxis"
+><A NAME="v%3AdefaultAxis"
+></A
+></A
+><B
+>defaultAxis</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:defaultGrid"
+><A NAME="v%3AdefaultGrid"
+></A
+></A
+><B
+>defaultGrid</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="botbar"
+>Produced by <A HREF="http://www.haskell.org/haddock/"
+>Haddock</A
+> version 2.6.0</TD
+></TR
+></TABLE
+></BODY
+></HTML
+>

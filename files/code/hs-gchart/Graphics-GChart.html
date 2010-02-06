@@ -1,0 +1,1293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Graphics.GChart</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+><SCRIPT TYPE="text/javascript"
+>window.onload = function () {setSynopsis("mini_Graphics-GChart.html")};</SCRIPT
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+>hs-gchart-0.1: Haskell wrapper for the Google Chart API</TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="modulebar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><FONT SIZE="6"
+>Graphics.GChart</FONT
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="section4"
+><B
+>Contents</B
+></TD
+></TR
+><TR
+><TD
+><DL
+><DT
+><A HREF="#1"
+>Setting Chart Parameters
+</A
+></DT
+><DT
+><A HREF="#2"
+>Retrieving Chart data
+</A
+></DT
+><DT
+><A HREF="#3"
+>Smart Constructors 
+</A
+></DT
+></DL
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Description</TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>Import this module to generate charts using the Google Chart API.
+</P
+><P
+>For more examples, refer to <TT
+>Examples.hs</TT
+> in the source tarball, or download it
+directly from Github : <A HREF="http://github.com/hs-gchart/"
+>http://github.com/hs-gchart/</A
+>.
+</P
+><P
+>For documentation regarding the full data model, refer to 
+<A HREF="Graphics-GChart-Types.html"
+>Graphics.GChart.Types</A
+>.
+</P
+><P
+>For more information about the Google Chart API, refer to
+<A HREF="http://code.google.com/apis/chart/"
+>http://code.google.com/apis/chart/</A
+>
+</P
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Synopsis</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+>module <A HREF="Graphics-GChart-Types.html"
+>Graphics.GChart.Types</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AsetChartSize"
+>setChartSize</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+> -&gt; <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AsetChartType"
+>setChartType</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartType"
+>ChartType</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AsetDataEncoding"
+>setDataEncoding</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AsetChartTitle"
+>setChartTitle</A
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AaddChartData"
+>addChartData</A
+> :: ChartDataEncodable a =&gt; [a] -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AaddChartDataXY"
+>addChartDataXY</A
+> :: ChartDataEncodable a =&gt; [(a, a)] -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AsetColors"
+>setColors</A
+> :: [<A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+>] -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AaddColor"
+>addColor</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AaddFill"
+>addFill</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AFill"
+>Fill</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AsetLegend"
+>setLegend</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AaddAxis"
+>addAxis</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AsetGrid"
+>setGrid</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AsetLabels"
+>setLabels</A
+> :: [<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+>] -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AgetChartData"
+>getChartData</A
+> :: ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+> -&gt; <A HREF="Graphics-GChart-Types.html#t%3AChart"
+>Chart</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AgetChartUrl"
+>getChartUrl</A
+> :: ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+> -&gt; <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AconvertToUrl"
+>convertToUrl</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChart"
+>Chart</A
+> -&gt; <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Asolid"
+>solid</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+> -&gt; <A HREF="Graphics-GChart-Types.html#t%3AFillType"
+>FillType</A
+> -&gt; <A HREF="Graphics-GChart-Types.html#t%3AFill"
+>Fill</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Alegend"
+>legend</A
+> :: [<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+>] -&gt; <A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AlegendWithPosition"
+>legendWithPosition</A
+> :: [<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+>] -&gt; <A HREF="Graphics-GChart-Types.html#t%3ALegendPosition"
+>LegendPosition</A
+> -&gt; <A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AmakeAxis"
+>makeAxis</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AmakeGrid"
+>makeGrid</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Asimple"
+>simple</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Atext"
+>text</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Aextended"
+>extended</A
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Documentation</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>module <A HREF="Graphics-GChart-Types.html"
+>Graphics.GChart.Types</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="1"
+><A NAME="1"
+>Setting Chart Parameters
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>Use these functions to set the parameters of the chart.
+</P
+><P
+>These functions must be called inside a <TT
+>do</TT
+> block, which can then be passed
+onto <TT
+><A HREF="Graphics-GChart.html#v%3AgetChartUrl"
+>getChartUrl</A
+></TT
+> or <TT
+><A HREF="Graphics-GChart.html#v%3AgetChartData"
+>getChartData</A
+></TT
+>.  For e.g, here is a simple pie chart function
+</P
+><PRE
+>
+generatePieChart = getChartUrl $ do setChartSize 640 400
+                                 setChartType Pie
+                                 setChartTitle &quot;Test&quot;
+                                 addChartData  ([1,2,3,4,5]::[Int])
+                                 addColor &quot;FF0000&quot;
+                                 setLegend $ legend [&quot;t1&quot;,&quot;t2&quot;, &quot;t3&quot;,&quot;t4&quot;,&quot;t5&quot;]
+                                 setLabels $ [&quot;Test 1&quot;, &quot;Test 2&quot;, &quot;Test 3&quot;, &quot;Test 4&quot;, &quot;Test 5&quot;]
+</PRE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setChartSize"
+><A NAME="v%3AsetChartSize"
+></A
+></A
+><B
+>setChartSize</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+> -&gt; <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Int.html#t%3AInt"
+>Int</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Set the chart size by passing the width and the height in pixels
+ For e.g : <TT
+>setChartSize 320 200</TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setChartType"
+><A NAME="v%3AsetChartType"
+></A
+></A
+><B
+>setChartType</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartType"
+>ChartType</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Set the chart type by passing a <TT
+><A HREF="Graphics-GChart-Types.html#t%3AChartType"
+>ChartType</A
+></TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setDataEncoding"
+><A NAME="v%3AsetDataEncoding"
+></A
+></A
+><B
+>setDataEncoding</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>Use it with <TT
+><A HREF="Graphics-GChart.html#v%3Asimple"
+>simple</A
+></TT
+>, <TT
+><A HREF="Graphics-GChart.html#v%3Atext"
+>text</A
+></TT
+> or <TT
+><A HREF="Graphics-GChart.html#v%3Aextended"
+>extended</A
+></TT
+> to specify the encoding. For e.g
+</P
+><PRE
+>
+setDataEncoding simple
+</PRE
+><P
+>Make sure you pass in values of the right type, Int for simple and extended
+encoding, and Float for text encoding.
+</P
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setChartTitle"
+><A NAME="v%3AsetChartTitle"
+></A
+></A
+><B
+>setChartTitle</B
+> :: <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Set the chart title by passing a <TT
+><A HREF="Graphics-GChart-Types.html#t%3AChartTitle"
+>ChartTitle</A
+></TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:addChartData"
+><A NAME="v%3AaddChartData"
+></A
+></A
+><B
+>addChartData</B
+> :: ChartDataEncodable a =&gt; [a] -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Add data to chart. Make sure you have set the data encoding using 
+ <TT
+><A HREF="Graphics-GChart.html#v%3AsetDataEncoding"
+>setDataEncoding</A
+></TT
+> before calling this function, otherwise it may generate
+ gibberish, or throw an error
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:addChartDataXY"
+><A NAME="v%3AaddChartDataXY"
+></A
+></A
+><B
+>addChartDataXY</B
+> :: ChartDataEncodable a =&gt; [(a, a)] -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Works like <TT
+><A HREF="Graphics-GChart.html#v%3AaddChartData"
+>addChartData</A
+></TT
+>, but for XY datasets for line XY chart etc
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setColors"
+><A NAME="v%3AsetColors"
+></A
+></A
+><B
+>setColors</B
+> :: [<A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+>] -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Pass a list of colors corresponding to the datasets in the chart
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:addColor"
+><A NAME="v%3AaddColor"
+></A
+></A
+><B
+>addColor</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>Add a color to the chart. This color will be added to the list <TT
+><A HREF="Graphics-GChart-Types.html#t%3AChartColors"
+>ChartColors</A
+></TT
+>.
+</P
+><P
+>Make sure you do not include a call to <TT
+><A HREF="Graphics-GChart.html#v%3AsetColors"
+>setColors</A
+></TT
+> at any time after a call to
+<TT
+><A HREF="Graphics-GChart.html#v%3AaddColor"
+>addColor</A
+></TT
+>, since this will lead to all previous values being erased.
+</P
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:addFill"
+><A NAME="v%3AaddFill"
+></A
+></A
+><B
+>addFill</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AFill"
+>Fill</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Add a <TT
+><A HREF="Graphics-GChart-Types.html#t%3AFill"
+>Fill</A
+></TT
+> to the chart
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setLegend"
+><A NAME="v%3AsetLegend"
+></A
+></A
+><B
+>setLegend</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Set a Legend for the chart
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:addAxis"
+><A NAME="v%3AaddAxis"
+></A
+></A
+><B
+>addAxis</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Add an <TT
+><A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TT
+> to the chart
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setGrid"
+><A NAME="v%3AsetGrid"
+></A
+></A
+><B
+>setGrid</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+> -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Set a <TT
+><A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+></TT
+> for the chart
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setLabels"
+><A NAME="v%3AsetLabels"
+></A
+></A
+><B
+>setLabels</B
+> :: [<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+>] -&gt; ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Set labels for the chart
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="2"
+><A NAME="2"
+>Retrieving Chart data
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:getChartData"
+><A NAME="v%3AgetChartData"
+></A
+></A
+><B
+>getChartData</B
+> :: ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+> -&gt; <A HREF="Graphics-GChart-Types.html#t%3AChart"
+>Chart</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Extracts the data out of the monad and returns a value of type <TT
+><A HREF="Graphics-GChart-Types.html#t%3AChart"
+>Chart</A
+></TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:getChartUrl"
+><A NAME="v%3AgetChartUrl"
+></A
+></A
+><B
+>getChartUrl</B
+> :: ChartM <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+> -&gt; <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Extracts the data out of the monad and returns a URL string for the chart 
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:convertToUrl"
+><A NAME="v%3AconvertToUrl"
+></A
+></A
+><B
+>convertToUrl</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChart"
+>Chart</A
+> -&gt; <A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Converts a value of type <TT
+><A HREF="Graphics-GChart-Types.html#t%3AChart"
+>Chart</A
+></TT
+> to a URL
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="3"
+><A NAME="3"
+>Smart Constructors 
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>These functions can be used to construct chart
+ parameters more conveniently
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:solid"
+><A NAME="v%3Asolid"
+></A
+></A
+><B
+>solid</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AColor"
+>Color</A
+> -&gt; <A HREF="Graphics-GChart-Types.html#t%3AFillType"
+>FillType</A
+> -&gt; <A HREF="Graphics-GChart-Types.html#t%3AFill"
+>Fill</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:legend"
+><A NAME="v%3Alegend"
+></A
+></A
+><B
+>legend</B
+> :: [<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+>] -&gt; <A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>generates a <TT
+><A HREF="Graphics-GChart-Types.html#v%3ASolid"
+>Solid</A
+></TT
+> fill from a hex color value
+</P
+><P
+>generates a <TT
+><A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TT
+> from a list of labels
+</P
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:legendWithPosition"
+><A NAME="v%3AlegendWithPosition"
+></A
+></A
+><B
+>legendWithPosition</B
+> :: [<A HREF="/Library/Frameworks/GHC.framework/Versions/612/usr/share/doc/ghc/html/libraries/base-4.2.0.0/Data-Char.html#t%3AString"
+>String</A
+>] -&gt; <A HREF="Graphics-GChart-Types.html#t%3ALegendPosition"
+>LegendPosition</A
+> -&gt; <A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>generats a <TT
+><A HREF="Graphics-GChart-Types.html#t%3AChartLegend"
+>ChartLegend</A
+></TT
+> from a list of lables and a <TT
+><A HREF="Graphics-GChart-Types.html#t%3ALegendPosition"
+>LegendPosition</A
+></TT
+>
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:makeAxis"
+><A NAME="v%3AmakeAxis"
+></A
+></A
+><B
+>makeAxis</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AAxis"
+>Axis</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>returns a default axis. Use this to override the fields with your own
+ values. For e.g :
+</P
+><PRE
+>
+makeAxis { <TT
+><A HREF="Graphics-GChart-Types.html#v%3AaxisType"
+>axisType</A
+></TT
+> = <TT
+><A HREF="Graphics-GChart-Types.html#v%3AAxisTop"
+>AxisTop</A
+></TT
+>,
+           <TT
+><A HREF="Graphics-GChart-Types.html#v%3AaxisLabels"
+>axisLabels</A
+></TT
+> = [&quot;0&quot;,&quot;50&quot;,&quot;100&quot;] }
+</PRE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:makeGrid"
+><A NAME="v%3AmakeGrid"
+></A
+></A
+><B
+>makeGrid</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartGrid"
+>ChartGrid</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>returns a default axis. Use this to override the fields with your own
+ values. For e.g :
+</P
+><PRE
+>
+makeGrid { <TT
+><A HREF="Graphics-GChart-Types.html#v%3AxAxisStep"
+>xAxisStep</A
+></TT
+> = 10,
+           <TT
+><A HREF="Graphics-GChart-Types.html#v%3AyAxisStep"
+>yAxisStep</A
+></TT
+> = 10,
+            xOffset = Just 5 }
+</PRE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:simple"
+><A NAME="v%3Asimple"
+></A
+></A
+><B
+>simple</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Use this to specify the <TT
+><A HREF="Graphics-GChart-Types.html#v%3ASimple"
+>Simple</A
+></TT
+> encoding for the <TT
+><A HREF="Graphics-GChart.html#v%3AsetDataEncoding"
+>setDataEncoding</A
+></TT
+>
+ function.
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:text"
+><A NAME="v%3Atext"
+></A
+></A
+><B
+>text</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Use this to specify the <TT
+><A HREF="Graphics-GChart-Types.html#v%3AText"
+>Text</A
+></TT
+> encoding for the <TT
+><A HREF="Graphics-GChart.html#v%3AsetDataEncoding"
+>setDataEncoding</A
+></TT
+>
+ function.
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:extended"
+><A NAME="v%3Aextended"
+></A
+></A
+><B
+>extended</B
+> :: <A HREF="Graphics-GChart-Types.html#t%3AChartData"
+>ChartData</A
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Use this to specify the <TT
+><A HREF="Graphics-GChart-Types.html#v%3AExtended"
+>Extended</A
+></TT
+> encoding for the <TT
+><A HREF="Graphics-GChart.html#v%3AsetDataEncoding"
+>setDataEncoding</A
+></TT
+>
+  function.
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="botbar"
+>Produced by <A HREF="http://www.haskell.org/haddock/"
+>Haddock</A
+> version 2.6.0</TD
+></TR
+></TABLE
+></BODY
+></HTML
+>
