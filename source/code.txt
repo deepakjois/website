@@ -12,15 +12,16 @@ OS X. The rest of the code is written in Ruby.
 
 ### hs-gchart
 
-**hs-gchart** is a Ruby wrapper around the [Google Chart API][gchartapi]. I
+[hs-gchart] is a Ruby wrapper around the [Google Chart API][gchartapi]. I
 wrote this to get a better grip on [Haskell], and also to make up for
 abandoning [gchartrb].
 
-*hs-gchart* makes use of Haskell’s powerful type system to come up with a rich
-[data model](GChartTypes) for the Google Chart API parameters, which can then
+**hs-gchart** makes use of Haskell’s powerful type system to come up with a rich
+[data model][GChartTypes] for the Google Chart API parameters, which can then
 be easily encoded into a querystring URL.
 
-[GChartTypes](http://hackage.haskell.org/packages/archive/hs-gchart/0.1/doc/html/Graphics-GChart-Types.html)
+[hs-gchart]: http://github.com/deepakjois/hs-gchart
+[GChartTypes]: http://hackage.haskell.org/packages/archive/hs-gchart/0.1/doc/html/Graphics-GChart-Types.html
 
 ### Tabbie
 
