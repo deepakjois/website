@@ -10,20 +10,17 @@ OS X. The rest of the code is written in Ruby.
 [Dhun]: http://github.com/deepakjois/dhun
 [osxinternals]: http://www.amazon.com/Mac-OS-Internals-Systems-Approach/dp/0321278542
 
-### gchartrb
-	  
-_This project is currently unmaintained_.
+### hs-gchart
 
-You can fork [the code][gchartrb] on GitHub and do what you like with it.
+**hs-gchart** is a Ruby wrapper around the [Google Chart API][gchartapi]. I
+wrote this to get a better grip on [Haskell], and also to make up for
+abandoning [gchartrb].
 
-**gchartrb** is a Ruby wrapper around the [Google Chart API][gchartapi]. It is
-inspired by another Ruby based graphing library called [Gruff][gruff]. Visit
-the website for more information.
+*hs-gchart* makes use of Haskell’s powerful type system to come up with a rich
+[data model](GChartTypes) for the Google Chart API parameters, which can then
+be easily encoded into a querystring URL.
 
-[gchartrb]: http://github.com/deepakjois/gchartrb	
-[gchartapi]: http://code.google.com/apis/chart/
-[gruff]: http://nubyonrails.com/pages/gruff
-
+[GChartTypes](http://hackage.haskell.org/packages/archive/hs-gchart/0.1/doc/html/Graphics-GChart-Types.html)
 
 ### Tabbie
 
@@ -41,6 +38,20 @@ Klaas Van Schelven is the current maintainer of Tabbie.
 [ntu]: http://www.ntu.edu.sg
 [tabbie_cust]: http://tabbie.wikidot.com/customers
 
+### gchartrb
+	  
+_This project is currently unmaintained_.
+
+You can fork [the code][gchartrb] on GitHub and do what you like with it.
+
+**gchartrb** is a Ruby wrapper around the [Google Chart API][gchartapi]. It is
+inspired by another Ruby based graphing library called [Gruff][gruff]. Visit
+the website for more information.
+
+[gchartrb]: http://github.com/deepakjois/gchartrb	
+[gchartapi]: http://code.google.com/apis/chart/
+[gruff]: http://nubyonrails.com/pages/gruff
+
 ## Bits of Code
 
 ### hs-twitterarchiver
@@ -50,6 +61,16 @@ Tweets in a JSON file. It also has the ability to sync an already existing
 archive and update it with the latest feeds.
 
 [hs-twitterarchiver]: http://github.com/deepakjois/hs-twitterarchiver/tree/master
+
+### Patches to yst
+
+[yst] is the static web page creator that powers this site. I contributed some
+patches to it([1][patch3],[2][patch2],[3][patch3]), and hope to develop more features when I get time.
+
+[yst]: http://github.com/jgm/yst/
+[patch1]: http://github.com/jgm/yst/commit/1388233929b3330bea3faf466762b37b59e6e79f
+[patch2]: http://github.com/jgm/yst/commit/e971e957816be32a537471d34b1d020e193cc3e3
+[patch3]: http://github.com/jgm/yst/commit/2175d5b8f0c5ab47d44f44e64729a91c309bb9ac
 
 ### Project Euler Problems
 
