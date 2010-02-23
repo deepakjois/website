@@ -42,4 +42,33 @@
   author   : "George Friedman"
   category : "non-fiction-other"
   date     : 2010-02-01
-    
+
+- title    : "Thinking with Type: A Critical Guide for Designers, Writers, Editors, & Students"
+  link     : "http://www.amazon.com/Thinking-Type-Critical-Designers-Students/dp/1568984480"
+  author   : "Ellen Lupton"
+  category : "non-fiction-tech"
+  date     : 2010-02-01
+  readable : yes
+
+- title    : "The Talent Code: Greatness Isn't Born. It's Grown. Here's How."
+  link     : "http://www.amazon.com/Talent-Code-Greatness-Born-Grown/dp/055380684X"
+  author   : "Daniel Coyle"
+  category : "non-fiction-other"
+  date     : 2010-02-01
+  readable : yes
+
+- title    : "Ramayana: Divine Loophole"
+  link     : "http://www.amazon.com/Ramayana-Divine-Loophole-Sanjay-Patel/dp/081187107X"
+  author   : "Sanjay Patel"
+  category : "fiction-indian"
+  date     : 2010-02-01
+
+- title    : "Love"
+  link     : "http://www.amazon.com/Love-Ferdinand-Protzman/dp/1426206291"
+  author   : "Ferdinand Protzman"
+  category : "non-fiction-photography"
+  date     : 2010-02-01
+
+
+
+
