@@ -69,6 +69,11 @@
   category : "non-fiction-photography"
   date     : 2010-02-01
 
-
+- title    : "Ruby Best Practices"
+  link     : "http://www.amazon.com/Ruby-Best-Practices-Gregory-Brown/dp/0596523009"
+  author   : "Gregory Brown"
+  category : "non-fiction-tech"
+  date     : 2010-02-01
+  readable : yes
 
 
