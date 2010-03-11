@@ -76,4 +76,29 @@
   date     : 2010-02-01
   readable : yes
 
+- title    : "Quarantine"
+  link     : "http://www.amazon.com/Quarantine-Greg-Egan/dp/0061054232"
+  author   : "Greg Egan"
+  category : "fiction-science"
+  date     : 2010-03-01
+  readable : yes
 
+- title    : "The Book of Dead Philosophers"
+  link     : "http://www.amazon.com/Book-Dead-Philosophers-Vintage/dp/0307390438"
+  author   : "Simon Critchley"
+  category : "non-fiction-culture"
+  date     : 2010-03-01
+
+- title    : "Why a Painting Is Like a Pizza: A Guide to Understanding and Enjoying Modern Art"
+  link     : "http://www.amazon.com/Why-Painting-Like-Pizza-Understanding/dp/0691090521/"
+  author   : "Nancy G. Heller"
+  category : "non-fiction-culture"
+  date     : 2010-03-01
+  readable : yes
+
+- title    : "Myth = Mithya: A Handbook of Hindu Mythology"
+  link     : "http://www.amazon.com/Myth-Mithya-Handbook-Hindu-Mythology/dp/0143099701"
+  author   : "Devdutt Patnaik"
+  category : "non-fiction-culture"
+  date     : 2010-03-01
+  readable : yes
