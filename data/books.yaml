@@ -102,3 +102,16 @@
   category : "non-fiction-culture"
   date     : 2010-03-01
   readable : yes
+
+- title    : "The Way We Live In the City"
+  link     : "http://www.amazon.com/gp/product/0847829642"
+  author   : "Stafford Cliff and Gilles de Chabaneix "
+  category : "non-fiction-other"
+  date     : 2010-03-01
+
+- title    : "The Book of Tea"
+  link     : "http://www.amazon.com/Book-Tea-Stone-Bridge-Classics/dp/1933330171"
+  author   : "Kakuzo Okakura"
+  category : "non-fiction-culture"
+  date     : 2010-03-01
+  readable : yes
