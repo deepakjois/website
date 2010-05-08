@@ -115,3 +115,10 @@
   category : "non-fiction-culture"
   date     : 2010-03-01
   readable : yes
+
+- title    : "Mushashi"
+  link     : "http://www.amazon.com/Musashi-Eiji-Yoshikawa/dp/4770019572"
+  author   : "Eiji Yoshikawa"
+  category : "fiction-other"
+  date     : 2010-05-01
+  readable : yes
