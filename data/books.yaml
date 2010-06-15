@@ -148,3 +148,10 @@
   author   : "Richard Florida"
   category : "non-fiction-economics"
   date     : 2010-05-01
+
+- title    : "The Windup Girl"
+  link     : "http://www.amazon.com/Windup-Girl-Paolo-Bacigalupi/dp/1597801577"
+  author   : "Paolo Bacigalupi"
+  category : "fiction-science"
+  date     : 2010-05-01
+  readable : yes
