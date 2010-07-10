@@ -155,3 +155,10 @@
   category : "fiction-science"
   date     : 2010-05-01
   readable : yes
+
+- title    : "Secret Son"
+  link     : "http://www.amazon.com/Secret-Son-Laila-Lalami/dp/1565124944"
+  author   : "Laila Lalami"
+  category : "fiction-other"
+  date     : 2010-07-01
+  readable : yes
