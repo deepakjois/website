@@ -162,3 +162,11 @@
   category : "fiction-other"
   date     : 2010-07-01
   readable : yes
+
+- title    : "Linux Kernel Development"
+  link     : "http://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468"
+  author   : "Robert Love"
+  category : "non-fiction-tech"
+  date     : 2010-07-01
+  readable : yes
+
