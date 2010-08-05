@@ -170,3 +170,23 @@
   date     : 2010-07-01
   readable : yes
 
+- title    : "The Story of Stuff"
+  link     : "http://www.amazon.com/Story-Stuff-Obsession-Communities-Health-/dp/143912566X"
+  author   : "Annie Leonard"
+  category : "non-fiction-other"
+  date     : 2010-07-01
+
+- title    : "Fantasies of a Bollywood Love Thief: Inside the World of Indian Moviemaking"
+  link     : "http://www.amazon.com/gp/product/0156030845/"
+  author   : "Stephen Alter"
+  category : "non-fiction-indian"
+  date     : 2010-08-01
+  readable : yes
+
+- title    : "Being Geek"
+  link     : "http://www.amazon.com/Being-Geek-Software-Developers-Handbook/dp/0596155409"
+  author   : "Michael Lopp"
+  category : "non-fiction-tech"
+  date     : 2010-08-01
+  readable : yes
+
