@@ -190,3 +190,16 @@
   date     : 2010-08-01
   readable : yes
 
+- title    : "How We Know What Isn't So"
+  link     : "http://www.amazon.com/How-Know-What-Isnt-Fallibility/dp/0029117062"
+  author   : "Thomas Glovich"
+  category : "non-fiction-economics"
+  date     : 2010-08-01
+  readable : yes
+
+- title    : "Hope and Other Dangerous Pursuits"
+  link     : "http://www.amazon.com/Other-Dangerous-Pursuits-Laila-Lalami/dp/1565124936"
+  author   : "Laila Lalami"
+  category : "fiction-other"
+  date     : 2010-08-01
+
