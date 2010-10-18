@@ -6,24 +6,31 @@
 
 - url      : books/index.html
   title    : Books
-  requires : [bookmonthly.st, book.st]
   template : books.txt.st
   data     :
     books : FROM books.yaml ORDER BY date ASC GROUP BY date
 
-- url      : colophon/index.html
-  title    : Colophon
-  source   : colophon.txt
+- url     : books/old_2006-2009.html
+  title   : "Books 2006–2009"
+  source  : books/old_2006-2009.html    
+  inmenu  : no
 
 - url      : code/index.html
   title    : Code
-  source   : code.txt
-
-- url      : contact/index.html
-  title    : Contact
-  source   : contact.txt
+  source   : code.txt  
   
-- url     : books/old_2006-2009.html
-  title   : "2006–2009"
-  source  : books/old_2006-2009.html    
-  inmenu  : no
+- url      : learning/index.html
+  title    : Learning
+  source   : learning.txt.st
+
+- url      : learning/logbook.html
+  title    : Logbook
+  source   : learning/logbook.txt
+  inmenu   : no
+
+- url      : learning/computer-systems-reading.html
+  title    : Computer Systems
+  template : learning/computer-systems-reading.txt.st
+  inmenu   : no
+  data     :
+    papers : FROM computer-systems-out.csv ORDER BY published ASC

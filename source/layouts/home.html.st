@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-<title>$pagetitle$</title> 
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" title="Main CSS"> 
-$includes/iehtml5()$
+<html class=home lang="en">
+<head>     
+  <meta charset="utf-8">   
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">   
+  <title>$pagetitle$</title> 
+  <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" title="Main CSS"> 
+  <script src="/js/modernizr-1.6.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div id="wrapper">  
-    	<header>
-			<h1>Deepak Jois</h1>
-  		<nav>
-  			$nav$
-  		</nav>				
-		</header>		
-	 $contents$
+<div id="wrapper">
+  <header>    	  
+		<nav>$nav$</nav>	
+  </header>		
+	<section>$contents$</section>
 </div>
 $includes/analytics()$
 </body>

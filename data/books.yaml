@@ -206,5 +206,25 @@
 - title    : "The Evolution of God"
   link     : "http://www.amazon.com/Evolution-God-Robert-Wright/dp/0316734918"
   author   : "Robert Wright"
-  category : "non-fiction-culture       "
+  category : "non-fiction-culture"
   date     : 2010-08-01
+
+- title    : "Muhammad and the Believers: At the Origins of Islam"
+  link     : "http://www.amazon.com/Muhammad-Believers-At-Origins-Islam/dp/0674050975"
+  author   : "Fred M. Donner"
+  category : "non-fiction-culture"
+  date     : 2010-09-01
+
+- title    : "The Shallows"
+  link     : "http://www.amazon.com/Shallows-What-Internet-Doing-Brains/dp/0393072223/"
+  author   : "Nicholas G. Carr"
+  category : "non-fiction-tech"
+  date     : 2010-10-01
+  readable : yes
+
+- title    : "A Geography Of Time: On Tempo, Culture, And The Pace Of Life"
+  link     : "http://www.amazon.com/Geography-Time-Misadventures-Psychologist-Differently/dp/0465026427"
+  author   : "Robert V. Levine"
+  category : "non-fiction-culture"
+  date     : 2010-10-01
+  readable : yes

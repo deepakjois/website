@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-<title>$pagetitle$</title> 
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" title="Main CSS"> 
-$includes/iehtml5()$
+<head>     
+  <meta charset="utf-8">   
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">   
+  <title>$pagetitle$</title> 
+  <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" title="Main CSS">
+  <script src="/js/modernizr-1.6.min.js" type="text/javascript" charset="utf-8"></script>   
 </head>
 <body>
 <div id="wrapper">
   <header>    	  
-	  <nav><a class="title" href="/">&#x2039; Home</a></nav>
-			<h1>$pagetitle$</h1>
-
-		<nav>
-			$nav$
-		</nav>	
+	  <nav><a class="title" href="/">&larr; Home</a></nav>
+		<nav>$nav$</nav>		  
+		<h1>$pagetitle$</h1>  
   </header>		
-	<section>
-  $contents$
-  </section>
+	<section>$contents$</section>
 </div>
 $includes/analytics()$
 </body>

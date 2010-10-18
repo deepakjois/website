@@ -1,9 +1,10 @@
 <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+var _gaq = [['_setAccount', 'UA-97595-5'], ['_trackPageview']];
+(function(d, t) {
+ var g = d.createElement(t),
+     s = d.getElementsByTagName(t)[0];
+ g.async = true;
+ g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ s.parentNode.insertBefore(g, s);
+})(document, 'script');
 </script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-97595-5");
-pageTracker._trackPageview();
-} catch(err) {}</script>
