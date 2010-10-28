@@ -12,6 +12,6 @@
 ## Academic Papers
 
 $papers:{ 
-  it | * <a href="$it.url$" target="_new">$it.title$.</a> $it.authors$
+  it | * <a href="$it.url$" target="_new">$it.title$.</a> $it.authors$. $it.published$
 }$
 
