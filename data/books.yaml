@@ -230,24 +230,28 @@
   readable : yes
 
 - title    : "Man's Search For Meaning"
-  link     : 
-  author   : 
-  category : 
-  date     : 
-  readable : 
+  link     : "http://www.amazon.com/Mans-Search-Meaning-Viktor-Frankl/dp/0807014273"
+  author   : "Viktor Frankl"
+  category : "non-fiction-culture"
+  date     : 2010-11-01
+  readable : yes
 
 - title    : "Narcissus and Goldmund"
-  link     : 
-  author   : 
-  category : 
-  date     : 
-  readable : 
+  link     : "http://www.amazon.com/Narcissus-Goldmund-Novel-Hermann-Hesse/dp/0312421672"
+  author   : "Herman Hesse"
+  category : "fiction-other"
+  date     : 2010-11-01
+  readable : yes
 
 - title    : "The Structure of Scientific Revolutions"
-  link     : 
-  author   : 
-  category : 
-  date     : 
-  readable : 
+  link     : "http://www.amazon.com/Structure-Scientific-Revolutions-Thomas-Kuhn/dp/0226458083"
+  author   : "Thomas Kuhn"
+  category : "non-fiction-tech"
+  date     : 2010-11-01
 
 - title    : "To Mock a Mockingbird"
+  link     : "http://www.amazon.com/Mock-Mockingbird-Other-Logic-Puzzles/dp/0192801422"
+  author   : "Raymond Smullyan"
+  category : "non-fiction-tech"
+  date     : 2010-11-01
+  readable : yes
