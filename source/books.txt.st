@@ -1,8 +1,10 @@
-Here is a list of books I have read in 2010. Items marked with a <em
-class="impt">*</em> are recommended highly. Elsewhere, I keep a (fairly big)
-[list of books][old_list] that I have read from 2006-2009. 
+Listed below are books I have read this year. Items marked with a <em
+class="impt">*</em> are recommended highly.
 
-[old_list]: old_2006-2009.html
+Follow the links below for the books I read in previous years
+
+* [2006-2009](old_2006-2009.html) 
+* [2010](old_2010.html)
 
 $books:{
   it |

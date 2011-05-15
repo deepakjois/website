@@ -10,15 +10,22 @@
   data     :
     books : FROM books.yaml ORDER BY date ASC GROUP BY date
 
+- url      : books/old_2010.html
+  title    : Books 2010
+  template : books_archive.txt.st
+  inmenu  : no  
+  data     :
+    books : FROM books_2010.yaml ORDER BY date ASC GROUP BY date
+
 - url     : books/old_2006-2009.html
   title   : "Books 2006–2009"
-  source  : books/old_2006-2009.html    
+  source  : books/old_2006-2009.html
   inmenu  : no
 
 - url      : code/index.html
   title    : Code
-  source   : code.txt  
-  
+  source   : code.txt
+
 - url      : learning/index.html
   title    : Learning
   source   : learning.txt.st
