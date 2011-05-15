@@ -8,14 +8,14 @@
   link     : "http://www.amazon.com/How-Solve-Aspect-Mathematical-Method/dp/0691023565"
   author   : "G. Polya"
   category : "non-fiction-other"
-  readable : yes  
+  readable : yes
   date     : 2011-02-01
 
 - title    : "Mad Men and Philosophy: Nothing Is as It Seems"
   link     : "http://www.amazon.com/Mad-Men-Philosophy-Nothing-Blackwell/dp/0470603011"
   author   : "James B. South, Rod Carveth and William Irwin"
   category : "non-fiction-culture"
-  readable : yes  
+  readable : yes
   date     : 2011-03-01
 
 - title    : "Welcome to Utopia: Notes from a Small Town"
@@ -34,14 +34,14 @@
   link     : "http://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200"
   author   : "Michael Kerrisk"
   category : "non-fiction-tech"
-  readable : yes  
+  readable : yes
   date     : 2011-03-01
 
 - title    : "Ship Breaker"
   link     : "http://www.amazon.com/Ship-Breaker-Paolo-Bacigalupi/dp/0316056219"
   author   : "Paolo Bacigalupi"
   category : "fiction-science"
-  readable : yes  
+  readable : yes
   date     : 2011-04-01
 
 - title    : "The Most Important Thing: Uncommon Sense for the Thoughtful Investor"
