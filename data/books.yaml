@@ -57,3 +57,10 @@
   category : "non-fiction-culture"
   readable : yes
   date     : 2011-05-01
+
+- title    : "Thinking in Systems: A Primer"
+  link     : "http://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557"
+  author   : "Donella H. Meadows"
+  category : "non-fiction-other"
+  readable : yes
+  date     : 2011-05-01
