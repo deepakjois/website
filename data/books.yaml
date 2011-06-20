@@ -64,3 +64,11 @@
   category : "non-fiction-other"
   readable : yes
   date     : 2011-05-01
+
+- title    : "Clean Code: A Handbook of Agile Software Craftsmanship"
+  link     : "http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"
+  author   : "Robert C. Martin"
+  category : "non-fiction-tech"
+  readable : yes
+  date     : 2011-06-01
+
