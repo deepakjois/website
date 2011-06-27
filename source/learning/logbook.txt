@@ -63,6 +63,7 @@ and 10 or 15 minutes discussing it (finished or not.)
 * [Hacking a Google Interview](http://courses.csail.mit.edu/iap/interview/)
 * [Get that job at Google](http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)
 * [Five Essential Phone Screen Question](http://steve.yegge.googlepages.com/five-essential-phone-screen-questions)
+* [i has 1337 code](http://www.ihas1337code.com/)
 
 ### Algorithms
 * [Cormen Book](http://mitpress.mit.edu/algorithms/)
