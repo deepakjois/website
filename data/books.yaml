@@ -79,3 +79,42 @@
   readable : yes
   date     : 2011-07-01
 
+- title    : "River of Smoke"
+  link     : "http://www.amazon.com/River-Smoke-Novel-Ibis-Trilogy/dp/0374174237"
+  author   : "Amitav Ghosh"
+  category : "fiction-other"
+  readable : yes
+  date     : 2011-07-01
+
+- title    : "A Game of Thrones: A Song of Ice and Fire: Book One"
+  link     : "http://www.amazon.com/Game-Thrones-Song-Fire-Book/dp/0553386794"
+  author   : "George R R Martin"
+  category : "fiction-other"
+  readable : yes
+  date     : 2011-07-01
+
+- title    : "Network Algorithmics,: An Interdisciplinary Approach to Designing Fast Networked Devices"
+  link     : "http://www.amazon.com/Network-Algorithmics-Interdisciplinary-Designing-Networking/dp/0120884771"
+  author   : "George Varghese"
+  category : "non-fiction-tech"
+  readable : yes
+  date     : 2011-08-01
+
+- title    : "A Friday Night Lights Companion: Love, Loss, and Football in Dillon, Texas"
+  link     : "http://www.amazon.com/Friday-Night-Lights-Companion-Football/dp/1935618563"
+  author   : "Leah Wilson and others"
+  category : "non-fiction-culture"
+  readable : yes
+  date     : 2011-08-01
+
+- title    : "Finding Serenity: Anti-heroes, Lost Shepherds And Space Hookers In Joss Whedon's Firefly"
+  link     : "http://www.amazon.com/Finding-Serenity-Anti-heroes-Shepherds-Hookers/dp/1932100431"
+  author   : "Jane Espenson and Glenn Yeffeth"
+  category : "non-fiction-culture"
+  date     : 2011-08-01
+
+- title    : "Serenity Found: More Unauthorized Essays on Joss Whedon's Firefly Universe"
+  link     : "http://www.amazon.com/Serenity-Found-Unauthorized-Whedons-Universe/dp/1933771216"
+  author   : "Jane Espenson"
+  category : "non-fiction-culture"
+  date     : 2011-08-01
