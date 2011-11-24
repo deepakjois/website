@@ -116,6 +116,7 @@
   link     : "http://www.amazon.com/Existentialism-Beginners-Guide-Oneworld/dp/1851685936"
   author   : "Thomas E. Wartenberg"
   category : "non-fiction-culture"
+  readable : yes
   date     : 2011-09-01
 
 - title    : "What Does It All Mean?: A Very Short Introduction to Philosophy"
