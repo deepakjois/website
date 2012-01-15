@@ -2,3 +2,6 @@ site
 .DS_Store
 
 **/*-out.csv
+**/*.hi
+**/*.o
+bin/site
