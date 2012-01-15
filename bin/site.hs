@@ -1,42 +1,65 @@
 {-# LANGUAGE OverloadedStrings #-}
 import Control.Arrow (arr, (>>>))
+import System.FilePath
 
 import Hakyll
 
 main :: IO ()
 main = hakyll $ do
-    match "css/*" $ do
-        route   idRoute
+    -- CSS files
+    match cssFiles $ do
+        route stripTopDir
         compile compressCssCompiler
 
-    match "js/*" $ do
-        route idRoute
+    -- Static files, except CSS
+    match staticFilesExceptCss $ do
+        route stripTopDir
         compile copyFileCompiler
 
+    -- Include files
+    match includes $ compile pageCompiler
 
-    match "images/*" $ do
-        route idRoute
-        compile copyFileCompiler
+    -- Template files
+    match templates $ compile templateCompiler
 
-    match "favicon.ico" $ do
-        route idRoute
-        compile copyFileCompiler
+    -- Home page
+    match "source/index.markdown" $ do
+        route defaultHtml
+        compile $ defaultCompiler "templates/home.html"
 
-    match "analytics.html" $ compile pageCompiler
-    match "nav.html" $ compile pageCompiler
+    -- Inner pages
+    match "source/code.markdown" $ do
+        route defaultHtml
+        compile $ defaultCompiler "templates/inner.html"
 
-    match "templates/*" $ compile templateCompiler
+    -- TODO Books
 
-    match "index.markdown" $ do
-        route $ setExtension "html"
-        compile $ pageCompiler
-             >>> requireA "analytics.html" (setFieldA "analytics" $ arr pageBody)
-             >>> requireA "nav.html" (setFieldA "nav" $ arr pageBody)
-             >>> applyTemplateCompiler "templates/home.html"
+-- | Matches css files in static folder
+cssFiles = "static/css/**"
 
-    match "code.markdown" $ do
-        route $ setExtension "html"
-        compile $ pageCompiler
-             >>> requireA "analytics.html" (setFieldA "analytics" $ arr pageBody)
-             >>> requireA "nav.html" (setFieldA "nav" $ arr pageBody)
-             >>> applyTemplateCompiler "templates/inner.html"
+-- | Matches all files in static folder, except CSS files
+staticFilesExceptCss = predicate (\i -> matches "static/**" i && not (matches "static/css/**" i))
+
+-- | Includes common to different kinds of pages
+includes = "includes/**"
+
+-- | Templates for home and inner pages
+templates = "templates/**"
+
+-- | Custom route to drop the topmost dir from the identifier
+stripTopDir = customRoute $ joinPath . tail . splitPath . toFilePath
+
+-- | Combination of dropping the topmost dir and adding the HTML extension
+defaultHtml = stripTopDir `composeRoutes` setExtension "html"
+
+-- | Default compiler for all pages
+defaultCompiler template = pageCompiler
+                       -- Google Analytics code
+                       >>> requireA "analytics.html" (setFieldA "analytics" $ arr pageBody)
+                       -- Nav bar
+                       >>> requireA "nav.html" (setFieldA "nav" $ arr pageBody)
+                       -- Template
+                       >>> applyTemplateCompiler template
+
+
+

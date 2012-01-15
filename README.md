@@ -1,1 +1,1 @@
-Source code for [my website](http://deepak.jois.name). Generated using [yst](http://github.com/jgm/yst)
+Source code for [my website](http://deepak.jois.name). Generated using [hakyll](http://jaspervdj.be/hakyll/)

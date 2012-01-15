@@ -1,3 +1,6 @@
+---
+pagetitle: Code
+---
 ## Software
 
 ### Dhun
