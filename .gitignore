@@ -5,3 +5,5 @@ site
 **/*.hi
 **/*.o
 bin/site
+_site
+_cache

@@ -1,6 +1,0 @@
-indexfile: index.yaml
-title: "Deepak Jois &middot; Website"
-sourcedir: source
-datadir: data
-filesdir: files
-layout: layouts/inner.html.st
