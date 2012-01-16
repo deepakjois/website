@@ -3,9 +3,10 @@ import Control.Arrow (arr, (>>>))
 import System.FilePath
 
 import Hakyll
+import Books
 
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     -- CSS files
     match cssFiles $ do
         route stripTopDir
@@ -17,7 +18,7 @@ main = hakyll $ do
         compile copyFileCompiler
 
     -- Include files
-    match includes $ compile pageCompiler
+    match includes $ compile readPageCompiler
 
     -- Template files
     match templates $ compile templateCompiler
@@ -55,11 +56,15 @@ defaultHtml = stripTopDir `composeRoutes` setExtension "html"
 -- | Default compiler for all pages
 defaultCompiler template = pageCompiler
                        -- Google Analytics code
-                       >>> requireA "analytics.html" (setFieldA "analytics" $ arr pageBody)
+                       >>> setFieldPage "analytics" "includes/analytics.html"
                        -- Nav bar
-                       >>> requireA "nav.html" (setFieldA "nav" $ arr pageBody)
+                       >>> setFieldPage "nav" "includes/nav.html"
                        -- Template
                        >>> applyTemplateCompiler template
 
 
 
+config = defaultHakyllConfiguration
+    {
+      deployCommand = "s3cmd sync  -r _site/*  s3://www.deepak.jois.name"
+    }
