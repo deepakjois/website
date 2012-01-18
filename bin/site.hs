@@ -45,7 +45,7 @@ main = hakyllWith config $ do
       route defaultHtml
       compile $ bookPageCompiler (parseIdentifier $ jsonFile b)
         where jsonFile page = "data/" ++
-                              (takeWhile (/= '.') . last . splitOn "/") (page) ++
+                              (takeWhile (/= '.') . last . splitOn "/") page ++
                               ".json"
 
 
@@ -68,10 +68,10 @@ templates = "templates/**"
 -- | Data in JSON format
 jsonData = "data/*.json"
 
--- | Inner pages (currently only code.markdown)
+-- | Inner pages
 innerPages = list ["source/code.markdown", "source/books/old_2006-2009.html"]
 
--- | Pages containing a list of books
+-- | Pages containing list of books
 bookPages = ["source/books.markdown", "source/books/2010.markdown"]
 
 
