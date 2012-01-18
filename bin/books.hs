@@ -114,6 +114,6 @@ booksGroupedByMonth = groupBy sameMonth where
 -- | Render a JSON string representing a list of books to HTML
 booksJsonToHtml = (booksYearlyHtml . booksGroupedByMonth) . books
 
-main = do
+printBooks = do
      json <- readFile "data/books.json"
      putStr $ renderHtml $ booksJsonToHtml json

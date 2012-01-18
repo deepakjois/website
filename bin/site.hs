@@ -1,6 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 import Control.Arrow (arr, (>>>))
 import System.FilePath
+import Text.Blaze.Renderer.String
 
 import Hakyll
 import Books
@@ -23,6 +24,9 @@ main = hakyllWith config $ do
     -- Template files
     match templates $ compile templateCompiler
 
+    -- Data files
+    match jsonData $ compile readPageCompiler
+
     -- Home page
     match "source/index.markdown" $ do
         route defaultHtml
@@ -33,7 +37,10 @@ main = hakyllWith config $ do
         route defaultHtml
         compile $ defaultCompiler "templates/inner.html"
 
-    -- TODO Books
+    -- Books
+    match "source/books.markdown" $ do
+        route defaultHtml
+        compile $ bookPageCompiler "books.json"
 
 -- | Matches css files in static folder
 cssFiles = "static/css/**"
@@ -46,6 +53,9 @@ includes = "includes/**"
 
 -- | Templates for home and inner pages
 templates = "templates/**"
+
+-- | Data in JSON format
+jsonData = "data/*.json"
 
 -- | Custom route to drop the topmost dir from the identifier
 stripTopDir = customRoute $ joinPath . tail . splitPath . toFilePath
@@ -62,7 +72,16 @@ defaultCompiler template = pageCompiler
                        -- Template
                        >>> applyTemplateCompiler template
 
-
+bookPageCompiler json = pageCompiler
+                    >>> setFieldPage "books" "data/books.json"
+                    >>> arr (changeField "books" $ renderHtml . booksJsonToHtml)
+                   >>> applyTemplateCompiler "templates/books.html"
+                       -- Google Analytics code
+                   >>> setFieldPage "analytics" "includes/analytics.html"
+                       -- Nav bar
+                   >>> setFieldPage "nav" "includes/nav.html"
+                       -- Templates
+                   >>> applyTemplateCompiler "templates/inner.html"
 
 config = defaultHakyllConfiguration
     {
