@@ -1,0 +1,10 @@
+---
+pagetitle: Books
+---
+Listed below are books I have read this year. Items marked with a <em
+class="impt">*</em> are recommended highly.
+
+Follow the links below for the books I read in previous years
+
+* [2006-2009](/books/old_2006-2009.html)
+* [2010](/books/2010.html)
