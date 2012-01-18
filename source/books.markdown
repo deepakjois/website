@@ -8,3 +8,4 @@ Follow the links below for the books I read in previous years
 
 * [2006-2009](/books/old_2006-2009.html)
 * [2010](/books/2010.html)
+* [2011](/books/2011.html)

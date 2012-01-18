@@ -94,7 +94,7 @@ bookLiElem book = li ! dataAttribute "category" (fromString c) $ do
                 where
                     Book t l a c r _ = book
                     booklink         = H.a ! href (fromString l) $ toHtml (t ++ " by " ++ a)
-                    starIfReadable   = if r then em "*" else ""
+                    starIfReadable   = if r then em ! class_ "impt" $ "*" else ""
 
 -- | Convert a list of books to a @ul@ element
 booksHtmlList books = ul $ mapM_ bookLiElem books

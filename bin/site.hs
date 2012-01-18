@@ -72,7 +72,7 @@ jsonData = "data/*.json"
 innerPages = list ["source/code.markdown", "source/books/old_2006-2009.html"]
 
 -- | Pages containing list of books
-bookPages = ["source/books.markdown", "source/books/2010.markdown"]
+bookPages = ["source/books.markdown","source/books/2011.markdown", "source/books/2010.markdown"]
 
 
 -- *****************
