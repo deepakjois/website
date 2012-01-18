@@ -1,0 +1,299 @@
+[
+  {
+    "title": "Methland: The Death and Life of an American Small Town",
+    "link": "http://www.amazon.com/Methland-Death-Life-American-Small/dp/1596916508",
+    "author": "Nick Reding",
+    "category": "non-fiction-culture",
+    "readable": true,
+    "date": "2010-01-01"
+  },
+  {
+    "title": "Buyology: Truth and Lies About Why We Buy",
+    "link": "http://www.amazon.com/Buyology-Truth-Lies-About-Why/dp/0385523882",
+    "author": "Martin Lindstrom",
+    "category": "non-fiction-economics",
+    "date": "2010-01-01"
+  },
+  {
+    "title": "The TeXbook",
+    "link": "http://www.amazon.com/TeXbook-Donald-E-Knuth/dp/0201134489",
+    "author": "Donald Knuth",
+    "category": "non-fiction-tech",
+    "readable": true,
+    "date": "2010-01-01"
+  },
+  {
+    "title": "Ratio: The Simple Codes Behind the Craft of Everyday Cooking",
+    "link": "http://www.amazon.com/Ratio-Simple-Behind-Everyday-Cooking/dp/1416566112",
+    "author": "Michael Ruhlman",
+    "category": "non-fiction-other",
+    "date": "2010-01-01"
+  },
+  {
+    "title": "Avatar: A Confidential Report on the Biological and Social History of Pandora",
+    "link": "http://www.amazon.com/Avatar-Confidential-Biological-History-Camerons/dp/0061896756",
+    "author": "Maria Wilhelm and Dirk Mathison",
+    "category": "fiction-science",
+    "date": "2010-01-01"
+  },
+  {
+    "title": "A Practical Guide to Data Structures and Algorithms using Java",
+    "link": "http://www.amazon.com/Practical-Structures-Algorithms-Chapman-Applied/dp/158488455X",
+    "author": "Sally A. Goldman and Kenneth J. Goldman",
+    "category": "non-fiction-tech",
+    "readable": true,
+    "date": "2010-02-01"
+  },
+  {
+    "title": "The Next 100 Years: A Forecast for the 21st Century",
+    "link": "http://www.amazon.com/Next-100-Years-Forecast-Century/dp/038551705X/",
+    "author": "George Friedman",
+    "category": "non-fiction-other",
+    "date": "2010-02-01"
+  },
+  {
+    "title": "Thinking with Type: A Critical Guide for Designers, Writers, Editors, & Students",
+    "link": "http://www.amazon.com/Thinking-Type-Critical-Designers-Students/dp/1568984480",
+    "author": "Ellen Lupton",
+    "category": "non-fiction-tech",
+    "date": "2010-02-01",
+    "readable": true
+  },
+  {
+    "title": "The Talent Code: Greatness Isn't Born. It's Grown. Here's How.",
+    "link": "http://www.amazon.com/Talent-Code-Greatness-Born-Grown/dp/055380684X",
+    "author": "Daniel Coyle",
+    "category": "non-fiction-other",
+    "date": "2010-02-01",
+    "readable": true
+  },
+  {
+    "title": "Ramayana: Divine Loophole",
+    "link": "http://www.amazon.com/Ramayana-Divine-Loophole-Sanjay-Patel/dp/081187107X",
+    "author": "Sanjay Patel",
+    "category": "fiction-indian",
+    "date": "2010-02-01"
+  },
+  {
+    "title": "Love",
+    "link": "http://www.amazon.com/Love-Ferdinand-Protzman/dp/1426206291",
+    "author": "Ferdinand Protzman",
+    "category": "non-fiction-photography",
+    "date": "2010-02-01"
+  },
+  {
+    "title": "Ruby Best Practices",
+    "link": "http://www.amazon.com/Ruby-Best-Practices-Gregory-Brown/dp/0596523009",
+    "author": "Gregory Brown",
+    "category": "non-fiction-tech",
+    "date": "2010-02-01",
+    "readable": true
+  },
+  {
+    "title": "Quarantine",
+    "link": "http://www.amazon.com/Quarantine-Greg-Egan/dp/0061054232",
+    "author": "Greg Egan",
+    "category": "fiction-science",
+    "date": "2010-03-01",
+    "readable": true
+  },
+  {
+    "title": "The Book of Dead Philosophers",
+    "link": "http://www.amazon.com/Book-Dead-Philosophers-Vintage/dp/0307390438",
+    "author": "Simon Critchley",
+    "category": "non-fiction-culture",
+    "date": "2010-03-01"
+  },
+  {
+    "title": "Why a Painting Is Like a Pizza: A Guide to Understanding and Enjoying Modern Art",
+    "link": "http://www.amazon.com/Why-Painting-Like-Pizza-Understanding/dp/0691090521/",
+    "author": "Nancy G. Heller",
+    "category": "non-fiction-culture",
+    "date": "2010-03-01",
+    "readable": true
+  },
+  {
+    "title": "Myth = Mithya: A Handbook of Hindu Mythology",
+    "link": "http://www.amazon.com/Myth-Mithya-Handbook-Hindu-Mythology/dp/0143099701",
+    "author": "Devdutt Patnaik",
+    "category": "non-fiction-culture",
+    "date": "2010-03-01",
+    "readable": true
+  },
+  {
+    "title": "The Way We Live In the City",
+    "link": "http://www.amazon.com/gp/product/0847829642",
+    "author": "Stafford Cliff and Gilles de Chabaneix",
+    "category": "non-fiction-other",
+    "date": "2010-03-01"
+  },
+  {
+    "title": "The Book of Tea",
+    "link": "http://www.amazon.com/Book-Tea-Stone-Bridge-Classics/dp/1933330171",
+    "author": "Kakuzo Okakura",
+    "category": "non-fiction-culture",
+    "date": "2010-03-01",
+    "readable": true
+  },
+  {
+    "title": "Mushashi",
+    "link": "http://www.amazon.com/Musashi-Eiji-Yoshikawa/dp/4770019572",
+    "author": "Eiji Yoshikawa",
+    "category": "fiction-other",
+    "date": "2010-05-01",
+    "readable": true
+  },
+  {
+    "title": "The Good Man Jesus and the Scoundrel Christ",
+    "link": "http://www.amazon.com/Good-Man-Jesus-Scoundrel-Christ/dp/080212996X",
+    "author": "Philip Pullman",
+    "category": "fiction-other",
+    "date": "2010-05-01"
+  },
+  {
+    "title": "The Middleman",
+    "link": "http://www.penguinbooksindia.com/category/Fiction/The_Middleman_9780143066712.aspx",
+    "author": "Sankar",
+    "category": "fiction-indian",
+    "date": "2010-05-01",
+    "readable": true
+  },
+  {
+    "title": "Curfewed Night: One Kashmiri Journalist's Frontline Account of Life, Love, and War in His Homeland",
+    "link": "http://www.amazon.com/Curfewed-Night-Kashmiri-Journalists-Frontline/dp/1439109109",
+    "author": "Basharat Peer",
+    "category": "non-fiction-indian",
+    "date": "2010-05-01",
+    "readable": true
+  },
+  {
+    "title": "The Great Reset: How New Ways of Living and Working Drive Post-Crash Prosperity",
+    "link": "http://www.amazon.com/Great-Reset-Working-Post-Crash-Prosperity/dp/0061937193",
+    "author": "Richard Florida",
+    "category": "non-fiction-economics",
+    "date": "2010-05-01"
+  },
+  {
+    "title": "The Windup Girl",
+    "link": "http://www.amazon.com/Windup-Girl-Paolo-Bacigalupi/dp/1597801577",
+    "author": "Paolo Bacigalupi",
+    "category": "fiction-science",
+    "date": "2010-05-01",
+    "readable": true
+  },
+  {
+    "title": "Secret Son",
+    "link": "http://www.amazon.com/Secret-Son-Laila-Lalami/dp/1565124944",
+    "author": "Laila Lalami",
+    "category": "fiction-other",
+    "date": "2010-07-01",
+    "readable": true
+  },
+  {
+    "title": "Linux Kernel Development",
+    "link": "http://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468",
+    "author": "Robert Love",
+    "category": "non-fiction-tech",
+    "date": "2010-07-01",
+    "readable": true
+  },
+  {
+    "title": "The Story of Stuff",
+    "link": "http://www.amazon.com/Story-Stuff-Obsession-Communities-Health-/dp/143912566X",
+    "author": "Annie Leonard",
+    "category": "non-fiction-other",
+    "date": "2010-07-01"
+  },
+  {
+    "title": "Fantasies of a Bollywood Love Thief: Inside the World of Indian Moviemaking",
+    "link": "http://www.amazon.com/gp/product/0156030845/",
+    "author": "Stephen Alter",
+    "category": "non-fiction-indian",
+    "date": "2010-08-01",
+    "readable": true
+  },
+  {
+    "title": "Being Geek",
+    "link": "http://www.amazon.com/Being-Geek-Software-Developers-Handbook/dp/0596155409",
+    "author": "Michael Lopp",
+    "category": "non-fiction-tech",
+    "date": "2010-08-01",
+    "readable": true
+  },
+  {
+    "title": "How We Know What Isn't So",
+    "link": "http://www.amazon.com/How-Know-What-Isnt-Fallibility/dp/0029117062",
+    "author": "Thomas Glovich",
+    "category": "non-fiction-economics",
+    "date": "2010-08-01",
+    "readable": true
+  },
+  {
+    "title": "Hope and Other Dangerous Pursuits",
+    "link": "http://www.amazon.com/Other-Dangerous-Pursuits-Laila-Lalami/dp/1565124936",
+    "author": "Laila Lalami",
+    "category": "fiction-other",
+    "date": "2010-08-01"
+  },
+  {
+    "title": "The Evolution of God",
+    "link": "http://www.amazon.com/Evolution-God-Robert-Wright/dp/0316734918",
+    "author": "Robert Wright",
+    "category": "non-fiction-culture",
+    "date": "2010-08-01"
+  },
+  {
+    "title": "Muhammad and the Believers: At the Origins of Islam",
+    "link": "http://www.amazon.com/Muhammad-Believers-At-Origins-Islam/dp/0674050975",
+    "author": "Fred M. Donner",
+    "category": "non-fiction-culture",
+    "date": "2010-09-01"
+  },
+  {
+    "title": "The Shallows",
+    "link": "http://www.amazon.com/Shallows-What-Internet-Doing-Brains/dp/0393072223/",
+    "author": "Nicholas G. Carr",
+    "category": "non-fiction-tech",
+    "date": "2010-10-01",
+    "readable": true
+  },
+  {
+    "title": "A Geography Of Time: On Tempo, Culture, And The Pace Of Life",
+    "link": "http://www.amazon.com/Geography-Time-Misadventures-Psychologist-Differently/dp/0465026427",
+    "author": "Robert V. Levine",
+    "category": "non-fiction-culture",
+    "date": "2010-10-01",
+    "readable": true
+  },
+  {
+    "title": "Man's Search For Meaning",
+    "link": "http://www.amazon.com/Mans-Search-Meaning-Viktor-Frankl/dp/0807014273",
+    "author": "Viktor Frankl",
+    "category": "non-fiction-culture",
+    "date": "2010-11-01",
+    "readable": true
+  },
+  {
+    "title": "Narcissus and Goldmund",
+    "link": "http://www.amazon.com/Narcissus-Goldmund-Novel-Hermann-Hesse/dp/0312421672",
+    "author": "Herman Hesse",
+    "category": "fiction-other",
+    "date": "2010-11-01",
+    "readable": true
+  },
+  {
+    "title": "The Structure of Scientific Revolutions",
+    "link": "http://www.amazon.com/Structure-Scientific-Revolutions-Thomas-Kuhn/dp/0226458083",
+    "author": "Thomas Kuhn",
+    "category": "non-fiction-tech",
+    "date": "2010-11-01"
+  },
+  {
+    "title": "To Mock a Mockingbird",
+    "link": "http://www.amazon.com/Mock-Mockingbird-Other-Logic-Puzzles/dp/0192801422",
+    "author": "Raymond Smullyan",
+    "category": "non-fiction-tech",
+    "date": "2010-11-01",
+    "readable": true
+  }
+]

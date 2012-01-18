@@ -1,0 +1,223 @@
+[
+  {
+    "title": "Our Kind of Traitor",
+    "link": "http://www.amazon.com/Our-Kind-Traitor-John-Carre/dp/0670022241",
+    "author": "John le Carre",
+    "category": "fiction-other",
+    "date": "2011-01-01"
+  },
+  {
+    "title": "How to Solve It: A New Aspect of Mathematical Method",
+    "link": "http://www.amazon.com/How-Solve-Aspect-Mathematical-Method/dp/0691023565",
+    "author": "G. Polya",
+    "category": "non-fiction-other",
+    "readable": true,
+    "date": "2011-02-01"
+  },
+  {
+    "title": "Mad Men and Philosophy: Nothing Is as It Seems",
+    "link": "http://www.amazon.com/Mad-Men-Philosophy-Nothing-Blackwell/dp/0470603011",
+    "author": "James B. South, Rod Carveth and William Irwin",
+    "category": "non-fiction-culture",
+    "readable": true,
+    "date": "2011-03-01"
+  },
+  {
+    "title": "Welcome to Utopia: Notes from a Small Town",
+    "link": "http://www.amazon.com/Welcome-Utopia-Notes-Small-Town/dp/038552286X",
+    "author": "Karen Valby",
+    "category": "non-fiction-culture",
+    "date": "2011-03-01"
+  },
+  {
+    "title": "The Great Stagnation: How America Ate All the Low-Hanging Fruit of Modern History, Got Sick, and Will(Eventually) Feel Better",
+    "link": "http://www.amazon.com/Great-Stagnation-America-Low-Hanging-Eventually/dp/0525952713",
+    "author": "Tyler Cowen",
+    "category": "non-fiction-economics",
+    "date": "2011-03-01"
+  },
+  {
+    "title": "The Linux Programming Interface: A Linux and UNIX System Programming Handbook",
+    "link": "http://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200",
+    "author": "Michael Kerrisk",
+    "category": "non-fiction-tech",
+    "readable": true,
+    "date": "2011-03-01"
+  },
+  {
+    "title": "Ship Breaker",
+    "link": "http://www.amazon.com/Ship-Breaker-Paolo-Bacigalupi/dp/0316056219",
+    "author": "Paolo Bacigalupi",
+    "category": "fiction-science",
+    "readable": true,
+    "date": "2011-04-01"
+  },
+  {
+    "title": "The Most Important Thing: Uncommon Sense for the Thoughtful Investor",
+    "link": "http://www.amazon.com/Most-Important-Thing-Thoughtful-Publishing/dp/0231153686",
+    "author": "Howard Marks",
+    "category": "non-fiction-economics",
+    "readable": true,
+    "date": "2011-05-01"
+  },
+  {
+    "title": "Tempo: timing, tactics and strategy in narrative-driven decision-making",
+    "link": "http://www.amazon.com/Tempo-tactics-strategy-narrative-driven-decision-making/dp/0982703007/",
+    "author": "Venkatesh Rao",
+    "category": "non-fiction-culture",
+    "readable": true,
+    "date": "2011-05-01"
+  },
+  {
+    "title": "Thinking in Systems: A Primer",
+    "link": "http://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557",
+    "author": "Donella H. Meadows",
+    "category": "non-fiction-other",
+    "readable": true,
+    "date": "2011-05-01"
+  },
+  {
+    "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+    "link": "http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882",
+    "author": "Robert C. Martin",
+    "category": "non-fiction-tech",
+    "readable": true,
+    "date": "2011-06-01"
+  },
+  {
+    "title": "River of Smoke",
+    "link": "http://www.amazon.com/River-Smoke-Novel-Ibis-Trilogy/dp/0374174237",
+    "author": "Amitav Ghosh",
+    "category": "fiction-other",
+    "readable": true,
+    "date": "2011-07-01"
+  },
+  {
+    "title": "A Game of Thrones: A Song of Ice and Fire: Book One",
+    "link": "http://www.amazon.com/Game-Thrones-Song-Fire-Book/dp/0553386794",
+    "author": "George R R Martin",
+    "category": "fiction-other",
+    "readable": true,
+    "date": "2011-07-01"
+  },
+  {
+    "title": "Network Algorithmics,: An Interdisciplinary Approach to Designing Fast Networked Devices",
+    "link": "http://www.amazon.com/Network-Algorithmics-Interdisciplinary-Designing-Networking/dp/0120884771",
+    "author": "George Varghese",
+    "category": "non-fiction-tech",
+    "readable": true,
+    "date": "2011-08-01"
+  },
+  {
+    "title": "A Friday Night Lights Companion: Love, Loss, and Football in Dillon, Texas",
+    "link": "http://www.amazon.com/Friday-Night-Lights-Companion-Football/dp/1935618563",
+    "author": "Leah Wilson and others",
+    "category": "non-fiction-culture",
+    "readable": true,
+    "date": "2011-08-01"
+  },
+  {
+    "title": "Finding Serenity: Anti-heroes, Lost Shepherds And Space Hookers In Joss Whedon's Firefly",
+    "link": "http://www.amazon.com/Finding-Serenity-Anti-heroes-Shepherds-Hookers/dp/1932100431",
+    "author": "Jane Espenson and Glenn Yeffeth",
+    "category": "non-fiction-culture",
+    "date": "2011-08-01"
+  },
+  {
+    "title": "Serenity Found: More Unauthorized Essays on Joss Whedon's Firefly Universe",
+    "link": "http://www.amazon.com/Serenity-Found-Unauthorized-Whedons-Universe/dp/1933771216",
+    "author": "Jane Espenson",
+    "category": "non-fiction-culture",
+    "date": "2011-08-01"
+  },
+  {
+    "title": "Existentialism: A Beginner's Guide",
+    "link": "http://www.amazon.com/Existentialism-Beginners-Guide-Oneworld/dp/1851685936",
+    "author": "Thomas E. Wartenberg",
+    "category": "non-fiction-culture",
+    "readable": true,
+    "date": "2011-09-01"
+  },
+  {
+    "title": "What Does It All Mean?: A Very Short Introduction to Philosophy",
+    "link": "http://www.amazon.com/What-Does-All-Mean-Introduction/dp/0195052161",
+    "author": "Thomas Nagel",
+    "category": "non-fiction-culture",
+    "date": "2011-09-01"
+  },
+  {
+    "title": "Delivering Happiness: A Path to Profits, Passion, and Purpose",
+    "link": "http://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/0446563048",
+    "author": "Tony Hsieh",
+    "category": "non-fiction-economics",
+    "date": "2011-10-01"
+  },
+  {
+    "title": "Reamde: A Novel",
+    "link": "http://www.amazon.com/Reamde-Novel-Neal-Stephenson/dp/0061977969",
+    "author": "Neal Stephenson",
+    "category": "fiction-science",
+    "readable": true,
+    "date": "2011-10-01"
+  },
+  {
+    "title": "Day Scholar",
+    "link": "http://www.flipkart.com/books/0330514067",
+    "author": "Siddharth Chowdhury",
+    "category": "fiction-indian",
+    "readable": true,
+    "date": "2011-10-01"
+  },
+  {
+    "title": "Aftertaste",
+    "link": "http://www.flipkart.com/books/8184001088",
+    "author": "Namita Devidayal",
+    "category": "fiction-indian",
+    "date": "2011-10-01"
+  },
+  {
+    "title": "Jimmy the Terrorist",
+    "link": "http://www.flipkart.com/books/067008364x",
+    "author": "Omair Ahmed",
+    "category": "fiction-indian",
+    "date": "2011-10-01"
+  },
+  {
+    "title": "Songs of Kabir",
+    "link": "http://www.amazon.com/Songs-Kabir-Review-Classics-ebook/dp/B004FEG3BC",
+    "author": "Arvind Mehrotra",
+    "category": "non-fiction-culture",
+    "readable": true,
+    "date": "2011-10-01"
+  },
+  {
+    "title": "Diksha at St. Martin's",
+    "link": "http://www.flipkart.com/books/8187075988",
+    "author": "Siddharth Chowdhury",
+    "category": "fiction-indian",
+    "date": "2011-10-01"
+  },
+  {
+    "title": "The Beast",
+    "link": "http://www.flipkart.com/books/9380283753",
+    "author": "Syed Muhammed Ashraf",
+    "category": "fiction-indian",
+    "date": "2011-10-01"
+  },
+  {
+    "title": "The Vedic People",
+    "link": "http://www.flipkart.com/books/8125010807",
+    "author": "Rajesh Kochhar",
+    "category": "non-fiction-culture",
+    "readable": true,
+    "date": "2011-11-01"
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "link": "http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374275637",
+    "author": "Daniel Kahneman",
+    "category": "non-fiction-economics",
+    "readable": true,
+    "date": "2011-12-01"
+  }
+]

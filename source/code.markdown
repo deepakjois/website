@@ -1,9 +1,12 @@
+---
+pagetitle: Code
+---
 ## Software
 
 ### Dhun
 [Dhun] is a minimalist, commandline music player for OS X. I wrote this while
 reading some chapters of the brilliant book [OS X Internals][osxinternals].
-Dhun uses a C interface to OS X libraries to handle audio playback and Spotlight 
+Dhun uses a C interface to OS X libraries to handle audio playback and Spotlight
 querying on OS X. The rest of the code is written in Ruby.
 
 [Dhun]: http://github.com/deepakjois/dhun
@@ -32,7 +35,7 @@ Klaas Van Schelven is the maintainer of Tabbie (last I checked).
 [gchartrb][gchartrb] is a Ruby wrapper around the [Google Chart API][gchartapi]. It is
 inspired by another Ruby based graphing library called [Gruff][gruff]. _This project is currently unmaintained_.
 
-[gchartrb]: http://github.com/deepakjois/gchartrb	
+[gchartrb]: http://github.com/deepakjois/gchartrb
 [gchartapi]: http://code.google.com/apis/chart/
 [gruff]: http://nubyonrails.com/pages/gruff
 
@@ -55,7 +58,7 @@ archive and update it with the latest feeds.
 [hs-twitterarchiver]: http://github.com/deepakjois/hs-twitterarchiver/tree/master
 
 ### Patches to yst
-[yst] is the static web page creator that powers this site. I contributed some
+[yst] is the static web page creator that used to power this site. I contributed some
 patches to it ([1][patch1],[2][patch2],[3][patch3]).
 
 [yst]: http://github.com/jgm/yst/
