@@ -14,13 +14,13 @@ main = hakyllWith config $ do
 
   -- Matches css files in static folder
   match "static/css/**" $ do
-      route stripTopDir
-      compile compressCssCompiler
+    route stripTopDir
+    compile compressCssCompiler
 
   -- Matches all files in static folder, except CSS files
   match (predicate (\i -> matches "static/**" i && not (matches "static/css/**" i))) $ do
-        route stripTopDir
-        compile copyFileCompiler
+    route stripTopDir
+    compile copyFileCompiler
 
   -- Includes common to different kinds of pages
   match "includes/*" $ compile readPageCompiler
@@ -42,7 +42,8 @@ main = hakyllWith config $ do
     compile $ defaultCompiler "templates/inner.html"
 
   -- Books
-  forM_ bookPages $ \b -> match (parseGlob b) $ do
+  forM_ bookPages $ \b ->
+    match (parseGlob b) $ do
       route defaultHtml
       compile $ bookPageCompiler (parseIdentifier $ jsonFile b)
         where jsonFile page = "data/" ++
@@ -101,5 +102,5 @@ renderLayout template = setFieldPage "analytics" "includes/analytics.html" >>>
 -- *****************
 
 config = defaultHakyllConfiguration {
-      deployCommand = "s3cmd sync  -r _site/*  s3://www.deepak.jois.name"
-}
+           deployCommand = "s3cmd sync  -r _site/*  s3://www.deepak.jois.name"
+         }

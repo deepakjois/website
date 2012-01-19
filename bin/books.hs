@@ -25,15 +25,15 @@ instance Monoid Bool where
     mempty   = False
     mappend  = (&&)
 
--- | Book type
+-- Book type
 --
 data Book = Book
-    { title    :: String  -- ^ Title
-    , link     :: String  -- ^ Link to book (Usually Amazon)
-    , author   :: String  -- ^ Author(s)
-    , category :: String  -- ^ Category (e.g. non-fiction-other, fiction-indian etc.)
-    , readable :: Bool    -- ^ Is the book any good?
-    , date     :: String  -- ^ Date read
+    { title    :: String  -- Title
+    , link     :: String  -- Link to book (Usually Amazon)
+    , author   :: String  -- Author(s)
+    , category :: String  -- Category (e.g. non-fiction-other, fiction-indian etc.)
+    , readable :: Bool    -- Is the book any good?
+    , date     :: String  -- Date read
     } deriving Show
 
 instance JSON Book where
@@ -59,7 +59,7 @@ instance JSON Book where
               d <- lookupP "date"
               return $ Book t l a c r d
 
--- | Convert a string representation of a JSON array to an list of 'Book's
+-- Convert a string representation of a JSON array to an list of 'Book's
 books :: String -> [Book]
 books json = rights
            $ Prelude.map (resultToEither . readJSON)
@@ -68,10 +68,10 @@ books json = rights
                      Right (JSArray xs) -> xs
                      _                  -> []
 
--- | Month extracted from date
+-- Month extracted from date
 month  = (take 2 . drop 5) . date
 
--- | Convert a month number to its name
+-- Convert a month number to its name
 --   FIXME is there a better way?
 monthName = ([""
              ,"January"
@@ -87,7 +87,7 @@ monthName = ([""
              ,"November"
              ,"December"] !!)
 
--- | Convert a single book to an @li@ element
+-- Convert a single book to an @li@ element
 bookLiElem book = li ! dataAttribute "category" (fromString c) $ do
                      booklink
                      starIfReadable
@@ -96,22 +96,22 @@ bookLiElem book = li ! dataAttribute "category" (fromString c) $ do
                     booklink         = H.a ! href (fromString l) $ toHtml (t ++ " by " ++ a)
                     starIfReadable   = if r then em ! class_ "impt" $ "*" else ""
 
--- | Convert a list of books to a @ul@ element
+-- Convert a list of books to a @ul@ element
 booksHtmlList books = ul $ mapM_ bookLiElem books
 
--- | Convert a list of books to HTML with a month header and list
+-- Convert a list of books to HTML with a month header and list
 booksMonthlyHtml books = do h2 ! A.id (fromString $ L.map toLower m) $ toHtml m
                             booksHtmlList books
                         where m = monthName $ (read . month) $ L.head books
 
--- | Convert a list of books grouped by month to HTML
+-- Convert a list of books grouped by month to HTML
 booksYearlyHtml = mapM_ booksMonthlyHtml
 
--- | Group a list of books by the month they were read in
+-- Group a list of books by the month they were read in
 booksGroupedByMonth = groupBy sameMonth where
                          sameMonth a b = month a == month b
 
--- | Render a JSON string representing a list of books to HTML
+-- Render a JSON string representing a list of books to HTML
 booksJsonToHtml = (booksYearlyHtml . booksGroupedByMonth) . books
 
 printBooks = do
