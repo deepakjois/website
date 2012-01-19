@@ -11,24 +11,25 @@ import Books (booksJsonToHtml)
 
 main :: IO ()
 main = hakyllWith config $ do
-  -- CSS files
-  match cssFiles $ do
+
+  -- Matches css files in static folder
+  match "static/css/**" $ do
       route stripTopDir
       compile compressCssCompiler
 
-  -- Static files, except CSS
-  match staticFilesExceptCss $ do
-      route stripTopDir
-      compile copyFileCompiler
+  -- Matches all files in static folder, except CSS files
+  match (predicate (\i -> matches "static/**" i && not (matches "static/css/**" i))) $ do
+        route stripTopDir
+        compile copyFileCompiler
 
-  -- Include files
-  match includes $ compile readPageCompiler
+  -- Includes common to different kinds of pages
+  match "includes/*" $ compile readPageCompiler
 
-  -- Template files
-  match templates $ compile templateCompiler
+  -- Templates for home and inner pages
+  match "templates/*" $ compile templateCompiler
 
-  -- Data files
-  match jsonData $ compile readPageCompiler
+  -- Data in JSON format
+  match "data/*.json" $ compile readPageCompiler
 
   -- Home page
   match "source/index.markdown" $ do
@@ -53,25 +54,10 @@ main = hakyllWith config $ do
 -- Files
 -- *****************
 
--- | Matches css files in static folder
-cssFiles = "static/css/**"
-
--- | Matches all files in static folder, except CSS files
-staticFilesExceptCss = predicate (\i -> matches "static/**" i && not (matches "static/css/**" i))
-
--- | Includes common to different kinds of pages
-includes = "includes/**"
-
--- | Templates for home and inner pages
-templates = "templates/**"
-
--- | Data in JSON format
-jsonData = "data/*.json"
-
--- | Inner pages
+-- Inner pages
 innerPages = list ["source/code.markdown", "source/books/old_2006-2009.html"]
 
--- | Pages containing list of books
+-- Pages containing list of books
 bookPages = ["source/books.markdown","source/books/2011.markdown", "source/books/2010.markdown"]
 
 
