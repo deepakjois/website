@@ -65,10 +65,10 @@ bookPages = ["source/books.markdown","source/books/2011.markdown", "source/books
 -- Routes
 -- *****************
 
--- | Custom route to drop the topmost dir from the identifier
+-- Custom route to drop the topmost dir from the identifier
 stripTopDir = customRoute $ joinPath . tail . splitPath . toFilePath
 
--- | Combination of dropping the topmost dir and adding the HTML extension
+-- Combination of dropping the topmost dir and adding the HTML extension
 defaultHtml = stripTopDir `composeRoutes` setExtension "html"
 
 
@@ -76,21 +76,21 @@ defaultHtml = stripTopDir `composeRoutes` setExtension "html"
 -- Compilers
 -- *****************
 
--- | Default compiler for all pages
+-- Default compiler for all pages
 defaultCompiler template = pageCompiler >>>
                            renderLayout template
 
--- | Compiler for pages containing book list
+-- Compiler for pages containing book list
 bookPageCompiler json = pageCompiler >>>
                         renderBookPage json >>>
                         renderLayout "templates/inner.html"
 
--- | Render a list of books
+-- Render a list of books
 renderBookPage json = setFieldPage "books" json >>>
                       arr (changeField "books" $ renderHtml . booksJsonToHtml) >>>
                       applyTemplateCompiler "templates/books.html"
 
--- | Render a standard layout containing some includes
+-- Render a standard layout containing some includes
 renderLayout template = setFieldPage "analytics" "includes/analytics.html" >>>
                         setFieldPage "nav" "includes/nav.html" >>>
                         applyTemplateCompiler template
