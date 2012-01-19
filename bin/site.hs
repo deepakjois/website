@@ -82,13 +82,13 @@ defaultCompiler template = pageCompiler >>>
 
 -- | Compiler for pages containing book list
 bookPageCompiler json = pageCompiler >>>
-                        renderBook json >>>
+                        renderBookPage json >>>
                         renderLayout "templates/inner.html"
 
 -- | Render a list of books
-renderBook json = setFieldPage "books" json >>>
-                  arr (changeField "books" $ renderHtml . booksJsonToHtml) >>>
-                  applyTemplateCompiler "templates/books.html"
+renderBookPage json = setFieldPage "books" json >>>
+                      arr (changeField "books" $ renderHtml . booksJsonToHtml) >>>
+                      applyTemplateCompiler "templates/books.html"
 
 -- | Render a standard layout containing some includes
 renderLayout template = setFieldPage "analytics" "includes/analytics.html" >>>
