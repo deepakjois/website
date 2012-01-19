@@ -1,119 +1,114 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Books where
 
-import Data.Monoid
-import Data.Either
-import Data.String
-import Data.List
-import Data.Char
+import Data.Monoid (Monoid, mempty, mappend)
+import Data.Either (rights)
+import Data.String (fromString)
+import Data.List (groupBy)
+import Data.Char (toLower)
 
-import Text.JSON
-import Text.JSON.Types
-import Text.JSON.String
-import Text.JSON.Pretty
+import Text.JSON (JSON, readJSON, showJSON, makeObj, resultToEither)
+import Text.JSON.Types (JSValue(..), JSObject, fromJSObject)
+import Text.JSON.String (runGetJSON, readJSArray)
 
-import Text.Blaze.Html5
-import Text.Blaze.Html5.Attributes
-import Text.Blaze.Renderer.Pretty
-
+import Text.Blaze.Html5 ((!))
 import qualified Text.Blaze.Html5 as H
 import qualified Text.Blaze.Html5.Attributes as A
-
-import qualified Data.List as L
+import Text.Blaze.Renderer.Pretty (renderHtml)
 
 instance Monoid Bool where
-    mempty   = False
-    mappend  = (&&)
+  mempty   = False
+  mappend  = (&&)
 
 -- Book type
---
-data Book = Book
-    { title    :: String  -- Title
-    , link     :: String  -- Link to book (Usually Amazon)
-    , author   :: String  -- Author(s)
-    , category :: String  -- Category (e.g. non-fiction-other, fiction-indian etc.)
-    , readable :: Bool    -- Is the book any good?
-    , date     :: String  -- Date read
-    } deriving Show
+data Book = Book {
+  title    :: String,  -- Title
+  link     :: String,  -- Link to book (Usually Amazon)
+  author   :: String,  -- Author(s)
+  category :: String,  -- Category (e.g. non-fiction-other, fiction-indian etc.)
+  readable :: Bool,    -- Is the book any good?
+  date     :: String   -- Date read
+} deriving Show
 
 instance JSON Book where
-    showJSON (Book title link author category readable date) =
-        makeObj [ ("title",    showJSON title)
-                , ("link",     showJSON link)
-                , ("author",   showJSON author)
-                , ("category", showJSON category)
-                , ("readable", showJSON readable)
-                , ("date",     showJSON date)
-                ]
+  showJSON (Book title link author category readable date) =
+    makeObj [ ("title",    showJSON title)
+            , ("link",     showJSON link)
+            , ("author",   showJSON author)
+            , ("category", showJSON category)
+            , ("readable", showJSON readable)
+            , ("date",     showJSON date)
+            ]
 
-    readJSON (JSObject obj) =
-        let jsonObjAssoc = fromJSObject obj
-            lookupP key = case lookup key jsonObjAssoc of
-                              Just o  -> readJSON o
-                              Nothing -> return mempty
-        in do t <- lookupP "title"
-              l <- lookupP "link"
-              a <- lookupP "author"
-              c <- lookupP "category"
-              r <- lookupP "readable"
-              d <- lookupP "date"
-              return $ Book t l a c r d
+  readJSON (JSObject obj) =
+    let jsonObjAssoc = fromJSObject obj
+        lookupP key = case lookup key jsonObjAssoc of
+                        Just o  -> readJSON o
+                        Nothing -> return mempty
+    in do
+      t <- lookupP "title"
+      l <- lookupP "link"
+      a <- lookupP "author"
+      c <- lookupP "category"
+      r <- lookupP "readable"
+      d <- lookupP "date"
+      return $ Book t l a c r d
 
 -- Convert a string representation of a JSON array to an list of 'Book's
 books :: String -> [Book]
 books json = rights
-           $ Prelude.map (resultToEither . readJSON)
+           $ map (resultToEither . readJSON)
            $ objArray json where
-                 objArray json = case runGetJSON readJSArray json of
-                     Right (JSArray xs) -> xs
-                     _                  -> []
+               objArray json = case runGetJSON readJSArray json of
+                                 Right (JSArray xs) -> xs
+                                 _                  -> []
 
 -- Month extracted from date
 month  = (take 2 . drop 5) . date
 
 -- Convert a month number to its name
---   FIXME is there a better way?
-monthName = ([""
-             ,"January"
-             ,"February"
-             ,"March"
-             ,"April"
-             ,"May"
-             ,"June"
-             ,"July"
-             ,"August"
-             ,"September"
-             ,"October"
-             ,"November"
-             ,"December"] !!)
+-- FIXME is there a better way?
+monthName :: Int -> String
+monthName n = [ "January"
+              , "February"
+              , "March"
+              , "April"
+              , "May"
+              , "June"
+              , "July"
+              , "August"
+              , "September"
+              , "October"
+              , "November"
+              , "December"
+              ] !! (n-1)
 
--- Convert a single book to an @li@ element
-bookLiElem book = li ! dataAttribute "category" (fromString c) $ do
-                     booklink
-                     starIfReadable
-                where
+-- Convert a single book to an <li> element
+bookLiElem book = H.li ! H.dataAttribute "category" (fromString c) $ do
+                    booklink
+                    starIfReadable
+                  where
                     Book t l a c r _ = book
-                    booklink         = H.a ! href (fromString l) $ toHtml (t ++ " by " ++ a)
-                    starIfReadable   = if r then em ! class_ "impt" $ "*" else ""
+                    booklink         = H.a ! A.href (fromString l) $ H.toHtml (t ++ " by " ++ a)
+                    starIfReadable   = if r then H.em ! A.class_ "impt" $ "*" else ""
 
 -- Convert a list of books to a @ul@ element
-booksHtmlList books = ul $ mapM_ bookLiElem books
+booksHtmlList books = H.ul $ mapM_ bookLiElem books
 
 -- Convert a list of books to HTML with a month header and list
-booksMonthlyHtml books = do h2 ! A.id (fromString $ L.map toLower m) $ toHtml m
+booksMonthlyHtml books = do H.h2 ! A.id (fromString $ map toLower m) $ H.toHtml m
                             booksHtmlList books
-                        where m = monthName $ (read . month) $ L.head books
+                         where m = monthName $ (read . month) $ head books
 
 -- Convert a list of books grouped by month to HTML
 booksYearlyHtml = mapM_ booksMonthlyHtml
 
 -- Group a list of books by the month they were read in
-booksGroupedByMonth = groupBy sameMonth where
-                         sameMonth a b = month a == month b
+booksGroupedByMonth = groupBy sameMonth
+                        where sameMonth a b = month a == month b
 
 -- Render a JSON string representing a list of books to HTML
-booksJsonToHtml = (booksYearlyHtml . booksGroupedByMonth) . books
+booksJSONToHtml = (booksYearlyHtml . booksGroupedByMonth) . books
 
-printBooks = do
-     json <- readFile "data/books.json"
-     putStr $ renderHtml $ booksJsonToHtml json
+printBooks = do json <- readFile "data/books.json"
+                putStr $ renderHtml $ booksJSONToHtml json

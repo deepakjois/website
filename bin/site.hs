@@ -7,7 +7,7 @@ import Data.String (fromString)
 import Text.Blaze.Renderer.String (renderHtml)
 import Hakyll
 
-import Books (booksJsonToHtml)
+import Books (booksJSONToHtml)
 
 main :: IO ()
 main = hakyllWith config $ do
@@ -88,7 +88,7 @@ bookPageCompiler json = pageCompiler >>>
 
 -- Render a list of books
 renderBookPage json = setFieldPage "books" json >>>
-                      arr (changeField "books" $ renderHtml . booksJsonToHtml) >>>
+                      arr (changeField "books" $ renderHtml . booksJSONToHtml) >>>
                       applyTemplateCompiler "templates/books.html"
 
 -- Render a standard layout containing some includes
