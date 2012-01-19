@@ -1,9 +1,9 @@
-{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE OverloadedStrings, RankNTypes #-}
 import Control.Monad (forM_)
 import Control.Arrow (arr, (>>>))
 import System.FilePath (joinPath, splitPath)
 import Data.List.Split (splitOn)
-import Data.String (fromString)
+import Data.String()
 import Text.Blaze.Renderer.String (renderHtml)
 import Hakyll
 
@@ -56,9 +56,11 @@ main = hakyllWith config $ do
 -- *****************
 
 -- Inner pages
+innerPages :: forall a. Pattern a
 innerPages = list ["source/code.markdown", "source/books/old_2006-2009.html"]
 
 -- Pages containing list of books
+bookPages :: [String]
 bookPages = ["source/books.markdown","source/books/2011.markdown", "source/books/2010.markdown"]
 
 
@@ -67,9 +69,11 @@ bookPages = ["source/books.markdown","source/books/2011.markdown", "source/books
 -- *****************
 
 -- Custom route to drop the topmost dir from the identifier
+stripTopDir :: Routes
 stripTopDir = customRoute $ joinPath . tail . splitPath . toFilePath
 
 -- Combination of dropping the topmost dir and adding the HTML extension
+defaultHtml :: Routes
 defaultHtml = stripTopDir `composeRoutes` setExtension "html"
 
 
@@ -78,20 +82,28 @@ defaultHtml = stripTopDir `composeRoutes` setExtension "html"
 -- *****************
 
 -- Default compiler for all pages
+defaultCompiler :: Identifier Template
+                -> Compiler Resource (Page String)
 defaultCompiler template = pageCompiler >>>
                            renderLayout template
 
 -- Compiler for pages containing book list
+bookPageCompiler :: Identifier (Page String)
+                 -> Compiler Resource (Page String)
 bookPageCompiler json = pageCompiler >>>
                         renderBookPage json >>>
                         renderLayout "templates/inner.html"
 
 -- Render a list of books
+renderBookPage :: Identifier (Page String)
+               -> Compiler (Page String) (Page String)
 renderBookPage json = setFieldPage "books" json >>>
                       arr (changeField "books" $ renderHtml . booksJSONToHtml) >>>
                       applyTemplateCompiler "templates/books.html"
 
 -- Render a standard layout containing some includes
+renderLayout :: Identifier Template
+             -> Compiler (Page String) (Page String)
 renderLayout template = setFieldPage "analytics" "includes/analytics.html" >>>
                         setFieldPage "nav" "includes/nav.html" >>>
                         applyTemplateCompiler template
@@ -101,6 +113,7 @@ renderLayout template = setFieldPage "analytics" "includes/analytics.html" >>>
 -- Configuration
 -- *****************
 
+config :: HakyllConfiguration
 config = defaultHakyllConfiguration {
            deployCommand = "s3cmd sync  -r _site/*  s3://www.deepak.jois.name"
          }

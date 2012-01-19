@@ -34,13 +34,13 @@ data Book = Book {
 } deriving Show
 
 instance JSON Book where
-  showJSON (Book title link author category readable date) =
-    makeObj [ ("title",    showJSON title)
-            , ("link",     showJSON link)
-            , ("author",   showJSON author)
-            , ("category", showJSON category)
-            , ("readable", showJSON readable)
-            , ("date",     showJSON date)
+  showJSON (Book t l a c r d) =
+    makeObj [ ("title",    showJSON t)
+            , ("link",     showJSON l)
+            , ("author",   showJSON a)
+            , ("category", showJSON c)
+            , ("readable", showJSON r)
+            , ("date",     showJSON d)
             ]
 
   readJSON (JSObject obj) =
@@ -57,16 +57,18 @@ instance JSON Book where
       d <- lookupP "date"
       return $ Book t l a c r d
 
+  readJSON _ = undefined
 -- Convert a string representation of a JSON array to an list of 'Book's
 books :: String -> [Book]
 books json = rights
            $ map (resultToEither . readJSON)
-           $ objArray json where
-               objArray json = case runGetJSON readJSArray json of
-                                 Right (JSArray xs) -> xs
-                                 _                  -> []
+           $ objArray where
+               objArray = case runGetJSON readJSArray json of
+                            Right (JSArray xs) -> xs
+                            _                  -> []
 
 -- Month extracted from date
+month :: Book -> String
 month  = (take 2 . drop 5) . date
 
 -- Convert a month number to its name
@@ -87,6 +89,7 @@ monthName n = [ "January"
               ] !! (n-1)
 
 -- Convert a single book to an <li> element
+bookLiElem :: Book -> H.Html
 bookLiElem book = H.li ! H.dataAttribute "category" (fromString c) $ do
                     booklink
                     starIfReadable
@@ -96,22 +99,29 @@ bookLiElem book = H.li ! H.dataAttribute "category" (fromString c) $ do
                     starIfReadable   = if r then H.em ! A.class_ "impt" $ "*" else ""
 
 -- Convert a list of books to a @ul@ element
-booksHtmlList books = H.ul $ mapM_ bookLiElem books
+booksHtmlList :: [Book] -> H.Html
+booksHtmlList b = H.ul $ mapM_ bookLiElem b
 
 -- Convert a list of books to HTML with a month header and list
-booksMonthlyHtml books = do H.h2 ! A.id (fromString $ map toLower m) $ H.toHtml m
-                            booksHtmlList books
-                         where m = monthName $ (read . month) $ head books
+booksMonthlyHtml :: [Book] -> H.Html
+booksMonthlyHtml b = do H.h2 ! A.id (fromString $ map toLower m) $ H.toHtml m
+                        booksHtmlList b
+                     where m = monthName $ (read . month) $ head b
 
 -- Convert a list of books grouped by month to HTML
+booksYearlyHtml :: [[Book]] -> H.Html
 booksYearlyHtml = mapM_ booksMonthlyHtml
 
 -- Group a list of books by the month they were read in
+booksGroupedByMonth :: [Book] -> [[Book]]
 booksGroupedByMonth = groupBy sameMonth
                         where sameMonth a b = month a == month b
 
 -- Render a JSON string representing a list of books to HTML
+booksJSONToHtml :: String -> H.Html
 booksJSONToHtml = (booksYearlyHtml . booksGroupedByMonth) . books
 
+-- Test method
+printBooks :: IO ()
 printBooks = do json <- readFile "data/books.json"
                 putStr $ renderHtml $ booksJSONToHtml json

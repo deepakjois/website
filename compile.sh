@@ -1,4 +1,4 @@
 #!/bin/sh
-ghc -ibin --make bin/site.hs 
+ghc -Wall -fno-warn-orphans -fno-warn-unused-do-bind -ibin --make bin/site.hs
 
 
