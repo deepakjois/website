@@ -7,7 +7,8 @@ pagetitle: Code
 [Dhun] is a minimalist, commandline music player for OS X. I wrote this while
 reading some chapters of the brilliant book [OS X Internals][osxinternals].
 Dhun uses a C interface to OS X libraries to handle audio playback and Spotlight
-querying on OS X. The rest of the code is written in Ruby.
+querying on OS X. The rest of the code is written in Ruby. _This project is currently
+unmaintained_.
 
 [Dhun]: http://github.com/deepakjois/dhun
 [osxinternals]: http://www.amazon.com/Mac-OS-Internals-Systems-Approach/dp/0321278542
@@ -40,6 +41,16 @@ inspired by another Ruby based graphing library called [Gruff][gruff]. _This pro
 [gruff]: http://nubyonrails.com/pages/gruff
 
 ## Bits of Code
+
+### Hakyll website
+This site runs on [Hakyll]. Apart from using the standard Hakyll functions, I
+also [wrote some code][hakyllsource] to read a list of books from a JSON file and
+render it to HTML using [blaze-html] combinators.
+
+[Hakyll]: http://jaspervdj.be/hakyll/
+[hakyllsource]: https://github.com/deepakjois/website/tree/master/bin
+[blaze-html]: https://github.com/jaspervdj/blaze-html
+
 ### Kindler
 [kindler] is a tool to generate nice .mobi files (readable on a [Kindle]) from
 webpages. It is a quick hack written in Ruby, with a Javascript bookmarklet for
