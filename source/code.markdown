@@ -3,6 +3,12 @@ pagetitle: Code
 ---
 ## Software
 
+### hs-logo
+[hs-logo] is a [Logo] interpreter written in Haskell.
+
+[hs-logo]: https://github.com/deepakjois/hs-logo
+[Logo]: http://www.cs.berkeley.edu/~bh/logo.html
+
 ### Dhun
 [Dhun] is a minimalist, commandline music player for OS X. I wrote this while
 reading some chapters of the brilliant book [OS X Internals][osxinternals].

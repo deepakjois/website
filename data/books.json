@@ -1,10 +1,25 @@
 [
   {
-      "title": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
-      "link": "http://www.amazon.com/Moonwalking-Einstein-Science-Remembering-Everything/dp/159420229X",
-      "author": "Joshua Foer",
-      "category": "non-fiction-other",
-      "readable": true,
-      "date": "2012-01-01"
+    "title"    : "Moonwalking with Einstein: The Art and Science of Remembering Everything",
+    "link"     : "http://www.amazon.com/Moonwalking-Einstein-Science-Remembering-Everything/dp/159420229X",
+    "author"   : "Joshua Foer",
+    "category" : "non-fiction-other",
+    "readable" : true,
+    "date"     : "2012-01-01"
+  },
+  {
+    "title"    : "Making it Big in Software: Get the Job. Work the Org. Become Great.",
+    "link"     : "http://www.amazon.com/Making-Big-Software-Become-Great/dp/0137059671",
+    "author"   : "Sam Lightstone",
+    "category" : "non-fiction-tech",
+    "date"     : "2012-02-01"
+  },
+  {
+    "title"    : "Kestrels, Quirky Birds, and Hopeless Egocentricity",
+    "link"     : "http://leanpub.com/combinators",
+    "author"   : "Reginald Braithwaite",
+    "category" : "non-fiction-tech",
+    "readable" : true,
+    "date"     : "2012-02-01"
   }
 ]
