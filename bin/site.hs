@@ -35,8 +35,13 @@ main = hakyllWith config $ do
   match "source/index.markdown" $ do
     route defaultHtml
     compile $ defaultCompiler "templates/home.html"
+	
+  -- Inner HTML pages
+  match "source/books/old_2006-2009.html" $ do
+	  route defaultHtml
+	  compile $ defaultHtmlCompiler "templates/inner.html"
 
-  -- Inner pages
+  -- Inner markdown pages
   match innerPages $ do
     route defaultHtml
     compile $ defaultCompiler "templates/inner.html"
@@ -57,7 +62,7 @@ main = hakyllWith config $ do
 
 -- Inner pages
 innerPages :: forall a. Pattern a
-innerPages = list ["source/code.markdown", "source/books/old_2006-2009.html"]
+innerPages = list ["source/code.markdown"]
 
 -- Pages containing list of books
 bookPages :: [String]
@@ -81,7 +86,13 @@ defaultHtml = stripTopDir `composeRoutes` setExtension "html"
 -- Compilers
 -- *****************
 
--- Default compiler for all pages
+-- Default compiler for HTML pages
+defaultHtmlCompiler :: Identifier Template
+                    -> Compiler Resource (Page String)
+defaultHtmlCompiler template = readPageCompiler >>>
+                               renderLayout template
+
+-- Default compiler for markdown pages
 defaultCompiler :: Identifier Template
                 -> Compiler Resource (Page String)
 defaultCompiler template = pageCompiler >>>
