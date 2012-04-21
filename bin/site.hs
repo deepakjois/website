@@ -35,11 +35,11 @@ main = hakyllWith config $ do
   match "source/index.markdown" $ do
     route defaultHtml
     compile $ defaultCompiler "templates/home.html"
-	
+
   -- Inner HTML pages
   match "source/books/old_2006-2009.html" $ do
-	  route defaultHtml
-	  compile $ defaultHtmlCompiler "templates/inner.html"
+          route defaultHtml
+          compile $ defaultHtmlCompiler "templates/inner.html"
 
   -- Inner markdown pages
   match innerPages $ do
