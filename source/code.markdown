@@ -3,11 +3,25 @@ pagetitle: Code
 ---
 ## Software
 
-### hs-logo
+### hs-logo and related projects
 [hs-logo] is a [Logo] interpreter written in Haskell.
 
 [hs-logo]: https://github.com/deepakjois/hs-logo
 [Logo]: http://www.cs.berkeley.edu/~bh/logo.html
+
+Developing in _hs-logo_ resulted in contributions to other projects as well,
+that are more generally useful.
+
+* [diagrams-svg]: an SVG backed for [diagrams], the library used to render
+  drawing primitives for hs-logo.
+* [blaze-svg]: a fast combinator library to generate SVG documents.
+* [blaze-markup]: a library extracted out of [blaze-html] to provide a general
+  markup generation library.
+
+[diagrams-svg]: https://github.com/deepakjois/diagrams-svg
+[diagrams]: http://projects.haskell.org/diagrams
+[blaze-svg]: https://github.com/deepakjois/blaze-svg
+[blaze-markup]: https://github.com/jaspervdj/blaze-markup
 
 ### Dhun
 [Dhun] is a minimalist, commandline music player for OS X. I wrote this while
