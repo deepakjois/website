@@ -29,5 +29,21 @@
     "category" : "non-fiction-tech",
     "readable" : true,
     "date"     : "2012-04-01"
+  },
+  {
+    "title"    : "Hagakure: The Book of the Samurai",
+    "link"     : "http://www.amazon.com/Hagakure-The-Book-Samurai-ebook/dp/B007V3FKOU",
+    "author"   : "Yamamoto Tsunetomo",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-05-01"
+  },
+  {
+    "title"    : "How to Live: Or A Life of Montaigne in One Question and Twenty Attempts at an Answer",
+    "link"     : "http://www.amazon.com/How-Live-Montaigne-Question-ebook/dp/B003E8AK4Q",
+    "author"   : "Sarah Bakewell",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-06-01"
   }
 ]
