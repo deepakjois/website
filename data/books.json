@@ -45,5 +45,13 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2012-06-01"
+  },
+  {
+    "title"    : "The Drowned Cities",
+    "link"     : "http://www.amazon.com/The-Drowned-Cities-ebook/dp/B005SCR2ZG",
+    "author"   : "Paolo Bacigalupi",
+    "category" : "fiction-science",
+    "readable" : true,
+    "date"     : "2012-06-01"
   }
 ]
