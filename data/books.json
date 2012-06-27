@@ -53,5 +53,21 @@
     "category" : "fiction-science",
     "readable" : true,
     "date"     : "2012-06-01"
+  },
+  {
+    "title"    : "The Edge of Desire",
+    "link"     : "http://www.flipkart.com/edge-desire-9350094436/p/9789350094433?pid=9789350094433&ref=9882236c-a42e-46e0-8f11-329a3cd642a3",
+    "author"   : "Tuhin Sinha",
+    "category" : "fiction-indian",
+    "readable" : true,
+    "date"     : "2012-06-01"
+  },
+  {
+    "title"    : "A Free Man",
+    "link"     : "http://www.flipkart.com/free-man-8184001533/p/itmdyuscrpqwkdsn?pid=9788184001532&ref=ca817ff6-ecce-4efa-b4ae-e71da5c1d6b2",
+    "author"   : "Aman Sethi",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-06-01"
   }
 ]
