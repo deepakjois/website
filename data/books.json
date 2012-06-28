@@ -69,5 +69,12 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2012-06-01"
+  },
+  {
+    "title"    : "Nothing is Blue",
+    "link"     : "http://www.flipkart.com/nothing-blue-8172237251/p/itmdyu4cuazcg22d?pid=9788172237257&ref=cb6725f6-c848-480a-8e68-ea36560c7e96",
+    "author"   : "Biman Nath",
+    "category" : "fiction-indian",
+    "date"     : "2012-06-01"
   }
 ]
