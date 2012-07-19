@@ -76,5 +76,13 @@
     "author"   : "Biman Nath",
     "category" : "fiction-indian",
     "date"     : "2012-06-01"
+  },
+  {
+    "title"    : "On Writing Well",
+    "link"     : "http://www.amazon.com/Writing-Well-Classic-Guide-Nonfiction/dp/141775057X",
+    "author"   : "William Zinsser",
+    "category" : "non-fiction-other",
+    "readable" : true,
+    "date"     : "2012-07-01"
   }
 ]
