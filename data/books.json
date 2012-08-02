@@ -84,5 +84,13 @@
     "category" : "non-fiction-other",
     "readable" : true,
     "date"     : "2012-07-01"
+  },
+  {
+    "title"    : "The Difficulty of being Good: On the Subtle Art of Dharma",
+    "link"     : "http://www.amazon.com/The-Difficulty-being-Good-Subtle/dp/0670083496",
+    "author"   : "Gurcharan Das",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-08-01"
   }
 ]
