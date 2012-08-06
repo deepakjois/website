@@ -92,5 +92,13 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2012-08-01"
+  },
+  {
+    "title"    : "Indian Journals",
+    "link"     : "http://www.amazon.com/Indian-Journals-Allen-Ginsberg/dp/0802134750",
+    "author"   : "Allen Ginsberg",
+    "category" : "non-fiction-other",
+    "readable" : true,
+    "date"     : "2012-08-01"
   }
 ]
