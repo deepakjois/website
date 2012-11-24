@@ -100,5 +100,58 @@
     "category" : "non-fiction-other",
     "readable" : true,
     "date"     : "2012-08-01"
-  }
+   },
+   {
+    "title"    : "The Expats",
+    "link"     : "http://www.amazon.com/The-Expats-ebook/dp/B0076794IO",
+    "author"   : "Chris Pavone",
+    "category" : "fiction-other",
+    "date"     : "2012-08-01"
+   },
+   {
+    "title"    : "Why We Love Sociopaths: A Guide To Late Capitalist Television",
+    "link"     : "http://www.amazon.com/Why-Love-Sociopaths-Capitalist-ebook/dp/B007Y5BFSK",
+    "author"   : "Adam Kotsko",
+    "category" : "non-fiction-culture",
+    "date"     : "2012-08-01"
+   },
+   {
+    "title"    : "Zen and the Art of Motorcycle Maintenance",
+    "link"     : "http://www.amazon.com/Zen-Art-Motorcycle-Maintenance-ebook/dp/B0026772N8",
+    "author"   : "Robert M. Pirsig",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-09-01"
+   },
+   {
+    "title"    : "On the Road",
+    "link"     : "http://www.amazon.com/On-the-Road-ebook/dp/B002IPZFYQ",
+    "author"   : "Jack Kerouac",
+    "category" : "fiction-other",
+    "date"     : "2012-09-01"
+   },
+   {
+    "title"    : "Butter Chicken in Ludhiana: Travels in Small Town India",
+    "link"     : "http://www.amazon.com/Butter-Chicken-Ludhiana-Travels-Small/dp/0330444123",
+    "author"   : "Pankaj Mishra",
+    "category" : "fiction-indian",
+    "readable" : true,
+    "date"     : "2012-09-01"
+   },
+   {
+    "title"    : "How Much Should a Person Consume?: Environmentalism in India and the United States",
+    "link"     : "http://www.amazon.com/Much-Should-Person-Consume-Environmentalism/dp/0520248058",
+    "author"   : "Ramachandra Guha",
+    "category" : "non-fiction-other",
+    "readable" : true,
+    "date"     : "2012-10-01"
+   },
+   {
+    "title"    : "Celebrating the Best of Urdu Poetry",
+    "link"     : "http://www.amazon.com/Celebrating-Best-Poetry-Khushwant-Singh/dp/0143417517",
+    "author"   : "Khushwant Singh and Kamna Prasad",
+    "category" : "fiction-indian",
+    "readable" : true,
+    "date"     : "2012-10-01"
+   }   
 ]
