@@ -1,0 +1,22 @@
+Name:                deepakjois-website
+Version:             0.0.1
+Synopsis:            Deepak Jois' Webpage
+Homepage:            http://deepak.jois.name
+License:             BSD3
+Author:              Deepak Jois <deepak.jois@gmail.com>
+Maintainer:          Deepak Jois <deepak.jois@gmail.com>
+Build-type:          Simple
+Cabal-version:       >=1.8
+Description:        Deepak Jois' Webpage
+
+Source-repository head
+  type:     git
+  location: http://github.com/deepakjois/website
+
+Executable site
+  Hs-source-dirs:      src
+  Main-is:             Site.hs
+  Build-depends:       base          > 4 && < 5
+                     , hakyll
+                     , blaze-markup, blaze-html, json, split, filepath
+  Ghc-options:         -Wall -fno-warn-orphans -fno-warn-unused-do-bind

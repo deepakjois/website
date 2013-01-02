@@ -1,4 +1,7 @@
 #!/bin/sh
-ghc -Wall -fno-warn-orphans -fno-warn-unused-do-bind -ibin --make bin/site.hs
+set -e
+cabal-dev --sandbox ../cabal-dev clean
+cabal-dev --sandbox ../cabal-dev configure
+cabal-dev --sandbox ../cabal-dev build
 
 
