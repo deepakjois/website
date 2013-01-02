@@ -4,7 +4,7 @@ import Control.Arrow (arr, (>>>))
 import System.FilePath (joinPath, splitPath)
 import Data.List.Split (splitOn)
 import Data.String()
-import Text.Blaze.Renderer.String (renderHtml)
+import Text.Blaze.Html.Renderer.String (renderHtml)
 import Hakyll
 
 import Books (booksJSONToHtml)

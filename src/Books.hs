@@ -14,7 +14,7 @@ import Text.JSON.String (runGetJSON, readJSArray)
 import Text.Blaze.Html5 ((!))
 import qualified Text.Blaze.Html5 as H
 import qualified Text.Blaze.Html5.Attributes as A
-import Text.Blaze.Renderer.Pretty (renderHtml)
+import Text.Blaze.Html.Renderer.Pretty (renderHtml)
 
 -- 'readable' property in JSON is optional,
 -- so Bool needs to be a monoid to allow
