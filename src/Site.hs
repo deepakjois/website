@@ -1,8 +1,7 @@
 {-# LANGUAGE OverloadedStrings, RankNTypes #-}
-import Control.Monad (forM_)
-import Control.Arrow (arr, (>>>))
 import System.FilePath (joinPath, splitPath)
 import Data.List.Split (splitOn)
+import Data.Monoid (mappend)
 import Data.String()
 import Text.Blaze.Html.Renderer.String (renderHtml)
 import Hakyll
@@ -18,42 +17,41 @@ main = hakyllWith config $ do
     compile compressCssCompiler
 
   -- Matches all files in static folder, except CSS files
-  match (predicate (\i -> matches "static/**" i && not (matches "static/css/**" i))) $ do
+  match ("static/**" .&&. complement "static/css/**") $ do
     route stripTopDir
     compile copyFileCompiler
 
   -- Includes common to different kinds of pages
-  match "includes/*" $ compile readPageCompiler
+  match "includes/*" $ compile getResourceBody
 
   -- Templates for home and inner pages
   match "templates/*" $ compile templateCompiler
 
   -- Data in JSON format
-  match "data/*.json" $ compile readPageCompiler
+  match "data/*.json" $ compile getResourceBody
 
   -- Home page
   match "source/index.markdown" $ do
     route defaultHtml
-    compile $ defaultCompiler "templates/home.html"
+    compile $ pandocCompiler >>= loadAndApplyTemplate "templates/home.html" pageCtx
 
   -- Inner HTML pages
   match "source/books/old_2006-2009.html" $ do
-          route defaultHtml
-          compile $ defaultHtmlCompiler "templates/inner.html"
+    route defaultHtml
+    compile $ getResourceBody >>= loadAndApplyTemplate "templates/inner.html" pageCtx
 
   -- Inner markdown pages
   match innerPages $ do
     route defaultHtml
-    compile $ defaultCompiler "templates/inner.html"
-
+    compile $ pandocCompiler >>= loadAndApplyTemplate "templates/inner.html" pageCtx
+  
   -- Books
-  forM_ bookPages $ \b ->
-    match (parseGlob b) $ do
-      route defaultHtml
-      compile $ bookPageCompiler (parseIdentifier $ jsonFile b)
-        where jsonFile page = "data/" ++
-                              (takeWhile (/= '.') . last . splitOn "/") page ++
-                              ".json"
+  match bookPages $ do
+    route defaultHtml
+    compile $
+      pandocCompiler >>=
+      loadAndApplyTemplate "templates/books.html" booksPageCtx >>=
+      loadAndApplyTemplate "templates/inner.html" pageCtx
 
 
 -- *****************
@@ -61,12 +59,12 @@ main = hakyllWith config $ do
 -- *****************
 
 -- Inner pages
-innerPages :: forall a. Pattern a
-innerPages = list ["source/code.markdown"]
+innerPages :: Pattern
+innerPages = fromList ["source/code.markdown"]
 
 -- Pages containing list of books
-bookPages :: [String]
-bookPages = ["source/books.markdown","source/books/2011.markdown", "source/books/2010.markdown"]
+bookPages :: Pattern
+bookPages = fromList ["source/books.markdown","source/books/2011.markdown", "source/books/2010.markdown"]
 
 
 -- *****************
@@ -83,48 +81,30 @@ defaultHtml = stripTopDir `composeRoutes` setExtension "html"
 
 
 -- *****************
--- Compilers
+-- Contexts
 -- *****************
 
--- Default compiler for HTML pages
-defaultHtmlCompiler :: Identifier Template
-                    -> Compiler Resource (Page String)
-defaultHtmlCompiler template = readPageCompiler >>>
-                               renderLayout template
+-- Standard page context which pulls in some common layout elements
+pageCtx :: Context String
+pageCtx = field "nav"       (\_ -> loadBody "includes/nav.html")       `mappend`
+          field "analytics" (\_ -> loadBody "includes/analytics.html") `mappend`
+          defaultContext
 
--- Default compiler for markdown pages
-defaultCompiler :: Identifier Template
-                -> Compiler Resource (Page String)
-defaultCompiler template = pageCompiler >>>
-                           renderLayout template
-
--- Compiler for pages containing book list
-bookPageCompiler :: Identifier (Page String)
-                 -> Compiler Resource (Page String)
-bookPageCompiler json = pageCompiler >>>
-                        renderBookPage json >>>
-                        renderLayout "templates/inner.html"
-
--- Render a list of books
-renderBookPage :: Identifier (Page String)
-               -> Compiler (Page String) (Page String)
-renderBookPage json = setFieldPage "books" json >>>
-                      arr (changeField "books" $ renderHtml . booksJSONToHtml) >>>
-                      applyTemplateCompiler "templates/books.html"
-
--- Render a standard layout containing some includes
-renderLayout :: Identifier Template
-             -> Compiler (Page String) (Page String)
-renderLayout template = setFieldPage "analytics" "includes/analytics.html" >>>
-                        setFieldPage "nav" "includes/nav.html" >>>
-                        applyTemplateCompiler template
-
-
+booksPageCtx :: Context String
+booksPageCtx = field "books" getBooks `mappend` defaultContext
+ where
+  jsonFile :: String -> String 
+  jsonFile pageFilePath = "data/" ++ (takeWhile (/= '.') . last . splitOn "/") pageFilePath ++ ".json" 
+  getBooks item = do
+    let jsonId  = fromFilePath . jsonFile . toFilePath . itemIdentifier $ item
+    jsonBody <- loadBody jsonId
+    return . renderHtml . booksJSONToHtml $ jsonBody
+  
 -- *****************
 -- Configuration
 -- *****************
 
-config :: HakyllConfiguration
-config = defaultHakyllConfiguration {
+config :: Configuration
+config = defaultConfiguration {
            deployCommand = "s3cmd sync  -r _site/*  s3://www.deepak.jois.name"
          }
