@@ -61,8 +61,7 @@ instance JSON Book where
 -- Convert a string representation of a JSON array to an list of 'Book's
 books :: String -> [Book]
 books json = rights
-           $ map (resultToEither . readJSON)
-           $ objArray where
+           $ map (resultToEither . readJSON) objArray where
                objArray = case runGetJSON readJSArray json of
                             Right (JSArray xs) -> xs
                             _                  -> []
