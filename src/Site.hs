@@ -44,7 +44,7 @@ main = hakyllWith config $ do
   match innerPages $ do
     route defaultHtml
     compile $ pandocCompiler >>= loadAndApplyTemplate "templates/inner.html" pageCtx
-  
+
   -- Books
   match bookPages $ do
     route defaultHtml
@@ -64,7 +64,7 @@ innerPages = fromList ["source/code.markdown"]
 
 -- Pages containing list of books
 bookPages :: Pattern
-bookPages = fromList ["source/books.markdown","source/books/2011.markdown", "source/books/2010.markdown"]
+bookPages = fromList ["source/books.markdown","source/books/2012.markdown","source/books/2011.markdown", "source/books/2010.markdown"]
 
 
 -- *****************
@@ -93,13 +93,13 @@ pageCtx = field "nav"       (\_ -> loadBody "includes/nav.html")       `mappend`
 booksPageCtx :: Context String
 booksPageCtx = field "books" getBooks `mappend` defaultContext
  where
-  jsonFile :: String -> String 
-  jsonFile pageFilePath = "data/" ++ (takeWhile (/= '.') . last . splitOn "/") pageFilePath ++ ".json" 
+  jsonFile :: String -> String
+  jsonFile pageFilePath = "data/" ++ (takeWhile (/= '.') . last . splitOn "/") pageFilePath ++ ".json"
   getBooks item = do
     let jsonId  = fromFilePath . jsonFile . toFilePath . itemIdentifier $ item
     jsonBody <- loadBody jsonId
     return . renderHtml . booksJSONToHtml $ jsonBody
-  
+
 -- *****************
 -- Configuration
 -- *****************

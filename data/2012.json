@@ -1,0 +1,180 @@
+[
+  {
+    "title"    : "Moonwalking with Einstein: The Art and Science of Remembering Everything",
+    "link"     : "http://www.amazon.com/Moonwalking-Einstein-Science-Remembering-Everything/dp/159420229X",
+    "author"   : "Joshua Foer",
+    "category" : "non-fiction-other",
+    "readable" : true,
+    "date"     : "2012-01-01"
+  },
+  {
+    "title"    : "Making it Big in Software: Get the Job. Work the Org. Become Great.",
+    "link"     : "http://www.amazon.com/Making-Big-Software-Become-Great/dp/0137059671",
+    "author"   : "Sam Lightstone",
+    "category" : "non-fiction-tech",
+    "date"     : "2012-02-01"
+  },
+  {
+    "title"    : "Kestrels, Quirky Birds, and Hopeless Egocentricity",
+    "link"     : "http://leanpub.com/combinators",
+    "author"   : "Reginald Braithwaite",
+    "category" : "non-fiction-tech",
+    "readable" : true,
+    "date"     : "2012-02-01"
+  },
+  {
+    "title"    : "Practical Vim: Edit Text at the Speed of Thought",
+    "link"     : "http://pragprog.com/book/dnvim/practical-vim",
+    "author"   : "Drew Neil",
+    "category" : "non-fiction-tech",
+    "readable" : true,
+    "date"     : "2012-04-01"
+  },
+  {
+    "title"    : "Hagakure: The Book of the Samurai",
+    "link"     : "http://www.amazon.com/Hagakure-The-Book-Samurai-ebook/dp/B007V3FKOU",
+    "author"   : "Yamamoto Tsunetomo",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-05-01"
+  },
+  {
+    "title"    : "How to Live: Or A Life of Montaigne in One Question and Twenty Attempts at an Answer",
+    "link"     : "http://www.amazon.com/How-Live-Montaigne-Question-ebook/dp/B003E8AK4Q",
+    "author"   : "Sarah Bakewell",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-06-01"
+  },
+  {
+    "title"    : "The Drowned Cities",
+    "link"     : "http://www.amazon.com/The-Drowned-Cities-ebook/dp/B005SCR2ZG",
+    "author"   : "Paolo Bacigalupi",
+    "category" : "fiction-science",
+    "readable" : true,
+    "date"     : "2012-06-01"
+  },
+  {
+    "title"    : "The Edge of Desire",
+    "link"     : "http://www.flipkart.com/edge-desire-9350094436/p/9789350094433?pid=9789350094433&ref=9882236c-a42e-46e0-8f11-329a3cd642a3",
+    "author"   : "Tuhin Sinha",
+    "category" : "fiction-indian",
+    "readable" : true,
+    "date"     : "2012-06-01"
+  },
+  {
+    "title"    : "A Free Man",
+    "link"     : "http://www.flipkart.com/free-man-8184001533/p/itmdyuscrpqwkdsn?pid=9788184001532&ref=ca817ff6-ecce-4efa-b4ae-e71da5c1d6b2",
+    "author"   : "Aman Sethi",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-06-01"
+  },
+  {
+    "title"    : "Nothing is Blue",
+    "link"     : "http://www.flipkart.com/nothing-blue-8172237251/p/itmdyu4cuazcg22d?pid=9788172237257&ref=cb6725f6-c848-480a-8e68-ea36560c7e96",
+    "author"   : "Biman Nath",
+    "category" : "fiction-indian",
+    "date"     : "2012-06-01"
+  },
+  {
+    "title"    : "On Writing Well",
+    "link"     : "http://www.amazon.com/Writing-Well-Classic-Guide-Nonfiction/dp/141775057X",
+    "author"   : "William Zinsser",
+    "category" : "non-fiction-other",
+    "readable" : true,
+    "date"     : "2012-07-01"
+  },
+  {
+    "title"    : "The Difficulty of being Good: On the Subtle Art of Dharma",
+    "link"     : "http://www.amazon.com/The-Difficulty-being-Good-Subtle/dp/0670083496",
+    "author"   : "Gurcharan Das",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-08-01"
+  },
+  {
+    "title"    : "Indian Journals",
+    "link"     : "http://www.amazon.com/Indian-Journals-Allen-Ginsberg/dp/0802134750",
+    "author"   : "Allen Ginsberg",
+    "category" : "non-fiction-other",
+    "readable" : true,
+    "date"     : "2012-08-01"
+   },
+   {
+    "title"    : "The Expats",
+    "link"     : "http://www.amazon.com/The-Expats-ebook/dp/B0076794IO",
+    "author"   : "Chris Pavone",
+    "category" : "fiction-other",
+    "date"     : "2012-08-01"
+   },
+   {
+    "title"    : "Why We Love Sociopaths: A Guide To Late Capitalist Television",
+    "link"     : "http://www.amazon.com/Why-Love-Sociopaths-Capitalist-ebook/dp/B007Y5BFSK",
+    "author"   : "Adam Kotsko",
+    "category" : "non-fiction-culture",
+    "date"     : "2012-08-01"
+   },
+   {
+    "title"    : "Zen and the Art of Motorcycle Maintenance",
+    "link"     : "http://www.amazon.com/Zen-Art-Motorcycle-Maintenance-ebook/dp/B0026772N8",
+    "author"   : "Robert M. Pirsig",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-09-01"
+   },
+   {
+    "title"    : "On the Road",
+    "link"     : "http://www.amazon.com/On-the-Road-ebook/dp/B002IPZFYQ",
+    "author"   : "Jack Kerouac",
+    "category" : "fiction-other",
+    "date"     : "2012-09-01"
+   },
+   {
+    "title"    : "Butter Chicken in Ludhiana: Travels in Small Town India",
+    "link"     : "http://www.amazon.com/Butter-Chicken-Ludhiana-Travels-Small/dp/0330444123",
+    "author"   : "Pankaj Mishra",
+    "category" : "fiction-indian",
+    "readable" : true,
+    "date"     : "2012-09-01"
+   },
+   {
+    "title"    : "How Much Should a Person Consume?: Environmentalism in India and the United States",
+    "link"     : "http://www.amazon.com/Much-Should-Person-Consume-Environmentalism/dp/0520248058",
+    "author"   : "Ramachandra Guha",
+    "category" : "non-fiction-other",
+    "readable" : true,
+    "date"     : "2012-10-01"
+   },
+   {
+    "title"    : "Celebrating the Best of Urdu Poetry",
+    "link"     : "http://www.amazon.com/Celebrating-Best-Poetry-Khushwant-Singh/dp/0143417517",
+    "author"   : "Khushwant Singh and Kamna Prasad",
+    "category" : "fiction-indian",
+    "readable" : true,
+    "date"     : "2012-10-01"
+   },
+   {
+    "title"    : "Intimacy",
+    "link"     : "http://www.amazon.com/Intimacy-Hanif-Kureishi/dp/0571195709",
+    "author"   : "Hanif Kureishi",
+    "category" : "fiction-other",
+    "readable" : true,
+    "date"     : "2012-12-01"
+   },
+   {
+    "title"    : "Committed: A Love Story",
+    "link"     : "http://www.amazon.com/Committed-Love-Story-Elizabeth-Gilbert/dp/0143118706",
+    "author"   : "Elizabeth Gilbert",
+    "category" : "non-fiction-other",
+    "date"     : "2012-12-01"
+   },
+   {
+    "title"    : "The Book of Disquiet",
+    "link"     : "http://www.amazon.com/Book-Disquiet-Serpents-Tail-Classics/dp/1846687357",
+    "author"   : "Fernando Pessoa",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-12-01"
+   }
+]
