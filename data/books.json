@@ -153,5 +153,28 @@
     "category" : "fiction-indian",
     "readable" : true,
     "date"     : "2012-10-01"
-   }   
+   },
+   {
+    "title"    : "Intimacy",
+    "link"     : "http://www.amazon.com/Intimacy-Hanif-Kureishi/dp/0571195709",
+    "author"   : "Hanif Kureishi",
+    "category" : "fiction-other",
+    "readable" : true,
+    "date"     : "2012-12-01"
+   },
+   {
+    "title"    : "Committed: A Love Story",
+    "link"     : "http://www.amazon.com/Committed-Love-Story-Elizabeth-Gilbert/dp/0143118706",
+    "author"   : "Elizabeth Gilbert",
+    "category" : "non-fiction-other",
+    "date"     : "2012-12-01"
+   },
+   {
+    "title"    : "The Book of Disquiet",
+    "link"     : "http://www.amazon.com/Book-Disquiet-Serpents-Tail-Classics/dp/1846687357",
+    "author"   : "Fernando Pessoa",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2012-12-01"
+   }
 ]
