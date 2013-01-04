@@ -1,6 +1,0 @@
----
-pagetitle: Books 2012
----
-Listed below are books I have read in 2012. Items marked with a <em
-class="impt">*</em> are recommended highly.
-

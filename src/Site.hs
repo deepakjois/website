@@ -1,9 +1,10 @@
 {-# LANGUAGE OverloadedStrings, RankNTypes #-}
 import System.FilePath (joinPath, splitPath)
-import Data.List.Split (splitOn)
+import Control.Monad (forM_)
 import Data.Monoid (mappend)
 import Data.String()
 import Text.Blaze.Html.Renderer.String (renderHtml)
+import System.FilePath ((<.>), (</>), takeFileName, dropExtension)
 import Hakyll
 
 import Books (booksJSONToHtml)
@@ -45,14 +46,22 @@ main = hakyllWith config $ do
     route defaultHtml
     compile $ pandocCompiler >>= loadAndApplyTemplate "templates/inner.html" pageCtx
 
-  -- Books
-  match bookPages $ do
+  -- Books from previous years
+  forM_ bookPages $ \b ->
+    match (fromGlob b) $ do
+      route idRoute
+      compile $
+        makeItem ""
+          >>= loadAndApplyTemplate "templates/books.html" booksPageCtx
+          >>= loadAndApplyTemplate "templates/inner.html" ((field "pagetitle" getBookPageTitle) `mappend` pageCtx)
+
+  -- Books from this year
+  match "source/books.markdown" $ do
     route defaultHtml
     compile $
-      pandocCompiler >>=
-      loadAndApplyTemplate "templates/books.html" booksPageCtx >>=
-      loadAndApplyTemplate "templates/inner.html" pageCtx
-
+      pandocCompiler
+        >>= loadAndApplyTemplate "templates/books_main.html" booksPageCtx
+        >>= loadAndApplyTemplate "templates/inner.html" pageCtx
 
 -- *****************
 -- Files
@@ -63,8 +72,8 @@ innerPages :: Pattern
 innerPages = fromList ["source/code.markdown"]
 
 -- Pages containing list of books
-bookPages :: Pattern
-bookPages = fromList ["source/books.markdown","source/books/2012.markdown","source/books/2011.markdown", "source/books/2010.markdown"]
+bookPages :: [String]
+bookPages = ["books/2012.html","books/2011.html", "books/2010.html"]
 
 
 -- *****************
@@ -91,14 +100,30 @@ pageCtx = field "nav"       (\_ -> loadBody "includes/nav.html")       `mappend`
           defaultContext
 
 booksPageCtx :: Context String
-booksPageCtx = field "books" getBooks `mappend` defaultContext
+booksPageCtx = field "books" getBooks `mappend`
+               field "year"  getYear  `mappend`
+               defaultContext
  where
-  jsonFile :: String -> String
-  jsonFile pageFilePath = "data/" ++ (takeWhile (/= '.') . last . splitOn "/") pageFilePath ++ ".json"
+  jsonFile pageFilePath = "data" </> (year pageFilePath <.> "json")
   getBooks item = do
     let jsonId  = fromFilePath . jsonFile . toFilePath . itemIdentifier $ item
     jsonBody <- loadBody jsonId
     return . renderHtml . booksJSONToHtml $ jsonBody
+
+-- Generate a title for an inner book list page
+getBookPageTitle :: forall a. Item a -> Compiler String
+getBookPageTitle item = do
+  y <- getYear item
+  return $ "Books " ++ y
+
+-- Generate a year for an inner book list page
+getYear :: forall a. Item a -> Compiler String
+getYear = return . year . toFilePath . itemIdentifier
+
+-- Get the year from a path to a inner book page
+year :: FilePath -> String
+year = dropExtension . takeFileName
+
 
 -- *****************
 -- Configuration
