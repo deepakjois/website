@@ -91,10 +91,11 @@ monthName n = [ "January"
 bookLiElem :: Book -> H.Html
 bookLiElem book = H.li ! H.dataAttribute "category" (fromString c) $ do
                     booklink
+                    fromString (" by " ++ a)
                     starIfReadable
                   where
                     Book t l a c r _ = book
-                    booklink         = H.a ! A.href (fromString l) $ H.toHtml (t ++ " by " ++ a)
+                    booklink         = H.a ! A.href (fromString l) $ H.toHtml t
                     starIfReadable   = if r then H.em ! A.class_ "impt" $ "*" else ""
 
 -- Convert a list of books to a @ul@ element
