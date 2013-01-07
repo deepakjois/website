@@ -1,6 +1,5 @@
 {-# LANGUAGE OverloadedStrings, RankNTypes #-}
 import System.FilePath (joinPath, splitPath)
-import Control.Monad (forM_)
 import Data.Monoid (mappend)
 import Data.String()
 import Text.Blaze.Html.Renderer.String (renderHtml)
@@ -47,13 +46,12 @@ main = hakyllWith config $ do
     compile $ pandocCompiler >>= loadAndApplyTemplate "templates/inner.html" pageCtx
 
   -- Books from previous years
-  forM_ bookPages $ \b ->
-    match (fromGlob b) $ do
-      route idRoute
-      compile $
-        makeItem ""
-          >>= loadAndApplyTemplate "templates/books.html" booksPageCtx
-          >>= loadAndApplyTemplate "templates/inner.html" ((field "pagetitle" getBookPageTitle) `mappend` pageCtx)
+  create bookPages $ do
+    route idRoute
+    compile $
+      makeItem ""
+        >>= loadAndApplyTemplate "templates/books.html" booksPageCtx
+        >>= loadAndApplyTemplate "templates/inner.html" ((field "pagetitle" getBookPageTitle) `mappend` pageCtx)
 
   -- Books from this year
   match "source/books.markdown" $ do
@@ -72,7 +70,7 @@ innerPages :: Pattern
 innerPages = fromList ["source/code.markdown"]
 
 -- Pages containing list of books
-bookPages :: [String]
+bookPages :: [Identifier]
 bookPages = ["books/2012.html","books/2011.html", "books/2010.html"]
 
 
