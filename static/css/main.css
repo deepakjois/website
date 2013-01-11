@@ -6,12 +6,6 @@
         font-style: normal;
 }
 
-p, ul, li, h1, h2, h3, body,
-header, nav, article, section, footer {
-        margin:0;
-        padding:0;
-}
-
 a {
         text-decoration:none;
 }
@@ -31,10 +25,6 @@ a:hover { text-decoration:underline; }
 
 em.impt { color:red; }
 
-
-header, nav, article, section, footer {
-        display:block;
-}
 
 #wrapper {
         width:50em;
@@ -96,10 +86,6 @@ section ul {
         margin:0 0 1em 0;
 }
 
-#software, #bits-of-code,
-#books, #books + #internet, #internet + #papers,
-#practising-programming, #programming-interviews-preparation, #java-concurrency, #c-in-depth, #java-core-libraries-source-code, #continuations,
-#january, #february, #march, #april, #may, #june, #july, #august, #september, #october, #november, #december { margin-top: 3em; }
 section li { margin-bottom: 0.5em; }
 
 
