@@ -2,7 +2,31 @@
     "title"    : "Antifragile: Things That Gain from Disorder",
     "link"     : "http://www.amazon.com/Antifragile-Things-That-Gain-Disorder/dp/1400067820",
     "author"   : "Nassim Nicholas Taleb",
-    "category" : "non-fiction",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2013-01-01"
+ },
+ {
+    "title"    : "The Dervish House",
+    "link"     : "http://www.amazon.com/Dervish-House-Ian-McDonald/dp/1616145455",
+    "author"   : "Ian McDonald",
+    "category" : "fiction-science",
+    "readable" : true,
+    "date"     : "2013-01-01"
+ },
+ {
+    "title"    : "Ghat Ghat Kabir",
+    "link"     : "http://www.kabirproject.org/music%20with%20books/ghat%20ghat%20kabir",
+    "author"   : "Various",
+    "category" : "non-fiction-indian",
+    "readable" : true,
+    "date"     : "2013-01-01"
+ },
+ {
+    "title"    : "The Sense of an Ending",
+    "link"     : "http://www.amazon.com/The-Sense-Ending-Borzoi-Books/dp/0307957128",
+    "author"   : "Julian Barnes",
+    "category" : "fiction-other",
     "readable" : true,
     "date"     : "2013-01-01"
  }]
