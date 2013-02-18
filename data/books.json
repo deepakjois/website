@@ -28,5 +28,21 @@
     "author"   : "Julian Barnes",
     "category" : "fiction-other",
     "readable" : true,
-    "date"     : "2013-01-01"
- }]
+    "date"     : "2013-02-01"
+ },
+ {
+    "title"    : "Understanding Power: The Indispensable Chomsky",
+    "link"     : "http://www.amazon.com/Understanding-Power-The-Indispensable-Chomsky/dp/1565847032",
+    "author"   : "Noam Chomsky",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2013-02-01"
+ },
+ {
+    "title"    : "The (Honest) Truth About Dishonesty: How We Lie to Everyone – Especially Ourselves",
+    "link"     : "http://www.amazon.com/Honest-Truth-About-Dishonesty-Everyone---Especially/dp/0062183591",
+    "author"   : "Dan Ariely",
+    "category" : "non-fiction-economics",
+    "date"     : "2013-02-01"
+ }
+]
