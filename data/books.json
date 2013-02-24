@@ -44,5 +44,12 @@
     "author"   : "Dan Ariely",
     "category" : "non-fiction-economics",
     "date"     : "2013-02-01"
+ },
+ {
+    "title"    : "The Memory of Love",
+    "link"     : "http://www.amazon.com/The-Memory-Love-Aminatta-Forna/dp/B00ANYV750",
+    "author"   : "Aminatta Forna",
+    "category" : "fiction-other",
+    "date"     : "2013-02-01"
  }
 ]
