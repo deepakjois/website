@@ -51,5 +51,13 @@
     "author"   : "Aminatta Forna",
     "category" : "fiction-other",
     "date"     : "2013-02-01"
+ },
+ {
+    "title"    : "Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Undercity",
+    "link"     : "http://www.amazon.com/Behind-Beautiful-Forevers-Mumbai-Undercity/dp/1400067553",
+    "author"   : "Katherine Boo",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2013-03-01"
  }
 ]
