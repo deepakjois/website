@@ -59,5 +59,12 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2013-03-01"
+ },
+ {
+    "title"    : "The Monk Who Sold His Ferrari: A Fable About Fulfilling Your Dreams & Reaching Your Destiny",
+    "link"     : "http://www.amazon.com/Monk-Who-Sold-His-Ferrari/dp/0062515675",
+    "author"   : "Robin Sharma",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-03-01"
  }
 ]
