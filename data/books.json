@@ -66,5 +66,13 @@
     "author"   : "Robin Sharma",
     "category" : "non-fiction-culture",
     "date"     : "2013-03-01"
+ },
+ {
+    "title"    : "Shop Class as Soulcraft: An Inquiry into the Value of Work",
+    "link"     : "http://www.amazon.com/Shop-Class-Soulcraft-Inquiry-Value/dp/0143117467",
+    "author"   : "Matthew B. Crawford",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2013-03-01"
  }
 ]
