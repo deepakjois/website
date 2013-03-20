@@ -53,6 +53,13 @@
     "date"     : "2013-02-01"
  },
  {
+    "title"    : "The Miracle of Mindfulness: An Introduction to the Practice of Meditation",
+    "link"     : "http://www.amazon.com/Miracle-Mindfulness-Introduction-Practice-Meditation/dp/0807012394",
+    "author"   : "Thich Nhat Nanh",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-03-01"
+ },
+ {
     "title"    : "Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Undercity",
     "link"     : "http://www.amazon.com/Behind-Beautiful-Forevers-Mumbai-Undercity/dp/1400067553",
     "author"   : "Katherine Boo",
@@ -74,5 +81,12 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2013-03-01"
- }
-]
+ },
+ {
+    "title"    : "Essays in Love",
+    "link"     : "http://www.amazon.com/Essays-Love-Alain-De-Botton/dp/0771026064",
+    "author"   : "Alain De Botton",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2013-03-01"
+ }]
