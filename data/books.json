@@ -89,4 +89,19 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2013-03-01"
+ },
+ {
+    "title"    : "An End to Suffering: The Buddha in the World",
+    "link"     : "http://www.amazon.com/An-End-Suffering-Buddha-World/dp/0374148368",
+    "author"   : "Pankaj Mishra",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2013-04-01"
+ },
+ {
+    "title"    : "Mindfire: Big Ideas for Curious Minds",
+    "link"     : "http://www.amazon.com/Mindfire-Ideas-Curious-Minds-ebook/dp/B0062F5QO2",
+    "author"   : "Scott Berkun",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-04-01"
  }]
