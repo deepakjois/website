@@ -104,4 +104,19 @@
     "author"   : "Scott Berkun",
     "category" : "non-fiction-culture",
     "date"     : "2013-04-01"
+ },
+ {
+    "title"    : "Beyond the Invisible Hand: Groundwork for a New Economics",
+    "link"     : "http://www.amazon.com/Beyond-Invisible-Hand-Groundwork-Economics/dp/0143415751",
+    "author"   : "Kaushik Basu",
+    "category" : "non-fiction-economics",
+    "date"     : "2013-04-01"
+ },
+ {
+    "title"    : "How to Get Filthy Rich in Rising Asia: A Novel",
+    "link"     : "http://www.amazon.com/How-Filthy-Rich-Rising-Asia/dp/1594487294",
+    "author"   : "Mohsin Hamid",
+    "category" : "fiction-indian",
+    "readable" : true,
+    "date"     : "2013-04-01"
  }]
