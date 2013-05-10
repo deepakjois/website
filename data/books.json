@@ -135,6 +135,13 @@
     "category" : "fiction-indian",
     "readable" : true,
     "date"     : "2013-05-01"
+ },
+ {
+    "title"    : "To Save Everything, Click Here: The Folly of Technological Solutionism",
+    "link"     : "http://www.amazon.com/Save-Everything-Click-Here-Technological/dp/1610391381",
+    "author"   : "Evgeny Morozov",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-05-01"
  }
 ]
 
