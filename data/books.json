@@ -149,6 +149,28 @@
     "author"   : "Jeet Thayil",
     "category" : "fiction-indian",
     "date"     : "2013-05-01"
+ },
+ {
+    "title"    : "Cooked: A Natural History of Transformation",
+    "link"     : "http://www.amazon.com/Cooked-A-Natural-History-Transformation/dp/1594204217",
+    "author"   : "Michael Pollan",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-05-01",
+    "readable" : true
+ },
+ {
+    "title"    : "Gettysburg: The Graphic Novel",
+    "link"     : "http://www.amazon.com/Gettysburg-Graphic-C-M-Butzer/dp/0061561762",
+    "author"   : "C.M. Butzer",
+    "category" : "fiction-other",
+    "date"     : "2013-05-01"
+ },
+ {
+    "title"    : "Sex at Dawn: How We Mate, Why We Stray, and What It Means for Modern Relationships",
+    "link"     : "http://www.amazon.com/Sex-Dawn-Stray-Modern-Relationships/dp/0061707813",
+    "author"   : "Christopher Ryan and Cacilda Jetha",
+    "category" : "fiction-other",
+    "date"     : "2013-05-01"
  }
 ]
 
