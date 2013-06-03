@@ -7,6 +7,7 @@ build-site:
 
 build:
 	cabal-dev --sandbox ../cabal-dev clean
+	cabal-dev --sandbox ../cabal-dev install-deps
 	cabal-dev --sandbox ../cabal-dev configure
 	cabal-dev --sandbox ../cabal-dev build
 
