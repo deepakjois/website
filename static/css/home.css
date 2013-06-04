@@ -1,0 +1,135 @@
+@font-face {
+        font-family: 'VollkornRegular';
+        src: url('../images/Vollkorn-Regular-webfont.eot');
+        src: local('☺'), url('../images/Vollkorn-Regular-webfont.woff') format('woff'), url('../images/Vollkorn-Regular-webfont.ttf') format('truetype'), url('../images/Vollkorn-Regular-webfont.svg#webfonttc6YkatK') format('svg');
+        font-weight: normal;
+        font-style: normal;
+}
+
+a {
+        text-decoration:none;
+}
+
+html.home {
+  background: url('../images/deepak-jois.jpg') top center no-repeat #000;
+  min-height: 100%;
+}
+
+body { color:#555; }
+
+a { color: #2d8aa8; }
+.home a { color:#30abb7; }
+a:hover { text-decoration:underline; }
+
+.home body { color: #ddd; }
+
+em.impt { color:red; }
+
+
+#wrapper {
+        width:50em;
+        margin: 0 auto;
+}
+
+.home #wrapper { margin-top: 3.5em; }
+.home #wrapper>section {
+  width: 18em;
+  padding: 2em;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+header nav {
+        overflow:hidden;
+}
+
+header nav:first-child {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  margin: 0 0 1em -1em;
+}
+
+.home header nav:first-child { background: none; padding: 0; margin: 0 0 1em 0; }
+
+nav ul {
+        display:block;
+        text-align:center;
+}
+
+header nav ul { text-align: left; }
+
+
+nav li {
+        display:inline;
+        padding:0 0.5em 0 0;
+        letter-spacing:0.05em;
+}
+
+
+nav li + li:before {
+        content: "\2767";
+        padding:0 0.5em 0 0.1em;
+}
+
+/* DEEPAK PHOTO AND SLOGAN */
+
+section {
+        clear:both;
+}
+
+section h2 {
+  text-transform: uppercase;
+}
+
+section p,
+section ul {
+        margin:0 0 1em 0;
+}
+
+section li { margin-bottom: 0.5em; }
+
+
+/* DEEPAK ONLINE */
+section.online ul { margin-bottom: 0; }
+section.online p a:after {
+        content: "";
+}
+
+section.online li {
+        list-style:none;
+        display:inline;
+}
+
+section.online li + li:before {
+        content: "\2767";
+        padding:0 0.5em;
+}
+
+/* ========= */
+/* = FONTS = */
+/* ========= */
+body {
+        font: normal normal normal 12px/1.4 VollkornRegular, Baskerville, Palatino, Constantia, Georgia, "Book Antiqua", "URW Palladio L", serif;
+}
+
+body { font-size:100%; }
+h1 { font-size: 3em; }
+h2 { font-size:1.5em; line-height: 1.5; }
+h3 { font-size: 1em; font-weight: bold; line-height: 2.3; }
+h1, h2 { font-weight: normal; }
+p, ul, h4, a.title { font-size:1em; }
+header nav {    font-size: 1.5em; line-height: 2.4; }
+section.online p { font-size:2em; }
+section.bio p { font-size:1em; }
+
+
+span.amp {
+    font-style: italic;
+    font-weight:normal;
+    font:  Baskerville, Constantia, Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", serif;
+}
+
+/* ======== */
+/* = GRID = */
+/* ========
+ body { background:url(/images/gridbg.gif) top left repeat; }
