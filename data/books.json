@@ -185,6 +185,14 @@
     "author"   : "Philippa Perry",
     "category" : "non-fiction-culture",
     "date"     : "2013-07-01"
+ },
+ {
+    "title"    : "The Savage Detectives: A Novel",
+    "link"     : "http://www.amazon.com/The-Savage-Detectives-A-Novel/dp/0312427484",
+    "author"   : "Roberto Bolaño",
+    "category" : "fiction-other",
+    "date"     : "2013-07-01",
+    "readable" : true
  }
 ]
 
