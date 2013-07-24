@@ -216,6 +216,14 @@
     "author"   : "Paul Smith",
     "category" : "non-fiction-poetry",
     "date"     : "2013-07-01"
+ },
+ {
+    "title"    : "How to Think More About Sex (The School of Life)",
+    "link"     : "http://www.amazon.com/Think-More-About-School-Life/dp/125003065X",
+    "author"   : "Alain de Botton",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-07-01",
+    "readable" : true
  }
 ]
 
