@@ -231,6 +231,14 @@
     "author"   : "Richard Wrangham",
     "category" : "non-fiction-culture",
     "date"     : "2013-07-01"
+ },
+ {
+    "title"    : "The Quark and the Jaguar: Adventures in the Simple and the Complex",
+    "link"     : "http://www.amazon.com/The-Quark-Jaguar-Adventures-Complex/dp/0805072535",
+    "author"   : "Murray Gell-Mann",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-08-01",
+    "readable" : true
  }
 ]
 
