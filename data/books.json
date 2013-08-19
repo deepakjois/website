@@ -239,6 +239,20 @@
     "category" : "non-fiction-culture",
     "date"     : "2013-08-01",
     "readable" : true
+ },
+ {
+    "title"    : "Code Connected Volume 1 - Professional Edition for C/C++",
+    "link"     : "http://www.amazon.com/Code-Connected-Volume-Professional-ebook/dp/B00ASE1PYS",
+    "author"   : "Pieter Hintjens",
+    "category" : "non-fiction-tech",
+    "date"     : "2013-08-01"
+ },
+ {
+    "title"    : "The Shape of Design",
+    "link"     : "http://shapeofdesignbook.com/",
+    "author"   : "Frank Chimero",
+    "category" : "non-fictin-design",
+    "date"     : "2013-08-01"
  }
 ]
 
