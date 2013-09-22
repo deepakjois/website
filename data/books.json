@@ -253,6 +253,29 @@
     "author"   : "Frank Chimero",
     "category" : "non-fictin-design",
     "date"     : "2013-08-01"
+ },
+ {
+    "title"    : "Debt: The First 5,000 Years",
+    "link"     : "http://www.amazon.com/Debt-The-First-000-Years/dp/1933633867",
+    "author"   : "David Graeber",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-09-01",
+    "readable" : true
+ },
+ {
+    "title"    : "The Flamethrowers",
+    "link"     : "http://www.amazon.com/The-Flamethrowers-A-Novel-ebook/dp/B008J4NBHI",
+    "author"   : "Rachel Kushner",
+    "category" : "fiction-other",
+    "date"     : "2013-09-01"
+ },
+ {
+    "title"    : "Radical Anthropology (Issues 1,2)",
+    "link"     : "http://www.radicalanthropologygroup.org/new/Journal.html",
+    "author"   : "Various
+    "category" : "non-fiction-culture",
+    "date"     : "2013-09-01",
+    "readable" : true
  }
 ]
 
