@@ -270,7 +270,7 @@
     "date"     : "2013-09-01"
  },
  {
-    "title"    : "Radical Anthropology (Issues 1,2,3)",
+    "title"    : "Radical Anthropology (Issues 1-6)",
     "link"     : "http://www.radicalanthropologygroup.org/new/Journal.html",
     "author"   : "Various",
     "category" : "non-fiction-culture",
@@ -281,6 +281,21 @@
     "title"    : "Be Slightly Evil: A Playbook for Sociopaths",
     "link"     : "http://www.amazon.com/Slightly-Evil-Sociopaths-Ribbonfarm-ebook/dp/B00F8JTYH8",
     "author"   : "Venkatesh Rao",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-09-01",
+    "readable" : true
+ },
+ {
+    "title"    : "The Gervais Principle: The Complete Series, with a Bonus Essay on Office Space (Ribbonfarm Roughs)",
+    "link"     : "http://www.amazon.com/The-Gervais-Principle-Ribbonfarm-ebook/dp/B00F9IV64W",
+    "author"   : "Venkatesh Rao",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-09-01"
+ },
+ {
+    "title"    : "War & the Noble Savage",
+    "link"     : "http://dreamflesh.com/projects/war-noble-savage/",
+    "author"   : "Gyrus",
     "category" : "non-fiction-culture",
     "date"     : "2013-09-01",
     "readable" : true
