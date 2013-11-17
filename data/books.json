@@ -299,6 +299,22 @@
     "category" : "non-fiction-culture",
     "date"     : "2013-09-01",
     "readable" : true
+ },
+ {
+    "title"    : "Possibilities: Essays on Hierarchy, Rebellion, and Desire",
+    "link"     : "http://www.amazon.com/Possibilities-Essays-Hierarchy-Rebellion-Desire/dp/1904859666",
+    "author"   : "David Graeber",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-11-01",
+    "readable" : true
+ },
+ {
+    "title"    : "Poet of the Revolution: The Memoirs of Lal Singh Dil",
+    "link"     : "http://www.amazon.com/Poet-Revolution-The-Memoirs-Singh-ebook/dp/B00A0MVMI2",
+    "author"   : "Nirupama Dutt",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-11-01",
+    "readable" : true
  }
 ]
 
