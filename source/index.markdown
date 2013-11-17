@@ -16,6 +16,5 @@ I work at [Soundcloud][sc]. Previously, I was at [Amazon Web Services][aws], whe
 
   * [Github](http://github.com/deepakjois)
   * [Facebook](http://facebook.com/deepak.jois)
-  * [LinkedIn](http://www.linkedin.com/in/deepakjois)
 
 </section>
