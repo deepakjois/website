@@ -315,6 +315,13 @@
     "category" : "non-fiction-culture",
     "date"     : "2013-11-01",
     "readable" : true
+ },
+ {
+    "title"    : "The Power of Habit: Why We Do What We Do in Life and Business",
+    "link"     : "http://www.amazon.com/The-Power-Habit-What-Business/dp/1400069289",
+    "author"   : "Charles Duhigg",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-11-01"
  }
 ]
 
