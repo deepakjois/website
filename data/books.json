@@ -322,6 +322,23 @@
     "author"   : "Charles Duhigg",
     "category" : "non-fiction-culture",
     "date"     : "2013-11-01"
+ },
+ {
+    "title"    : "The Antidote: Happiness for People Who Can't Stand Positive Thinking",
+    "link"     : "http://www.amazon.com/Antidote-Happiness-People-Positive-Thinking-ebook/dp/B0080K3G4O",
+    "author"   : "Oliver Burkeman",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-12-01",
+    "readable" : true
+
+ },
+ {
+    "title"    : "On Anarchism",
+    "link"     : "http://www.amazon.com/Anarchism-Noam-Chomsky-ebook/dp/B00E25LZZI",
+    "author"   : "Noam Chomsky",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-12-01",
+    "readable" : true
  }
 ]
 
