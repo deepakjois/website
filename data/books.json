@@ -339,6 +339,14 @@
     "category" : "non-fiction-culture",
     "date"     : "2013-12-01",
     "readable" : true
+ },
+ {
+    "title"    : "Darwin's Dangerous Idea: Evolution and the Meanings of Life",
+    "link"     : "http://www.amazon.com/Darwins-Dangerous-Idea-Evolution-Meanings/dp/0684802902",
+    "author"   : "Daniel Dennett",
+    "category" : "non-fiction-culture",
+    "date"     : "2013-12-01",
+    "readable" : true
  }
 ]
 
