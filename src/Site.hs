@@ -71,7 +71,7 @@ innerPages = fromList ["source/code.markdown"]
 
 -- Pages containing list of books
 bookPages :: [Identifier]
-bookPages = ["books/2012.html","books/2011.html", "books/2010.html"]
+bookPages = ["books/2013.html","books/2012.html","books/2011.html", "books/2010.html"]
 
 
 -- *****************
