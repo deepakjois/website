@@ -3,6 +3,13 @@
     "link"     : "http://www.amazon.com/The-Origin-Species-Chris-Stringer/dp/0141037202",
     "author"   : "Chris Stringer",
     "category" : "non-fiction-culture",
+    "date"     : "2014-01-01"
+},
+{
+    "title"    : "On Hinduism",
+    "link"     : "http://www.amazon.com/Hinduism-Wendy-Doniger-ebook/dp/B00ET2PGYK",
+    "author"   : "Wendy Doniger",
+    "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2014-01-01"
  }]
