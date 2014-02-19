@@ -2,7 +2,7 @@
     "title"    : "The Origin of Our Species",
     "link"     : "http://www.amazon.com/The-Origin-Species-Chris-Stringer/dp/0141037202",
     "author"   : "Chris Stringer",
-    "category" : "non-fiction-culture",
+    "category" : "non-fiction-science",
     "date"     : "2014-01-01"
 },
 {
@@ -12,5 +12,38 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2014-01-01"
- }]
+ },
+ {
+    "title"    : "A Brief History of Neoliberalism",
+    "link"     : "http://www.amazon.com/Brief-History-Neoliberalism-David-Harvey-ebook/dp/B005X3SA74",
+    "author"   : "David Harvey",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "The Enigma of Capital",
+    "link"     : "http://www.amazon.com/Enigma-Capital-David-Harvey-ebook/dp/B004V9OAH0",
+    "author"   : "David Harvey",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "The Western Illusion of Human Nature",
+    "link"     : "http://www.amazon.com/The-Western-Illusion-Human-Nature/dp/0979405726",
+    "author"   : "Marshall Sahlins",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "Mirrored Mind: My Life in Letters and Code",
+    "link"     : "http://www.amazon.com/Mirrored-Mind-Life-Letters-Code-ebook/dp/B00GBSTJK2",
+    "author"   : "Vikram Chandra",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ }
+]
 
