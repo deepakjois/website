@@ -44,6 +44,22 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "The Moral Economy of the Peasant: Rebellion and Subsistence in Southeast Asia",
+    "link"     : "http://www.amazon.com/Moral-Economy-Peasant-Rebellion-Subsistence-ebook/dp/B00B4NLWTA/",
+    "author"   : "James C. Scott",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "The People of Forever are not Afraid",
+    "link"     : "http://www.amazon.com/People-Forever-Are-Not-Afraid-ebook/dp/B009M63ZZ0",
+    "author"   : "Shani Boianjiu",
+    "category" : "fiction",
+    "readable" : true,
+    "date"     : "2014-02-01"
  }
 ]
 
