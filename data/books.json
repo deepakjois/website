@@ -60,6 +60,14 @@
     "category" : "fiction",
     "readable" : true,
     "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "Gandhi Before India",
+    "link"     : "http://www.amazon.com/Gandhi-Before-India-Ramachandra-Guha-ebook/dp/B00FAJA90C",
+    "author"   : "Ramachandra Guha",
+    "category" : "non-fiction-biography",
+    "readable" : true,
+    "date"     : "2014-03-01"
  }
 ]
 
