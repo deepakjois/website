@@ -7,3 +7,5 @@ site
 bin/site
 _site
 _cache
+.cabal-sandbox
+cabal.sandbox.config
