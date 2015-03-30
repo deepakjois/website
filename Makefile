@@ -12,7 +12,7 @@ clean-site:
 	cabal run clean
 
 preview-site: build-site
-	cabal run preview
+	cabal run watch
 
 deploy-site: build-site
 	cabal run deploy
