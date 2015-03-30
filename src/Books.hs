@@ -8,7 +8,7 @@ import Data.List (groupBy)
 import Data.Char (toLower)
 
 import Text.JSON (JSON, readJSON, showJSON, makeObj, resultToEither)
-import Text.JSON.Types (JSValue(..), JSObject, fromJSObject)
+import Text.JSON.Types (JSValue(..), fromJSObject)
 import Text.JSON.String (runGetJSON, readJSArray)
 
 import Text.Blaze.Html5 ((!))
