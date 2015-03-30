@@ -1,0 +1,10 @@
+* Analytics
+* Finish About Me page
+* Last minute tweaks
+* merge with master
+* Launch on deepak.jois.name
+* Build tag pages and update template to include tags
+* Cleanup Coursera Notes
+* Improve typography: add more whitespace
+* Draft Support(?)
+* Script to track latest updates

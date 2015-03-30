@@ -1,0 +1,175 @@
+[{
+    "title"    : "The Origin of Our Species",
+    "link"     : "http://www.amazon.com/The-Origin-Species-Chris-Stringer/dp/0141037202",
+    "author"   : "Chris Stringer",
+    "category" : "non-fiction-science",
+    "date"     : "2014-01-01"
+},
+{
+    "title"    : "On Hinduism",
+    "link"     : "http://www.amazon.com/Hinduism-Wendy-Doniger-ebook/dp/B00ET2PGYK",
+    "author"   : "Wendy Doniger",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-01-01"
+ },
+ {
+     "title"    : "The Persistence of Caste",
+     "link"     : "http://www.amazon.com/The-Persistence-Caste-Khairlanji-Apartheid/dp/1848134495",
+     "author"   : "Anand Teltubmde",
+     "category" : "non-fiction-culture",
+     "readable" : true,
+     "date"     : "2014-01-01"
+ },
+ {
+    "title"    : "A Brief History of Neoliberalism",
+    "link"     : "http://www.amazon.com/Brief-History-Neoliberalism-David-Harvey-ebook/dp/B005X3SA74",
+    "author"   : "David Harvey",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "The Enigma of Capital",
+    "link"     : "http://www.amazon.com/Enigma-Capital-David-Harvey-ebook/dp/B004V9OAH0",
+    "author"   : "David Harvey",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "The Western Illusion of Human Nature",
+    "link"     : "http://www.amazon.com/The-Western-Illusion-Human-Nature/dp/0979405726",
+    "author"   : "Marshall Sahlins",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "Mirrored Mind: My Life in Letters and Code",
+    "link"     : "http://www.amazon.com/Mirrored-Mind-Life-Letters-Code-ebook/dp/B00GBSTJK2",
+    "author"   : "Vikram Chandra",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "The Moral Economy of the Peasant: Rebellion and Subsistence in Southeast Asia",
+    "link"     : "http://www.amazon.com/Moral-Economy-Peasant-Rebellion-Subsistence-ebook/dp/B00B4NLWTA/",
+    "author"   : "James C. Scott",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "The People of Forever are not Afraid",
+    "link"     : "http://www.amazon.com/People-Forever-Are-Not-Afraid-ebook/dp/B009M63ZZ0",
+    "author"   : "Shani Boianjiu",
+    "category" : "fiction",
+    "readable" : true,
+    "date"     : "2014-02-01"
+ },
+ {
+    "title"    : "Gandhi Before India",
+    "link"     : "http://www.amazon.com/Gandhi-Before-India-Ramachandra-Guha-ebook/dp/B00FAJA90C",
+    "author"   : "Ramachandra Guha",
+    "category" : "non-fiction-history",
+    "readable" : true,
+    "date"     : "2014-03-01"
+ },
+ {
+    "title"    : "Rick Steves' Italy 2014",
+    "link"     : "http://www.amazon.com/Rick-Steves-Italy-2014-ebook/dp/B00E257W2S",
+    "author"   : "Rick Steves",
+    "category" : "non-fiction-travel",
+    "readable" : true,
+    "date"     : "2014-04-01"
+},
+{
+    "title"    : "Economics of Good and Evil: The Quest for Economic Meaning from Gilgamesh to Wall Street",
+    "link"     : "http://www.amazon.com/Economics-Good-Evil-Economic-Gilgamesh/dp/019932218X",
+    "author"   : "Tomas Sedlacek",
+    "category" : "non-fiction-economics",
+    "readable" : true,
+    "date"     : "2014-07-01"
+ },
+ {
+    "title"    : "The Fiction of Fact Finding - Modi and Godhra",
+    "link"     : "http://www.amazon.com/Fiction-Fact-Finding-Modi-Godhra-ebook/dp/B00JJHGGBM/",
+    "author"   : "Manoj Mitta",
+    "category" : "non-fiction-news",
+    "readable" : true,
+    "date"     : "2014-07-01"
+ },
+ {
+    "title"    : "The Indus Civilization, The People's History of India 2",
+    "link"     : "http://www.amazon.in/Indus-Civilization-Peoples-History-India/dp/8189487868",
+    "author"   : "Irfan Habib",
+    "category" : "non-fiction-history",
+    "readable" : true,
+    "date"     : "2014-07-01"
+ },
+ {
+    "title"    : "A People`s History of India 3: The Vedic Age",
+    "link"     : "http://www.amazon.in/People%60s-History-India-The-Vedic/dp/8189487353",
+    "author"   : "Irfan Habib",
+    "category" : "non-fiction-history",
+    "readable" : true,
+    "date"     : "2014-07-01"
+ },
+ {
+    "title"    : "The Alchemy of Desire: A Novel",
+    "link"     : "http://www.amazon.com/Alchemy-Desire-Tarun-J-Tejpal/dp/006088858X",
+    "author"   : "Tarun Tejpal",
+    "category" : "fiction-indian",
+    "date"     : "2014-07-01"
+ },
+ {
+    "title"    : "Day's End Stories: Life After Sundown in Small-Town India: 1",
+    "link"     : "http://www.amazon.in/Days-End-Stories-Sundown-Small-Town/dp/9383260815",
+    "author"   : "Subuhi Jiwani",
+    "category" : "non-fiction-culture",
+    "date"     : "2014-08-01"
+ },
+ {
+    "title"    : "A Matter of Rats: A Short Biography of Patna",
+    "link"     : "http://www.amazon.com/Matter-Rats-Short-Biography-Patna/dp/9382277226",
+    "author"   : "Amitava Kumar",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-08-01"
+ },
+ {
+    "title"    : "From Hindi to Urdu - Social and Political History",
+    "link"     : "http://www.amazon.com/From-Hindi-Urdu-Political-History/dp/8125042482",
+    "author"   : "Tariq Rahman",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-08-01"
+ },
+ {
+    "title"    : "Urdu Literature And Journalism: Critical Perspectives",
+    "link"     : "http://www.amazon.com/Urdu-Literature-And-Journalism-Perspectives/dp/9382993770",
+    "author"   : "Shafey Kidwai",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-08-01"
+ },
+ {
+    "title"    : "Subalterns and Sovereigns: An Anthropological History of Bastar (1854-2006)",
+    "link"     : "http://www.amazon.com/Subalterns-Sovereigns-Anthropological-1854-2006-Subaltern/dp/0195697049",
+    "author"   : "Nandini Sundar",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-09-01"
+ },
+ {
+    "title"    : "Early Urdu Literary Culture and History",
+    "link"     : "http://www.amazon.com/Early-Urdu-Literary-Culture-History/dp/0195652010",
+    "author"   : "Shamsur Rahman Faruqi",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-11-01"
+ }
+]
+

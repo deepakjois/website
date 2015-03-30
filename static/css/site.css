@@ -1,0 +1,35 @@
+img.logo {
+    margin-top: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  display: block;
+  border-bottom: 0;
+  font-size: 85%;
+  line-height: 1.25;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 2em;
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+:lang(ur) {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+}
+
+.impt {
+	color: red;
+}
