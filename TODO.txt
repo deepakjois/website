@@ -6,3 +6,6 @@
 * Transcribe notes that are still on paper
 * Amiri Font
 * Change Favicon
+* Tagging Support
+* Script to track latest updates
+* Draft Support(?)
