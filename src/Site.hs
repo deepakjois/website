@@ -19,9 +19,9 @@ main = hakyllWith config $ do
   match "templates/*" $ compile templateCompiler
 
   -- Home page
-  match "source/index.markdown" $ do
+  match "source/index.html" $ do
     route defaultHtml
-    compile $ pandocCompiler >>= loadAndApplyTemplate "templates/home.html" defaultContext
+    compile $ getResourceBody >>= loadAndApplyTemplate "templates/home.html" defaultContext
 
 -- *****************
 -- Routes

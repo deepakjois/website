@@ -1,0 +1,8 @@
+* Content for pages
+* Books
+* Content for nav items
+* Content for Urdu
+* Anonymous Feedback
+* Transcribe notes that are still on paper
+* Amiri Font
+* Change Favicon

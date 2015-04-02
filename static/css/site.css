@@ -1,7 +1,21 @@
-html {
-    font-family: serif;
+img.logo {
+    margin-top: 20px;
 }
 
-body {
-    font-family: Baskerville,Trebuchet,Georgia,Arial,"Lucida Grande",garamond,palatino,verdana;
+nav {
+    text-align: center;
 }
+
+nav a {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  display: block;
+  border-bottom: 0;
+  font-size: 0.8em;
+  line-height: 1.25;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
