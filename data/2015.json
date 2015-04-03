@@ -1,0 +1,26 @@
+[
+{
+    "title"    : "A Spoke in the Wheel",
+    "link"     : "http://www.amazon.in/Spoke-Wheel-Amita-kanekar/dp/8189059564",
+    "author"   : "Amita Kanekar",
+    "category" : "fiction-indian",
+    "readable" : true,
+    "date"     : "2015-02-01"
+},
+{
+    "title"    : "Songs of the Saints of India",
+    "link"     : "http://www.amazon.com/Songs-Saints-India-Oxford-Paperbacks/dp/0195694201",
+    "author"   : "John Stratton Hawley and Mark Juergensmeyer",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2015-02-01"
+},
+{
+    "title"    : "The Indian Ideology",
+    "link"     : "http://www.amazon.com/Indian-Ideology-Perry-Anderson/dp/1781682593",
+    "author"   : "Perry Anderson",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2015-02-01"
+}
+]

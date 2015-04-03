@@ -1,11 +1,14 @@
-* Content for pages
-* Books
 * Content for nav items
+* Change Favicon
+* Amiri Font and content for Urdu
 * Content for Urdu
 * Anonymous Feedback
+* Footer
 * Transcribe notes that are still on paper
-* Amiri Font
-* Change Favicon
-* Tagging Support
-* Script to track latest updates
+* Cleanup Coursera Notes
+* Analytics
+* Deployment to Github
+* Improve typography: add more whitespace
 * Draft Support(?)
+* Script to track latest updates
+* Tagging Support

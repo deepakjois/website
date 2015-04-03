@@ -146,6 +146,22 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2014-08-01"
+ },
+ {
+    "title"    : "Subalterns and Sovereigns: An Anthropological History of Bastar (1854-2006)",
+    "link"     : "http://www.amazon.com/Subalterns-Sovereigns-Anthropological-1854-2006-Subaltern/dp/0195697049",
+    "author"   : "Nandini Sundar",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-09-01"
+ },
+ {
+    "title"    : "Early Urdu Literary Culture and History",
+    "link"     : "http://www.amazon.com/Early-Urdu-Literary-Culture-History/dp/0195652010",
+    "author"   : "Shamsur Rahman Faruqi",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2014-11-01"
  }
 ]
 
