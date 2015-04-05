@@ -14,6 +14,14 @@
     "date"     : "2014-01-01"
  },
  {
+     "title"    : "The Persistence of Caste",
+     "link"     : "http://www.amazon.com/The-Persistence-Caste-Khairlanji-Apartheid/dp/1848134495",
+     "author"   : "Anand Teltubmde",
+     "category" : "non-fiction-culture",
+     "readable" : true,
+     "date"     : "2014-01-01"
+ },
+ {
     "title"    : "A Brief History of Neoliberalism",
     "link"     : "http://www.amazon.com/Brief-History-Neoliberalism-David-Harvey-ebook/dp/B005X3SA74",
     "author"   : "David Harvey",

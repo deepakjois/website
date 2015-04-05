@@ -1,6 +1,6 @@
 ---
 title: Sociology
-date: Dec 1, 2014
+published: 2014-12-01
 lead: Notes from Sociology, a <abbr title="Massive Open Online Course">MOOC</abbr> on <a href="https://www.open2study.com">OpenStudy</a>
 ---
 ## Module 1: The Sociological Imagination

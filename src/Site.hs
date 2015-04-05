@@ -1,8 +1,8 @@
 {-# LANGUAGE OverloadedStrings, RankNTypes #-}
 import System.FilePath (joinPath, splitPath)
-import Data.Monoid (mappend)
+import Data.Monoid ((<>))
 import Data.String()
-import System.FilePath ((<.>), (</>), dropExtension)
+import System.FilePath ((<.>), (</>), takeFileName)
 import Text.Blaze.Html.Renderer.String (renderHtml)
 import Hakyll
 import Books (booksJSONToHtml)
@@ -26,15 +26,18 @@ main = hakyllWith config $ do
   match "source/index.html" $ do
     route defaultHtml
     compile $ getResourceBody
-        >>= loadAndApplyTemplate "templates/home.html" (field "title" (\_ -> return "Essays, Notes, Links and Code") `mappend` defaultContext)
+        >>= loadAndApplyTemplate "templates/home.html" (constField "title" "Essays, Notes, Links and Code" <> defaultContext)
         >>= loadAndApplyTemplate "templates/main.html" defaultContext
+
+  -- build up tags
+  tags <- buildTags "source/*.md" (fromCapture "tags/*")
 
   -- Inner pages
   match "source/*.md" $ do
     route $ stripTopDir `composeRoutes` setExtension ""
     compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/inner.html" defaultContext
-        >>= loadAndApplyTemplate "templates/main.html" defaultContext
+        >>= loadAndApplyTemplate "templates/inner.html" postCtx
+        >>= loadAndApplyTemplate "templates/main.html" postCtx
 
   -- Books
   create bookPages $ do
@@ -44,6 +47,19 @@ main = hakyllWith config $ do
         >>= loadAndApplyTemplate "templates/books.html" booksPageCtx
         >>= loadAndApplyTemplate "templates/main.html" defaultContext
 
+  -- Post tags
+  tagsRules tags $ \tag pattern -> do
+    let title = "Posts tagged ‘" ++ tag ++ "’"
+    route idRoute
+    compile $ do
+      posts <- recentFirst =<< loadAll pattern
+      let ctx = constField "tag" tag <>
+                constField "title" title <>
+                listField "posts" (postCtxWithTags tags) (return posts) <>
+                defaultContext
+      makeItem ""
+        >>= loadAndApplyTemplate "templates/tagged-list.html" ctx
+        >>= loadAndApplyTemplate "templates/main.html" ctx
 
 -- *****************
 -- Books
@@ -51,8 +67,10 @@ main = hakyllWith config $ do
 
 -- Pages containing list of books
 bookPages :: [Identifier]
-bookPages = map fromFilePath $ zipWith (++) (repeat "Book List ") (map show [2010..2015])
+bookPages = map fromFilePath $ zipWith (++) (repeat "Book Lists/") (map show bookPageYears)
 
+bookPageYears :: [Int]
+bookPageYears = [2010..2015]
 
 -- *****************
 -- Routes
@@ -71,10 +89,16 @@ defaultHtml = stripTopDir `composeRoutes` setExtension "html"
 -- Contexts
 -- *****************
 
+postCtx :: Context String
+postCtx = dateField "date" "%B %e, %Y" <> defaultContext
+
+postCtxWithTags :: Tags -> Context String
+postCtxWithTags tags = tagsField "tags" tags <> postCtx
+
 -- Context for a page listing books	
 booksPageCtx :: Context String
-booksPageCtx = field "books" getBooks `mappend`
-               field "year"  getYear  `mappend`
+booksPageCtx = field "books" getBooks <>
+               field "year"  getYear  <>
                defaultContext
  where
   jsonFile pageFilePath = "data" </> (year pageFilePath <.> "json")
@@ -89,7 +113,7 @@ getYear = return . year . toFilePath . itemIdentifier
 
 -- Get the year from a path to a inner book page
 year :: FilePath -> String
-year = last . words
+year = takeFileName
 
 -- *****************
 -- Configuration

@@ -1,6 +1,6 @@
 ---
 title: Coursera Downloader
-date: 31 Mar, 2015
+published: 2015-03-31
 lead: Script to download lecture videos from Coursera
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Nehru’s Constituent Assembly Speech
+tags: urdu
 lead: Nehru delivered an Urdu speech in the Constituent Assembly on 14th&nbsp;August&nbsp;1947.
-date: 2 Apr, 2015
+published: 2015-04-02
 ---
 <div class="embed-responsive embed-responsive-16by9">
 <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/fut7f7pXM_Q" allowfullscreen></iframe>

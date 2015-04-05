@@ -1,6 +1,6 @@
 ---
 title: Notes from reading Practical Vim
-date: May 2, 2012
+published: 2012-05-02
 lead: Useful Vim tips from Drew Neil’s book <a href="https://pragprog.com/book/dnvim/practical-vim">Practical&nbsp;Vim</a>
 ---
 ### Chapter 1 : The Vim Way

@@ -5,10 +5,15 @@
 // when `hakyll watch` is invoked does not sniff the MIME type of files
 // without an extension properly. This pops up a download dialog when those
 // files are accessed in a web browser.
+//
+// USAGE:
+// go run serve.go
 package main
 
 import "net/http"
+import "flag"
 
 func main() {
-	panic(http.ListenAndServe(":8080", http.FileServer(http.Dir("./_site"))))
+    flag.Parse()
+	panic(http.ListenAndServe(":8080", http.FileServer(http.Dir(flag.Arg(0)))))
 }

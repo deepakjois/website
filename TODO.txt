@@ -1,14 +1,12 @@
-* Content for nav items
 * Change Favicon
-* Amiri Font and content for Urdu
-* Content for Urdu
-* Anonymous Feedback
-* Footer
 * Transcribe notes that are still on paper
 * Cleanup Coursera Notes
+* Build tag pages and update template to include tags
+* Fix mime-type issue
+* Deployment to S3
 * Analytics
-* Deployment to Github
+* Put up pages on: Music, Movies, Linguistcs MOOC
+* Launch on deepak.jois.name
 * Improve typography: add more whitespace
 * Draft Support(?)
 * Script to track latest updates
-* Tagging Support
