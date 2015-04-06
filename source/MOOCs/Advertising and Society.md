@@ -1,6 +1,7 @@
 ---
 title: Advertising and Society
 published: 2014-12-01
+tags: mooc
 lead: Notes from <a href="https://www.coursera.org/course/adsoc">Advertising and Society</a>,  a <abbr title="Massive Open Online Course">MOOC</abbr> on Coursera.
 ---
 

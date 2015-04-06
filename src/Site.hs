@@ -33,7 +33,7 @@ main = hakyllWith config $ do
   tags <- buildTags "source/*.md" (fromCapture "tags/*")
 
   -- Inner pages
-  match "source/*.md" $ do
+  match "source/**.md" $ do
     route $ stripTopDir `composeRoutes` setExtension ""
     compile $ pandocCompiler
         >>= loadAndApplyTemplate "templates/inner.html" postCtx
