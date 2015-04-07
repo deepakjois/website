@@ -18,5 +18,5 @@ Executable site
   Main-is:             Site.hs
   Build-depends:       base          >= 4 && < 5
                      , hakyll        >= 4.6 && < 5
-                     , blaze-markup, blaze-html, json, split, filepath
+                     , blaze-markup, blaze-html, json, split, filepath, pandoc, containers
   Ghc-options:         -Wall -fno-warn-orphans -fno-warn-unused-do-bind

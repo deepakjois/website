@@ -1,7 +1,7 @@
 ---
 title: About Me
 published: 2015-04-03
-lead: 
+lead:
 ---
 
 Not too long ago, I used to work as a professional computer programmer. I worked at [Amazon][amazon] and [Soundcloud][soundcloud] among other places. I am currently on an extended break away from the tech bubble.

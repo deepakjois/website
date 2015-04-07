@@ -2,9 +2,11 @@
 import System.FilePath (joinPath, splitPath)
 import Data.Monoid ((<>))
 import Data.String()
+import qualified Data.Set as S
 import System.FilePath ((<.>), (</>), takeFileName)
 import Text.Blaze.Html.Renderer.String (renderHtml)
 import Hakyll
+import Text.Pandoc.Options
 import Books (booksJSONToHtml)
 
 
@@ -35,7 +37,7 @@ main = hakyllWith config $ do
   -- Inner pages
   match "source/**.md" $ do
     route $ stripTopDir `composeRoutes` setExtension ""
-    compile $ pandocCompiler
+    compile $ pandocMathCompiler
         >>= loadAndApplyTemplate "templates/inner.html" postCtx
         >>= loadAndApplyTemplate "templates/main.html" postCtx
 
@@ -114,6 +116,23 @@ getYear = return . year . toFilePath . itemIdentifier
 -- Get the year from a path to a inner book page
 year :: FilePath -> String
 year = takeFileName
+
+
+-- *****************
+-- Compilers
+-- *****************
+
+pandocMathCompiler :: Compiler (Item String)
+pandocMathCompiler =
+    let mathExtensions = [Ext_tex_math_dollars, Ext_tex_math_double_backslash,
+                          Ext_latex_macros]
+        defaultExtensions = writerExtensions defaultHakyllWriterOptions
+        newExtensions = foldr S.insert defaultExtensions mathExtensions
+        writerOptions = defaultHakyllWriterOptions {
+                          writerExtensions = newExtensions,
+                          writerHTMLMathMethod = MathJax ""
+                        }
+    in pandocCompilerWith defaultHakyllReaderOptions writerOptions
 
 -- *****************
 -- Configuration
