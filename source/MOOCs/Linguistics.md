@@ -27,7 +27,7 @@ lead: Notes from <a href="https://www.coursera.org/course/humanlanguage">Miracle
 * **Aphasia**: The (partial) loss of language due to brain damage.
 * Evolution of Languages
      - Continuity based theories: e.g. Tomasello, Pinker
-     - Discontinuity based theories: e.g. Chomsky
+     - Discontinuity based theories: e.g. Chomsky. See [here](http://newsoffice.mit.edu/2015/rapid-rise-human-language-0331) for an article w/ more details.
 * Natural Language = Native Speakers
 * William Lobov (famous American Sociolinguist) once said linguists work in 5 different places:
     (@) Library
@@ -47,4 +47,4 @@ lead: Notes from <a href="https://www.coursera.org/course/humanlanguage">Miracle
 * Victoria Nyst Interview
     - Phonology in Sign Language linguistics
     - “Parameters” e.g. handshakes, orientation of hand, location of hand
-       
+

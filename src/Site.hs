@@ -21,6 +21,9 @@ main = hakyllWith config $ do
   -- Templates for home and inner pages
   match "templates/*" $ compile templateCompiler
 
+  -- Includes for home and inner pages
+  match "includes/*" $ compile getResourceBody
+
   -- Data in JSON format
   match "data/*.json" $ compile getResourceBody
 
@@ -29,10 +32,7 @@ main = hakyllWith config $ do
     route defaultHtml
     compile $ getResourceBody
         >>= loadAndApplyTemplate "templates/home.html" (constField "title" "Essays, Notes, Links and Code" <> defaultContext)
-        >>= loadAndApplyTemplate "templates/main.html" defaultContext
-
-  -- build up tags
-  tags <- buildTags "source/*.md" (fromCapture "tags/*")
+        >>= loadAndApplyTemplate "templates/main.html" (constField "title" "Essays, Notes, Links and Code" <> defaultContext)
 
   -- Inner pages
   match "source/**.md" $ do
@@ -49,19 +49,6 @@ main = hakyllWith config $ do
         >>= loadAndApplyTemplate "templates/books.html" booksPageCtx
         >>= loadAndApplyTemplate "templates/main.html" defaultContext
 
-  -- Post tags
-  tagsRules tags $ \tag pattern -> do
-    let title = "Posts tagged ‘" ++ tag ++ "’"
-    route idRoute
-    compile $ do
-      posts <- recentFirst =<< loadAll pattern
-      let ctx = constField "tag" tag <>
-                constField "title" title <>
-                listField "posts" (postCtxWithTags tags) (return posts) <>
-                defaultContext
-      makeItem ""
-        >>= loadAndApplyTemplate "templates/tagged-list.html" ctx
-        >>= loadAndApplyTemplate "templates/main.html" ctx
 
 -- *****************
 -- Books
@@ -140,5 +127,5 @@ pandocMathCompiler =
 
 config :: Configuration
 config = defaultConfiguration {
-           deployCommand = "s3cmd sync  -r _site/*  s3://www.deepak.jois.name"
+           deployCommand = "s3cmd sync --guess-mime-type --no-mime-magic --delete-removed -r _site/*  s3://www.deepak.jois.name"
          }

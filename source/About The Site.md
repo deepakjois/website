@@ -1,10 +1,9 @@
 ---
 title: About The Site
 published: 2015-04-03
-lead: This site started life back in April 2009.
 ---
 
-Since then I keep gravitating between actively updating it and ignoring it completely, with an occasional burst where I fiddle around with the backend and design.
+This site started life back in April 2009. Since then I keep gravitating between actively updating it and ignoring it completely, with an occasional burst where I fiddle around with the backend and design.
 
 ## Content
 In the latest iteration of this site, I am trying to gather everything I have written (prose or code) in a single place. Currently, the best way to navigate the content is to use the [home page](/). When the site grows and adds more pages, I plan to add a section listing the latest entries in chronological order (with an <abbr title="Really Simple Syndication">RSS</abbr> feed to go along with it as well).
@@ -26,13 +25,14 @@ CSS styling is done using [Bootstrap 3.0][bootstrap] almost exclusively. I am no
 [amiri]: http://www.amirifont.org/
 [nastaliq]: http://en.wikipedia.org/wiki/Nasta%CA%BFl%C4%ABq_script
 
-I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. Hakyll’s default web server (invoked using `hakyll watch`) does not recognise the Content-type of pages with no extensions, so I had to [write my own], which turned out be pretty easy in [Go][go]. Later, I discovered that [s3cmd][s3cmd] is pretty broken when it comes to uploading files with the right Content-types. So I had to write my own uploader in Go as well.
+I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. Hakyll’s default web server (invoked using `hakyll watch`) does not recognise the Content-type of pages with no extensions, so I had to [write my own][serve.go], which turned out be pretty easy in [Go][go]. It is still a bit tricky to upload the files with the right content type, but [s3cmd][] works for now.
 
 [cool-uris]:http://www.w3.org/Provider/Style/URI.html
 [go]:http://golang.org/
-[s3cmd]: http://s3tools.org 
+[serve.go]:https://github.com/deepakjois/website/blob/master/serve.go
+[s3cmd]: http://s3tools.org
 
-The source code for this site is [hosted on Github][github-url]. This site is licensed under the [Creative Commons][cc] [public domain][cc0] license.</p>
+The source code for this site is [hosted on Github][github-url]. This site is licensed under the [Creative Commons][cc] [public domain][cc0] license.
 
 [github-url]:https://github.com/deepakjois/website
 [cc]: http://en.wikipedia.org/wiki/Creative%20Commons

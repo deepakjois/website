@@ -1,12 +1,10 @@
-* Change Favicon
-* Transcribe notes that are still on paper
-* Cleanup Coursera Notes
-* Build tag pages and update template to include tags
-* Fix mime-type issue
-* Deployment to S3
 * Analytics
-* Put up pages on: Music, Movies, Linguistcs MOOC
+* Finish About Me page
+* Last minute tweaks
+* merge with master
 * Launch on deepak.jois.name
+* Build tag pages and update template to include tags
+* Cleanup Coursera Notes
 * Improve typography: add more whitespace
 * Draft Support(?)
 * Script to track latest updates
