@@ -22,7 +22,7 @@ main = hakyllWith config $ do
   match "templates/*" $ compile templateCompiler
 
   -- Includes for home and inner pages
-  match "includes/*" $ compile getResourceBody
+  match "includes/*" $ compile templateCompiler
 
   -- Data in JSON format
   match "data/*.json" $ compile getResourceBody
@@ -127,5 +127,5 @@ pandocMathCompiler =
 
 config :: Configuration
 config = defaultConfiguration {
-           deployCommand = "s3cmd sync --guess-mime-type --no-mime-magic --delete-removed -r _site/*  s3://www.deepak.jois.name"
+           deployCommand = "s3cmd sync --guess-mime-type --no-mime-magic --delete-removed -r _site/  s3://www.deepak.jois.name/"
          }
