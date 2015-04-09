@@ -81,9 +81,6 @@ defaultHtml = stripTopDir `composeRoutes` setExtension "html"
 postCtx :: Context String
 postCtx = dateField "date" "%B %e, %Y" <> defaultContext
 
-postCtxWithTags :: Tags -> Context String
-postCtxWithTags tags = tagsField "tags" tags <> postCtx
-
 -- Context for a page listing books	
 booksPageCtx :: Context String
 booksPageCtx = field "books" getBooks <>
