@@ -220,7 +220,6 @@ func main() {
 
 	// Check whether the Walk failed.
 	if err := <-errc; err != nil {
-		// TODO Do something
 		fmt.Print("Walk failed")
 	}
 }
