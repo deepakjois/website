@@ -2,6 +2,7 @@ package main
 
 import (
 	"crypto/md5"
+	"errors"
 	"flag"
 	"fmt"
 	"io"
@@ -10,14 +11,16 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"sync"
 
 	"github.com/awslabs/aws-sdk-go/aws"
 	"github.com/awslabs/aws-sdk-go/service/s3"
 )
 
 const (
-	sniffLen = 512
-	bucket   = "www.deepak.jois.name"
+	sniffLen    = 512
+	bucket      = "www.deepak.jois.name"
+	numParallel = 10
 )
 
 var (
@@ -108,16 +111,12 @@ func uploadFile(path string, ctype string) error {
 	return nil
 }
 
-func visit(path string, f os.FileInfo, err error) error {
-	if f.IsDir() {
-		return nil
-	}
-
-	fmt.Printf("Uploading %s…", path)
-
+// Check if MD5 hashes of remote and local copies match, and upload local to
+// remote if they don’t.
+func checkAndUpload(path string) (string, error) {
 	md5Local, err := computeMd5(path)
 	if err != nil {
-		return err
+		return "", err
 	}
 
 	md5Remote, err := computeMd5Remote(path)
@@ -125,37 +124,103 @@ func visit(path string, f os.FileInfo, err error) error {
 		if awserr.StatusCode == 404 {
 			md5Remote = "" // Set to dummy value
 		} else {
-			return err
+			return "", err
 		}
 
 	} else if err != nil {
-		return err
+		return "", err
 	}
 
 	if md5Local == md5Remote {
-		fmt.Println("up-to-date")
-	} else {
-		ctype, err := sniffContentType(path)
-		if err != nil {
-			return err
-		}
+		return "up-to-date", nil
+	}
+	ctype, err := sniffContentType(path)
+	if err != nil {
+		return "", err
+	}
 
-		err = uploadFile(path, ctype)
-		if err != nil {
-			fmt.Println("ERROR!")
-		} else {
-			fmt.Println("done")
+	err = uploadFile(path, ctype)
+	if err != nil {
+		return "", err
+	}
+	return "done", nil
+}
+
+type result struct {
+	path   string
+	status string
+	err    error
+}
+
+func uploader(done <-chan struct{}, paths <-chan string, c chan<- result) {
+	for path := range paths {
+		status, err := checkAndUpload(path)
+		select {
+		case c <- result{path: path, status: status, err: err}:
+		case <-done:
+			return
 		}
 	}
-	return nil
 }
 
 func main() {
 	svc = s3.New(&aws.Config{Region: "us-east-1"})
 	flag.Parse()
 	pathPrefix = flag.Arg(0)
-	err := filepath.Walk(pathPrefix, visit)
-	if err != nil {
-		fmt.Printf("filepath.Walk() returned %v\n", err)
+
+	done := make(chan struct{})
+	defer close(done)
+
+	paths := make(chan string)
+	errc := make(chan error, 1)
+
+	go func() {
+		defer close(paths)
+
+		errc <- filepath.Walk(pathPrefix, func(path string, f os.FileInfo, err error) error {
+			if err != nil {
+				return err
+			}
+
+			if f.IsDir() {
+				return nil
+			}
+			select {
+			case paths <- path:
+			case <-done:
+				return errors.New("walk canceled")
+			}
+			return nil
+		})
+	}()
+
+	// Start a fixed number of goroutines to check and upload files.
+	c := make(chan result)
+	var wg sync.WaitGroup
+	wg.Add(numParallel)
+	for i := 0; i < numParallel; i++ {
+		go func() {
+			uploader(done, paths, c)
+			wg.Done()
+		}()
+	}
+	go func() {
+		wg.Wait()
+		close(c)
+	}()
+
+	for r := range c {
+		if r.status == "done" {
+			fmt.Printf("Uploading %s…%s\n", r.path, r.status)
+		}
+		if r.err != nil {
+			fmt.Printf("Uploading %s…ERROR!: %s\n", r.path, r.err)
+		}
+	}
+
+	// Check whether the Walk failed.
+	if err := <-errc; err != nil {
+		// TODO Do something
+		fmt.Print("Walk failed")
 	}
 }
