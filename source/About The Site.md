@@ -25,11 +25,12 @@ CSS styling is done using [Bootstrap 3.0][bootstrap] almost exclusively. I am no
 [amiri]: http://www.amirifont.org/
 [nastaliq]: http://en.wikipedia.org/wiki/Nasta%CA%BFl%C4%ABq_script
 
-I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. Hakyll’s default web server (invoked using `hakyll watch`) does not recognise the Content-type of pages with no extensions, so I had to [write my own][serve.go], which turned out be pretty easy in [Go][go]. It is still a bit tricky to upload the files with the right content type, but [s3cmd][] works for now.
+I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. Hakyll’s default web server (invoked using `hakyll watch`) does not recognise the Content-type of pages with no extensions, so I had to [write my own][serve.go]. I also wrote my own [uploader][upload.go], because [s3cmd][] was pretty terrible at sniffing MIME-types effectively and handling uploads of filenames with unicode chars in them. Both the web server and uploader were written in [Go.][go]
 
 [cool-uris]:http://www.w3.org/Provider/Style/URI.html
 [go]:http://golang.org/
 [serve.go]:https://github.com/deepakjois/website/blob/master/serve.go
+[upload.go]:https://github.com/deepakjois/website/blob/master/upload.go
 [s3cmd]: http://s3tools.org
 
 The source code for this site is [hosted on Github][github-url]. This site is licensed under the [Creative Commons][cc] [public domain][cc0] license.
