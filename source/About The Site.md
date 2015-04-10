@@ -6,7 +6,7 @@ published: 2015-04-03
 This site started life back in April 2009. Since then I keep gravitating between actively updating it and ignoring it completely, with an occasional burst where I fiddle around with the backend and design.
 
 ## Content
-In the latest iteration of this site, I am trying to gather everything I have written (prose or code) in a single place. Currently, the best way to navigate the content is to use the [home page](/). When the site grows and adds more pages, I plan to add a section listing the latest entries in chronological order (with an <abbr title="Really Simple Syndication">RSS</abbr> feed to go along with it as well).
+In the latest iteration of this site, I am trying to gather everything I have written (prose or code) in a single place. Currently, the best way to navigate the content is to use the [home page](/). When the site grows and more pages are added, I plan to add a tags, a section listing the latest entries in chronological order, and an <abbr title="Really Simple Syndication">RSS</abbr> feed.
 
 ## Colophon
 

@@ -11,7 +11,7 @@ Not too long ago, I used to work as a professional computer programmer. I worked
 
 I recently started learning [Urdu][urdu].
 
-One of the motivations to run this site is to put more of my thoughts down in writing. This should hopefully lead to an improvement in my writing skills. I appreciate receiving any suggestions or criticisms. You can send me [anonymous feedback][feedback].
+One of the motivations to run this site is to put more of my thoughts down in writing. This will hopefully lead to an improvement in my writing skills. I appreciate receiving any suggestions or criticisms. You can send me [anonymous feedback][feedback].
 
 [feedback]: https://docs.google.com/forms/d/1JHsgl6-FXZNdBkEZSHNrGkb9gTjqooqXOM6NvmGau3c/viewform"
 
