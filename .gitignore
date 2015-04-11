@@ -10,3 +10,4 @@ _cache
 .cabal-sandbox
 cabal.sandbox.config
 serve
+upload
