@@ -183,6 +183,9 @@ func main() {
 			}
 
 			if f.IsDir() {
+				if filepath.Base(f.Name()) == "Drafts" {
+					return filepath.SkipDir
+				}
 				return nil
 			}
 			select {
