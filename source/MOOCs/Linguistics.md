@@ -35,9 +35,9 @@ lead: Notes from <a href="https://www.coursera.org/course/humanlanguage">Miracle
         - Historical Linguistics
         - Philology (How is language used in literary works)
     (@) Bush
-        - Study New Languages
+        - Study new languages in remote locations
     (@) Closet
-        - Write/Think; Theoritical Linguistics
+        - Write/Think; Theoretical Linguistics
     (@) Laboratory
         - Phonetics/Speech Sounds
         - Psycholinguistics
