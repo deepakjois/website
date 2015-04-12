@@ -25,7 +25,7 @@ CSS styling is done using [Bootstrap 3.0][bootstrap] almost exclusively. I am no
 [amiri]: http://www.amirifont.org/
 [nastaliq]: http://en.wikipedia.org/wiki/Nasta%CA%BFl%C4%ABq_script
 
-I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. Hakyll’s default web server (invoked using `hakyll watch`) does not recognise the Content-type of pages with no extensions, so I had to [write my own][serve.go]. I also wrote my own [uploader][upload.go], because [s3cmd][] was pretty terrible at sniffing MIME-types effectively and handling uploads of filenames with unicode chars in them. Both the web server and uploader were written in [Go.][go]
+I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. Hakyll’s default web server (invoked using `hakyll watch`) does not recognise the Content-type of pages with no extensions, so I had to [write my own][serve.go]. I also wrote my own [uploader][upload.go], because [s3cmd][] was terrible at sniffing MIME-types effectively and handling uploads of filenames with unicode chars in them. Both the web server and uploader were written in [Go.][go]
 
 [cool-uris]:http://www.w3.org/Provider/Style/URI.html
 [go]:http://golang.org/
