@@ -10,13 +10,13 @@ published: 2015-04-12
 [guide]:http://patriot.net/~abdali/urdumac.html#TypesettingWithTeX
 [XeLaTeX]:http://www.xelatex.org/
 
-This page however is about typesetting Urdu in Plain [XeTeX], without any additional formats. It is not very straightforward and requires a lot of heavy lifting. I have been experimenting with it off and on.
+This page is about typesetting Urdu in Plain [XeTeX], without any additional formats. It is not very straightforward and requires a lot of heavy lifting. I have been experimenting with it off and on.
 
 [XeTeX]:http://xetex.sourceforge.net/
 
- When delimiters and commands appear with Urdu text, the sequence can get messed up. To avoid confusion, you could try putting Urdu and non-Urdu symbols on different lines (see code below).
+On a related note, I haven’t found a text editor that can handle bilingual text when one of the languages is written left-to-right and the other right-to-left. It happens a lot in this case because the commands are in English, and the text in Urdu. When delimiters and commands appear with Urdu text, the sequence can get messed up. To avoid confusion, you could try putting Urdu and non-Urdu symbols on different lines (see code below).
 
- On a related note, it is very difficult to find a decent text editor that can handle bilingual text when one of the languages is written left-to-right and the other right-to-left. This happens a lot in TeX because the commands are in English, and the text in Urdu. On OS X, [Katib][] is decent, but it’s not without kinks. It is designed more as a Markdown text editor, so it is not that great for editing code. If you have found something that works for you, send me a message.
+On OS X, the [Katib][] editor is decent for editing languages that are written from right-to-left, but it’s not without kinks. It is designed more as a Markdown text editor, so it isn’t ideal for editing code. If you have found something that works nicely, send me a message.
 
 [Katib]:http://katibapp.com/
 
