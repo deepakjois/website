@@ -48,3 +48,45 @@ lead: Notes from <a href="https://www.coursera.org/course/humanlanguage">Miracle
     - Phonology in Sign Language linguistics
     - “Parameters” e.g. handshakes, orientation of hand, location of hand
 
+## Week 2
+
+* Two subdisciplines of Linguistics
+    - Phonetics: Studies physical and physiological aspects of sounds
+    - Phonology: Studies sounds as part of language, omitting linguistically irrelevant details
+
+* Sounds
+  - Form finite set
+  - ± 20-200 vowels and consonants
+  - Building blocks for constructing words
+
+* International Phonetic Alphabet (IPA)
+    - All different sounds
+    - All different languages
+
+### Consonants
+
+[Table of English Consonants](https://www.google.com/search?q=table+of+english+consonants)
+
+* Distinguising consonants from vowels
+    - Airstream is not impeded for vowels
+    - Every syllable has a vowel; consonants are optional
+
+Three dimensions:
+- Place of articulation
+    * Labial (lips)
+    * Alveolar ([alveolar ridge](http://en.wikipedia.org/wiki/Alveolar_ridge))
+    * Velar (back part of the mouth)
+    * Other? (for e.g. somewhere around the vocal cords, for e.g the Urdu ‘خ’ sound)
+* Manner or articulation
+    - Stop/Plosive (प)
+    - Fricative (फ)
+    * Nasal (म)
+    * Sonorant (ल)
+* Voicing
+    * Vocal cords
+
+* Some consonants that occur is (almost) all languages: T and M
+* Consonants reveal word meaning
+* Southern African languages have the most consonants (100-150)
+
+### Sounds in systems
