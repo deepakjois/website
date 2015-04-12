@@ -9,7 +9,7 @@ Not too long ago, I used to work as a professional computer programmer. I worked
 [soundcloud]:http://soundcloud.com
 [urdu]:http://en.wikipedia.org/wiki/Urdu
 
-Nowadays, I am learning [Urdu][urdu] and doing a lot of <abbr title="Massive Open Online Course">MOOCs</abbr>, mostly on [Coursera][course-list].
+Nowadays, I am learning [Urdu][urdu] and doing a [lot of MOOCs][course-list].
 
 One of the motivations to run this site is to put more of my thoughts down in writing. This will hopefully lead to an improvement in my writing skills. I appreciate receiving any suggestions or criticisms. You can send me [anonymous feedback][feedback].
 
