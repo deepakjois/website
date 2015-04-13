@@ -1,5 +1,3 @@
-* Launch on deepak.jois.name
 * Build tag pages and update template to include tags
 * Improve typography: add more whitespace
-* Draft Support(?)
 * Script to track latest updates
