@@ -19,4 +19,5 @@ published: 2015-04-08
 * [Force Majeure](http://www.imdb.com/title/tt3630276/)
 * [La graine et le mulet](http://www.imdb.com/title/tt0487419/)
 * [‘Mhaari Boli Lakhe Na Koi’ by Mahesha Ram](https://www.youtube.com/watch?v=iadFidYcXu0&feature=youtu.be)
-* [Sahel Sounds](http://www.afropop.org/11119/sahel-sounds-mix/)
+* [Sahel Sounds Mix](http://www.afropop.org/11119/sahel-sounds-mix/)
+* [Group Anmataff - Tinariwen](http://sahelsounds.bandcamp.com/track/tinariwen)
