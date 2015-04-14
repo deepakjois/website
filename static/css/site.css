@@ -33,3 +33,15 @@ nav a:hover {
 .impt {
 	color: red;
 }
+
+@media (min-width: 992px) {
+    .fixed-nav {
+        position: fixed;
+    }
+}
+
+@media (min-width: 768px) {
+    .fixed-nav {
+        position:fixed;
+    }
+}
