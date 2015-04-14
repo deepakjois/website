@@ -2,6 +2,9 @@
 import System.FilePath (joinPath, splitPath)
 import Data.Monoid ((<>))
 import Data.String()
+import Data.List (sortBy)
+import Data.Ord (comparing)
+import Network.URI (unEscapeString)
 import qualified Data.Set as S
 import System.FilePath ((<.>), (</>), takeFileName)
 import Text.Blaze.Html.Renderer.String (renderHtml)
@@ -43,11 +46,23 @@ main = hakyllWith config $ do
 
   -- Books
   create bookPages $ do
-    route idRoute
+    route $ stripTopDir `composeRoutes` setExtension ""
     compile $
       makeItem ""
         >>= loadAndApplyTemplate "templates/books.html" booksPageCtx
         >>= loadAndApplyTemplate "templates/main.html" defaultContext
+
+  -- List of all posts
+
+  create ["All Posts"] $ do
+    route $ idRoute
+    compile $ do
+      posts <- alphaFirst =<< loadAll "source/**"
+      let archiveCtx = listField "posts" postCtx (return posts) <> defaultContext
+      makeItem ""
+        >>= loadAndApplyTemplate "templates/all-posts.html" archiveCtx
+        >>= loadAndApplyTemplate "templates/main.html" archiveCtx
+
 
 
 -- *****************
@@ -56,7 +71,7 @@ main = hakyllWith config $ do
 
 -- Pages containing list of books
 bookPages :: [Identifier]
-bookPages = map fromFilePath $ zipWith (++) (repeat "Book Lists/") (map show bookPageYears)
+bookPages = map fromFilePath $ zipWith (++) (repeat "source/Book Lists/") (map show bookPageYears)
 
 bookPageYears :: [Int]
 bookPageYears = [2010..2015]
@@ -78,10 +93,21 @@ defaultHtml = stripTopDir `composeRoutes` setExtension "html"
 -- Contexts
 -- *****************
 
+-- Context for posts
 postCtx :: Context String
-postCtx = dateField "date" "%B %e, %Y" <> defaultContext
+postCtx = dateField "date" "%B %e, %Y" <> unEscapedUrlField "uurl" <> defaultContext
 
--- Context for a page listing books	
+-- Sort items alphabetically
+alphaFirst :: [Item a] -> Compiler [Item a]
+alphaFirst items = return $
+  sortBy (comparing (unEscapeString . toFilePath . itemIdentifier)) items
+
+-- Context field to get unescaped URL
+unEscapedUrlField :: String -> Context a
+unEscapedUrlField key = field key $
+    fmap (maybe "" id) . getRoute . itemIdentifier
+
+-- Context for a page listing books
 booksPageCtx :: Context String
 booksPageCtx = field "books" getBooks <>
                field "year"  getYear  <>
