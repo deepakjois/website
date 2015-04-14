@@ -72,21 +72,48 @@ lead: Notes from <a href="https://www.coursera.org/course/humanlanguage">Miracle
     - Every syllable has a vowel; consonants are optional
 
 Three dimensions:
+
 - Place of articulation
-    * Labial (lips)
-    * Alveolar ([alveolar ridge](http://en.wikipedia.org/wiki/Alveolar_ridge))
-    * Velar (back part of the mouth)
-    * Other? (for e.g. somewhere around the vocal cords, for e.g the Urdu ‘خ’ sound)
+     * Labial (lips)
+     * Alveolar ([alveolar ridge](http://en.wikipedia.org/wiki/Alveolar_ridge))
+     * Velar (back part of the mouth)
+     * Other? (for e.g. somewhere around the vocal cords, for e.g the Urdu ‘خ’ sound)
 * Manner or articulation
-    - Stop/Plosive (प)
-    - Fricative (फ)
-    * Nasal (म)
-    * Sonorant (ल)
+     - Stop/Plosive (प)
+     - Fricative (फ)
+     * Nasal (म)
+     * Sonorant (ल)
 * Voicing
-    * Vocal cords
+     * Vocal cords
 
 * Some consonants that occur is (almost) all languages: T and M
 * Consonants reveal word meaning
 * Southern African languages have the most consonants (100-150)
 
 ### Sounds in systems
+
+* In phonology, the dimensions we discussed above are called _features_
+* Assumption: Sounds are constituted of features. The true atoms of language are just those _features_
+* Evidence Type 1: Phonological Activity
+    - Sound A → B or Feature A → B
+* Evidence Type 2: Symmetry of Consonants
+    - Hawaiian : ‘t’ and ‘k’ mean the same thing
+* Evidence Type 3: Path of Acquisition
+    - Children learn sounds ’p’ and ‘t’ (voiceless, plosive, labial and coronal)
+    * Then they learn nasal: m-n
+    * Then they learn fricatives: f-s
+    * They don’t learn sounds one at a time, they learn places or articulation/manners of articulation one at a time
+* Evidence Type 4: Speech errors
+    * Interchanging sounds:
+        - Brake fluid → Blake fruid
+    * Interchanging features
+        * Cedars of Lebanon → Cedars of Lemadon
+        * Spaghetti → Skabetti
+
+* Why do languages chance?
+    * Internal factors: How children acquires languages from their parents and change it ever so slightly
+    * External factors: Borrowings from other languages
+
+* Nacht (German) and Night (English)
+* Christmas (English) and Kalikimaka (Christmas)
+
