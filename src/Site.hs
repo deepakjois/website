@@ -2,9 +2,8 @@
 import System.FilePath (joinPath, splitPath)
 import Data.Monoid ((<>))
 import Data.String()
-import Data.List (sortBy)
+import Data.List (sortBy, isInfixOf)
 import Data.Ord (comparing)
-import Network.URI (unEscapeString)
 import qualified Data.Set as S
 import System.FilePath ((<.>), (</>), takeFileName)
 import Text.Blaze.Html.Renderer.String (renderHtml)
@@ -57,12 +56,11 @@ main = hakyllWith config $ do
   create ["All Posts"] $ do
     route $ idRoute
     compile $ do
-      posts <- alphaFirst =<< loadAll "source/**"
+      posts <- alphaFirst =<< filterDrafts =<< loadAll "source/**"
       let archiveCtx = listField "posts" postCtx (return posts) <> defaultContext
       makeItem ""
         >>= loadAndApplyTemplate "templates/all-posts.html" archiveCtx
         >>= loadAndApplyTemplate "templates/main.html" archiveCtx
-
 
 
 -- *****************
@@ -100,7 +98,12 @@ postCtx = dateField "date" "%B %e, %Y" <> unEscapedUrlField "uurl" <> defaultCon
 -- Sort items alphabetically
 alphaFirst :: [Item a] -> Compiler [Item a]
 alphaFirst items = return $
-  sortBy (comparing (unEscapeString . toFilePath . itemIdentifier)) items
+  sortBy (comparing (toFilePath . itemIdentifier)) items
+
+-- Filter any draft items
+filterDrafts :: [Item a] -> Compiler [Item a]
+filterDrafts items = return $
+  filter (not . (isInfixOf "Drafts/") . toFilePath . itemIdentifier) items
 
 -- Context field to get unescaped URL
 unEscapedUrlField :: String -> Context a
