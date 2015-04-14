@@ -1,4 +1,3 @@
-* Build master list
-* Build tag pages and update template to include tags
 * Improve typography: add more whitespace
 * Script to track latest updates
+* Build tag pages and update template to include tags
