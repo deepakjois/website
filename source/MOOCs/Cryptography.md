@@ -1,5 +1,5 @@
 ---
-title: Cryptography MOOC
+title: Cryptography
 published: 2015-04-06
 lead: Notes from <a href="https://www.coursera.org/course/cryptography">Cryptography</a>, a <abbr title="Massive Open Online Course">MOOC</abbr> on Coursera
 ---
