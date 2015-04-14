@@ -13,6 +13,7 @@ published: 2015-04-08
 * [Marxizard](http://existentialcomics.com/comic/74)
 * [The Most Ubermensch Man in the World](http://existentialcomics.com/comic/75)
 * [Beyond the “Madman”](https://www.jacobinmag.com/2015/04/lubitz-pilot-germanwings-crash-lufthansa/)
+* [An Interview on the Continuing Relevance of Marx](http://kafila.org/2015/04/12/an-interview-on-the-continuing-relevance-of-marx/)
 
 ### Music and Movies
 * [After the Money: Salsa for Love in NYC](http://www.afropop.org/22447/after-the-money-salsa-for-love-in-nyc/)
