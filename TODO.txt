@@ -1,3 +1,4 @@
 * Improve typography: add more whitespace
+* Search function
 * Script to track latest updates
 * Build tag pages and update template to include tags
