@@ -4,6 +4,27 @@ published: 2015-04-06
 lead: Notes from <a href="https://www.coursera.org/course/cryptography">Cryptography</a>, a <abbr title="Massive Open Online Course">MOOC</abbr> on Coursera
 ---
 
+## Week 6: Message Integrity
+
+* Secrecy and Integrity
+    - Orthogonal Concerns
+    * Encryption does not (in general) provide any integrity (_malleability_)
+* Threat model = “Adaptive chosen-message attack”
+* Security Goal = “Existential Unforgeability”
+* Replay attacks are still possible
+* CBC-MAC
+    * deterministic (no IV)
+    * Online final value is output
+* Hash functions: Maps arbitrary length inputs to a short, fixed length “digest”
+    - Keyed functions
+    - Unkeyed functions
+* Types of hash functions
+    - MD5: 128-bit, insecure
+    - SHA-1: 160-bit, known “theoritical” weaknesses
+    * SHA-2: 256-bit (same family as SHA-1)
+    * SHA-3/Keccak: 224, 256, 384 and 512-bit variants
+* H-MAC (Hash and MAC)
+
 ## Week 7: Number Theory
 * Number theory is needed for public-key cryptography
 * Basic treatment here, for more details refer to Cat Lyndel textbook.
@@ -132,3 +153,23 @@ Example:
 #### Cyclic Groups
 * Diffie Helman problems
 * Elliptic Curves
+
+## Week 8: Public Key Cryptography
+
+* Problems with Private Key Crypto
+    - Key Distribution Problem
+    - Key Management Problem
+    - Lack of support for “Open Systems”
+        - Two users who have no prior relationship, but want to communicate securely
+* New approaches were needed
+    * [New Directions in Cryptography](http://www-ee.stanford.edu/~hellman/publications/24.pdf) by Whitfied Diffie and Martin E. Hellman, published in 1975
+    * Some problems exhibit _assymetry_ – easy to convert, hard to invert
+    * Use assymetry to agree on a shared secret key using public channel
+* _Authenticated Key Exchange_
+    - Parties know each others identities
+* Public Key Distribution
+    - One implicit assumption might be that parties are able to obtain _correct_ copies of each other’s public keys
+    * Will revisit this assumption next week
+* Why study private key crypto (if public key crypto can do the job for us)
+    * Private key crypto is more suitable for certain applications, e.g. disk encryption
+    * Public key crypto is SLOW! (2–3 orders of magnitude)
