@@ -23,7 +23,7 @@ nav a:hover {
     margin-top: 2em;
 }
 
-@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+@import url(http://fonts.googleapis.com/css?family=Amiri:400,700&subset=arabic,latin);
 
 :lang(ur) {
     font-family: 'Amiri', serif;
