@@ -19,7 +19,7 @@ Ambedkar was also one of the most erudite and articulate scholars of his time, w
 ## Books
 
 ### Annihilation of Caste
-The best introduction to Ambedkar's writings is, no doubt, the seminal text [Annihilation of Caste][aoc]. Written in the form of a speech, which was meant to be delivered at a conference that never happened (the irreverence of what Ambedkar was planning to say made the organisers uncomfortable enough to cancel the event outright), it is a scathing indictment of the caste system and a call for a revolution within Hindu society. Ambedkar covers a range of issues, from the problems and failures of the upper-caste Hindu reform movement, to the root causes of social inequality and discrimination among Hindus. His arguments are sharp, logical and incisive, and backed by numerous sources as well as creative analogies and examples.
+The best introduction to Ambedkar's writings is, no doubt, the seminal text [Annihilation of Caste][aoc]. Written in the form of a speech, which was meant to be delivered at a conference that never happened (the irreverence of what Ambedkar was planning to say made the organisers uncomfortable enough to cancel the event outright), it is a scathing indictment of the caste system and a call for a revolution within Hindu society. Ambedkar covers a range of issues, from the problems and failures of the upper-caste Hindu reform movement, to the root causes of social inequality and discrimination among Hindus. His arguments are sharp, logical and incisive, and backed by creative analogies and examples.
 
 [aoc]:http://ccnmtl.columbia.edu/projects/mmt/ambedkar/web/index.html
 
