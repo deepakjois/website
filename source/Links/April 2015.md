@@ -12,6 +12,9 @@ published: 2015-04-08
 * [The Ten Commandments of Sushi](https://medium.com/gone/the-ten-commandments-of-sushi-4eac45192c7d)
 * [Beyond the “Madman”](https://www.jacobinmag.com/2015/04/lubitz-pilot-germanwings-crash-lufthansa/)
 * [An Interview on the Continuing Relevance of Marx](http://kafila.org/2015/04/12/an-interview-on-the-continuing-relevance-of-marx/)
+* [‘They,’ the Singular Pronoun, Gets Popular](http://www.wsj.com/articles/can-they-be-accepted-as-a-singular-pronoun-1428686651)
+* [Playing with Language](http://ed.ted.com/series/playing-with-language)
+* [The Muddled Meaning of Mindfulness](http://www.nytimes.com/2015/04/19/magazine/the-muddied-meaning-of-mindfulness.html)
 
 ### Music and Movies
 * [Force Majeure](http://www.imdb.com/title/tt3630276/)
@@ -20,3 +23,6 @@ published: 2015-04-08
 * [‘Mhaari Boli Lakhe Na Koi’ by Mahesha Ram](https://www.youtube.com/watch?v=iadFidYcXu0&feature=youtu.be)
 * [Sahel Sounds Mix](http://www.afropop.org/11119/sahel-sounds-mix/)
 * [Group Anmataff - Tinariwen](http://sahelsounds.bandcamp.com/track/tinariwen)
+* [Kinan Azmeh (Syria) & Morgenland Chamber Orchestra](https://youtu.be/ZFDCtC6M2Es)
+* [Bombino - Nomad](http://www.nonesuch.com/albums/nomad)
+* [पढ़ना लिखना सीखो](http://www.jananatyamanch.org/node/138)
