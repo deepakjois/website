@@ -3,8 +3,7 @@ title: Ambedkar Reading List for&nbsp;Beginners
 published: 2015-04-19
 ---
 
-*Written by: Surabhi*<br/>
-*(Work in progress. Comments and suggestions are welcome.)*
+#### *Written by: Surabhi*
 
 ## Introduction
 
@@ -43,3 +42,5 @@ Ambedkar’s relationship with the Indian National Congress, which was dominated
 
 [savarna]:http://en.wikipedia.org/wiki/Savarna
 [congress-gandhi-untouchables]:http://www.ambedkar.org/ambcd/41A.What%20Congress%20and%20Gandhi%20Preface.htm
+
+*This is a work in progress. Comments and suggestions are welcome.*
