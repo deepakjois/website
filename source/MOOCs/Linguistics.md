@@ -117,3 +117,98 @@ Three dimensions:
 * Nacht (German) and Night (English)
 * Christmas (English) and Kalikimaka (Christmas)
 
+## Week 3
+
+* Words and sentences
+    - Express meaning
+    - **Morphology:** Study of internal structure of words
+    * **Syntax:** Study of how sentences are formed out of words
+
+### Morphology
+
+* Criteria for words
+    - Spaces
+    - Meaning, one meaningful concept
+    * Pronunciation, one form that cannot be interrupted
+* Parts of words
+    * e.g. _uncovering_
+    * Three *morphemes*, un-, cover, -ing
+    * Affixes: *un-* (prefix), *-ing* (suffix)
+    * Base: *cover*
+
+#### Four Types of Languages
+
+* Isolating
+    - word is one morpheme
+    * few combinations
+    * e.g. Chinese
+    * 1:1, Morpheme:Meaning
+* Agglutinative
+    - Lots of morphemes
+    - Transparent way of combining
+    - Turkish:
+        * *el* = hand
+        * *el-ler* = hands
+        * *el-im* = my hands
+        * *el-ler-im* = my hands
+* Fusional
+    * e.g Arabic
+    * Affix changes internal to the base
+    * Example:
+        - کتاب = Kitāb (Book)
+        * کُتُب = Kutub (Books)
+        * کاتِب = Katib (Writer)
+        * کِتابت = Kitabat (to write)
+* Polysynthetic
+    * Combine bases and affixes endlessly
+    * e.g. Mohawk
+
+
+Most languages cannot be neatly classified into one category above. For e.g. Engish is
+
+* Fusional - *sing*, *sang*, *sung*
+* Isolating
+* Agglutinative - *uncovering*
+
+Do some languages have more words than others?
+
+> Languages seem to differ in the number of words they have, but at the end of the day we cannot really count the number of words in any language and therefore we cannot really make that comparison.
+
+### Morphology and Syntax
+
+* Labels for words, for e.g *John eats rice*
+    - Subject
+        * *John*
+        - performer of action
+        * if subject changes, verb changes
+    * Object
+        * *rice*
+        * other nominal thing
+        * _not_ the subject
+    * Verb
+        * _eats_
+        * describes the action
+        * changes when subject changes
+* Word orders (six possible)
+    * SVO - English
+    * SOV - Turkish, Korean
+    * VSO - Tagalog
+    * VOS - Malagasy
+    * OSV - Xavante
+    * OVS - Hixkaryana
+* Longer Sentences
+    * Noun Adjective order
+        * NA - Abenaki
+        * AN - Mising
+    * Prepostion/Postposition
+        * Polish has prepositions - *Na Stole* (On the table)
+        * Finnish has postpositions - *Liisan kanssa* (Lisa with)
+* Typologists: study correlation in word orders
+    * Joseph Greenberg (1915-2001)
+* Word orders
+    * SVO and SOV cover 90% of languages
+    * VSO cover another 8-9%
+    * Subject comes before object (usually). Two kinds of hypotheses for this:
+        * innate
+        * logical order
+* [Chomsky Interview Transcript](https://dl.dropboxusercontent.com/u/953/coursera-notes/linguistics/week3/Chomsky%20Interview%20Transcript.txt)
