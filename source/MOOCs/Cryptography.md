@@ -4,7 +4,7 @@ published: 2015-04-06
 lead: Notes from <a href="https://www.coursera.org/course/cryptography">Cryptography</a>, a <abbr title="Massive Open Online Course">MOOC</abbr> on Coursera
 ---
 
-## Week 6: Message Integrity
+## Week 4: Message Integrity
 
 * Secrecy and Integrity
     - Orthogonal Concerns
@@ -25,7 +25,7 @@ lead: Notes from <a href="https://www.coursera.org/course/cryptography">Cryptogr
     * SHA-3/Keccak: 224, 256, 384 and 512-bit variants
 * H-MAC (Hash and MAC)
 
-## Week 7: Number Theory
+## Week 5: Number Theory
 * Number theory is needed for public-key cryptography
 * Basic treatment here, for more details refer to Cat Lyndel textbook.
 * *Algorithmic* Number Theory
@@ -37,7 +37,7 @@ lead: Notes from <a href="https://www.coursera.org/course/cryptography">Cryptogr
     - Integer addition/subtraction/multipllication/division with remainder
     - Modular addition/subtraction/multiplication/reduction
     - Modular Exponentiation?
-    
+
 ### Exponentiation
 
 * Compute a^b^?
@@ -72,7 +72,7 @@ exp(a, b, N) {
     if (b odd)
       t = [t * x mod N], b = b -1;
     x = [x^2 mod N], b = b/2; }
-  return t; }   
+  return t; }
 }
 ~~~~
 
@@ -95,7 +95,7 @@ Example:
     - Identity is 0
     - Inverse of a is \[-a mod N]
     - Associativity, commutativity is obvious
-    * Order is N 
+    * Order is N
 
 #### Modular Inverses
 
@@ -154,7 +154,7 @@ Example:
 * Diffie Helman problems
 * Elliptic Curves
 
-## Week 8: Public Key Cryptography
+## Week 6: Public Key Cryptography
 
 * Problems with Private Key Crypto
     - Key Distribution Problem
@@ -173,3 +173,73 @@ Example:
 * Why study private key crypto (if public key crypto can do the job for us)
     * Private key crypto is more suitable for certain applications, e.g. disk encryption
     * Public key crypto is SLOW! (2–3 orders of magnitude)
+
+## Week 7: Digital Signatures and PKI
+
+### Digital Signatures
+
+* Digital Signatures
+    - Provide integrity in the public key setting
+    * e.g. used to distribute software patches
+* Comparision to MACs
+    - Public verifiability: “Anyone” can verify (only a holder of the key can verify a MAC tag)
+    * Transferability: Can forward a signture to someone else
+    * Non-repudiation
+        * Signer cannot (easily) deny using a signature
+        - Crucial for legal applications
+        - Judge can verify signature using public copy of it
+        * MAC cannot provide this functionality
+* Hash-and-sign paradigm
+    - Analogous to hybrid encryption: The _functionality_ of digital signatures and the _asymptomatic cost_ of a symmetric key operation
+    - Used extensively in practise
+* Identification schemes
+    * Extremely important as a building block for digital signatures
+    * Not suitable for remote authentication
+    * e.g. Schnorr identification scheme
+    * DSS (Digital Signature Standard)
+        - NIST standard for digital signatures
+            - DSA, based on discrete logarithm problem in subgroups of $\mathbb{Z}$^\*^~p~
+            * ECDSA, based on elliptic curve groups
+
+### Public Key Infrastructure
+* Use signatures for secure key distribution
+* Assume a trusted party with a public key known to everyone
+    - CA = Certificate authority
+    - Public Key *pk~CA~*
+* Alice asks the CA to sign the _binding_ (Alice, pk)
+    - Cert ~CA→Alice~ = Sign(Alice,pk) with *pk~CA~* (CA Must certify Alice’s identity out of band)
+* Bob obtains Alice, pk and Cert ~CA→Alice~ and verifies it. Bob is then assured that pk is Alice’s public key
+    * As long as the CA is trustworthy
+* Chicken-and-egg problem - how does Bob get public key of CA
+    - “Roots of trust” model
+        - Only need to obtain a small number of CA public keys, so need to ensure secure distribution for only those
+        * Distribute as part of web browser, OS etc.
+    * “Web of trust” model
+        * Obtain public keys from my friends in person
+            - “key-signing parties”
+        * Obtain “certificates” on my public key from my friends
+        * Public key repositiries
+            * e.g. MIT PGP key server
+* PKI in practise
+    - Proliferation of root CAs (hence difficult to manage) (see news item [Google Chrome will banish Chinese certificate authority for breach of trust](http://arstechnica.com/security/2015/04/google-chrome-will-banish-chinese-certificate-authority-for-breach-of-trust/))
+    * Revocation
+    * Other issues…
+
+### SSL/TLS (Putting it all together)
+
+* Standards
+    - Secure Sockets Layer (Netscape, mid 90s)
+    - Transport Layer Security
+        - TLS 1.0 (1999)
+        - TLS 1.2 (2008, current)
+        - TLS 1.3 (draft)
+* Protocol (two phases)
+    - Handshake protocol: Establish a shared key between two entities
+        * <img src="/images/ssl_handshake.png" class="img-responsive" alt="SSL Handshake"/>
+    * Record-layer protocol: Use the shared key for secure communication
+        * Parties now share k~c~, k~c~\', k~s~, k~s~\'
+        * Client uses k~c~, k~c~\' (for encryption and authentication respectively)
+        * Server uses  k~s~, k~s~\'
+        * Separate keys for client and server prevent reflection attacks
+        * Sequence numbers used to prevent reflection attacks
+
