@@ -235,7 +235,7 @@ Example:
         - TLS 1.3 (draft)
 * Protocol (two phases)
     - Handshake protocol: Establish a shared key between two entities
-        * <img src="/images/ssl_handshake.png" class="img-responsive" alt="SSL Handshake"/>
+        * <img src="/images/ssl_handshake.jpg" class="img-responsive" alt="SSL Handshake"/>
     * Record-layer protocol: Use the shared key for secure communication
         * Parties now share k~c~, k~c~\', k~s~, k~s~\'
         * Client uses k~c~, k~c~\' (for encryption and authentication respectively)
