@@ -28,3 +28,4 @@ published: 2015-04-08
 * [Kinan Azmeh (Syria) & Morgenland Chamber Orchestra](https://youtu.be/ZFDCtC6M2Es)
 * [Bombino - Nomad](http://www.nonesuch.com/albums/nomad)
 * [पढ़ना लिखना सीखो](http://www.jananatyamanch.org/node/138)
+* [Mahmoud Guinia](http://www.awesometapes.com/mahmoud-guinia-2/)
