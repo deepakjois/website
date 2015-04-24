@@ -212,3 +212,57 @@ Do some languages have more words than others?
         * innate
         * logical order
 * [Chomsky Interview Transcript](https://dl.dropboxusercontent.com/u/953/coursera-notes/linguistics/week3/Chomsky%20Interview%20Transcript.txt)
+
+## Week 4
+
+* Meaning in language
+    - What is meaning? Philosophical question
+* Two layers of meaning
+    - Semantic
+        - is literal
+    * Pragmatic
+        - Why does the speaker say this
+        * To inform, order or apologize etc.
+            - Is about context
+            - I → you
+
+### Semantics
+* _Orange_ - No precise definition of color orange
+* Not all languages have word for _orange_
+* Languages differ in the way they represent and talk about color
+* Languages divide this world in different ways, using different categories
+* Debate universals
+    * Ethnocentrism (western frame)
+    * Are aspects of human language universal
+    * Given by human biology
+    * Influenced by surrounding culture
+* Debate language and thought
+    * Few color terms, more difficut to distinguish colors (results of experiments mixed)
+* Problems with word semantics
+    * How many color terms for English?
+        - Indefinite. Depends on speaker, context etc.
+    * Inuit and many words for snow
+    * e.g: What is a book? How do you define a book unambiguously?
+
+### Pragmatics
+* Performative meaning 1:
+    - Examples:
+        - I name this ship The Queen Elizabeth
+        * I do take this woman…
+    * Speech Acts
+        * Sentences that would change the world (JL Austin)
+* Performative meaning 2:
+    * Making a change by _not_ saying something
+    * Reference letter\
+     <img src="/images/linguistics_semantics_ref_letter.jpg" class="img-responsive" alt="Letter slide">
+    - Semantics: +ve
+    * Pragmatics: -ve (She isn’t a good candidate)
+* Ignoring pragmatics
+    * Spouse: “I ate half of your apple pie”
+        - Ate half of the pie
+        * Ate the entire pie (which included half)
+    * Maxims
+        - Rules that participants have to obey in conversation (Paul Grice)
+        * _Quantity_ – Provide just enough information
+
+
