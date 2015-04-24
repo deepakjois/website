@@ -1,9 +1,9 @@
 ---
 title: Urdu Assignment April 2015
 published: 2015-04-22
+lead: Final term assignment for Urdu class – an analysis of <a href="http://en.wikipedia.org/wiki/Toba_Tek_Singh_%28short_story%29">Toba Tek Singh</a>, a short story by Saadat Hasan Manto.
 ---
 
-*Final term assignment for Urdu class – an analysis of <a href="http://en.wikipedia.org/wiki/Toba_Tek_Singh_%28short_story%29">Toba Tek Singh</a>, a short story by Saadat Hasan Manto. *
 
 *Link to original handwritten version: [Page 1], [Page 2]*
 
