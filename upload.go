@@ -1,6 +1,8 @@
 package main
 
 import (
+	"bytes"
+	"compress/gzip"
 	"crypto/md5"
 	"errors"
 	"flag"
@@ -46,16 +48,10 @@ func sniffContentType(path string) (string, error) {
 }
 
 // Calculate MD5 of local file
-func computeMd5(path string) (string, error) {
+func computeMd5(buf io.Reader) (string, error) {
 	var result []byte
-	file, err := os.Open(path)
-	if err != nil {
-		return "", err
-	}
-	defer file.Close()
-
 	hash := md5.New()
-	if _, err := io.Copy(hash, file); err != nil {
+	if _, err := io.Copy(hash, buf); err != nil {
 		return "", err
 	}
 
@@ -64,10 +60,7 @@ func computeMd5(path string) (string, error) {
 }
 
 // Calculate MD5 for file in S3 using ETag header
-func computeMd5Remote(path string) (string, error) {
-	key := strings.TrimPrefix(path, pathPrefix)
-	key = strings.TrimPrefix(key, "/") // Just in case
-
+func computeMd5Remote(key string) (string, error) {
 	params := &s3.HeadObjectInput{
 		Bucket: aws.String(bucket), // Required
 		Key:    aws.String(key),    // Required
@@ -85,41 +78,53 @@ func computeMd5Remote(path string) (string, error) {
 }
 
 // Upload file to S3
-func uploadFile(path string, ctype string) error {
-	file, err := os.Open(path)
-	if err != nil {
-		return err
-	}
-
-	key := strings.TrimPrefix(path, pathPrefix)
-	key = strings.TrimPrefix(key, "/") // Just in case
+func uploadFile(r io.ReadSeeker, key, ctype string) error {
 
 	params := &s3.PutObjectInput{
-		Bucket:      aws.String(bucket), // Required
-		Key:         aws.String(key),    // Required
-		Body:        file,
-		ContentType: aws.String(ctype),
+		Bucket:          aws.String(bucket), // Required
+		Key:             aws.String(key),    // Required
+		Body:            r,
+		ContentType:     aws.String(ctype),
+		ContentEncoding: aws.String("gzip"),
 	}
 
-	_, err = svc.PutObject(params)
+	_, err := svc.PutObject(params)
 
 	if awserr := aws.Error(err); awserr != nil {
 		return awserr
 	} else if err != nil {
 		return err
 	}
+
 	return nil
 }
 
-// Check if MD5 hashes of remote and local copies match, and upload local to
-// remote if they don’t.
+// Check if MD5 hashes of remote and (gzipped) local copies match, and upload
+// local to remote if they don’t.
 func checkAndUpload(path string) (string, error) {
-	md5Local, err := computeMd5(path)
+	file, err := os.Open(path)
 	if err != nil {
 		return "", err
 	}
 
-	md5Remote, err := computeMd5Remote(path)
+	var b bytes.Buffer
+	gw := gzip.NewWriter(&b)
+	_, err = io.Copy(gw, file)
+	gw.Close()
+	file.Close()
+	if err != nil {
+		return "", err
+	}
+
+	md5Local, err := computeMd5(bytes.NewReader(b.Bytes()))
+	if err != nil {
+		return "", err
+	}
+
+	key := strings.TrimPrefix(path, pathPrefix)
+	key = strings.TrimPrefix(key, "/") // Just in case
+
+	md5Remote, err := computeMd5Remote(key)
 	if awserr := aws.Error(err); awserr != nil {
 		if awserr.StatusCode == 404 {
 			md5Remote = "" // Set to dummy value
@@ -134,12 +139,13 @@ func checkAndUpload(path string) (string, error) {
 	if md5Local == md5Remote {
 		return "up-to-date", nil
 	}
+
 	ctype, err := sniffContentType(path)
 	if err != nil {
 		return "", err
 	}
 
-	err = uploadFile(path, ctype)
+	err = uploadFile(bytes.NewReader(b.Bytes()), key, ctype)
 	if err != nil {
 		return "", err
 	}
