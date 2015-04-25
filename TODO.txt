@@ -1,4 +1,5 @@
-* Improve typography: add more whitespace
-* Search function
-* Script to track latest updates
 * Build tag pages and update template to include tags
+* Search function
+* Add more contributions
+* Improve typography: add more whitespace
+* Script to track latest updates
