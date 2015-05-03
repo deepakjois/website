@@ -265,4 +265,36 @@ Do some languages have more words than others?
         - Rules that participants have to obey in conversation (Paul Grice)
         * _Quantity_ – Provide just enough information
 
+## Week 5
+* Sociolinguistics
+    - Language in natural context
+    * Language changes
+* Classifying individual differences among languages
+    * Genetically: Divide languages into families
+    * Geographically
+    * Social variables
+        * age
+        * gender
+        * social class
+        * _sociolect_
+    * _Ideolects_ – The individual unique mixture
+* Why language varies
+    - Not just a tool for information transfer
+    * Showing Identity
+* William Labov’s study in Philadelphia
+    * Pronouncing vowel ‘ou’ (e.g. _south_) towards the front of the mouth
+    * Exploring Labov’s study
+        - All children learn from their mothers
+        * For girls, peer group becomes important around ±5/6 yrs
+        * 20 is the age for which social life becomes more important for a man
+* Politeness
+    * Ways to express relations between people
+    * Face
+        - Public self image
+        * Penelope Brown and Stephen Levinson’s theories
+        * -ve face: you don’t want to others to hinder your actions
+        * +ve face: to be appreciated by others
+    * Politics and Interculturality
+        - Different cultures may have different politeness strategies
+
 
