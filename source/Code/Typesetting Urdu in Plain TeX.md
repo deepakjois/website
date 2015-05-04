@@ -42,7 +42,7 @@ Download the [gist file][gist], unzip and run
 > xetex urdu.tex
 ```
 
-It should generate a PDF file [like this](/assets/urdu_plain_tex.pdf).
+It should generate a PDF file [like this](https://dl.dropboxusercontent.com/u/953/site_assets/urdu_plain_tex.pdf).
 
 ### Code
 
