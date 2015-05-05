@@ -49,7 +49,7 @@ main = hakyllWith config $ do
     compile $
       makeItem ""
         >>= loadAndApplyTemplate "templates/books.html" booksPageCtx
-        >>= loadAndApplyTemplate "templates/main.html" defaultContext
+        >>= loadAndApplyTemplate "templates/main.html" booksPageCtx
 
   -- List of all posts
 
@@ -114,6 +114,7 @@ unEscapedUrlField key = field key $
 booksPageCtx :: Context String
 booksPageCtx = field "books" getBooks <>
                field "year"  getYear  <>
+               field "title" getTitle <>
                defaultContext
  where
   jsonFile pageFilePath = "data" </> (year pageFilePath <.> "json")
@@ -126,10 +127,16 @@ booksPageCtx = field "books" getBooks <>
 getYear :: forall a. Item a -> Compiler String
 getYear = return . year . toFilePath . itemIdentifier
 
+-- Generate a title for an inner book list page
+getTitle :: forall a. Item a -> Compiler String
+getTitle = return . title . toFilePath . itemIdentifier
+
 -- Get the year from a path to a inner book page
 year :: FilePath -> String
 year = takeFileName
 
+title :: FilePath -> String
+title = ((++) "Book List ") . year
 
 -- *****************
 -- Compilers
