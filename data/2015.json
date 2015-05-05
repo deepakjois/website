@@ -22,5 +22,12 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2015-02-01"
+},
+{
+    "title"    : "Patna Manual of Style",
+    "link"     : "http://www.amazon.in/Patna-Manual-Style-Stories/dp/9383064773",
+    "author"   : "Siddharth Chowdhury",
+    "category" : "fiction-indian",
+    "date"     : "2015-05-01"
 }
 ]
