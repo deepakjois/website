@@ -29,5 +29,13 @@
     "author"   : "Siddharth Chowdhury",
     "category" : "fiction-indian",
     "date"     : "2015-05-01"
+},
+{
+    "title"    : "Programming in Lua",
+    "link"     : "http://www.amazon.com/Programming-Lua-Roberto-Ierusalimschy/dp/859037985X",
+    "author"   : "Roberto Ierusalimschy",
+    "category" : "tech",
+    "readable" : true,
+    "date"     : "2015-05-01"
 }
 ]
