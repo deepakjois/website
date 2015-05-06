@@ -21,7 +21,6 @@ One of the motivations to run this site is to put more of my thoughts down in wr
 I used to be pretty active online. Nowadays, I have reduced my online presence to the following places
 
 * [Facebook](http://facebook.com/deepak.jois)
-* [Medium](http://medium.com/@vyom) (Only use it to host drafts of [Ghalib’s letters](http://medium.com/ghalibs-letters))
 * [Github](https://github.com/deepakjois)
 * [Email](mailto:deepak.jois@gmail.com)
 
