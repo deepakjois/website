@@ -1,5 +1,13 @@
 [
 {
+    "title"    : "Ishq me Shaher Hona",
+    "link"     : "http://www.amazon.in/Ishq-Shaher-Hona-Ravish-Kumar/dp/8126727675",
+    "author"   : "Ravish Kumar",
+    "category" : "fiction-indian",
+    "readable" : true,
+    "date"     : "2015-02-01"
+},  
+{
     "title"    : "A Spoke in the Wheel",
     "link"     : "http://www.amazon.in/Spoke-Wheel-Amita-kanekar/dp/8189059564",
     "author"   : "Amita Kanekar",
@@ -35,6 +43,14 @@
     "link"     : "http://www.amazon.com/Programming-Lua-Roberto-Ierusalimschy/dp/859037985X",
     "author"   : "Roberto Ierusalimschy",
     "category" : "tech",
+    "readable" : true,
+    "date"     : "2015-05-01"
+},
+{
+    "title"    : "When Google Met Wikileaks",
+    "link"     : "http://www.amazon.com/When-Google-Wikileaks-Julian-Assange/dp/8189059661/",
+    "author"   : "Julian Assange",
+    "category" : "non-fiction-tech",
     "readable" : true,
     "date"     : "2015-05-01"
 }
