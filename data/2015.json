@@ -53,5 +53,13 @@
     "category" : "non-fiction-tech",
     "readable" : true,
     "date"     : "2015-05-01"
+},
+{
+    "title"     : "Buddhism in India: Challenging Brahmanism and Caste",
+    "author"    : "Gail Omvedt",
+    "link"      : "http://www.amazon.com/Buddhism-India-Challenging-Brahmanism-Classics/dp/8132110285",
+    "category"  : "non-fiction-culture",
+    "readable"  : true,
+    "date"      : "2015-05-01"
 }
 ]
