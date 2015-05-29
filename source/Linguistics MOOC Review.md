@@ -21,7 +21,7 @@ I decided to start by enrolling in an Urdu language diploma course at a universi
 [mohl-mooc]:https://www.coursera.org/course/humanlanguage
 
 ### Leiden University MOOCs
-Leiden University has a dedicated [Online Learning Lab][oll] which runs [several MOOCs][leiden-moocs]. My previous experience with the course [Configuring the World][configuring-world] was very good, so I was optimistic about this course being high quality, just like the others. There is a high level of engagement by the teaching staff, apart from putting out the course videos. There are dedicated groups on Facebook, weekly Google Hangouts with professors and quick responses by university staff on the online discussion forums.
+Leiden University has a dedicated [Online Learning Lab][oll] which runs [several MOOCs][leiden-moocs]. My previous experience with the course [Configuring the World][configuring-world] was very good, so I was optimistic about this course being high quality also. There is a high level of engagement by the teaching staff, apart from putting out the course videos. There are groups on Facebook, weekly Google Hangouts with professors, and university staff are prompt in responding on the online discussion forums.
 
 [oll]:http://leidenuniv.onlinelearninglab.org/
 [leiden-moocs]:https://www.coursera.org/leiden
@@ -47,14 +47,15 @@ The quizzes and the final exam were easy too. The required readings were mostly 
 [chomsky]:http://en.wikipedia.org/wiki/Noam_Chomsky
 
 ### Conclusion
-Taking the course was a highly enjoyable experience. It was a good introduction to various aspects of linguistics. Being an introductory course, it was understandable that the professor did not delve too deeply in any specific topic. However, a motivated individual could  use the readings and forum discussions to explore specific topics of their interest further.
+Taking the course was a highly enjoyable experience. It was a good introduction to various aspects of linguistics. Being an introductory course, it is understandable that the professor did not delve too deeply into any one topic. However, a motivated individual could  use the readings and forum discussions to explore specific topics of their interest further.
 
-It has definitely motivated me enough to consider studying linguistics seriously. I have become particularly interested in the subdiscipline of sociolinguistics and see myself delving deeper into that in the future.
+It has definitely motivated me enough to consider studying linguistics seriously. I have become particularly interested in the subdiscipline of [sociolinguistics] and see myself delving deeper into that in the future.
 
-For now, I have decided to learn [Pali] (a dead but historically significant Indian language) this year, and also registered for two new linguistics courses starting in June at the [Virtual Linguistics Campus][VLC]. I hope to enrol into a masters degree in linguistics some time next year. Being able to expand my knowledge enough to pursue serious linguistic research in the future would be a great outcome of taking this course. I am keeping my fingers crossed.
+For now, I have decided to learn [Pali] (a dead but historically significant Indian language) this year, and also registered for two new linguistics courses starting in June at the [Virtual Linguistics Campus][VLC]. I hope to enrol into a master’s degree in linguistics some time next year. Being able to expand my knowledge enough to pursue serious linguistic research in the future would be a great outcome of taking this course. I am keeping my fingers crossed.
 
 [Pali]:http://en.wikipedia.org/wiki/Pali
 [VLC]:http://linguistics.online.uni-marburg.de/
+[sociolinguistics]:http://en.wikipedia.org/wiki/Sociolinguistics
 
 [^1]: Urdu is almost the same language as Hindi, except that it is written in a different script, and has more Persian-origin words, whereas Hindi uses more Sanskrit-origin words. Hindi and Urdu came to be known as separate languages for purely political reasons a few decades ago, and have since grown in different directions.
 
