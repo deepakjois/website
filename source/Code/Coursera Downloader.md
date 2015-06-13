@@ -4,9 +4,17 @@ published: 2015-03-31
 lead: Script to download lecture videos (and their subtitles) from Coursera
 ---
 
+### Prerequisites
+Before running the script below, you need to have the following installed:
+
+* [Ruby](https://www.ruby-lang.org/en/) (the script is written using the Ruby language)
+* RubyGems `nokogiri` and `typhoeus` (Additional Ruby libraries the script depends on)
+
 ### Usage
 
-Invoke the script with the username, password, course name and section number.
+Download the [gist file][gist], unzip and invoke the script with the username, password, course name and section number.
+
+[gist]:https://gist.github.com/deepakjois/439e1eb8697058735ef4/download
 
 * The username should be your email ID
 * The course name can be found in the URL for the course, e.g _humanlanguage-001_, _cryptography-002_ etc.
