@@ -29,7 +29,7 @@ Some people refer to such a condition as a mental 'disorder', which is how I tho
 
 Often, clinical treatments for conditions such as anxiety, depression and bipolarity are available, including medication and cognitive therapy. Meditation techniques such as Mindfulness, are also known to help people live better lives. But in the end, it must be left entirely to a neurodivergent person to decide how they wish to address their mental condition. Different people have different ways of perceiving and dealing with their neurodivergence, which should be respected. Some may indeed see it, understandably, as a disorder which they wish to overcome entirely; others might want support to alter some aspects of it which they may find to be debilitating or restrictive; yet others may feel entirely ok with how their mind works and just wish that other people were less judgemental and more understanding of their needs.
 
-Indian society is especially unkind to people with mental health issues. Our utterly broken public healthcare system, very limited access to mental healthcare facilities for the general public, and the misconceptions and social stigma attached with any kind of mental health problem, makes life very difficult, especially for people who come from socially and economically weaker backgrounds. I realise I'm far more fortunate than most of other neurodivergent people in my country, and have options and opportunities most never will.
+Indian society is especially unkind to people with mental health issues. Our utterly broken public healthcare system, very limited access to mental healthcare facilities for the general public, and the misconceptions and social stigma attached with any kind of mental health problem, makes life very difficult, especially for people who come from socially and economically weaker backgrounds. I realise I'm far more fortunate than most other neurodivergent people in my country, and have options and opportunities most never will.
 
 I'm still not sure what the best course of action for me would be. For now, just the experience of coming to terms with my neurodivergence and learning to accept it has been liberating. Also, meeting and falling in love with a person who understands me and is a bedrock of support has allowed me reach deeper levels of self-acceptance than ever before.
 
@@ -39,6 +39,7 @@ All that said, there is a lot more to me than my anxiety and I would certainly n
 
 #### More About Social Anxiety
 
-* [Social Anxiety on Wikipedia](https://en.wikipedia.org/wiki/Social_anxiety)
 * [A Simple Analogy to Explain How Anxiety Works](http://snapdraws.tumblr.com/post/50082858616/apologies-for-the-terrible-image-quality-im)
+* [Social Anxiety on Wikipedia](https://en.wikipedia.org/wiki/Social_anxiety)
 * [Making Social Movements More Inclusive of Neurodoversity](http://everydayfeminism.com/2015/06/neurodiversity-social-justice/)
+* [Mental Healthcare Challenges in India](http://www.theguardian.com/global-development/2014/dec/29/india-mental-healthcare-challenges)
