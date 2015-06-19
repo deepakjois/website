@@ -69,5 +69,13 @@
     "category"  : "non-fiction-culture",
     "readable"  : true,
     "date"      : "2015-05-01"
+},
+{
+    "title"     : "Confronting Colonialism: Resistance and Modernization Under Haidar Ali and Tipu Sultan",
+    "author"    : "Irfan Habib (Editor)",
+    "link"      : "http://www.amazon.in/Confronting-Colonialism-Resistance-Modernization-Haidar/dp/938238104X",
+    "category"  : "non-fiction-history",
+    "readable"  : true,
+    "date"      : "2015-06-01"
 }
 ]
