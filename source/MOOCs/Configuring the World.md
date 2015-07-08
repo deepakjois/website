@@ -65,13 +65,49 @@ lead: Notes from the extra material for <a href="https://www.coursera.org/course
 * Provide guide to an alternative world order
 
 ### The Take Off - Walt W. Rostow
+* 1916-2003
+* Wrote The Stages of Economic Growth: A Non-Communist Manifesto
+* All societies were eventually destined to press through stages of economic growth
+    - Traditional Society
+    * Precondition Phase
+    * Take-off
+    * Maturity
+    * Mass Consumption
+* Thoroughly discredited eventually, but even today there are economists who take it seriously
 
 ### Marxism - Karl Marx
+* Fusion of Hegelian Philosophy and Empirical Study on the state of society
+* Hegel’s ideology: Any current situation contained contradictions, and the resolution of there contradictions moves society to a new level
+* Dialectic Materialism: Class Struggle
+* Criticism of Marx’s Ideology
+    - Capitalism has survived many crises
+    * Technological advance postponed the falling rate of profit
+    * Proletariat contines to be deceived by false identities, as they would call it
+    * In the cases where power difference ??? from the hands of the bourgeoise, the lasting benefits of Communism were hard to find
 
 ### Small States - Peter Katzenstein
+* 1945-
+* Interesting work – Small States in World Markets: Industrial Policy in Europe (1985)
+    - Analysis of small states in Europe like Denmark, Sweden, Australia, Netherlands etc.
 
 ### World Systems Theory - Immanuel Wallerstein
+* The Modern World System Vol. I-IV
+    - Divides economics into two types: core and periphery
+    - Capitalists of both core and periphery exploit their workers
+    - They share an identity of interest, and therefore conspire to maintain a system from which both sides profit, although they may compete for power within these structures.
 
 ### New Institutional Economics- Ronald Coase
+* 1910-2013
+* An amalgam of separate ideas that have slowly coalsced into a supporting framework for the mainstream neo-classical focus
+* Transaction costs from firms
+* Social costs, the impact of property rights and their
+    - Transaction costs low, property rights are relatively unimportant
+    - But when they are high, property rights are important in determining time horizon for output planning
+* Here are winners and losers in institutional change
+* Markets are not academic abstractions, but political constructions
 
 ### Economic Structuralism- Raúl Prebisch
+* Structurally, the prices of primary products tend to decline relative to those of manufactured costs
+* Therefore, benefits of international trade tended to go to industrial countries, which is an inevitable consequences of the nature of production
+* Advocated heavy industrialisation, import substitution
+* Ideas discredited during the Latin American Debt Crisis of 1985
