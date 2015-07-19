@@ -85,5 +85,37 @@
     "category"  : "non-fiction-culture",
     "readable"  : true,
     "date"      : "2015-06-01"
+},
+{
+    "title"     : "Profiting Without Producing: How Finance Exploits Us All",
+    "author"    : "Costas Lapavitsas",
+    "link"      : "http://www.amazon.com/Profiting-Without-Producing-Finance-Exploits/dp/1781681414",
+    "category"  : "non-fiction-economics",
+    "readable"  : true,
+    "date"      : "2015-07-01"
+},
+{
+    "title"     : "The Doubt Factory",
+    "author"    : "Paolo Bacigalupi",
+    "link"      : "http://www.amazon.com/Doubt-Factory-Paolo-Bacigalupi/dp/0316220752",
+    "category"  : "fiction-science",
+    "readable"  : true,
+    "date"      : "2015-07-01"
+},
+{
+    "title"     : "Zombie Baseball Beatdown",
+    "author"    : "Paolo Bacigalupi",
+    "link"      : "http://www.amazon.com/Zombie-Baseball-Beatdown-Paolo-Bacigalupi/dp/0316220795",
+    "category"  : "fiction-science",
+    "readable"  : true,
+    "date"      : "2015-07-01"
+},
+{
+    "title"     : "The Water Knife",
+    "author"    : "Paolo Bacigalupi",
+    "link"      : "http://www.amazon.com/Water-Knife-novel-Paolo-Bacigalupi/dp/0385352875",
+    "category"  : "fiction-science",
+    "readable"  : true,
+    "date"      : "2015-07-01"
 }
 ]
