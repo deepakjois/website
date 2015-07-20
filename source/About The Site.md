@@ -39,7 +39,7 @@ The site is hosted on [Amazon S3][s3], and uses [Amazon Route 53][route53] for D
 [s3]:http://aws.amazon.com/s3/
 [route53]:http://aw.amazon.com/route53/
 
-I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. The tools available out do not deal well with text files that do not have an extension. Hakyll’s default web server (invoked using `hakyll watch`) does not recognise the Content-type of pages with no extensions, so I [wrote my own][serve.go]. I also wrote my own [uploader][upload.go], because [s3cmd][] was not sniffing MIME-types correctly. Both the web server and uploader were written in [Go.][go]
+I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. The tools available out there do not deal well with text files that do not have an extension. Hakyll’s default web server (invoked using `hakyll watch`) does not recognise the Content-type of pages with no extensions, so I [wrote my own][serve.go]. I also wrote my own [uploader][upload.go], because [s3cmd][] was not sniffing MIME-types correctly. Both the web server and uploader were written in [Go.][go]
 
 [cool-uris]:http://www.w3.org/Provider/Style/URI.html
 [go]:http://golang.org/
