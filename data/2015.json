@@ -117,5 +117,13 @@
     "category"  : "fiction-science",
     "readable"  : true,
     "date"      : "2015-07-01"
+},
+{
+    "title"     : "Flood of Fire",
+    "author"    : "Amitav Ghosh",
+    "link"      : "http://www.amazon.in/Flood-Fire-Novel-Ibis-Trilogy/dp/0374174245",
+    "category"  : "fiction-indian",
+    "readable"  : true,
+    "date"      : "2015-08-01"
 }
 ]
