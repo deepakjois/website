@@ -507,7 +507,7 @@ whether class as a concept is
 * Concept of trust
 * Ulrich Beck
   - Individualisation: disembedding - we have been taken out of the roles that used to guide us. dienchantment - we are not fully trusting of our expert systems around us. rembedding - we have been rembedding into our economic forces
-  - 
+  -
 ### Topic 5: Different Views of Contemporary Society
 * Reflexive Modernism
   - Comes from the work of Anthony Giddens and Ulrich Beck
@@ -558,7 +558,7 @@ whether class as a concept is
   - movie: The Kids are Alright
   - fluidity in the concept of family and family structures: same sex couples, people remarrying, single households
 * Class
-  - This is where the idea of zombie categories is at its most contentious: 
+  - This is where the idea of zombie categories is at its most contentious:
   - “Society can no longer look in the mirror and see social classes. The mirror has been smashed and all we have left are the individualised fragments.” - Beck and Williams 2004
   - Many people see this as problematic
   - Class seems to be holding us pretty stronger, compared to gender, ethnicity etc.
