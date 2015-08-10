@@ -1,7 +1,7 @@
 ---
 title: World101x Anthropology of Current World Issues
 published: 2014-08-09
-tags: mooc,linguistics
+tags: mooc
 lead: Notes from World101x Anthropology of Current World Issues, a <abbr title="Massive Open Online Course">MOOC</abbr> on <a href="https://edx.org">EdX</a>
 ---
 
