@@ -125,5 +125,13 @@
     "category"  : "fiction-indian",
     "readable"  : true,
     "date"      : "2015-08-01"
+},
+{
+    "title"     : "Baluta",
+    "author"    : "Daya Pawar (Author), Jerry Pinto (Translator)",
+    "link"      : "http://www.amazon.com/Baluta-Daya-Pawar/dp/9385288466",
+    "category"  : "fiction-indian",
+    "readable"  : true,
+    "date"      : "2015-08-01"
 }
 ]
