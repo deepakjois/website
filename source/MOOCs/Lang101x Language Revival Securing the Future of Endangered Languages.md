@@ -69,5 +69,19 @@ lead: Notes from Lang101x Language Revival: Securing the Future of Endangered La
  * Purism vs Compromise
     - Revivalistics can assist Indigenous communities in a realistic, non-puristic way, without selling them myths. Revivalistics discards an “imprisoning purism prism”. It makes the community members realise that “shift” happens, which can be a good thing.
 
+### Saving Languages
 
+* **La**nguage **R**evival **D**iamond (LaRD)
+    - Language Owners
+        - Custodians and their communities
+    - Linguistics
+        - Spelling, Orthography, Dictionaries and Grammar
+        - Research and Collating Sources
+        - New Media Resources and Learning Materials
+    - Education
+        - Art, Song and Traditional Rituals
+        - Methods, Strategies and Immersion
+        - Learning, Teaching and Schooling
+    - Public Sphere
+        - General Community, Linguisitic Landscape (signs) and media
 
