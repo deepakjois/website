@@ -133,5 +133,13 @@
     "category"  : "fiction-indian",
     "readable"  : true,
     "date"      : "2015-08-01"
+},
+{
+    "title"     : "Humare Samay Mein Shram Ki Garima",
+    "author"    : "Kancha Ilaiya (Author), Durgabai Vyam (Illustrator), Bharat Tripati (Translator)",
+    "link"      : "http://www.pitarakart.in/humare-samay-mein-shram-ki-garima",
+    "category"  : "non-fiction-culture",
+    "readable"  : true,
+    "date"      : "2015-08-01"
 }
 ]
