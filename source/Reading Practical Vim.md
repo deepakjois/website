@@ -85,7 +85,7 @@ reverse the `f{char}` command.
 * `\`.` marks the position of last change.
 * `\`^` marks the positions of last change.
 * We need somehow to instruct Vim to modify the filepath under the cursor by
-  appending the .rb file extension before attempting to open it. We can do 
+  appending the .rb file extension before attempting to open it. We can do
   this with the `suffixesadd` option.
 
 ### Chapter 10 : Copy and paste
@@ -208,7 +208,7 @@ setlocal makeprg=NODE_DISABLE_COLORS=1\ nodelint\ %
 
 ### Chapter 19 : Dial ‘X’ for auto-completion
 
-* Page 237 has all the shortcuts related to auto-completion
+* Page 277 has all the shortcuts related to auto-completion
 * `<C-e>` reverts to the originally typed text (exit from auto-completion)
 * `<C-x><C-l>` triggers linewise auto-completion which might be useful when coding.
 
@@ -232,5 +232,16 @@ if has("autocmd")
         autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noet
 endif
 ```
+## Notes from talk on YouTube: Let Vim Do the Typing
+
+Talk link: <https://www.youtube.com/watch?v=3TX3kV3TICU>
+
+* `<C-r>` in insert mode to paste contents of a register
+* `<C-a>` in insert mode to paste last inserted text
+* `<C-p>` and `<C-n>` in insert mode are Vim’s default keybindings for completion
+* `<C-x>` is a special submode of completion, which could be used for example to complete only tags. `<C-x> <C-]>`
+* `<C-x> <C-f>` for filename completion
+* `<C-x> <C-p>` and  `<C-x> <C-n>` for context-aware completion.
+* `<C-x> <C-l>` for context-aware line completion
 
 
