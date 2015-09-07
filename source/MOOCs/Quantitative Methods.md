@@ -236,3 +236,134 @@ lead: Notes from <a href="https://www.coursera.org/learn/quantitative-methods">Q
     * Applied research – improve human condition
     * Fundamental research – for the sake of knowing
 
+## The Scientific Method
+
+### Empirical Cycle
+* Empirical Cycle
+  - Observation -> Induction -> Deduction -> Testing -> Evaluation -> Observation (again)
+* Observation
+    * Observing relation in one or more instances
+    - Sparks idea for hypothessis
+        - pattern, unexpected event, interesting relation we want to explain
+        - source not important
+* Induction
+    * General rule
+    * Relations holds in specific cases => Relations holds in all cases
+    * Inductive reasoning used to transform
+* Deduction
+    * Relation should hold in new instances
+    * Expectation/prediction is deduced about new observations
+    * Determine research setup
+    * Define concepts, measurement instruments, procedures, sample
+    * _Hypothesis is transformed with deductive reasoning and specification of research setup into prediction about new observations_
+* Testing
+    * Data collection
+    * Compare data to prediction (via statistics processing)
+    * desriptive statistics: summarize
+    * inferential statistics: decide
+    * _New data collected and with aid of statistics, compared to predictions_
+* Evaluation
+    * Interpret results in terms of hypothesis
+    * Prediction confirmed => hypothesis provisionally supported, NOT PROVEN
+    * Prediction disconfirmed
+        * repeat with better research setup
+        * adjust hypothesis
+        * reject hypothesis (rarely)
+
+### Criteria for evaluation of hyothesis
+* Reliability
+    * Replicability
+* Validity
+    * Hypotheised relation accurately reflects reality
+    * Construct Validity
+        * Do we measure/manipulate intended constructs
+    * Internal Validity
+        * Is the hypothesised cause actual cause of observed effect?
+        * Threatened by alternative explanations (other causes)
+    * External Validity
+        * Generalizability
+
+### Causality
+* Four criteria
+    - Cause and effect are connected
+    - Cause precedes effect
+    * Cause and effect covary consistently
+    * Alternative explanations could be ruled out
+* Causation requires correlation, however correlation does not imply causation
+
+### Threats to internal validity
+* Threatened when there is a plausible alternative explanation to the effect
+* Threats due to participants
+    * maturation
+        * alternative explanation: natural change
+        * solution: control group
+    * selection
+        * alternative explanation: systematic differences in participant characteristics
+        * solution: random assignment
+    * selection by maturation
+        * alternatice explanation: systematic differences in rate of maturation
+        * solution: random assignment
+* Threats due to instruments
+    * Low construct validity
+        * systematic bias/measures another construct
+        * construct validity a prerequsite for internal validity
+        * valid instruments, and valid manipulation method used consistently
+    * Instrumentation
+        * instruments changed during course of the study
+        * valid instruments, and valid manipulation method used consistently
+    * Testing
+        * Sensitization – measurement affects behavior
+        * special design with multiple groups with/without pretest
+* Threats due to artificiality
+    * Experimenter expectancy
+        * biasing effect researcher’s expectations
+        * researcher changes behavior (unconsciously)
+        * Experimenter blind design
+    * Demand characteristics
+        * biasing effect participant’s expectations
+        * participant changes behavior (unconsciously)
+        * Double blind research design
+* Threats due to research setup
+    * Ambiguous temporal precedence
+        * Unclear if the hypothesised cause _actually_ precedes the observed effect
+        * Eliminated by manipulation of cause
+    * History
+        * Unforseen event during study
+        * provides alternative explanation
+    * Mortality
+        * differential dropout
+        * provides alternative explanation
+        * document reasons for dropout for further research
+
+## Variables of Interest
+* Construct
+    - denotes property in general abstract terms
+* Variable <=> constant
+    * operationalized, concrete expression of construct
+    * measurable/manipulable
+* Independent variable
+    * cause
+    * explanatory
+    * input
+    * predictor
+* Dependent variable
+    * influenced by
+    * the result of
+    * effect
+    * response
+    * outcome
+    * output
+* Variables of interest
+    * focus of hypothesis
+    * provide possible alternative explanations
+* Variables of disinterest
+    * Confounders
+        * Related to independent + dependent variables
+        * Partially or entirely accounts for the relationship
+        * Not account for in hypothesis
+    * Control variables
+        * likely to be related to independent + dependent variables
+        * effects can be controlled for (unlike confounder)
+    * Background variables
+        - not relevant in relation between independent + dependent variable
+        * relevant for determining representativeness
