@@ -335,7 +335,7 @@ lead: Notes from <a href="https://www.coursera.org/learn/quantitative-methods">Q
         * provides alternative explanation
         * document reasons for dropout for further research
 
-## Variables of Interest
+### Variables of Interest
 * Construct
     - denotes property in general abstract terms
 * Variable <=> constant
@@ -367,3 +367,120 @@ lead: Notes from <a href="https://www.coursera.org/learn/quantitative-methods">Q
     * Background variables
         - not relevant in relation between independent + dependent variable
         * relevant for determining representativeness
+
+## Research Design
+
+### True Experiments
+* Also knows as randomized control trials (RCTs)
+* Maximize internal validity
+* Essential Ingredients
+    - _Manipulation_: Ensures cause precedes effect
+    * _Comparision_: Ensures effect does not occur naturally
+    * _Random Assignment_: Ensures there are no other explanations for effect
+    * _Replication_ (not an essential ingredient): is required to ensure randomization works
+
+### Factorial Design
+* Several independent variables – factors (crossed with each other)
+* Factors investigated simultaneously
+* One dependent variable
+    - main effects
+    * interaction effects
+
+### Repeated measures
+* between factor (between subjects design)
+    - Expose different levels of the subjects to a different levels of the independent variable
+*  within factor (within subjects design)
+    * Expose same subjects to different levels of the independent variable
+* Longitudnal design
+    * measures same variable repeatedly over long period of time
+* Repeated measures design
+    * Measures repeatedly over short period of time
+    * At least one within factor and possibly (multiple) between factor(s)
+
+### Manipulations
+* creating different levels of independent variable
+* Experimental variable: independent variable that can be fully controlled
+* Individual difference variables: intrinsic property of participant that cannot be controlled
+* assessing effectiveness by _manipulation check_
+* keeping external variables constant
+
+### Lab vs Field
+* Rigorous Study
+    - Manipulation - independent variable
+    * Control – extraneous variables
+* Laboratory
+    - maximizes internal validity
+    - low ecological validity (mundane realism)
+    - experimental realism – experimental translation of natural setting
+    * low ecological validity ≠ low construct validity ≠ low external validity
+* Field
+    * maximises external validity
+    * Uncontrolled environment
+    * public area, private residence etc
+    * often observing natural behavior
+    * usually non experimental, but can be experimental
+
+### Randomization
+* eliminate all systematic differences between participants in different conditions _on average_
+* any particular study –> unequal distribution possible (randomization failure)
+* Restricted randomization
+    - Guarantee randomization over selected variables
+    - blocking: guarantees equal group sizes
+    - stratified restricted randomization: equal distribution on participant characteristic
+    - limits: 2,3 variables? -> too complicated
+* Randomization with repeated measures
+    - Ordering in which subjects are exposed to different conditions must be randomized
+
+### Experimental Designs
+* Two-Group Design
+* Two-Group Pre/Post
+    - Pre testing can
+        - sensitize
+        - practice effect
+        - alert to purpose
+* Solomon 4-Group
+* Within/Repeated Measures
+
+### Matching
+* Sometimes random assignment is impossible
+    - threat of selection to internal validity
+    - pragmatic/ethical reasons
+    - independent -> individual differences variable
+* Regression to the mean
+    - due to matching
+    - detrimental effect (undermatching)
+    - Can occur if:
+        - Related to variables of interest
+        - Measured with some error
+
+### Quasi-experimental designs
+* Non-random assignment (Random assignment can be impractical/unethical)
+* Sometimes no manipulation, or comparision
+* Investigates causal relation
+* Static Group Comparision
+    - non-random assignment
+
+### Correlation Design
+* No manipulation of independent variable,or
+* No independent variable identified
+* No causal direction specified
+
+### Other designs
+* Case study
+    - One person/group as a whole
+    - Quantitative: time-series, n=1
+    - Qualitative: generating hypotheses, more than testing
+        - negative analysis
+        - contradictory evidence
+        - one counter example to reject hypothesis
+* Evaluation research
+    - Effect of policy/program
+    - Summative: outcome
+    * Formative: process = applied, usually non-experimental, broader scope
+    * Sociology, communication sciences, political sciences
+* Intervention Study
+    - effect of treatment on individuals = usually (quasi-)experimental
+    * developmental, clinical psychology
+* Validation study
+    - assesses quality of instrument
+    - psychometrics, sociometrics
