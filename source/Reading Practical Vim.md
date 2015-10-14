@@ -232,6 +232,7 @@ if has("autocmd")
         autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noet
 endif
 ```
+
 ## Notes from talk on YouTube: Let Vim Do the Typing
 
 Talk link: <https://www.youtube.com/watch?v=3TX3kV3TICU>
@@ -244,4 +245,6 @@ Talk link: <https://www.youtube.com/watch?v=3TX3kV3TICU>
 * `<C-x> <C-p>` and  `<C-x> <C-n>` for context-aware completion.
 * `<C-x> <C-l>` for context-aware line completion
 
+## References
+* <http://dougblack.io/words/a-good-vimrc.html>
 
