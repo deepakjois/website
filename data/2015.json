@@ -141,5 +141,21 @@
     "category"  : "non-fiction-culture",
     "readable"  : true,
     "date"      : "2015-08-01"
+},
+{
+    "title"     : "The Three–Body Problem",
+    "author"    : "Cixin Liu",
+    "link"      : "http://www.amazon.com/Three-Body-Problem-Cixin-Liu/dp/0765377063",
+    "category"  : "fiction-science",
+    "readable"  : true,
+    "date"      : "2015-09-01"
+},
+{
+    "title"     : "Americanah",
+    "author"    : "Chimamanda Ngozi Adichie",
+    "link"      : "http://www.amazon.com/Americanah-Chimamanda-Ngozi-Adichie/dp/0307455920",
+    "category"  : "fiction",
+    "readable"  : true,
+    "date"      : "2015-10-01"
 }
 ]
