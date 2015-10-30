@@ -157,5 +157,13 @@
     "category"  : "fiction",
     "readable"  : true,
     "date"      : "2015-10-01"
+},
+{
+    "title"     : "Postmodernism: A Very Short Introduction",
+    "author"    : "Christopher Butler",
+    "link"      : "http://www.amazon.com/Postmodernism-Short-Introduction-Christopher-Butler/dp/0192802399",
+    "category"  : "non-fiction-culture",
+    "readable"  : true,
+    "date"      : "2015-10-01"
 }
 ]
