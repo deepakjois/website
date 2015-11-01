@@ -165,5 +165,12 @@
     "category"  : "non-fiction-culture",
     "readable"  : true,
     "date"      : "2015-10-01"
-}
-]
+},
+{
+    "title"     : "Foucault: A Very Short Introduction",
+    "author"    : "Gary Gutting",
+    "link"      : "http://www.amazon.com/gp/product/0192805576",
+    "category"  : "non-fiction-culture",
+    "readable"  : true,
+    "date"      : "2015-11-01"
+}]
