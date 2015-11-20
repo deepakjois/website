@@ -188,5 +188,13 @@
     "category"  : "non-fiction-culture",
     "readable"  : true,
     "date"      : "2015-11-01"
+},
+{
+    "title"     : "Fonts and Encodings",
+    "author"    : "Yannis Haralambous (Author), P. Scott Horne (Translator)",
+    "link"      : "http://www.amazon.com/Fonts-Encodings-Yannis-Haralambous/dp/0596102429",
+    "category"  : "non-fiction-tech",
+    "readable"  : true,
+    "date"      : "2015-11-01"
 }
 ]
