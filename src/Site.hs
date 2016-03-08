@@ -72,7 +72,7 @@ bookPages :: [Identifier]
 bookPages = map fromFilePath $ zipWith (++) (repeat "source/Book Lists/") (map show bookPageYears)
 
 bookPageYears :: [Int]
-bookPageYears = [2010..2015]
+bookPageYears = [2010..2016]
 
 -- *****************
 -- Routes

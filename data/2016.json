@@ -1,0 +1,18 @@
+[
+{
+    "title"    : "Half of a Yellow Sun",
+    "link"     : "http://www.amazon.com/Half-Yellow-Chimamanda-Ngozi-Adichie/dp/1400095204",
+    "author"   : "Chimamanda Ngozi Adichie",
+    "category" : "fiction",
+    "readable" : true,
+    "date"     : "2016-01-01"
+},
+{
+    "title"    : "Unveiling The Retirement Myth",
+    "link"     : "http://www.amazon.com/Unveiling-The-Retirement-Myth-Otar/dp/0968963420",
+    "author"   : "Jim C. Otar",
+    "category" : "non-fiction-finance",
+    "readable" : true,
+    "date"     : "2016-02-01"
+}
+]
