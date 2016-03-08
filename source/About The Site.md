@@ -6,7 +6,7 @@ published: 2015-04-03
 This site started life back in April 2009. Since then I keep gravitating between actively updating it and ignoring it completely, with an occasional burst where I fiddle around with the backend and design.
 
 ## Content
-In the latest iteration of this site, I am trying to gather everything I have written (prose or code) in a single place. Currently, the best way to navigate the content is to use the [home page](/). When the site grows and more pages are added, I plan to add a tags, a section listing the latest entries in chronological order, and an <abbr title="Really Simple Syndication">RSS</abbr> feed.
+In the latest iteration of this site, I am trying to gather everything I have written in a single place. Currently, the best way to navigate the content is to use the [home page](/). When the site grows and more pages are added, I plan to add a tags, a section listing the latest entries in chronological order, and an <abbr title="Really Simple Syndication">RSS</abbr> feed.
 
 The source code for this site is [hosted on Github][github-url]. This site is licensed under the [Creative Commons][cc] [public domain][cc0] license.
 
@@ -39,13 +39,12 @@ The site is hosted on [Amazon S3][s3], and uses [Amazon Route 53][route53] for D
 [s3]:http://aws.amazon.com/s3/
 [route53]:http://aw.amazon.com/route53/
 
-I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. The tools available out there do not deal well with text files that do not have an extension. Hakyll’s default web server (invoked using `hakyll watch`) does not recognise the Content-type of pages with no extensions, so I [wrote my own][serve.go]. I also wrote my own [uploader][upload.go], because [s3cmd][] was not sniffing MIME-types correctly. Both the web server and uploader were written in [Go.][go]
+I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. The tools available out there do not deal well with text files that do not have an extension. I wrote my own [uploader][upload.go], because [s3cmd][] was not sniffing MIME-types correctly. Both the web server and uploader were written in [Go.][go]
 
 [cool-uris]:http://www.w3.org/Provider/Style/URI.html
 [go]:http://golang.org/
-[serve.go]:https://github.com/deepakjois/website/blob/master/serve.go
 [upload.go]:https://github.com/deepakjois/website/blob/master/upload.go
-[s3cmd]: http://s3tools.org
+[s3cmd]:http://s3tools.org
 
 ## Credits
 
