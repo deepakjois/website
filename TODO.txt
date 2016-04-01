@@ -1,6 +1,0 @@
-* Uploader should be able to upload a single file
-* Improve typography: add more whitespace
-* Build tag pages and update template to include tags
-* Search function
-* Add more contributions
-* Script to track latest updates
