@@ -1,7 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Books where
 
-import Data.Monoid (Monoid, mempty, mappend)
 import Data.Either (rights)
 import Data.String (fromString)
 import Data.List (groupBy)

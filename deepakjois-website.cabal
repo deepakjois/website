@@ -1,5 +1,5 @@
 Name:                deepakjois-website
-Version:             0.0.1
+Version:             0.0.2
 Synopsis:            Deepak Jois' Webpage
 Homepage:            http://deepak.jois.name
 License:             BSD3
@@ -19,4 +19,5 @@ Executable site
   Build-depends:       base          >= 4 && < 5
                      , hakyll        >= 4.7 && < 5
                      , blaze-markup, blaze-html, json, split, filepath, pandoc, containers, network-uri
+  Other-modules:       Books
   Ghc-options:         -Wall -fno-warn-orphans -fno-warn-unused-do-bind
