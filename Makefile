@@ -1,19 +1,19 @@
 .PHONY: build build-site clean-site preview-site deploy-site
 
 build-site:
-	cabal run build
+	site build
 
 build:
-	cabal clean
-	cabal configure
-	cabal build
+	stack clean
+	stack build
+	stack install
 
 clean-site:
-	cabal run clean
+	site clean
 
 preview-site: build-site
-	cabal run watch
+	devd -ol .
 
 deploy-site: build-site
-	cabal run deploy
+	./upload _site
 
