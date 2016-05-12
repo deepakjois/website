@@ -1,0 +1,9 @@
+#!/bin/sh
+link_file="data/links/`date '+%Y-%m.json'`"
+if [ ! -e $link_file ]
+then
+  echo "[]" >> $link_file
+fi
+cat $link_file | jq  ". |= . + [{ \"link\": \"$1\", \"title\": \"$2\"}]" > $link_file.new
+cp $link_file.new $link_file && rm $link_file.new
+
