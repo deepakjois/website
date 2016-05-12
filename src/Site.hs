@@ -27,7 +27,7 @@ main = hakyllWith config $ do
   match "includes/*" $ compile templateCompiler
 
   -- Data in JSON format
-  match "data/*.json" $ compile getResourceBody
+  match "data/**.json" $ compile getResourceBody
 
   -- Home page
   match "source/index.html" $ do
@@ -117,7 +117,7 @@ booksPageCtx = field "books" getBooks <>
                field "title" getTitle <>
                defaultContext
  where
-  jsonFile pageFilePath = "data" </> (year pageFilePath <.> "json")
+  jsonFile pageFilePath = "data" </> "books" </> (year pageFilePath <.> "json")
   getBooks item = do
     let jsonId  = fromFilePath . jsonFile . toFilePath . itemIdentifier $ item
     jsonBody <- loadBody jsonId
