@@ -30,5 +30,21 @@
     "category" : "non-fiction",
     "readable" : true,
     "date"     : "2016-04-01"
+},
+{
+    "title"    : "100 photos de René Burri pour la liberté de la presse",
+    "link"     : "https://www.amazon.fr/photos-Ren%C3%A9-Burri-libert%C3%A9-presse/dp/2362200000",
+    "author"   : "Jean-François Julliard",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2016-05-01"
+},
+{
+    "title"    : "Who was Shivaji?",
+    "link"     : "http://www.amazon.com/Who-was-Shivaji-Prabhat-Patnaik/dp/9380118139",
+    "author"   : "Govind Pansare",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2016-05-01"
 }
 ]
