@@ -54,5 +54,15 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2016-05-01"
+},
+{
+    "title"    : "Purple Hibiscus",
+    "link"     : "http://www.amazon.in/Purple-Hibiscus-Chimamanda-Ngozi-Adichie/dp/1616202416",
+    "author"   : "Chimamanda Ngozi Adichie",
+    "category" : "fiction",
+    "readable" : true,
+    "date"     : "2016-06-01"
 }
+
+
 ]
