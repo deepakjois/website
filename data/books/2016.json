@@ -62,7 +62,29 @@
     "category" : "fiction",
     "readable" : true,
     "date"     : "2016-06-01"
+},
+{
+    "title"    : "We Should All Be Feminists",
+    "link"     : "https://www.amazon.com/We-Should-All-Be-Feminists-ebook/dp/B00MT9EJZC",
+    "author"   : "Chimamanda Ngozi Adichie",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2016-06-01"
+},
+{
+    "title"    : "The Thing Around Your Neck",
+    "link"     : "https://www.amazon.com/Thing-Around-Your-Neck-ebook/dp/B002RI9TFU/",
+    "author"   : "Chimamanda Ngozi Adichie",
+    "category" : "fiction",
+    "readable" : true,
+    "date"     : "2016-06-01"
+},
+{
+    "title"    : "The Book of Five Rings",
+    "link"     : "https://www.amazon.com/Book-Five-Rings-Miyamoto-Musashi-ebook/dp/B007V3FHRU",
+    "author"   : "Miyamoto Musashi (Author), Shiro Tsujimura (Illustrator), William Scott Wilson (Translator)",
+    "category" : "non-fiction-culture",
+    "readable" : true,
+    "date"     : "2016-06-01"
 }
-
-
 ]
