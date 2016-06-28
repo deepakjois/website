@@ -86,5 +86,13 @@
     "category" : "non-fiction-culture",
     "readable" : true,
     "date"     : "2016-06-01"
+},
+{
+    "title"    : "Tales and Legends of Africa",
+    "link"     : "http://roobinio.ru/item/341614.html",
+    "author"   : "Unknown",
+    "category" : "fiction",
+    "readable" : true,
+    "date"     : "2016-06-01"
 }
 ]
