@@ -94,5 +94,12 @@
     "category" : "fiction",
     "readable" : true,
     "date"     : "2016-06-01"
+},
+{
+    "title"    : "Ishq Mein Mati Sona",
+    "link"     : "http://www.amazon.in/Ishq-Mein-Maati-Sona-Girindra/dp/812672837X",
+    "author"   : "Girindra Nath Jha",
+    "category" : "fiction",
+    "date"     : "2016-07-01"
 }
 ]
