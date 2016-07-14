@@ -4,6 +4,5 @@ if [ ! -e $link_file ]
 then
   echo "[]" >> $link_file
 fi
-cat $link_file | jq  ". |= . + [{ \"link\": \"$1\", \"title\": \"$2\"}]" > $link_file.new
-cp $link_file.new $link_file && rm $link_file.new
+cat $link_file | jq  ". |= . + [{ \"link\": \"$1\", \"title\": \"$2\"}]" | sponge $link_file
 
