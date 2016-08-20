@@ -1,4 +1,4 @@
-.PHONY: build build-css build-site clean-site preview-site deploy-site
+.PHONY: build build-site clean-site preview-site deploy-site
 
 build-site:
 	sass sass/style.scss:static/css/style.css
