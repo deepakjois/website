@@ -12,7 +12,7 @@ clean-site:
 	site clean
 
 preview-site: build-site
-	devd -ol .
+	devd -ol _site
 
 deploy-site: build-site
 	./upload _site
