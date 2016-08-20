@@ -1,5 +1,61 @@
 /* CSS compiled from SCSS */
 /* --------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body {
+  height: 100%; }
+
+a img {
+  border: none; }
+
+blockquote {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, label, legend, caption, figcaption {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 75%; }
+  @media (min-width: 30em) {
+    html {
+      font-size: 87.5%; } }
+  @media (min-width: 48em) {
+    html {
+      font-size: 100%; } }
+  @media (min-width: 61.25em) {
+    html {
+      font-size: 112.5%; } }
+  @media (min-width: 80em) {
+    html {
+      font-size: 125%; } }
+
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, label, legend, caption, figcaption {
   margin: 0;
   padding: 0; }
@@ -489,17 +545,17 @@ li {
       line-height: 2rem; } }
 
 a {
-  color: #169dbf;
+  color: #8232d2;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(22, 157, 191, 0.6) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(130, 50, 210, 0.6) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 1.05em;
   background-position: 0 calc(43% + 0.44em + 2px);
   cursor: pointer; }
   a:hover {
-    background-image: linear-gradient(to bottom, transparent 50%, rgba(22, 157, 191, 0.8) 50%);
-    color: #169dbf; }
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(130, 50, 210, 0.8) 50%);
+    color: #8232d2; }
   .no-cssgradients a {
     text-decoration: underline; }
 
@@ -826,8 +882,5 @@ th {
   font-weight: bold;
   font-family: "Helvetica Neue", Arial, sans-serif;
   border-bottom: 2px solid #000000; }
-
-sup {
-  line-height: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,434 @@
+// =====================================================
+// ---------------- Megatype typography ----------------
+// =====================================================
+// @author Thomas Bredin-Grey <tom@studiothick.com>
+// Megatype: https://github.com/StudioThick/megatype
+// =====================================================
+
+
+// Paragraphs. OpenType ligatures and oldstyle figures enabled if available.
+p, dd, dt, figcaption {
+	font-feature-settings: "kern" 1, "onum" 1, "liga" 1;
+	font-family: font-family-of($serif);
+	font-weight: regular-of($serif);
+	text-align: left;
+	color: palette(black);
+	max-width: $type-measure; // good typographic measure
+
+	@include min-width(0 1) {
+		@include typeset($serif, 14px, 28px, 0, 2);
+	}
+	@include min-width(2) {
+		@include typeset($serif, 16px, 32px, 0, 2);
+	}
+	@include min-width(3 4) {
+		@include typeset($serif, 18px, 36px, 0, 2);
+	}
+}
+
+// Headings. OpenType ligatures, discretionary ligatures and lining figures enabled if available.
+h1, h2, h3, h4, h5, h6 {
+	font-feature-settings: "dlig" 1, "liga" 1, "lnum" 1, "kern" 1;
+	color: palette(black);
+	font-family: font-family-of($sans);
+	font-weight: bold-of($sans);
+	max-width: $type-measure;
+}
+
+
+// Heading level 1.
+h1, .h1-style {
+	letter-spacing: -0.02em;
+	font-weight: bold;
+
+	@include min-width(0 1) {
+		@include typeset($sans, 38px, 38px, 2, 2);
+	}
+
+	@include min-width(2) {
+		@include typeset($sans, 42px, 42px, 2, 2);
+	}
+
+	@include min-width(3) {
+		@include typeset($sans, 52px, 52px, 2, 2);
+	}
+
+	&:first-child {
+		@include min-width(0 1) {
+			@include typeset($sans, 38px, 38px, 1, 2);
+		}
+
+		@include min-width(2) {
+			@include typeset($sans, 42px, 42px, 0, 2);
+		}
+
+		@include min-width(3) {
+			@include typeset($sans, 52px, 52px, 0, 2);
+		}
+	}
+}
+
+
+// Heading level 2.
+h2, .h2-style {
+	@include min-width(0 1 2) {
+		@include typeset($sans, 26px, 28px, 2, 1);
+	}
+
+	@include min-width(3 4) {
+		@include typeset($sans, 30px, 32px, 2, 1);
+	}
+}
+
+
+// Heading level 3.
+h3, .h3-style {
+	@include typeset($sans, 20px, 24px, 2, 1);
+
+	@include min-width(1 2) {
+		@include typeset($sans, 22px, 28px, 2, 1);
+	}
+
+	@include min-width(3) {
+		@include typeset($sans, 24px, 32px, 2, 1);
+	}
+}
+
+// Heading level 4.
+h4, .h4-style {
+	@include typeset($sans, 18px, 24px, 1, 1);
+
+	@include min-width(1 2) {
+		@include typeset($sans, 20px, 28px, 1, 1);
+	}
+
+	@include min-width(3) {
+		@include typeset($sans, 22px, 32px, 1, 1);
+	}
+}
+
+// Heading level 5, 6.
+h5, .h5-style,
+h6, .h6-style {
+	@include typeset($sans, 1, 2, 1, 1);
+
+	@include min-width(1) {
+		@include typeset($sans, 1rem, 2, 1, 1);
+	}
+
+	@include min-width(3) {
+		@include typeset($sans, 20px, 28px, 1, 1);
+	}
+}
+
+
+// Lists
+ul {
+	list-style: disc outside;
+	padding-left: 1.375rem;
+
+	li {
+		padding-left: 0.35rem;
+	}
+}
+
+ol {
+	padding-left: 1.75rem;
+}
+
+ol, ul {
+	padding-bottom: 1rem;
+	max-width: $type-measure;
+}
+
+li {
+	font-feature-settings: "kern" 1, "onum" 1, "liga" 1;
+	font-family: font-family-of($serif);
+	text-align: left;
+	color: palette(black);
+
+	@include min-width(0 1) {
+		@include typeset($serif, 14px, 24px, 0, 1);
+	}
+	@include min-width(2) {
+		@include typeset($serif, 16px, 32px, 0, 1);
+	}
+	@include min-width(3 4) {
+		@include typeset($serif, 18px, 36px, 0, 1);
+	}
+}
+
+
+// links
+a {
+	@include text-link;
+}
+
+// Bold.
+b, strong {
+	font-weight: bold;
+}
+
+
+// Italic.
+em, i {
+	font-style: italic;
+}
+
+
+// inline small text.
+small {
+	line-height: 1;
+	font-size: 0.875em;
+}
+
+
+// images
+img {
+    -ms-interpolation-mode: bicubic;
+    height: auto;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
+// figures and captions
+figure {
+	position: relative;
+	margin-bottom: 1rem;
+
+	> img {
+		width: 100%;
+	}
+}
+
+// figcaption.
+figcaption {
+	margin-top: 0;
+	background-color: palette(black);
+	font-family: font-family-of($serif);
+	font-style: normal;
+	font-weight: regular-of($serif);
+}
+
+
+// Quotes.
+blockquote {
+	clear: both;
+	border: 0 none;
+	position: relative;
+	margin-top: 3rem;
+	padding-bottom: 3rem;
+	margin: 0;
+
+	@include min-width(2) {
+		margin-top: 4rem;
+		padding-bottom: 4rem;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		height: 4px;
+		background-color: palette(black);
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: span(2);
+		max-width: px-to-rem(147px);
+
+		@include min-width(1) {
+			width: 30%;
+		}
+	}
+
+	p {
+		font-family: font-family-of($serif);
+		margin-bottom: 0;
+		position: relative;
+		overflow: visible;
+
+		@include min-width(0 2) {
+			@include typeset($serif, 24px, 32px, 24px, 0px);
+		}
+
+		@include min-width(3) {
+			@include typeset($serif, 28px, 36px, 24px, 0px);
+		}
+	}
+}
+
+cite {
+	font-family: font-family-of($serif);
+	display: block;
+	@include typeset($serif, 18px, 29px, 0, 36px);
+	font-style: italic;
+
+	@include min-width(0 2 3) {
+		@include typeset($serif, 18px, 29px, 0, 36px);
+	}
+
+	@include min-width(3) {
+		@include typeset($serif, 20px, 32px, 0, 48px);
+	}
+}
+
+
+// Horizontal rule.
+hr {
+	background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,#000 50%);
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	background-position: 0 50%;
+	border: 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: 0;
+	height: 0;
+}
+
+
+// Code block.
+code {
+	background-color: lighten(palette(black), 20%);
+	color: #fff;
+    font-family: font-family-of($monospace);
+	line-height: 1;
+	padding: 0.375rem 0.5rem;
+	border-radius: 0.3rem;
+
+	@include all-breakpoints {
+		font-size: px-to-rem(14px);
+		line-height: 1rem;
+	}
+
+	pre & {
+		display: inline-block;
+		padding: 1.15rem 1rem 0.85rem;
+	}
+}
+
+
+// Preformatted text.
+pre {
+	border-radius: 0.3rem;
+	display: block;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
+	margin-bottom: 2rem;
+}
+
+
+// Form elements
+// input text
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=number],
+textarea {
+	$input-pad: 1rem;
+	border-radius: 0;
+	font-family: font-family-of($serif);
+	text-align: left;
+	color: palette(black);
+	background-color: #fff;
+	outline: 0 none;
+	padding: 0 $input-pad;
+	margin: 0;
+	margin-bottom: 2rem;
+	border: 1px solid palette(black);
+	line-height: 2.9rem;
+	min-height: 3rem;
+	-webkit-appearance: none;
+	appearance: none;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	font-size: px-to-rem(18px);
+
+	&:focus {
+		color: palette(black);
+	}
+
+	// Placeholder text
+	&::placeholder {
+	   color: palette(black);
+	}
+}
+
+// Form submit.
+input[type=submit] {
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+// Select element.
+select {
+	height: 2.75em;
+	margin: 0 0 2rem 0;
+	font-family: font-family-of($sans);
+	border-radius: 0px;
+	padding: 0.575em 2em 0.575em 1.125em;
+	display: block;
+	width: 100%;
+   	-webkit-appearance: none;
+	background: url(../images/arrow.svg) no-repeat right yellow;
+	background-size: 25px;
+	color: palette(black);
+	border: 2px solid palette(black);
+	font-size: px-to-rem(18px);
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	font-family: font-family-of($sans);
+	@include typeset($sans, 18px, 24px, 0px, 14px);
+}
+
+button {
+	border: 0 none;
+}
+
+
+// Tables.
+table {
+	width: 100%;
+	max-width: 100%;
+	margin-top: 2rem;
+	margin-top: 0;
+}
+
+th, td {
+	color: palette(black);
+	font-family: font-family-of($serif);
+	height: 3rem;
+	padding: 1rem;
+
+	@include typeset($serif, 18px, 29px, 8px, 8px);
+
+	@include min-width(2) {
+		@include typeset($serif, 18px, 29px, 8px, 8px);
+	}
+
+	@include min-width(3) {
+		@include typeset($serif, 18px, 29px, 8px, 8px);
+	}
+
+	@include min-width(3) {
+		@include typeset($serif, 20px, 32px, 8px, 8px);
+	}
+}
+
+th {
+	font-weight: bold;
+	font-family: font-family-of($sans);
+	border-bottom: 2px solid palette(black);
+}
+

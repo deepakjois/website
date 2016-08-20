@@ -1,0 +1,82 @@
+// =====================================================
+// ------------------ Megatype globals ------------------
+// =====================================================
+// @author Thomas Bredin-Grey <tom@studiothick.com>
+// Megatype: https://github.com/StudioThick/megatype
+// =====================================================
+
+@include megatype;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    background-color: site-color(white);
+}
+
+
+body {
+    line-height: 2rem;
+    font-family: font-family-of($serif);
+    font-style: normal;
+}
+
+.page {
+    @include set-container;
+    margin: 0 auto;
+
+    @include all-breakpoints {
+        padding: 4rem 2rem;
+    }
+}
+
+// common animation keyframes
+// fade in
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// fade out
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.sans {
+    font-family: font-family-of($sans);
+}
+
+.serif {
+    font-family: font-family-of($serif);
+}
+
+.sidebar {
+    @include min-width(2) {
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+        float: right;
+        width: 33.333%;
+    }
+    @include min-width(3) {
+        padding-top: 1rem;
+        width: 25%;
+    }
+    @include min-width(4) {
+        padding-top: 0;
+    }
+    @include min-width(3 4) {
+    }
+}
