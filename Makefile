@@ -1,8 +1,13 @@
-.PHONY: build build-site clean-site preview-site deploy-site
+.PHONY: build build-css copy-css build-site clean-site preview-site deploy-site
 
-build-site:
-	sass sass/style.scss:static/css/style.css
+build-site: build-css
 	site build
+
+build-css:
+	sass sass/style.scss:static/css/style.css
+
+copy-css: build-css
+	cp static/css/style.css _site/css/
 
 build:
 	stack clean
