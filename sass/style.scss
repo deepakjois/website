@@ -1,13 +1,7 @@
 @import "megatype/megatype";
 
-// debug baseline grid
-$debug-grid: true;
-// debug typeset elements, their cap height, and baseline
-$debug-type: true;
-// show some information about the current breakpoint and it's config
-$debug-breakpoints: true;
+@import "modules/debug";
 
-$debug-allow: true;
 @include megatype;
 
 * {
