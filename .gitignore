@@ -13,3 +13,5 @@ serve
 upload
 cabal.config
 .stack-work
+.sass-cache/
+*.css.map

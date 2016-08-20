@@ -1,0 +1,3 @@
+[submodule "sass/megatype"]
+	path = sass/megatype
+	url = https://github.com/StudioThick/megatype.git
