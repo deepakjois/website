@@ -4,7 +4,7 @@ build-site: build-css
 	site build
 
 build-css:
-	sass sass/style.scss:static/css/style.css
+	sass sass/style.scss:_site/css/style.css
 
 copy-css: build-css
 	cp static/css/style.css _site/css/
