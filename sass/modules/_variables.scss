@@ -14,6 +14,7 @@
 // colors
 $palettes: (
     purple: #8232d2,
+    blue: #337ab7,
     white: #ffffff,
     wolf: #b7b8c7,
     black: #000000
@@ -102,7 +103,7 @@ $baseline-snap: true;
 $type-measure: 40rem;
 
 // link offset from baseline
-$link-color: palette(purple);
+$link-color: palette(blue);
 
 // link offset from baseline
 $link-offset: 2px;

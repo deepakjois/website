@@ -1,0 +1,31 @@
+nav {
+  padding-left: 2rem;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+nav a {
+  @include reset-link;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0 0.5rem;
+  text-transform: uppercase;
+  line-height: 1;
+
+  @include min-width(0 1) {
+    font-size: 1em;
+  }
+
+  @include min-width(2 3) {
+    font-size: 0.875em;
+  }
+}
+
+.nav-up {
+    top: -90px;
+}
+
