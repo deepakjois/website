@@ -11,7 +11,7 @@ p, dd, dt, figcaption {
 	font-feature-settings: "kern" 1, "onum" 1, "liga" 1;
 	font-family: font-family-of($serif);
 	font-weight: regular-of($serif);
-	text-align: left;
+	text-align: justify;
 	color: palette(black);
 	max-width: $type-measure; // good typographic measure
 
@@ -22,7 +22,7 @@ p, dd, dt, figcaption {
 		@include typeset($serif, 16px, 32px, 0, 2);
 	}
 	@include min-width(3 4) {
-		@include typeset($serif, 18px, 36px, 0, 2);
+		@include typeset($serif, 20px, 36px, 0, 2);
 	}
 }
 
@@ -30,40 +30,39 @@ p, dd, dt, figcaption {
 h1, h2, h3, h4, h5, h6 {
 	font-feature-settings: "dlig" 1, "liga" 1, "lnum" 1, "kern" 1;
 	color: palette(black);
-	font-family: font-family-of($sans);
-	font-weight: bold-of($sans);
+	font-family: font-family-of($serifdisplay);
+	font-weight: bold-of($serifdisplay);
 	max-width: $type-measure;
 }
 
 
 // Heading level 1.
 h1, .h1-style {
-	letter-spacing: -0.02em;
 	font-weight: bold;
 
 	@include min-width(0 1) {
-		@include typeset($sans, 38px, 38px, 2, 2);
+		@include typeset($serifdisplay, 38px, 38px, 2, 2);
 	}
 
-	@include min-width(2) {
-		@include typeset($sans, 42px, 42px, 2, 2);
+	@include min-width(2 3) {
+		@include typeset($serifdisplay, 42px, 42px, 2, 2);
 	}
 
 	@include min-width(3) {
-		@include typeset($sans, 52px, 52px, 2, 2);
+		@include typeset($serifdisplay, 48px, 52px, 2, 2);
 	}
 
 	&:first-child {
 		@include min-width(0 1) {
-			@include typeset($sans, 38px, 38px, 1, 2);
+			@include typeset($serifdisplay, 38px, 38px, 1, 2);
 		}
 
-		@include min-width(2) {
-			@include typeset($sans, 42px, 42px, 0, 2);
+		@include min-width(2 3) {
+			@include typeset($serifdisplay, 42px, 42px, 0, 2);
 		}
 
 		@include min-width(3) {
-			@include typeset($sans, 52px, 52px, 0, 2);
+			@include typeset($serifdisplay, 48px, 52px, 0, 2);
 		}
 	}
 }
@@ -72,52 +71,52 @@ h1, .h1-style {
 // Heading level 2.
 h2, .h2-style {
 	@include min-width(0 1 2) {
-		@include typeset($sans, 26px, 28px, 2, 1);
+		@include typeset($serifdisplay, 26px, 28px, 1, 1);
 	}
 
 	@include min-width(3 4) {
-		@include typeset($sans, 30px, 32px, 2, 1);
+		@include typeset($serifdisplay, 30px, 32px, 1, 1);
 	}
 }
 
 
 // Heading level 3.
 h3, .h3-style {
-	@include typeset($sans, 20px, 24px, 2, 1);
+	@include typeset($serifdisplay, 20px, 24px, 1, 1);
 
 	@include min-width(1 2) {
-		@include typeset($sans, 22px, 28px, 2, 1);
+		@include typeset($serifdisplay, 22px, 28px, 1, 1);
 	}
 
 	@include min-width(3) {
-		@include typeset($sans, 24px, 32px, 2, 1);
+		@include typeset($serifdisplay, 24px, 32px, 1, 1);
 	}
 }
 
 // Heading level 4.
 h4, .h4-style {
-	@include typeset($sans, 18px, 24px, 1, 1);
+	@include typeset($serifdisplay, 18px, 24px, 1, 1);
 
 	@include min-width(1 2) {
-		@include typeset($sans, 20px, 28px, 1, 1);
+		@include typeset($serifdisplay, 20px, 28px, 1, 1);
 	}
 
 	@include min-width(3) {
-		@include typeset($sans, 22px, 32px, 1, 1);
+		@include typeset($serifdisplay, 22px, 32px, 1, 1);
 	}
 }
 
 // Heading level 5, 6.
 h5, .h5-style,
 h6, .h6-style {
-	@include typeset($sans, 1, 2, 1, 1);
+	@include typeset($serifdisplay, 1, 2, 1, 1);
 
 	@include min-width(1) {
-		@include typeset($sans, 1rem, 2, 1, 1);
+		@include typeset($serifdisplay, 1rem, 2, 1, 1);
 	}
 
 	@include min-width(3) {
-		@include typeset($sans, 20px, 28px, 1, 1);
+		@include typeset($serifdisplay, 20px, 28px, 1, 1);
 	}
 }
 
@@ -154,7 +153,7 @@ li {
 		@include typeset($serif, 16px, 32px, 0, 1);
 	}
 	@include min-width(3 4) {
-		@include typeset($serif, 18px, 36px, 0, 1);
+		@include typeset($serif, 20px, 36px, 0, 1);
 	}
 }
 
@@ -434,3 +433,7 @@ th {
 	border-bottom: 2px solid palette(black);
 }
 
+sup {
+  vertical-align: super;
+  line-height: 0;
+}
