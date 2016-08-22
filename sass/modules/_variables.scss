@@ -150,3 +150,17 @@ $link-offset: 2px;
 //     regular: 400,
 //     cap-height: 0.68
 // ) !default;
+
+$serif: (
+  font-family: '"Alegreya", Georgia, serif',
+  regular: normal,
+  bold: bold,
+  cap-height: 0.62
+);
+
+$serifdisplay: (
+  font-family: '"Volkhov", Georgia, serif',
+  regular: normal,
+  bold: bold,
+  cap-height: 0.63
+);
