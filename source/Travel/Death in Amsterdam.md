@@ -4,8 +4,10 @@ published: 2012-08-22
 ---
 
 > “Whether people be of high or low birth, rich or poor, old or young, enlightened or confused, they are all alike in that they will one day die. It is not that we don't know that we are going to die, but we grasp at straws. While knowing that we will die someday, we think that all the others will die before us and that we will be the last to go. Death seems a long way off.
+>
 > Is this not shallow thinking? It is worthless and is only a joke within a dream. It will not do to think in such a way, and be negligent. Insofar as death is always at one's door, one should make sufficient effort and act quickly.”
-> <footer><cite title="Hagakure">Hagakure</cite></footer>
+>
+> <cite title="Hagakure">– Hagakure</cite>
 
 As the temperatures in Amsterdam soared above thirty degrees and locals looked to get as much sun as possible by hanging out in parks and beaches, I walked into the Tropenmuseum to check out a special exhibit called “Death Matters”.
 

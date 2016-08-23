@@ -16,7 +16,7 @@ p, dd, dt, figcaption {
 	max-width: $type-measure; // good typographic measure
 
 	@include min-width(0 1) {
-		@include typeset($serif, 14px, 28px, 0, 2);
+		@include typeset($serif, 18px, 28px, 0, 2);
 	}
 	@include min-width(2) {
 		@include typeset($serif, 16px, 32px, 0, 2);
@@ -39,31 +39,16 @@ h1, h2, h3, h4, h5, h6 {
 // Heading level 1.
 h1, .h1-style {
 	font-weight: bold;
-
 	@include min-width(0 1) {
-		@include typeset($serifdisplay, 38px, 38px, 2, 2);
+		@include typeset($serifdisplay, 38px, 38px, 1, 2);
 	}
 
-	@include min-width(2 3) {
-		@include typeset($serifdisplay, 42px, 42px, 2, 2);
+	@include min-width(2) {
+		@include typeset($serifdisplay, 42px, 42px, 0, 2);
 	}
 
 	@include min-width(3) {
-		@include typeset($serifdisplay, 48px, 52px, 2, 2);
-	}
-
-	&:first-child {
-		@include min-width(0 1) {
-			@include typeset($serifdisplay, 38px, 38px, 1, 2);
-		}
-
-		@include min-width(2 3) {
-			@include typeset($serifdisplay, 42px, 42px, 0, 2);
-		}
-
-		@include min-width(3) {
-			@include typeset($serifdisplay, 48px, 52px, 0, 2);
-		}
+		@include typeset($serifdisplay, 48px, 52px, 0, 2);
 	}
 }
 
@@ -147,7 +132,7 @@ li {
 	color: palette(black);
 
 	@include min-width(0 1) {
-		@include typeset($serif, 14px, 24px, 0, 1);
+        @include typeset($serif, 18px, 28px, 0, 1);
 	}
 	@include min-width(2) {
 		@include typeset($serif, 16px, 32px, 0, 1);
@@ -214,65 +199,31 @@ figcaption {
 }
 
 
-// Quotes.
 blockquote {
-	clear: both;
-	border: 0 none;
-	position: relative;
-	margin-top: 3rem;
-	padding-bottom: 3rem;
-	margin: 0;
+  position: relative;
 
-	@include min-width(2) {
-		margin-top: 4rem;
-		padding-bottom: 4rem;
-	}
+  &::before {
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #dcdcdc;
+    position: absolute;
+    left: 10px;
+    top:5px;
+  }
 
-	&:before {
-		content: "";
-		display: block;
-		height: 4px;
-		background-color: palette(black);
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: span(2);
-		max-width: px-to-rem(147px);
-
-		@include min-width(1) {
-			width: 30%;
-		}
-	}
-
-	p {
-		font-family: font-family-of($serif);
-		margin-bottom: 0;
-		position: relative;
-		overflow: visible;
-
-		@include min-width(0 2) {
-			@include typeset($serif, 24px, 32px, 24px, 0px);
-		}
-
-		@include min-width(3) {
-			@include typeset($serif, 28px, 36px, 24px, 0px);
-		}
-	}
+  p {
+    padding-left: 2em;
+    padding-right: 2em;
+    color: #2F4F4F;
+  }
 }
 
 cite {
 	font-family: font-family-of($serif);
 	display: block;
-	@include typeset($serif, 18px, 29px, 0, 36px);
 	font-style: italic;
-
-	@include min-width(0 2 3) {
-		@include typeset($serif, 18px, 29px, 0, 36px);
-	}
-
-	@include min-width(3) {
-		@include typeset($serif, 20px, 32px, 0, 48px);
-	}
 }
 
 
