@@ -3,7 +3,7 @@ title: Linguistics MOOC Review
 published: 2015-05-27
 ---
 
-#### _Originally posted on [Class Central](https://www.class-central.com/report/review-miracles-human-language-introduction-linguistics/)_
+_(Originally posted on [Class Central](https://www.class-central.com/report/review-miracles-human-language-introduction-linguistics/))_
 
 
 ### Introduction and Motivation

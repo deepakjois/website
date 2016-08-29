@@ -1,8 +1,15 @@
 ---
-title: Notes from reading Practical Vim
+title: Vim Tips
 published: 2012-05-02
-lead: Useful Vim tips from Drew Neil’s book <a href="https://pragprog.com/book/dnvim/practical-vim">Practical&nbsp;Vim</a>
+updated: 2016-08-29
 ---
+
+[Vim](https://vim.org) tips from different sources.
+
+## Reading Practical Vim
+
+Notes from Drew Neil’s book [Practical Vim](https://pragprog.com/book/dnvim/practical-vim).
+
 ### Chapter 1 : The Vim Way
 
 * The Dot Formula
@@ -244,6 +251,11 @@ Talk link: <https://www.youtube.com/watch?v=3TX3kV3TICU>
 * `<C-x> <C-f>` for filename completion
 * `<C-x> <C-p>` and  `<C-x> <C-n>` for context-aware completion.
 * `<C-x> <C-l>` for context-aware line completion
+
+## Vim folding tips
+* `za` to toggle a fold
+* `zR` to open all folds
+* `zM` to close all folds
 
 ## References
 * <http://dougblack.io/words/a-good-vimrc.html>

@@ -1,9 +1,8 @@
 ---
 title: Social Anxiety and Me
 published: 2015-06-14
+author: Surabhi
 ---
-
-#### *Written by: Surabhi*
 
 When I was five years old, I was terrified of my kindergarten class teacher. She often shouted at the kids in my class for 'misbehaving' (i.e. behaving like their usual five-year-old selves). Though I was never at the receiving end of her anger - probably because I was always exceptionally quiet and mindlessly obedient (an ideal student, in other words) - I was still mortified by the thought of being embarrassed and humiliated in front of the whole class if she did choose to single me out some day. It made me wake up every weekday morning with a sense of foreboding, and experience a mounting discomfort as my school rickshaw approached its destination. One day, after one of her particularly unpleasant tirades of criticism directed at a classmate, I decided I couldn't take it any longer. The next morning when my parents woke me up for school, I began to sob and flatly refused to get out of bed.
 

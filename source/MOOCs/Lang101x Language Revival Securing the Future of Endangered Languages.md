@@ -2,8 +2,11 @@
 title: "Lang101x Language Revival: Securing the Future of Endangered Languages"
 published: 2014-08-09
 tags: mooc, linguistics
-lead: "Notes from Lang101x Language Revival: Securing the Future of Endangered Languages, a <abbr title=\"Massive Open Online Course\">MOOC</abbr> on <a href=\"https://edx.org\">EdX</a>"
 ---
+
+Notes from [Lang101x Language Revival: Securing the Future of Endangered Languages][lang101x], a MOOC on EdX.
+
+[lang101x]: https://www.edx.org/course/language-revival-securing-future-adelaidex-lang101x
 
 ### Linguicide (Case for Revival)
 

@@ -1,9 +1,8 @@
 ---
 title: Why We Need a Neurodiversity Movement
 published: 2015-11-07
+author: Surabhi
 ---
-
-#### *Written by: Surabhi*
 
 I have social anxiety, and for most of my life this made me believe there was something wrong me. This perception of being inherently flawed brought with it the feeling that it was important for me to push myself so that I would conform and be accepted. Very often, society expected me to do things which made me uncomfortable, which were stress-inducing and unpleasant, and I was convinced that I had to do those things because that is what it took to be “normal”. After all, I would think, it was my fault that these things were hard for me, not anybody else’s. It never occurred to me that maybe the society I lived in owed something to me as well; that maybe, as a human being, I deserved enough respect and compassion from the people, institutions and organisations I was associated with for them to make an effort to understand my needs, and make adjustments to facilitate my mental wellbeing.
 

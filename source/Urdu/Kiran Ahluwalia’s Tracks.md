@@ -2,10 +2,11 @@
 title: Kiran Ahluwalia’s Tracks
 published: 2015-04-02
 tags: urdu
-lead: Lyrics (in Urdu) of two tracks, <a href="http://www.kiranmusic.com/music-2/aam-zameen-common-ground/lakeerai"><em>Lakeerai</em></a> and <a href="http://www.kiranmusic.com/music-2/aam-zameen-common-ground/safar"><em>Saffar</em></a> from singer Kiran Ahluwalia’s album <a href="http://www.kiranmusic.com/music-2/aam-zameen-common-ground"><em>Aam Zameen.</em></a>
 ---
 
-<div lang="ur">	
+Lyrics (in Urdu) of two tracks, <a href="http://www.kiranmusic.com/music-2/aam-zameen-common-ground/lakeerai"><em>Lakeerai</em></a> and <a href="http://www.kiranmusic.com/music-2/aam-zameen-common-ground/safar"><em>Saffar</em></a> from singer Kiran Ahluwalia’s album <a href="http://www.kiranmusic.com/music-2/aam-zameen-common-ground"><em>Aam Zameen.</em></a>
+
+<div lang="ur">
 ## لکیریں
 لکیریں کھینچی ہیں کاغز پہ مگر
 <br/>
@@ -30,7 +31,7 @@ lead: Lyrics (in Urdu) of two tracks, <a href="http://www.kiranmusic.com/music-2
 کہ نیند ہی بچاےگی
 <br/>
 سپنوں میں بھی نضارے لیکن
-<br/>	
+<br/>
 سنہرے ملتے نہیں
 
 ## سفر

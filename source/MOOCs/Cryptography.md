@@ -1,8 +1,11 @@
 ---
 title: Cryptography
 published: 2015-04-06
-lead: Notes from <a href="https://www.coursera.org/course/cryptography">Cryptography</a>, a <abbr title="Massive Open Online Course">MOOC</abbr> on Coursera
 ---
+
+Notes from [Cryptography][crypto], a MOOC on Coursera.
+
+[crypto]: https://www.coursera.org/course/cryptography
 
 ## Week 4: Message Integrity
 

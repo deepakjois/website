@@ -1,8 +1,11 @@
 ---
 title: Quantitative Methods
 published: 2015-09-02
-lead: Notes from <a href="https://www.coursera.org/learn/quantitative-methods">Quantitative Methods</a>, a <abbr title="Massive Open Online Course">MOOC</abbr> on Coursera.
 ---
+
+Notes from [Quantitative Methods][quantitative-methods], a MOOC on Coursera.
+
+[quantitative-methods]: https://www.coursera.org/learn/quantitative-methods
 
 ## Origins of the Scientific Method
 

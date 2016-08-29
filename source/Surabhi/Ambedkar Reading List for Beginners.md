@@ -1,9 +1,8 @@
 ---
 title: Ambedkar Reading List for&nbsp;Beginners
 published: 2015-04-19
+author: Surabhi
 ---
-
-#### *Written by: Surabhi*
 
 ## Introduction
 

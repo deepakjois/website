@@ -2,8 +2,11 @@
 title: Linguistics
 published: 2015-04-05
 tags: mooc,linguistics
-lead: Notes from <a href="https://www.coursera.org/course/humanlanguage">Miracles of Human Language</a>, a <abbr title="Massive Open Online Course">MOOC</abbr> on Coursera.
 ---
+
+Notes from [Miracles of Human Language][humanlanguage], a MOOC on Coursera.
+
+[humanlanguage]:https://www.coursera.org/course/humanlanguage
 
 ## Week 1
 

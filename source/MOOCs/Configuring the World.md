@@ -1,8 +1,11 @@
 ---
 title: Configuring the World (Extra Material)
 published: 2015-05-20
-lead: Notes from the extra material for <a href="https://www.coursera.org/course/configuringworld">Configuring the World</a>, a <abbr title="Massive Open Online Course">MOOC</abbr> on Coursera.
 ---
+
+Notes from the extra material for [Configuring the World][configuringworld], a MOOC on Coursera.
+
+[configuringworld]: https://www.coursera.org/course/configuringworld
 
 ### The Invisible Hand - Adam Smith
 * Champion of free markets.

@@ -1,8 +1,10 @@
 ---
 title: Notes on Tech Interviewing
 published: 2011-06-27
-lead: Unstructured notes on preparing for technical programming interviews and improving one’s programming skills.
 ---
+
+Unstructured notes on preparing for technical programming interviews and improving one’s programming skills.
+
 * [Practising Programming](#practising-programming)
 * [Programming Interviews Preparation](#programming-interviews-preparation)
 * [Java Concurrency](#java-concurrency)

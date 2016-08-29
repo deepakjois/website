@@ -2,8 +2,11 @@
 title: World101x Anthropology of Current World Issues
 published: 2014-08-09
 tags: mooc
-lead: Notes from World101x Anthropology of Current World Issues, a <abbr title="Massive Open Online Course">MOOC</abbr> on <a href="https://edx.org">EdX</a>
 ---
+
+Notes from [World101x Anthropology][world101x] of Current World Issues, a MOOC on EdX.
+
+[world101x]:http://world101x.org/
 
 ### Episode 1: Anthropology 101 I
 
