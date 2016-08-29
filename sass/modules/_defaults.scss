@@ -11,7 +11,7 @@ p, dd, dt, figcaption {
   font-feature-settings: "kern" 1, "onum" 1, "liga" 1;
   font-family: font-family-of($serif);
   font-weight: regular-of($serif);
-  text-align: justify;
+  text-align: left;
   color: palette(black);
   max-width: $type-measure; // good typographic measure
 
