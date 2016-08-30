@@ -1,13 +1,12 @@
 ---
 title: About The Site
 published: 2015-04-03
+updated: 2016-08-30
 ---
 
 This site started life back in April 2009. Since then I keep gravitating between actively updating it and ignoring it completely, with an occasional burst where I fiddle around with the backend and design.
 
 ## Content
-In the latest iteration of this site, I am trying to gather everything I have written in a single place. Currently, the best way to navigate the content is to use the [home page](/). When the site grows and more pages are added, I plan to add a tags, a section listing the latest entries in chronological order, and an <abbr title="Really Simple Syndication">RSS</abbr> feed.
-
 The source code for this site is [hosted on Github][github-url]. This site is licensed under the [Creative Commons][cc] [public domain][cc0] license.
 
 [github-url]:https://github.com/deepakjois/website
