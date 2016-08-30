@@ -24,7 +24,7 @@ The site is served as static HTML content, which is generated using [Hakyll][hak
 [flat-files]:https://github.com/deepakjois/website/tree/master/data
 
 ### Design
-CSS for the site is generated using [SASS]. [MegaType] is used for typography.
+CSS for the site is generated using [SASS] language. [MegaType] is used for typography.
 
 [SASS]:http://sass-lang.com/
 [MegaType]:http://megatype.studiothick.com/
