@@ -23,14 +23,11 @@ The site is served as static HTML content, which is generated using [Hakyll][hak
 [pandoc]:http://johnmacfarlane.net/pandoc/
 [flat-files]:https://github.com/deepakjois/website/tree/master/data
 
-### Design and Typography
-CSS styling is done using [Bootstrap 3.0][bootstrap] almost exclusively.
+### Design
+CSS for the site is generated using [SASS]. [MegaType] is used for typography.
 
-The typography of the site is a work in progress. [Amiri font][amiri] is used to typeset Urdu. Amiri is a nice balance between some of the more geometric and plain looking Arabic fonts that come bundled on most OSes, and the highly stylised [Nastaliq][nastaliq] fonts (in which Urdu is traditionally typeset) which make blingual typesetting on a webpage very complicated.
-
-[bootstrap]:http://getbootstrap.com
-[amiri]: http://www.amirifont.org/
-[nastaliq]: http://en.wikipedia.org/wiki/Nasta%CA%BFl%C4%ABq_script
+[SASS]:http://sass-lang.com/
+[MegaType]:http://megatype.studiothick.com/
 
 ### Hosting
 The site is hosted on [Amazon S3][s3], and uses [Amazon Route 53][route53] for DNS management.
@@ -50,8 +47,6 @@ I went through a bit of pain to get [Cool URIs][cool-uris] to work properly. The
 * [Gwern.net][gwern] for a lot of ideas around organising the site content.
 * Surabhi Agarwal for  proofreading and providing helpful suggestions.
 * [Jasper][jasper] for building Hakyll.
-* [Khaled Hosny][hosny] for Amiri font.
 
 [gwern]:http://gwern.net
 [jasper]: http://jaspervdj.be
-[hosny]: http://www.khaledhosny.org/
