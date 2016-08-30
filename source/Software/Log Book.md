@@ -8,7 +8,6 @@ published: 2016-08-30
 ### Webpack
 * Webpack has a `style-loader` and `css-loader` for processing `require`s which have CSS files in them. This can be combined with the `extract-text-plugin` to have component-specific CSS during coding, but bundling it while running the code.
 * `style-loader` loads the raw style files, but it can be chained with `css-loader` to provide some additional functionality for @import etc.
-
 * `copy-webpack-plugin` can be used to copy static assets from one place to another
 
 ### Tmux
