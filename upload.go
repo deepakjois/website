@@ -15,8 +15,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/awslabs/aws-sdk-go/aws"
-	"github.com/awslabs/aws-sdk-go/service/s3"
+	"github.com/aws/aws-sdk-go/aws"
+	"github.com/aws/aws-sdk-go/aws/awserr"
+	"github.com/aws/aws-sdk-go/aws/session"
+	"github.com/aws/aws-sdk-go/service/s3"
 )
 
 const (
@@ -68,9 +70,7 @@ func computeMd5Remote(key string) (string, error) {
 
 	resp, err := svc.HeadObject(params)
 
-	if awserr := aws.Error(err); awserr != nil {
-		return "", awserr
-	} else if err != nil {
+	if err != nil {
 		return "", err
 	}
 
@@ -88,11 +88,7 @@ func uploadFile(r io.ReadSeeker, key, ctype string) error {
 		ContentEncoding: aws.String("gzip"),
 	}
 
-	_, err := svc.PutObject(params)
-
-	if awserr := aws.Error(err); awserr != nil {
-		return awserr
-	} else if err != nil {
+	if _, err := svc.PutObject(params); err != nil {
 		return err
 	}
 
@@ -125,13 +121,12 @@ func checkAndUpload(path string) (string, error) {
 	key = strings.TrimPrefix(key, "/") // Just in case
 
 	md5Remote, err := computeMd5Remote(key)
-	if awserr := aws.Error(err); awserr != nil {
-		if awserr.StatusCode == 404 {
+	if reqErr, ok := err.(awserr.RequestFailure); ok {
+		if reqErr.StatusCode() == 404 {
 			md5Remote = "" // Set to dummy value
 		} else {
 			return "", err
 		}
-
 	} else if err != nil {
 		return "", err
 	}
@@ -170,7 +165,8 @@ func uploader(done <-chan struct{}, paths <-chan string, c chan<- result) {
 }
 
 func main() {
-	svc = s3.New(&aws.Config{Region: "us-east-1"})
+	svc = s3.New(session.New(aws.NewConfig().WithRegion("us-east-1")))
+
 	flag.Parse()
 	pathPrefix = flag.Arg(0)
 
