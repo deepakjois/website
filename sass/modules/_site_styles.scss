@@ -33,6 +33,12 @@
   color: red;
 }
 
+#searchbox_demo input {
+  display: inline;
+  width: auto;
+  border: 1px solid #999;
+}
+
 footer p {
     text-align: center;
     font-family: "Droid Sans", "Helvetica Neue",Helvetica,sans-serif;
