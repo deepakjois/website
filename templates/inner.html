@@ -1,10 +1,8 @@
 <h1>$title$</h1>
 
 <p class="byline">
-  Posted on $date$<br/>
-  $if(author)$
-  Written by $author$
-  $endif$
+  $if(updated)$Updated on $updated$.$else$Posted on $date$.$endif$<br/>
+  $if(author)$Written by $author$$endif$
 </p>
 $body$
 

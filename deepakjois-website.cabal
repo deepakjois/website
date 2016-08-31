@@ -19,5 +19,6 @@ Executable site
   Build-depends:       base          >= 4.2 && < 5
                      , hakyll        >= 4.8 && < 5
                      , blaze-markup, blaze-html, json, split, filepath, pandoc, containers, network-uri
+                     , time, time-locale-compat
   Other-modules:       Books
   Ghc-options:         -Wall -fno-warn-orphans -fno-warn-unused-do-bind
