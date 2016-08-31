@@ -196,3 +196,8 @@ func main() {
 
 ### CSS Masonry Layout
 * <https://codepen.io/dudleystorey/pen/eAqzk>
+
+## 30 Aug
+
+### Serve static file and API simultaneously with Go
+* <https://elithrar.github.io/article/vue-react-ember-server-golang/>
