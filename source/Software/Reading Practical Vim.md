@@ -259,4 +259,4 @@ Talk link: <https://www.youtube.com/watch?v=3TX3kV3TICU>
 
 ## References
 * <http://dougblack.io/words/a-good-vimrc.html>
-
+* <https://www.vi-improved.org/recommendations/>
