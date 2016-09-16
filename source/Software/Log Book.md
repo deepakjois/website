@@ -201,3 +201,61 @@ func main() {
 
 ### Serve static file and API simultaneously with Go
 * <https://elithrar.github.io/article/vue-react-ember-server-golang/>
+
+## 8 Sept
+### Minimal Web Server
+```
+ while true ; do  echo -e "HTTP/1.1 200 OK\n\n $(date)" | nc -l -p 1500  ; done
+```
+
+### Raspberry Pi Wifi Setup commandline
+* <https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md>
+* [Automatically connect a Raspberry Pi to a Wifi network](http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/)
+## 9 Sept
+### USB Tethering
+* Assign a static IP to host during USB tethering:
+  *  <http://www.monblocnotes.com/node/1895> 
+    * (Note: NetworkManager is not part of Rasbian, so ignore those instructions)
+  * <https://www.raspberrypi.org/forums/viewtopic.php?f=36&t=47522> 
+    * Following these instructions and then using `hostname -I` gives two IP addresses for the `usb0` interface, and both of them seem to work. It appears that one of them is assigned dynamically _after_ the static IP is configured. Not sure what exactly is happening.
+### Raspberry Pi and Macbook direct network connection
+* Lots of conflicting and confusing information online.
+* Best working instructions: <http://kmahelona.blogspot.in/2013/04/share-your-internet-from-your-macbook.html>
+	* Setup ethernet and assign a static IP 192.168.2.1 to Macbook, along with a public DNS like 8.8.8.8 and 8.8.4.4
+	* Setup Raspberry Pi eth0 interface and assign static IP 192.168.2.2 to:
+		
+```
+auto eth0
+iface eth0 inet static
+address 192.168.2.2
+netmask 255.255.255.0
+gateway 192.168.2.1
+```
+Turn on internet sharing on Mac, and reboot Raspberry Pi. After that you should be able to SSH into `raspberrypi.local` and also use the internet on the Pi.
+### Auto-mounting USB drives on Raspberry Pi
+It seems that USB drives do not automount on the Raspberry Pi by default. Here are the steps I needed:
+
+* Install `usbmount`: `sudo apt-get install usbmount`
+	* According to the original, page `usbmount` is unmaintained, but there is a repo on Github with updated code: <https://github.com/rbrito/usbmount>
+	* It seems that `usbmount` basically works by adding some rules for `udevd` which are triggered everytime a USB device is added/removed
+* By default USB Mount will mount the disks read-only. Change that by changing FS_MOUNTOPTIONS to something like `-fstype=vfat,umask=0000`. More details:
+	* <http://raspberrypi.stackexchange.com/questions/29688/samba-and-usbmount-cant-write-on-automounted-device>
+	* <http://unix.stackexchange.com/questions/39921/device-is-mounting-as-read-only-can-copy-files-as-root>
+	* <http://raspberrypi.stackexchange.com/questions/41959/automount-various-usb-stick-file-systems-on-jessie-lite>
+### Disabling Wifi and Bluetooth on Raspberry Pi
+* <https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=138610>
+## 13 Sept
+### Bash shell and history
+* <http://samrowe.com/wordpress/advancing-in-the-bash-shell/>
+
+## 16 Sep
+### Lua simple grepping example using patterns
+```
+local pattern = "%w+%.%w+%("
+
+for line in io.lines("src/bidi_bracket.lua") do
+  if string.find(line,pattern) then print(line) end
+end
+```
+
+_needed this recently to search for something…_
