@@ -259,3 +259,65 @@ end
 ```
 
 _needed this recently to search for something…_
+## 17 Sep
+### Lua hex string to number conversion
+```
+local someHexString = "03FFACB"
+local someNumber = tonumber(someHexString, 16)
+```
+## 19 Sep
+### Go chaining handlers
+* Alice: <https://github.com/justinas/alice>
+	* Simple, minimalist way to chain handlers
+## 20 Sep
+### startup scripts with systemd
+* <https://gauntface.com/blog/2015/12/02/start-up-scripts-for-raspbian>
+* <https://wiki.archlinux.org/index.php/Systemd>
+* Creating Custom Target with systemd:<http://unix.stackexchange.com/questions/301987/how-to-create-a-systemd-target>
+### logging with systemd
+* Example from influxdb: <https://github.com/influxdata/influxdb/issues/4490>
+
+```
+[Unit]
+Description=InfluxDB is an open-source, distributed, time series database
+Documentation=https://influxdb.com/docs/
+After=network.target
+
+[Service]
+User=influxdb
+Group=influxdb
+LimitNOFILE=65536
+Environment='STDOUT=/dev/null'
+Environment='STDERR=/var/log/influxdb/influxd.log'
+EnvironmentFile=-/etc/default/influxdb
+ExecStart=/bin/sh -c "/opt/influxdb/influxd -config /etc/opt/influxdb/influxdb.conf ${INFLUXD_OPTS} > ${STDOUT} 2> ${STDERR}"
+KillMode=control-group
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+Alias=influxd.service
+```
+
+## 21 September
+### React Native
+* Curated List of Talks: <https://github.com/mightyCrow/awesome-react-native-talks>
+### Automounting NTFS Disk on Raspberry Pi
+* Latest Jessie seems to have in-built support for NTFS
+* Finding UUID of the disk: `sudo blkid -o list`
+* Adding a fstab entry: e.g: `UUID=xxxx /media/USBDRIVE ntfs-3g auto,users,permissions 0 0`
+### usbmount bug
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=774149
+* Basically because: _“You cannot start long-lived processes from a udev rule, this should be handled by systemd.”_
+### Seeing all files installed by a Debian package
+To see all the files the package installed onto your system, do this:
+```
+dpkg-query -L <package_name>
+```
+
+## 25 Sep
+### Multiple GOPATHs
+* `go help gopath` contains details about multiple gopaths, internal packages etc.
+## 26 Sep
+* Go Build Essential: <http://golang.rakyll.org/go-tool-flags/>
+* `go build -x`
