@@ -321,3 +321,21 @@ dpkg-query -L <package_name>
 ## 26 Sep
 * Go Build Essential: <http://golang.rakyll.org/go-tool-flags/>
 * `go build -x`
+## 22 Oct
+### Bundling static assets with go
+* http://mattjibson.com/blog/2014/11/19/esc-embedding-static-assets/
+## 24 Oct
+### Locking down specific users on Windows 10 for kiosk mode
+Reference: <http://www.sevenforums.com/tutorials/101869-local-group-policies-apply-all-users-except-administrators.html>
+* Make sure you are logged in as administrator
+* Launch the `mmc` app (Microsoft Management Console)
+* Select Add snap-in
+*  In the left pane, select Group Policy Object Editor, and click on the Add button.
+* This is the crucial part:  Click on the Browse button, and select the user or group you want to attach the policy to
+*  Click on the Finish button. 
+* Now make the changes to lock down the user:
+	* Use Custom Interface (alternatively one can set a string `Shell` under `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System`
+	* Disable Task Manager
+	* Disable Change Password
+	* Disable Sign Out
+	* (any other policy…)
