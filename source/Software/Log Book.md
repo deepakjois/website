@@ -326,7 +326,11 @@ dpkg-query -L <package_name>
 * http://mattjibson.com/blog/2014/11/19/esc-embedding-static-assets/
 ## 24 Oct
 ### Locking down specific users on Windows 10 for kiosk mode
-Reference: <http://www.sevenforums.com/tutorials/101869-local-group-policies-apply-all-users-except-administrators.html>
+References: 
+* <http://www.sevenforums.com/tutorials/101869-local-group-policies-apply-all-users-except-administrators.html>
+* http://superuser.com/questions/134066/how-to-apply-group-policy-settings-to-specific-local-accounts-in-windows
+
+Instructions:
 * Make sure you are logged in as administrator
 * Launch the `mmc` app (Microsoft Management Console)
 * Select Add snap-in
@@ -334,7 +338,7 @@ Reference: <http://www.sevenforums.com/tutorials/101869-local-group-policies-app
 * This is the crucial part:  Click on the Browse button, and select the user or group you want to attach the policy to
 *  Click on the Finish button. 
 * Now make the changes to lock down the user:
-	* Use Custom Interface (alternatively one can set a string `Shell` under `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System`
+	* Use Custom Interface (alternatively one can set a string `Shell` under `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System`: <http://serverfault.com/questions/762717/windows-10-kiosk-modus-with-custom-shell>
 	* Disable Task Manager
 	* Disable Change Password
 	* Disable Sign Out
