@@ -153,7 +153,7 @@ Use `system` to run system commands
 * HTTP Response snippets: <http://www.alexedwards.net/blog/golang-response-snippets#json>
 
 ### Tmux reorder windows
-* `swap-window -t <x>` will swap current window with window <x>
+* `swap-window -t <x>` will swap current window with window \<x\>
 
 ### Golang CORS
 * Handler to do CORS: <https://github.com/rs/cors>
@@ -343,3 +343,30 @@ Instructions:
 	* Disable Change Password
 	* Disable Sign Out
 	* (any other policy…)
+
+## 25 Oct
+### Slice tricks
+* <https://github.com/golang/go/wiki/SliceTricks>
+* Removing element from slice: <http://stackoverflow.com/questions/29005825/how-to-remove-element-of-struct-array-in-loop-in-golang>
+
+## 26 Oct
+### Windows Home directory
+Home directory on Windows can be accessed by the variable `%USERPROFILE%` variable.
+## 27 Oct
+### Removable media bit on Windows
+* <http://superuser.com/questions/391176/flipping-the-removable-media-bit-alternatives-to-bootit>
+## 2 Nov
+### Skylake vs Kaby Lake
+<http://gizmodo.com/intels-new-kaby-lake-processors-what-you-need-to-know-1785889498>
+
+> Understanding which processor is which is not easy. When you’re in Best Buy and urgently trying to upgrade, you should remember at least one thing: Kaby Lake processors will start with the number 7. So the i5-7500U or m3-7Y30 is a 7th-generation Kaby Lake chip, while the i7-6920HQ would be a 6th-generation Skylake chip.
+
+## 3 Nov
+### Text Shaping and Rendering
+* <https://www.youtube.com/watch?v=Plhnr7mPhxw>
+* <https://www.youtube.com/watch?v=T79LMEXkf9w>
+* <https://opensource.com/life/16/3/twisted-road-right-left-language-support>
+## 19 Nov
+### Enqueueing Coursera videos in VLC
+* Create m3u playlists: `find . -name '*.mp4' -execdir bash -c 'file="{}"; printf "%s\n" "${file##*/}" >> "${PWD##*/}.m3u"' \;`
+* Open them like this: `find . -iname "*.m3u" | xargs -n 1 open -a VLC.app`
