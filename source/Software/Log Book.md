@@ -158,7 +158,7 @@ Use `system` to run system commands
 ### Golang CORS
 * Handler to do CORS: <https://github.com/rs/cors>
 
-```
+```go
 package main
 
 import (
@@ -250,7 +250,7 @@ It seems that USB drives do not automount on the Raspberry Pi by default. Here a
 
 ## 16 Sep
 ### Lua simple grepping example using patterns
-```
+```lua
 local pattern = "%w+%.%w+%("
 
 for line in io.lines("src/bidi_bracket.lua") do
@@ -370,3 +370,40 @@ Home directory on Windows can be accessed by the variable `%USERPROFILE%` variab
 ### Enqueueing Coursera videos in VLC
 * Create m3u playlists: `find . -name '*.mp4' -execdir bash -c 'file="{}"; printf "%s\n" "${file##*/}" >> "${PWD##*/}.m3u"' \;`
 * Open them like this: `find . -iname "*.m3u" | xargs -n 1 open -a VLC.app`
+
+## 2 Dec
+### React Router
+* Training: <https://github.com/ReactTraining/react-router>
+
+### Webpack 2
+* What’s new: <https://gist.github.com/sokra/27b24881210b56bbaff7>
+
+Here is an interesting config option:
+
+#### Configuration
+
+In the past environment variables are often used to handle different environments in the configuration file. Webpack 2 brings a new way to pass options to the configuration.
+
+The configuration file can export a function which returns the configuration. The function is called by the CLI and the value passed via `--env` is passed to the configuration function.
+
+You can pass a string (`--env dev` => `"dev"`) or a complex options object (`--env.minimize --env.server localhost` => `{minimize: true, server: "localhost"}`). I would recommend using an object, because it's more extendable, but it's up to you.
+
+##### Example
+
+``` js
+// webpack.config.babel.js
+exports default function(options) {
+	return {
+		// ...
+		devtool: options.dev ? "cheap-module-eval-source-map" : "hidden-source-map"
+	};
+}
+```
+
+## 3 Dec
+### Screencasting on Mac
+* <https://gist.github.com/dergachev/4627207>
+
+### Headless Chrome
+* <https://chromium.googlesource.com/chromium/src/+/master/headless>
+* <http://www.zackarychapple.guru/chrome/2016/08/24/chrome-headless.html>
