@@ -25,6 +25,7 @@ We can setup tmux sessions in advance using scripting. Here is an example:
 * Make sure you have .eslintignore file in place to ignore places like `node_modules`.
 * Here is a sample configuration:
 
+```json
     {
       "parser": "babel-eslint",
       "env": {
@@ -35,6 +36,7 @@ We can setup tmux sessions in advance using scripting. Here is an example:
       "installedESLint": true,
       "plugins": ["react"]
     }
+  ```
 
 ## Using Jest with React and Babel
 * Install `react-addons-test-utils`
@@ -407,3 +409,8 @@ exports default function(options) {
 ### Headless Chrome
 * <https://chromium.googlesource.com/chromium/src/+/master/headless>
 * <http://www.zackarychapple.guru/chrome/2016/08/24/chrome-headless.html>
+
+## 15 Dec
+### Filename lengths on Windows
+* http://superuser.com/questions/941992/filename-length-in-windows
+* https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247%28v=vs.85%29.aspx
