@@ -414,3 +414,17 @@ exports default function(options) {
 ### Filename lengths on Windows
 * http://superuser.com/questions/941992/filename-length-in-windows
 * https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247%28v=vs.85%29.aspx
+
+## 29 Dec
+### Software for Organising/Making Lists
+* Quip
+* Dropbox Paper
+* VimWiki: http://vimwiki.github.io/
+
+
+## 3 Jan
+### Deploying Static Files to AWS
+* https://github.com/zupzup/static-aws-deploy
+
+
+
