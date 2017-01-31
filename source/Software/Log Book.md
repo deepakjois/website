@@ -425,6 +425,3 @@ exports default function(options) {
 ## 3 Jan
 ### Deploying Static Files to AWS
 * https://github.com/zupzup/static-aws-deploy
-
-
-
