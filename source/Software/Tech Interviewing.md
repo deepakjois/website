@@ -12,6 +12,9 @@ Unstructured notes on preparing for technical programming interviews and improvi
 * [Java Core Libraries Source Code](#java-core-libraries-source-code)
 * [Continuations](#continuations)
 
+## System Design
+* [The System Design Primer](https://github.com/donnemartin/system-design-primer)
+
 ## Practicing Programming
 ### Resources
 * [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
