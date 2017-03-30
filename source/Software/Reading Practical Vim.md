@@ -260,3 +260,4 @@ Talk link: <https://www.youtube.com/watch?v=3TX3kV3TICU>
 ## References
 * <http://dougblack.io/words/a-good-vimrc.html>
 * <https://www.vi-improved.org/recommendations/>
+* <https://gist.github.com/csswizardry/9a33342dace4786a9fee35c73fa5deeb>
