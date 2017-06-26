@@ -425,3 +425,7 @@ exports default function(options) {
 ## 3 Jan
 ### Deploying Static Files to AWS
 * https://github.com/zupzup/static-aws-deploy
+
+## 12 Apr
+### Joining two CSV files and doing other things like sorting etc
+Use [CSVKit](http://csvkit.readthedocs.io)
