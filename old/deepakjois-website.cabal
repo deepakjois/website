@@ -16,8 +16,8 @@ Source-repository head
 Executable site
   Hs-source-dirs:      src
   Main-is:             Site.hs
-  Build-depends:       base          >= 4.2 && < 5
-                     , hakyll        >= 4.8 && < 5
+  Build-depends:       base          == 4.*
+                     , hakyll  == 4.10.*
                      , blaze-markup, blaze-html, json, split, filepath, pandoc, containers, network-uri
                      , time, time-locale-compat
   Other-modules:       Books

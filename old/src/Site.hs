@@ -4,7 +4,6 @@ import Data.Monoid ((<>))
 import Data.String()
 import Data.List (sortBy, intercalate)
 import Data.Ord (comparing)
-import qualified Data.Set as S
 import System.FilePath ((<.>), (</>), takeFileName, splitDirectories)
 import Text.Blaze.Html.Renderer.String (renderHtml)
 import Hakyll
@@ -146,7 +145,7 @@ pandocMathCompiler =
     let mathExtensions = [Ext_tex_math_dollars, Ext_tex_math_double_backslash,
                           Ext_latex_macros]
         defaultExtensions = writerExtensions defaultHakyllWriterOptions
-        newExtensions = foldr S.insert defaultExtensions mathExtensions
+        newExtensions = foldr enableExtension defaultExtensions mathExtensions
         writerOptions = defaultHakyllWriterOptions {
                           writerExtensions = newExtensions,
                           writerHTMLMathMethod = MathJax ""
