@@ -1,93 +1,71 @@
 import React from "react"
-import Link from "gatsby-link"
-import styles from "../styles"
-import presets from "../utils/presets"
-import { rhythm, scale } from "../utils/typography"
+import logodeva from './logo-deva.svg';
+import logolatn from './logo-latn.svg';
 
-class Index extends React.Component {
-  render() {
-    const posts = this.props.data.allMarkdownRemark.edges
-
+export default () => {
+    let choice = Math.round(Math.random());
+    let logo = [logodeva, logolatn][choice];
     return (
-      <div>
-        <div>
-          <h1
-            css={{
-              ...scale(4 / 5),
-              fontWeight: `800`,
-              marginBottom: rhythm(2),
-            }}
-          >
-            This example demonstrates{` `}
-            <a href="https://www.gatsbyjs.org/packages/gatsby-transformer-remark/">
-              gatsby-transformer-remark
-            </a>
-            {` `}
-            and its plugins. It uses{` `}
-            <a href="https://github.com/KyleAMathews/typography.js">
-              Typography.js
-            </a>
-            {` `}
-            and self-hosted fonts via the{` `}
-            <a href="https://github.com/KyleAMathews/typefaces">Typefaces</a>
-            {` `}
-            project.
-            {}
-          </h1>
-          <ul
-            css={{
-              marginBottom: rhythm(2),
-              marginTop: rhythm(2),
-              marginLeft: 0,
-              listStyle: `none`,
-            }}
-          >
-            {posts.map(post => (
-              <li key={post.node.fields.slug}>
-                <span
-                  css={{
-                    color: styles.colors.light,
-                    display: `block`,
-                    [presets.Tablet]: {
-                      float: `right`,
-                      marginLeft: `1rem`,
-                    },
-                  }}
-                >
-                  {post.node.frontmatter.date}
-                </span>
-                <Link to={post.node.fields.slug} className="link-underline">
-                  {post.node.frontmatter.title}
-                </Link>
+      <div className="container">
+        <div className="row">
+          <div className="header col-sm-4 col-sm-offset-4">
+            <img className="logo" src={logo} alt="logo" />
+
+            <h1>Deepak Jois</h1>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-sm-8 col-sm-offset-2">
+            <h4>
+              Programmer and{' '}
+              <a href="https://en.wikipedia.org/wiki/Free_software">
+                free (libre) software
+              </a>{' '}
+              enthusiast from India. Previously used to work at{' '}
+              <a href="https://soundcloud.com">Soundcloud</a> and{' '}
+              <a href="https://aws.amazon.com">Amazon Web Services</a>, among
+              other places.
+            </h4>
+
+            <ul className="links">
+              <li>
+                <h3>
+                  <i className="fa fa-envelope" aria-hidden="true" />{' '}
+                  <a href="mailto:deepak.jois@gmail.com">Email</a>
+                </h3>
               </li>
-            ))}
-          </ul>
+
+              <li>
+                <h3>
+                  <i className="fa fa-github" aria-hidden="true" />{' '}
+                  <a href="https://github.com/deepakjois">Github</a>
+                </h3>
+              </li>
+
+              <li>
+                <h3>
+                  <i className="fa fa-twitter" aria-hidden="true" />{' '}
+                  <a href="http://twitter.com/debugjois">Twitter</a>
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <i className="fa fa-medium" aria-hidden="true" />{' '}
+                  <a href="https://medium.com/@debugjois">Medium</a>
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <i className="fa fa-bandcamp" aria-hidden="true" />{' '}
+                  <a href="https://bandcamp.com/deepakjois/wishlist">
+                    Bandcamp
+                  </a>
+                </h3>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    )
-  }
+    );
 }
-
-export default Index
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: { ne: true }, example: { ne: true } } }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
-      }
-    }
-  }
-`

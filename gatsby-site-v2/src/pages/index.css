@@ -1,0 +1,17 @@
+@import 'mini.css/dist/mini-nord.min.css';
+
+img.logo {
+    width: 60%;
+    margin: auto;
+    display:block;
+  }
+
+  .header h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+

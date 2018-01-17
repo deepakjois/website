@@ -78,21 +78,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
-  if (node.internal.type === `File`) {
-    const parsedFilePath = path.parse(node.absolutePath)
-    const slug = `/${parsedFilePath.dir.split(`---`)[1]}/`
-    createNodeField({ node, name: `slug`, value: slug })
-  } else if (
-    node.internal.type === `MarkdownRemark` &&
-    typeof node.slug === `undefined`
-  ) {
-    const fileNode = getNode(node.parent)
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode, trailingSlash: false })
     createNodeField({
-      node,
       name: `slug`,
-      value: fileNode.fields.slug,
+      node,
+      value,
     })
-
     if (node.frontmatter.tags) {
       const tagSlugs = node.frontmatter.tags.map(
         tag => `/tags/${_.kebabCase(tag)}/`
