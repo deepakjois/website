@@ -1,9 +1,13 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
-const ArticleTemplate = ({data}) => {
-    const article = data.markdownRemark
+const ArticleTemplate = (props) => {
+    const article = props.data.markdownRemark
   return (
     <div>
+    <Helmet
+      title={article.frontmatter.title}
+    />
       <h1>{article.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: article.html }} />
     </div>
