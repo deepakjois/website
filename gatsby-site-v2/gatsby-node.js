@@ -11,7 +11,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     const blogPostTemplate = path.resolve(`src/templates/template-blog-post.js`)
-    const tagPagesTemplate = path.resolve(`src/templates/template-tag-page.js`)
     graphql(
       `
         {
@@ -40,32 +39,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       // Create blog posts pages.
       result.data.allMarkdownRemark.edges.forEach(edge => {
         createPage({
-          path: edge.node.fields.slug, // required
+          path: edge.node.fields.slug, // Required
           component: slash(blogPostTemplate),
           context: {
             slug: edge.node.fields.slug,
             highlight: edge.node.frontmatter.highlight,
-            shadow: edge.node.frontmatter.shadow,
-          },
-        })
-      })
-
-      // Create tag pages.
-      let tags = []
-      result.data.allMarkdownRemark.edges.forEach(edge => {
-        if (_.get(edge, `node.frontmatter.tags`)) {
-          tags = tags.concat(edge.node.frontmatter.tags)
-        }
-      })
-      tags = _.uniq(tags)
-      tags.forEach(tag => {
-        const tagPath = `/tags/${_.kebabCase(tag)}/`
-        createPage({
-          path: tagPath,
-          component: tagPagesTemplate,
-          context: {
-            tag,
-          },
+            shadow: edge.node.frontmatter.shadow
+          }
         })
       })
 
@@ -83,7 +63,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value
     })
     if (node.frontmatter.tags) {
       const tagSlugs = node.frontmatter.tags.map(

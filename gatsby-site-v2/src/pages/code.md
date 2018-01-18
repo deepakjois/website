@@ -8,7 +8,7 @@ tags:
   - Code Highlighting
 ---
 
-![](jeremy-bishop-262119.jpg) _Photo by
+![](/images/jeremy-bishop-262119.jpg) _Photo by
 [Jeremy Bishop](https://unsplash.com/@tidesinourveins) via
 [Unsplash](https://unsplash.com/?photo=XxpCNQ_w3is)_
 

@@ -1,6 +1,6 @@
-import React from "react"
-import Link from "gatsby-link"
-import kebabCase from "lodash/kebabCase"
+import React from 'react'
+import Link from 'gatsby-link'
+import kebabCase from 'lodash/kebabCase'
 
 class TagsPageRoute extends React.Component {
   render() {
@@ -14,11 +14,13 @@ class TagsPageRoute extends React.Component {
             <li key={tag.fieldValue}>
               <Link
                 style={{
-                  textDecoration: `none`,
+                  textDecoration: `none`
                 }}
                 to={`/tags/${kebabCase(tag.fieldValue)}/`}
               >
-                {tag.fieldValue} ({tag.totalCount})
+                {tag.fieldValue} (
+                {tag.totalCount}
+                )
               </Link>
             </li>
           ))}
@@ -39,7 +41,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 2000
-      filter: { frontmatter: { draft: { ne: true }, } }
+      filter: { frontmatter: { draft: { ne: true } } }
     ) {
       group(field: frontmatter___tags) {
         fieldValue

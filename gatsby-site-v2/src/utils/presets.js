@@ -8,5 +8,5 @@ module.exports = {
   desktop: `(min-width: 1000px)`,
   Desktop: `@media (min-width: 1000px)`,
   hd: `(min-width: 1200px)`,
-  Hd: `@media (min-width: 1200px)`,
+  Hd: `@media (min-width: 1200px)`
 }

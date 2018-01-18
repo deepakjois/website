@@ -9,36 +9,32 @@
     "bluebird": "^3.4.7",
     "es6-object-assign": "^1.1.0",
     "gatsby": "^1.9.75",
-    "gatsby-image": "^1.0.5",
     "gatsby-link": "latest",
     "gatsby-plugin-catch-links": "latest",
     "gatsby-plugin-glamor": "latest",
-    "gatsby-plugin-sharp": "latest",
+    "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-autolink-headers": "^1.4.8",
-    "gatsby-remark-copy-linked-files": "latest",
-    "gatsby-remark-images": "latest",
-    "gatsby-remark-katex": "latest",
+    "gatsby-remark-katex": "^1.0.10",
     "gatsby-remark-prismjs": "latest",
     "gatsby-remark-responsive-iframe": "^1.4.9",
     "gatsby-remark-smartypants": "latest",
     "gatsby-source-filesystem": "latest",
     "gatsby-transformer-remark": "latest",
-    "gatsby-transformer-sharp": "latest",
     "gatsby-transformer-yaml": "latest",
     "lodash": "^4.17.4",
     "lodash-id": "^0.14.0",
-    "lodash-webpack-plugin": "^0.11.2",
-    "react-typography": "^0.15.10",
-    "slash": "^1.0.0",
-    "typeface-space-mono": "^0.0.22",
-    "typeface-spectral": "^0.0.29",
-    "typography": "^0.15.10"
+    "lodash-webpack-plugin": "^0.11.2"
   },
   "license": "MIT",
-  "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "prettier": "prettier --write --no-semi --single-quote src/**/*.js gatsby-*.js"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "1.10.2"
   }
 }
