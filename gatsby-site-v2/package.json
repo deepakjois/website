@@ -30,11 +30,15 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "prettier": "prettier --write --no-semi --single-quote src/**/*.js gatsby-*.js"
+    "prettier": "prettier --write --no-semi --single-quote src/**/*.js gatsby-*.js",
+    "precommit": "lint-staged"
   },
   "devDependencies": {
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
     "prettier": "1.10.2"
+  },
+  "lint-staged": {
+    "*.js": ["prettier --no-semi --single-quote"]
   }
 }
