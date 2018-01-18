@@ -4,6 +4,7 @@ import { rhythm, scale } from '../utils/typography'
 import presets from '../utils/presets'
 
 require(`prismjs/themes/prism-solarizedlight.css`)
+require(`font-awesome/css/font-awesome.css`)
 
 class DefaultLayout extends React.Component {
   render() {
