@@ -39,6 +39,8 @@
     "prettier": "1.10.2"
   },
   "lint-staged": {
-    "*.js": ["prettier --no-semi --single-quote"]
+    "*.js": [
+      "prettier --no-semi --single-quote"
+    ]
   }
 }
