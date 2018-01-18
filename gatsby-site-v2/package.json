@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-example-using-remark",
+  "name": "deepakjois.name-site",
   "private": true,
-  "description": "Gatsby example site that demonstrates gatsby-transformer-remark and its plugins.",
-  "version": "1.0.0",
-  "author": "Florian Kissling <sechskilo@gmail.com>",
+  "description": "Deepak Jois’ Website",
+  "version": "0.0.1",
+  "author": "Deepak Jois <deepak.jois@gmail.com>",
   "dependencies": {
     "babel-plugin-lodash": "^3.2.11",
     "bluebird": "^3.4.7",
