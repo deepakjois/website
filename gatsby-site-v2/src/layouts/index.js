@@ -2,9 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { rhythm, scale } from '../utils/typography'
 import presets from '../utils/presets'
-
-require(`prismjs/themes/prism-solarizedlight.css`)
-require(`font-awesome/css/font-awesome.css`)
+import 'font-awesome/css/font-awesome.css'
+import 'prismjs/themes/prism-solarizedlight.css'
 
 class DefaultLayout extends React.Component {
   render() {
