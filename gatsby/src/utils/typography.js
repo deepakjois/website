@@ -25,7 +25,17 @@ const typography = new Typography({
   baseFontSize: '20px',
   bodyGray: 0,
   headerFontFamily: ['Playfair Display', 'sans-serif'],
-  bodyFontFamily: ['Old Standard TT', 'serif']
+  bodyFontFamily: ['Old Standard TT', 'serif'],
+  overrideStyles: ({ rhythm, scale }, options) => {
+    return {
+      a: {
+        color: '#88c0d0'
+      },
+      'a:visited': {
+        color: '#5e81ac'
+      }
+    }
+  }
 })
 
 module.exports = typography

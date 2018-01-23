@@ -7,6 +7,7 @@ import 'font-awesome/css/font-awesome.css'
 import 'prismjs/themes/prism-solarizedlight.css'
 import 'typeface-playfair-display'
 import 'typeface-old-standard-tt'
+import './layout.css'
 
 class DefaultLayout extends React.Component {
   render() {
