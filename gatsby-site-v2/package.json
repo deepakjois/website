@@ -24,7 +24,9 @@
     "gatsby-transformer-yaml": "latest",
     "lodash": "^4.17.4",
     "lodash-id": "^0.14.0",
-    "lodash-webpack-plugin": "^0.11.2"
+    "lodash-webpack-plugin": "^0.11.2",
+    "typeface-old-standard-tt": "^0.0.44",
+    "typeface-playfair-display": "^0.0.45"
   },
   "license": "MIT",
   "scripts": {

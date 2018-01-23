@@ -8663,6 +8663,14 @@ type-of@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/type-of/-/type-of-2.0.1.tgz#e72a1741896568e9f628378d816d6912f7f23972"
 
+typeface-old-standard-tt@^0.0.44:
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/typeface-old-standard-tt/-/typeface-old-standard-tt-0.0.44.tgz#dea28567f22f8d5cf998476cfcd3e2160f4ae6f6"
+
+typeface-playfair-display@^0.0.45:
+  version "0.0.45"
+  resolved "https://registry.yarnpkg.com/typeface-playfair-display/-/typeface-playfair-display-0.0.45.tgz#6564f2180d510eda6547d95b7186c7850c8475de"
+
 typography-normalize@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.14.0.tgz#1d77c1fe2aaf4a51b3673c4c85c85a65a2d4b573"

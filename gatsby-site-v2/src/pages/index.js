@@ -7,11 +7,16 @@ export default () => {
   const logo = [logodeva, logolatn][choice]
   return (
     <div className="container">
-      <img className="logo" src={logo} alt="logo" />
+      <img
+        css={{ height: '10em', display: 'block', margin: '0 auto' }}
+        className="logo"
+        src={logo}
+        alt="logo"
+      />
 
-      <h1>Deepak Jois</h1>
+      <h1 css={{ textAlign: 'center' }}>Deepak Jois</h1>
 
-      <h4>
+      <p>
         Programmer and{' '}
         <a href="https://en.wikipedia.org/wiki/Free_software">
           free (libre) software
@@ -20,40 +25,30 @@ export default () => {
         <a href="https://soundcloud.com">Soundcloud</a> and{' '}
         <a href="https://aws.amazon.com">Amazon Web Services</a>
         , among other places.
-      </h4>
+      </p>
 
       <ul className="links">
         <li>
-          <h3>
-            <i className="fa fa-envelope" aria-hidden="true" />{' '}
-            <a href="mailto:deepak.jois@gmail.com">Email</a>
-          </h3>
+          <i className="fa fa-envelope" aria-hidden="true" />{' '}
+          <a href="mailto:deepak.jois@gmail.com">Email</a>
         </li>
 
         <li>
-          <h3>
-            <i className="fa fa-github" aria-hidden="true" />{' '}
-            <a href="https://github.com/deepakjois">Github</a>
-          </h3>
+          <i className="fa fa-github" aria-hidden="true" />{' '}
+          <a href="https://github.com/deepakjois">Github</a>
         </li>
 
         <li>
-          <h3>
-            <i className="fa fa-twitter" aria-hidden="true" />{' '}
-            <a href="http://twitter.com/debugjois">Twitter</a>
-          </h3>
+          <i className="fa fa-twitter" aria-hidden="true" />{' '}
+          <a href="http://twitter.com/debugjois">Twitter</a>
         </li>
         <li>
-          <h3>
-            <i className="fa fa-medium" aria-hidden="true" />{' '}
-            <a href="https://medium.com/@debugjois">Medium</a>
-          </h3>
+          <i className="fa fa-medium" aria-hidden="true" />{' '}
+          <a href="https://medium.com/@debugjois">Medium</a>
         </li>
         <li>
-          <h3>
-            <i className="fa fa-bandcamp" aria-hidden="true" />{' '}
-            <a href="https://bandcamp.com/deepakjois/wishlist">Bandcamp</a>
-          </h3>
+          <i className="fa fa-bandcamp" aria-hidden="true" />{' '}
+          <a href="https://bandcamp.com/deepakjois/wishlist">Bandcamp</a>
         </li>
       </ul>
     </div>
