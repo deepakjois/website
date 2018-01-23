@@ -11,32 +11,7 @@ class Index extends React.Component {
     return (
       <div>
         <div>
-          <h1
-            css={{
-              ...scale(4 / 5),
-              fontWeight: `800`,
-              marginBottom: rhythm(2)
-            }}
-          >
-            This example demonstrates
-            {` `}
-            <a href="https://www.gatsbyjs.org/packages/gatsby-transformer-remark/">
-              gatsby-transformer-remark
-            </a>
-            {` `}
-            and its plugins. It uses
-            {` `}
-            <a href="https://github.com/KyleAMathews/typography.js">
-              Typography.js
-            </a>
-            {` `}
-            and self-hosted fonts via the
-            {` `}
-            <a href="https://github.com/KyleAMathews/typefaces">Typefaces</a>
-            {` `}
-            project.
-            {}
-          </h1>
+          <h1>All Posts</h1>
           <ul
             css={{
               marginBottom: rhythm(2),

@@ -10,7 +10,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve(`src/templates/template-blog-post.js`)
+    const postTemplate = path.resolve(`src/templates/template-post.js`)
     graphql(
       `
         {
@@ -40,7 +40,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       result.data.allMarkdownRemark.edges.forEach(edge => {
         createPage({
           path: edge.node.fields.slug, // Required
-          component: slash(blogPostTemplate),
+          component: slash(postTemplate),
           context: {
             slug: edge.node.fields.slug,
             highlight: edge.node.frontmatter.highlight,
