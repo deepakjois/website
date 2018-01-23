@@ -16,6 +16,7 @@ export default () => {
 
       <h1 css={{ textAlign: 'center' }}>Deepak Jois</h1>
 
+      <hr />
       <p>
         Programmer and{' '}
         <a href="https://en.wikipedia.org/wiki/Free_software">
@@ -26,7 +27,6 @@ export default () => {
         <a href="https://aws.amazon.com">Amazon Web Services</a>
         , among other places.
       </p>
-
       <ul className="links">
         <li>
           <i className="fa fa-envelope" aria-hidden="true" />{' '}
