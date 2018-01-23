@@ -34,7 +34,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "prettier": "prettier --write --no-semi --single-quote src/**/*.js gatsby-*.js",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "deploy": "yarn build && aws s3 sync --delete public/ s3://www.deepakjois.name"
   },
   "devDependencies": {
     "husky": "^0.14.3",
