@@ -43,7 +43,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier --no-semi --single-quote"
+      "prettier --write --no-semi --single-quote"
     ]
   }
 }
