@@ -2,7 +2,7 @@ import React from 'react'
 import logodeva from './logo-deva.svg'
 import logolatn from './logo-latn.svg'
 
-export default () => {
+export default function Index() {
   const choice = Math.round(Math.random())
   const logo = [logodeva, logolatn][choice]
   return (

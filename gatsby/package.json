@@ -5,14 +5,19 @@
   "version": "0.0.1",
   "author": "Deepak Jois <deepak.jois@gmail.com>",
   "dependencies": {
+    "babel-eslint": "^8.2.1",
     "babel-plugin-lodash": "^3.2.11",
     "bluebird": "^3.4.7",
     "es6-object-assign": "^1.1.0",
+    "eslint": "^4.16.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eval": "^0.1.2",
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.75",
     "gatsby-link": "latest",
     "gatsby-plugin-catch-links": "latest",
     "gatsby-plugin-glamor": "latest",
+    "gatsby-plugin-remove-trailing-slashes": "^1.0.4",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-autolink-headers": "^1.4.8",
     "gatsby-remark-katex": "^1.0.10",
@@ -26,7 +31,8 @@
     "lodash-id": "^0.14.0",
     "lodash-webpack-plugin": "^0.11.2",
     "typeface-old-standard-tt": "^0.0.44",
-    "typeface-playfair-display": "^0.0.45"
+    "typeface-playfair-display": "^0.0.45",
+    "webpack-sources": "^1.1.0"
   },
   "license": "MIT",
   "scripts": {
@@ -34,6 +40,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "prettier": "prettier --write --no-semi --single-quote src/**/*.js gatsby-*.js",
+    "lint": "eslint .",
     "precommit": "lint-staged",
     "deploy": "yarn build && aws s3 sync --delete public/ s3://www.deepakjois.name"
   },
@@ -45,6 +52,7 @@
   "lint-staged": {
     "*.js": [
       "prettier --write --no-semi --single-quote",
+      "eslint",
       "git add"
     ]
   }

@@ -47,6 +47,7 @@ module.exports = {
     },
     `gatsby-transformer-yaml`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-glamor`
+    `gatsby-plugin-glamor`,
+    `gatsby-plugin-remove-trailing-slashes`
   ]
 }

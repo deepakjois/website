@@ -5,11 +5,13 @@ const slash = require(`slash`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const webpackLodashPlugin = require(`lodash-webpack-plugin`)
+const StaticSiteGeneratorWebpackPlugin = require(`static-site-generator-webpack-plugin`)
+const AlternateStaticSiteGeneratorWebpackPlugin = require(`./src/webpack/alternate-static-site-generator-webpack-plugin`)
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
-  return new Promise((resolve, reject) => {
+  return new Promise(resolve => {
     const postTemplate = path.resolve(`src/templates/template-post.js`)
     graphql(
       `
@@ -76,10 +78,30 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
 // Sass and Lodash.
 exports.modifyWebpackConfig = ({ config, stage }) => {
+  let idx, plugin
   switch (stage) {
-    case `build-javascript`:
+    case 'build-javascript':
       config.plugin(`Lodash`, webpackLodashPlugin, null)
+      break
+    case 'build-html':
+      // Modify HTML building to generate files w/ no extension
+      // instead of generating a folder witn a single index.html
+      // file in it
+      idx = _.findIndex(
+        config._config.plugins,
+        o => o instanceof StaticSiteGeneratorWebpackPlugin
+      )
+      plugin = config._config.plugins[idx]
+      console.log(plugin.entry)
+      console.log(plugin.paths)
 
+      // Replace StaticSiteGeneratorWebpackPlugin w/ our custom version
+      config._config.plugins[
+        idx
+      ] = new AlternateStaticSiteGeneratorWebpackPlugin({
+        entry: plugin.entry,
+        paths: plugin.paths
+      })
       break
   }
 

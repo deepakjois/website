@@ -26,7 +26,7 @@ const typography = new Typography({
   bodyGray: 0,
   headerFontFamily: ['Playfair Display', 'sans-serif'],
   bodyFontFamily: ['Old Standard TT', 'serif'],
-  overrideStyles: ({ rhythm, scale }, options) => {
+  overrideStyles: () => {
     return {
       a: {
         color: '#88c0d0'
