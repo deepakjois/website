@@ -92,8 +92,6 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
         o => o instanceof StaticSiteGeneratorWebpackPlugin
       )
       plugin = config._config.plugins[idx]
-      console.log(plugin.entry)
-      console.log(plugin.paths)
 
       // Replace StaticSiteGeneratorWebpackPlugin w/ our custom version
       config._config.plugins[
