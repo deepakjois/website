@@ -42,12 +42,12 @@
     "deploy": "yarn build && aws s3 sync --delete public/ s3://www.deepakjois.name"
   },
   "devDependencies": {
-    "husky": "^0.14.3",
-    "lint-staged": "^6.0.0",
-    "prettier": "1.10.2",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.16.0",
-    "eslint-plugin-react": "^7.5.1"
+    "eslint-plugin-react": "^7.5.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "1.10.2"
   },
   "lint-staged": {
     "*.js": [
