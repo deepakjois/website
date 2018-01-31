@@ -11,7 +11,7 @@
     "eval": "^0.1.2",
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.75",
-    "gatsby-link": "latest",
+    "gatsby-link": "^1.6.35",
     "gatsby-plugin-catch-links": "latest",
     "gatsby-plugin-glamor": "latest",
     "gatsby-plugin-remove-trailing-slashes": "^1.0.4",
