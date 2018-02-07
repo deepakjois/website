@@ -29,10 +29,10 @@ const typography = new Typography({
   overrideStyles: () => {
     return {
       a: {
-        color: '#88c0d0'
+        color: '#3a2aa1'
       },
       'a:visited': {
-        color: '#5e81ac'
+        color: '#19789c'
       }
     }
   }
