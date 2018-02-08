@@ -4,6 +4,7 @@ import styles from '../styles'
 import presets from '../utils/presets'
 import { rhythm } from '../utils/typography'
 import { Helmet } from 'react-helmet'
+import Nav from '../components/Nav'
 
 class Index extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class Index extends React.Component {
         <Helmet>
           <title>All Posts</title>
         </Helmet>
+        <Nav />
         <div>
           <h1>All Posts</h1>
           <ul

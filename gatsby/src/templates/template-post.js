@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { rhythm } from '../utils/typography'
+import Nav from '../components/Nav'
 
 import 'katex/dist/katex.min.css'
 
@@ -16,6 +17,7 @@ class BlogPostRoute extends React.Component {
         <Helmet>
           <title>{post.frontmatter.title}</title>
         </Helmet>
+        <Nav />
         <header>
           <h1>{post.frontmatter.title}</h1>
         </header>

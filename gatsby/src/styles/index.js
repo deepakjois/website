@@ -10,5 +10,25 @@ export default {
   container: style({
     maxWidth: `37rem`,
     margin: `0 auto`
+  }),
+  nav: style({
+    height: rhythm(1.5),
+    fontFamily: 'helvetica, sans-serif',
+    fontVariant: 'small-caps',
+    textAlign: 'center',
+    '& ul': {
+      display: 'inline-block',
+      listStyle: 'none',
+      margin: '0',
+      '& li': {
+        display: 'inline'
+      },
+      '& li + li:before': {
+        content: '  ❧  '
+      },
+      '& a': {
+        textDecoration: 'none'
+      }
+    }
   })
 }
