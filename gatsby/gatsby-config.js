@@ -5,9 +5,6 @@ module.exports = {
     description: `Blazing-fast React.js static site generator`,
     homepage: `https://www.gatsbyjs.org`
   },
-  mapping: {
-    'MarkdownRemark.frontmatter.author': `AuthorYaml`
-  },
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,
@@ -45,9 +42,9 @@ module.exports = {
         ]
       }
     },
-    `gatsby-transformer-yaml`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-glamor`,
-    `gatsby-plugin-remove-trailing-slashes`
+    `gatsby-plugin-remove-trailing-slashes`,
+    `gatsby-plugin-react-helmet`
   ]
 }

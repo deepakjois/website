@@ -1,12 +1,16 @@
 import React from 'react'
 import logodeva from './logo-deva.svg'
 import logolatn from './logo-latn.svg'
+import { Helmet } from 'react-helmet'
 
 export default function Index() {
   const choice = Math.round(Math.random())
   const logo = [logodeva, logolatn][choice]
   return (
     <div className="container">
+      <Helmet>
+        <title>Deepak Jois – Website</title>
+      </Helmet>
       <img
         css={{ height: '10em', display: 'block', margin: '0 auto' }}
         className="logo"

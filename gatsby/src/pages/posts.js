@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import styles from '../styles'
 import presets from '../utils/presets'
 import { rhythm } from '../utils/typography'
+import { Helmet } from 'react-helmet'
 
 class Index extends React.Component {
   render() {
@@ -10,6 +11,9 @@ class Index extends React.Component {
 
     return (
       <div>
+        <Helmet>
+          <title>All Posts</title>
+        </Helmet>
         <div>
           <h1>All Posts</h1>
           <ul

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Helmet } from 'react-helmet'
 import { rhythm } from '../utils/typography'
 
 import 'katex/dist/katex.min.css'
@@ -13,6 +13,9 @@ class BlogPostRoute extends React.Component {
           maxWidth: rhythm(26)
         }}
       >
+        <Helmet>
+          <title>{post.frontmatter.title}</title>
+        </Helmet>
         <header>
           <h1>{post.frontmatter.title}</h1>
         </header>

@@ -14,6 +14,7 @@
     "gatsby-link": "^1.6.35",
     "gatsby-plugin-catch-links": "latest",
     "gatsby-plugin-glamor": "latest",
+    "gatsby-plugin-react-helmet": "^2.0.4",
     "gatsby-plugin-remove-trailing-slashes": "^1.0.4",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-autolink-headers": "^1.4.8",
@@ -27,6 +28,7 @@
     "lodash": "^4.17.4",
     "lodash-id": "^0.14.0",
     "lodash-webpack-plugin": "^0.11.2",
+    "react-helmet": "^5.2.0",
     "typeface-old-standard-tt": "^0.0.44",
     "typeface-playfair-display": "^0.0.45",
     "webpack-sources": "^1.1.0"
