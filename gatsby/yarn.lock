@@ -59,8 +59,8 @@
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.6.2.tgz#12cfaba693ba20f114ed5765467ff25fdf67ddb0"
 
 "@types/node@*":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
+  version "9.4.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.2.tgz#b109a6c4f64147ccf9476d9e1a6fbf69a10faeb8"
 
 "@types/react-router-dom@^4.2.2":
   version "4.2.3"
@@ -2685,8 +2685,8 @@ domutils@1.5.1:
     domelementtype "1"
 
 domutils@^1.5.1:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.6.2.tgz#1958cc0b4c9426e9ed367fb1c8e854891b0fa3ff"
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -3648,14 +3648,14 @@ gatsby-remark-katex@^1.0.10:
     remark-math "^0.2.4"
     unist-util-visit "^1.1.1"
 
-gatsby-remark-prismjs@latest:
-  version "1.2.12"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-1.2.12.tgz#3ca1067daaa0bd738dce6d1005310cb85f7ee04e"
+gatsby-remark-prismjs@^1.2.14:
+  version "1.2.14"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-1.2.14.tgz#3f5fd2ac1d5a174673a6b6fa63b4e4fa526d36c0"
   dependencies:
     babel-runtime "^6.26.0"
-    parse-numeric-range "^0.0.2"
-    prismjs "^1.7.0"
-    unist-util-visit "^1.1.1"
+    parse-numeric-range "0.0.2"
+    prismjs "^1.11.0"
+    unist-util-visit "^1.3.0"
 
 gatsby-remark-responsive-iframe@^1.4.9:
   version "1.4.16"
@@ -3693,8 +3693,8 @@ gatsby-source-filesystem@^1.5.14:
     valid-url "^1.0.9"
 
 gatsby-transformer-remark@^1.7.29:
-  version "1.7.30"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.30.tgz#8785bc1f6b7df312bcf93ac02b6523723218f1e7"
+  version "1.7.31"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.31.tgz#b429e14e60c8cf8809def0c6c914627ef7ff3a1c"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
@@ -3727,8 +3727,8 @@ gatsby-transformer-yaml@latest:
     unist-util-select "^1.5.0"
 
 gatsby@^1.9.75:
-  version "1.9.183"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.183.tgz#3e6afaf17be7383a767b3d9c60e64f69eaa96ba6"
+  version "1.9.184"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.184.tgz#03ee3b39fb4056180140ebaed041a7523acf955a"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -5503,8 +5503,8 @@ lodash.merge@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
 
 lodash.mergewith@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.0.tgz#150cf0a16791f5903b8891eab154609274bdea55"
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
 
 lodash.pad@^4.1.0:
   version "4.5.1"
@@ -5939,8 +5939,8 @@ mitt@^1.1.2:
   resolved "https://registry.yarnpkg.com/mitt/-/mitt-1.1.3.tgz#528c506238a05dce11cd914a741ea2cc332da9b8"
 
 mixin-deep@^1.2.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.0.tgz#47a8732ba97799457c8c1eca28f95132d7e8150a"
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.1.tgz#a49e7268dce1a0d9698e45326c5626df3543d0fe"
   dependencies:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
@@ -6533,7 +6533,7 @@ parse-latin@^4.0.0:
     unist-util-modify-children "^1.0.0"
     unist-util-visit-children "^1.0.0"
 
-parse-numeric-range@^0.0.2:
+parse-numeric-range@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/parse-numeric-range/-/parse-numeric-range-0.0.2.tgz#b4f09d413c7adbcd987f6e9233c7b4b210c938e4"
 
@@ -7228,17 +7228,9 @@ postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
-postcss@^6.0.1:
+postcss@^6.0.1, postcss@^6.0.14:
   version "6.0.17"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.17.tgz#e259a051ca513f81e9afd0c21f7f82eda50c65c5"
-  dependencies:
-    chalk "^2.3.0"
-    source-map "^0.6.1"
-    supports-color "^5.1.0"
-
-postcss@^6.0.14:
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.16.tgz#112e2fe2a6d2109be0957687243170ea5589e146"
   dependencies:
     chalk "^2.3.0"
     source-map "^0.6.1"
@@ -7278,9 +7270,9 @@ pretty-format@^21.2.1:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
-prismjs@^1.7.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.10.0.tgz#77e5187c2ae6b3253fcc313029cf25fe53778721"
+prismjs@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.11.0.tgz#297aef33eb79421bfdb19273a5092ca515970d29"
   optionalDependencies:
     clipboard "^1.7.1"
 
@@ -9373,7 +9365,7 @@ unist-util-visit-children@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit-children/-/unist-util-visit-children-1.1.1.tgz#eba63b371116231181068837118b6e6e10ec8844"
 
-unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.1:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.1, unist-util-visit@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.3.0.tgz#41ca7c82981fd1ce6c762aac397fc24e35711444"
   dependencies:
