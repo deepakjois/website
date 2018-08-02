@@ -1,27 +1,16 @@
 import Typography from 'typography'
 
 const typography = new Typography({
-  /*
   googleFonts: [
-  {
-    name: 'Playfair Display',
-    styles: [
-      '400',
-      '400i',
-      '700',
-      '700i'
-    ],
-  },
-  {
-    name: 'Old Standard TT',
-    styles: [
-      '400',
-      '400i',
-      '700'
-    ],
-  },
+    {
+      name: 'Playfair Display',
+      styles: ['400', '400i', '700', '700i'],
+    },
+    {
+      name: 'Old Standard TT',
+      styles: ['400', '400i', '700'],
+    },
   ],
-  */
   baseFontSize: '20px',
   bodyGray: 0,
   headerFontFamily: ['Playfair Display', 'sans-serif'],
@@ -29,13 +18,14 @@ const typography = new Typography({
   overrideStyles: () => {
     return {
       a: {
-        color: '#3a2aa1'
+        color: '#3a2aa1',
+        textDecoration: 'none',
       },
       'a:visited': {
-        color: '#19789c'
-      }
+        color: '#19789c',
+      },
     }
-  }
+  },
 })
 
-module.exports = typography
+export default typography

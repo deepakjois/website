@@ -1,16 +1,21 @@
 import React from 'react'
+
+import Layout from '../components/layout'
+
 import logodeva from './logo-deva.svg'
 import logolatn from './logo-latn.svg'
-import { Helmet } from 'react-helmet'
+import styles from '../styles'
 
-export default function Index() {
-  const choice = Math.round(Math.random())
-  const logo = [logodeva, logolatn][choice]
-  return (
-    <div className="container">
-      <Helmet>
-        <title>Deepak Jois – Website</title>
-      </Helmet>
+const choice = Math.round(Math.random())
+const logo = [logodeva, logolatn][choice]
+
+const IndexPage = () => (
+  <Layout>
+    <div
+      className="container"
+      {...styles.container}
+      {...styles.verticalPadding}
+    >
       <img
         css={{ height: '10em', display: 'block', margin: '0 auto' }}
         className="logo"
@@ -26,10 +31,9 @@ export default function Index() {
         <a href="https://en.wikipedia.org/wiki/Free_software">
           free (libre) software
         </a>{' '}
-        enthusiast from India. Previously used to work at{' '}
+        enthusiast from India. Previously worked at{' '}
         <a href="https://soundcloud.com">Soundcloud</a> and{' '}
-        <a href="https://aws.amazon.com">Amazon Web Services</a>
-        , among other places.
+        <a href="https://aws.amazon.com">Amazon Web Services</a>.
       </p>
       <ul className="links">
         <li>
@@ -40,6 +44,11 @@ export default function Index() {
         <li>
           <i className="fa fa-github" aria-hidden="true" />{' '}
           <a href="https://github.com/deepakjois">Github</a>
+        </li>
+
+        <li>
+          <i className="fa fa-linkedin" aria-hidden="true" />{' '}
+          <a href="https://www.linkedin.com/in/debugjois/">LinkedIn</a>
         </li>
 
         <li>
@@ -56,5 +65,7 @@ export default function Index() {
         </li>
       </ul>
     </div>
-  )
-}
+  </Layout>
+)
+
+export default IndexPage
