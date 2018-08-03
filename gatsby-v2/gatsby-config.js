@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Deepak Jois – Website',
+    description: 'Deepak Jois’ Website',
+    author: 'Deepak Jois',
+    siteUrl: 'https://www.deepakjois.name'
   },
   plugins: [
     {

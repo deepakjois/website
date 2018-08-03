@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "author": "Deepak Jois <deepak.jois@gmail.com>",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "font-awesome": "^4.7.0",
     "gatsby": "next",
     "gatsby-plugin-feed": "^2.0.0-beta.4",
@@ -17,6 +18,8 @@
     "gatsby-source-filesystem": "^2.0.1-beta.10",
     "gatsby-transformer-remark": "^2.1.1-beta.5",
     "glamor": "^2.20.40",
+    "lodash": "^4.17.10",
+    "prismjs": "^1.15.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
