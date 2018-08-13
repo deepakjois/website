@@ -35,7 +35,7 @@
     "deploy": "gatsby build && aws s3 sync --delete public/ s3://www.deepakjois.name"
   },
   "devDependencies": {
-    "prettier": "^1.14.0"
+    "prettier": "^1.14.2"
   },
   "repository": {
     "type": "git",
